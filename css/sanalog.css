@@ -346,7 +346,7 @@ figure {
 .home_contacts_grid_div {
   color: #000;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   transition: letter-spacing 200ms ease;
 }
 
@@ -480,7 +480,7 @@ figure {
 }
 
 .about_rich_text figure {
-  margin-bottom: 75vh;
+  margin-bottom: 40vh;
 }
 
 .about_rich_text h1 {
@@ -761,6 +761,16 @@ figure {
 
 }
 */
+
+.footer {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
 
 @media screen and (max-width: 991px) {
   .logoyellow {
