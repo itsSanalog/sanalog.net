@@ -1,5 +1,5 @@
 on: push
-name: Deploy sanalog.cf via FTP on push
+name: Deploy sanalog.net via FTP on push
 jobs:
   web-deploy:
     name: FTP Deploy
