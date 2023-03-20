@@ -1,5 +1,5 @@
 # sanalog.net
-Personal website. Currently being used to sell myself.
+Personal website. Currently not in use.
 
 For an actual description of the site, purpose, development and whatnot, check [sanalog.net/blog/code/sanalog.net](https://sanalog.net/blog/code/sanalog.net).
 
