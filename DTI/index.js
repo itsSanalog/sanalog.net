@@ -28,12 +28,12 @@ const makeGrid = (audios) => {
 const NUMBUTTONS = 12;
 const bpm = document.querySelector("#bpm");
 const audios = makeAudios([
-    "clap.ogg",
-    "closedhat.ogg",
+    "Clap.ogg",
+    "ClosedHat.ogg",
+    "OpenHat.ogg",
+    "Snare.ogg",
+    "Kick.ogg",
     "c.mp3",
-    "openhat.ogg",
-    "snare.ogg",
-    "kick.ogg",
 ]);
 const grid = makeGrid(audios);
 
