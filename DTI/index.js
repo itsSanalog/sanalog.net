@@ -6,7 +6,7 @@ import * as Tone from "https://cdn.skypack.dev/tone";
 const makeAudios = (audios) => {
     return audios.map((audio) =>
         // Caching, otherwise keeps downloading every restart
-        new Tone.Player(`./Audios/${audio}`).toDestination()
+        new Tone.Player(`./Audios/${audio}?_=${Date.now()}`).toDestination()
     );
 };
 
