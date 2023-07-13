@@ -38,11 +38,11 @@ figure {
 }
 
 .menu_button {
-  position: static;
+  position: relative;
   width: 50px;
   height: 35px;
-  padding: 0px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .sidenav {
@@ -240,7 +240,7 @@ figure {
   transition: letter-spacing 200ms ease;
 }
 
-.home_hero_intro2:hover{
+.home_hero_intro2:hover {
   letter-spacing: 10px;
   color: #fff;
   text-shadow: 8px 8px 0px #000;
@@ -263,7 +263,7 @@ figure {
   transition: letter-spacing 200ms ease;
 }
 
-.home_hero_intro4:hover{
+.home_hero_intro4:hover {
   letter-spacing: 10px;
   color: #fff;
   text-shadow: -8px 8px 0px #000;
@@ -553,7 +553,7 @@ figure {
 
 .works_collapsible {
   background-color: transparent;
-  cursor:pointer;
+  cursor: pointer;
   text-align: left;
   padding: 10px 0px;
   margin-top: 50px;
@@ -582,7 +582,7 @@ figure {
   margin-bottom: 15px;
   font-size: 20px;
   line-height: 30px;
-  font-weight:lighter;
+  font-weight: lighter;
   text-align: justify;
 }
 
@@ -591,7 +591,7 @@ figure {
   margin-bottom: 60px;
   font-size: 16px;
   line-height: 30px;
-  font-weight:lighter;
+  font-weight: lighter;
 }
 
 .indiv_rich_text p {
@@ -751,6 +751,7 @@ figure {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'BritLight';
   src: url('../fonts/britrln.ttf') format('truetype');
@@ -758,6 +759,7 @@ figure {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Helvetica Light';
   src: url('../fonts/Helvetica-Light.ttf') format('truetype');
@@ -765,6 +767,7 @@ figure {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Helvetica';
   src: url('../fonts/Helvetica.ttf') format('truetype');
@@ -772,6 +775,7 @@ figure {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Dohyeon';
   src: url('../fonts/DoHyeon-Regular.ttf') format('truetype');
@@ -779,6 +783,7 @@ figure {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Helvetica Bold';
   src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
@@ -786,6 +791,7 @@ figure {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'GothicA1';
   src: url('../fonts/GothicA1-Black.ttf') format('truetype');
