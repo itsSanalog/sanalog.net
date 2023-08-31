@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html data-wf-page="62376cbbf022db260d180e37" data-wf-site="6087d2168ff33de97d640418">
+<html>
 
 <head>
-  <meta charset="utf-8">
   <title>sanalog.net</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/baseweb.css" rel="stylesheet" type="text/css">
   <link href="css/sanalog.css" rel="stylesheet" type="text/css">
-  <link href="css/scrollbar.css" rel="stylesheet" type="text/css">
   <link href="assets/images/favicon.png" rel="icon" type="image/ico">
-  <link rel="stylesheet" href="https://unpkg.com/fullpage.js@3.1.2/dist/fullpage.min.css">
+  <link href="https://unpkg.com/fullpage.js@3.1.2/dist/fullpage.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="body">
@@ -23,15 +19,13 @@
   </div>
   <a href="/"><img src="assets/images/LogoBlack.png" loading="lazy" width="300" alt="" class="logoblack"></a>
   <a href="/"><img src="assets/images/LogoYellow.png" loading="lazy" width="300" alt="" class="logoyellow"></a>
-
-  <div id="navmenu" class="sidenav" style="transform: translateX(-380px);">
-    <div class="menu_links">
-      <a href="about" class="menu_link">ABOUT</a>
-      <a href="blog/main" class="menu_link">WORK</a>
-      <a href="contact" class="menu_link">CONTACT</a>
-    </div>
+  <div id="navmenu" class="menu_sidebar" style="transform: translateX(-380px);">
+    <a href="about" class="menu_link">about</a>
+    <a href="blog/main" class="menu_link">work</a>
+    <a href="contact" class="menu_link">contact</a>
+    <!-- Remember to add 'current' after menu_link on other pages -->
   </div>
-
+  <div class="menu_bg"></div>
   <div class="menu_bar">
     <svg class="menu_button" viewBox="0 0 24 24" id="burger">
       <path d="M4 18L20 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
@@ -40,13 +34,12 @@
     </svg>
   </div>
 
-
   <!--Content Starts Here vvv-->
 
-  <h1 data-w-id="cf9b6dd9-6bd1-93fa-341c-02ce002759d5" class="home_scroller0">0 — 3</h1>
-  <h1 data-w-id="d4ef1ae2-0f4d-aeff-824d-eca3d1d7206e" class="home_scroller1">1 — 3</h1>
-  <h1 data-w-id="c11b1d8a-c39d-b340-d644-bd9e3960ab90" class="home_scroller2">2 — 3</h1>
-  <h1 data-w-id="44bae05c-7504-59d5-a973-ead257b60d75" class="home_scroller3">3 — 3</h1>
+  <h1 id="scroller0" class="home_scroller">0 — 3</h1>
+  <h1 id="scroller1" class="home_scroller">1 — 3</h1>
+  <h1 id="scroller2" class="home_scroller">2 — 3</h1>
+  <h1 id="scroller3" class="home_scroller">3 — 3</h1>
   <div id="fullpage" class="home_fullpage">
     <div id="hero" class="section home_hero">
       <h1 class="home_hero_intro1">[test]</h1>
@@ -55,19 +48,19 @@
       <h1 class="home_hero_intro4">[test]</h1>
     </div>
     <div id="hero" class="section home_hero">
-      <div class="home_hero_flex w-container">
+      <div class="home_hero_flex">
         <a href="about" class="home_hero_link">WHO<br>I AM</a><img src="assets/images/face.jpg"
           data-w-id="7bbdcf29-5e18-bf05-1419-a3ccef4d0b33" style="opacity:0" alt="" class="home_hero_image">
       </div>
     </div>
     <div id="hero" class="section home_hero">
-      <div class="home_hero_flex w-container">
+      <div class="home_hero_flex">
         <a href="blog/main" class="home_hero_link">WHAT<br>I DO</a><img src="assets/images/desk.jpg" style="opacity:0"
           data-w-id="28338860-6e38-b943-6d3c-66b40d7d865b" alt="" class="home_hero_image">
       </div>
     </div>
     <div id="hero" class="section home_hero">
-      <div class="home_hero_flex w-container">
+      <div class="home_hero_flex">
         <a href="contact" class="home_hero_link">CONTACT</a>
       </div>
       <div class="footer">
@@ -85,18 +78,7 @@
   <script src="js/sanalog2.js" type="text/javascript"></script>
 
 
-  <!-- NAVBAR -->
-  <script>
-  const button = document.getElementById("burger");
-  button.addEventListener("click", () => {
-    document.getElementById("navmenu").style.transform =
-      (document.getElementById("navmenu").style.transform == "translateX(-380px)") ? "translateX(0)" : "translateX(-380px)";
-    document.getElementsByClassName("logoyellow")[0].style.opacity =
-      (document.getElementsByClassName("logoyellow")[0].style.opacity == "1") ? "0" : "1";
-    document.getElementById("burger").style.color =
-      (document.getElementById("burger").style.color == "yellow") ? "black" : "yellow";
-  });
-  </script>
+  <script src="js/sanalog.js" type="text/javascript"></script>
 
   <!-- FULLPAGE.JS -->
   <script type="text/javascript" src="https://unpkg.com/fullpage.js@3.1.2/dist/fullpage.min.js"></script>
@@ -108,5 +90,4 @@
     });
   </script>
 </body>
-
 </html>
