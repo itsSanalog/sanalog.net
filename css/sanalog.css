@@ -55,45 +55,28 @@ body {
 .mobile_button {
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid #000;
+  border: 2px solid var(--dark);
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0);
   color: var(--dark);
   font-size: 20px;
   text-decoration: none;
 }
 
-.menu_bar {
+.logo {
   position: fixed;
-  z-index: 1000;
-  top: 0%;
-  bottom: 0%;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu_button {
-  position: relative;
-  width: 50px;
-  height: 35px;
-  cursor: pointer;
-  transition: 200ms ease;
-}
-
-.menu_bg {
-  position: fixed;
-  z-index: 600;
   left: 0%;
   top: 0%;
-  right: 0%;
-  bottom: 0%;
+  right: auto;
+  bottom: auto;
+  z-index: 700;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.logo.yellow {
+  z-index: 900;
   opacity: 0;
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 100ms ease;
+  transition: 200ms ease;
 }
 
 .menu_sidebar {
@@ -106,15 +89,14 @@ body {
   width: 380px;
   height: 100%;
   padding: 20px;
-  background-color: #000;
-  /* overflow-x: hidden; */
+  background-color: var(--dark);
   transition: 200ms ease;
 }
 
 .menu_link {
   padding: 20px;
-  transition: letter-spacing 100ms ease;
-  color: #ff0;
+  transition: 100ms ease;
+  color: var(--accent);
   font-size: 20px;
   text-decoration: none;
 }
@@ -127,29 +109,39 @@ body {
   letter-spacing: 0px;
 }
 
-.logoblack {
+.menu_bg {
   position: fixed;
+  z-index: 600;
   left: 0%;
   top: 0%;
-  right: auto;
-  bottom: auto;
-  z-index: 700;
-  margin-top: 40px;
-  margin-left: 40px;
+  right: 0%;
+  bottom: 0%;
+  pointer-events: none;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 100ms ease;
 }
 
-.logoyellow {
+.menu_bar {
   position: fixed;
-  left: 0%;
+  z-index: 1000;
   top: 0%;
-  right: auto;
-  bottom: auto;
-  z-index: 900;
-  margin-top: 40px;
-  margin-left: 40px;
-  opacity: 0;
+  bottom: 0%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_button {
+  position: relative;
+  width: 50px;
+  height: 35px;
+  cursor: pointer;
   transition: 200ms ease;
 }
+
+/* That should be all the global stuff */
 
 .home_hero {
   display: flex;

@@ -15,8 +15,10 @@
     <p class="mobile_text">mobile version coming Soon™</p>
     <a href="https://www.amazon.com/s?k=monitor" target="_blank" class="mobile_button">Buy</a>
   </div>
-  <a href="/"><img src="assets/images/LogoBlack.png" loading="lazy" width="300" alt="" class="logoblack"></a>
-  <a href="/"><img src="assets/images/LogoYellow.png" loading="lazy" width="300" alt="" class="logoyellow"></a>
+
+  <a href="/"><img src="assets/images/LogoBlack.png" width="300" class="logo"></a>
+  <a href="/"><img src="assets/images/LogoYellow.png" width="300" class="logo yellow"></a>
+
   <div id="navmenu" class="menu_sidebar" style="transform: translateX(-380px);">
     <a href="about" class="menu_link">about</a>
     <a href="blog/main" class="menu_link">work</a>
@@ -25,7 +27,7 @@
   </div>
   <div class="menu_bg"></div>
   <div class="menu_bar">
-    <svg class="menu_button" viewBox="0 0 24 24" id="burger">
+    <svg id="burger" class="menu_button" viewBox="0 0 24 24">
       <path d="M4 18L20 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
       <path d="M4 12L20 12" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
       <path d="M4 6L20 6" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
@@ -70,19 +72,13 @@
 
 
 
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6087d2168ff33de97d640418"
-    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"></script>
-  <script src="js/sanalog2.js" type="text/javascript"></script>
-
-
   <script src="js/sanalog.js" type="text/javascript"></script>
 
   <!-- FULLPAGE.JS -->
   <script type="text/javascript" src="https://unpkg.com/fullpage.js@3.1.2/dist/fullpage.min.js"></script>
   <script>
     new fullpage('#fullpage', {
-      scrollingSpeed: 1000,
+      scrollingSpeed: 900,
       verticalCentered: false,
       scrollBar: true
     });

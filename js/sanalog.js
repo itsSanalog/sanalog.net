@@ -4,8 +4,8 @@ button.addEventListener("click", () => {
     // To make the button work on first click, navmenu is set to -380px in inline html. Thus the sequence is 0?1:0. The rest, the default is set to whatever value fits 0 state in the css file. Thus, sequence is 1?0:1
     document.getElementById("navmenu").style.transform =
         (document.getElementById("navmenu").style.transform == "translateX(-380px)") ? "translateX(0)" : "translateX(-380px)";
-    document.getElementsByClassName("logoyellow")[0].style.opacity =
-        (document.getElementsByClassName("logoyellow")[0].style.opacity == "1") ? "0" : "1";
+    document.getElementsByClassName("yellow")[0].style.opacity =
+        (document.getElementsByClassName("yellow")[0].style.opacity == "1") ? "0" : "1";
     document.getElementById("burger").style.color =
         (document.getElementById("burger").style.color == "yellow") ? "black" : "yellow";
     document.getElementsByClassName("menu_bg")[0].style.opacity =
@@ -39,9 +39,8 @@ window.addEventListener('scroll', function () {
     const scrollHeight = document.documentElement.scrollHeight;
     const clientHeight = document.documentElement.clientHeight || window.innerHeight;
     const scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
-
+    
     console.log(scrollPercentage);
-
     showHide(scrollPercentage);
 });
 
