@@ -1,5 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+author: 'Sanalog'
+category: {{ category }}
 ---
