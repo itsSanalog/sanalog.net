@@ -1,9 +1,7 @@
-favicon: ../../assets/images/favicon.png
+favicon: ../assets/images/favicon.png
 
 # navigation config
 nav:
-  # the title displays in the upper left corner which won't change
-  title: Blog
   # the items displays in the upper right corner
   items:
     # these items will display as a link
@@ -36,11 +34,3 @@ footer:
   Me:
     # items
     GitHub: https://github.com/MrWillCom
-
-# footer extra description
-# footer_extra_description: something will be shown at the bottom of the footer
-
-# the license your posts under
-license: CC BY-NC 4.0
-# the link of your license
-license_link: https://creativecommons.org/licenses/by-nc/4.0
