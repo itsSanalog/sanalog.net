@@ -33,6 +33,11 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
 .mobile {
   display: none;
   flex-direction: column;
@@ -141,6 +146,14 @@ body {
   transition: 200ms ease;
 }
 
+.footer {
+  margin: 50px;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
 /* That should be all the global stuff */
 
 .home_scroller {
@@ -164,33 +177,27 @@ body {
   height: 100%;
 }
 
-.home_hero_flex {
+.home_flex {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
-.home_hero_link {
+.home_link {
   z-index: 90;
   margin-top: 60px;
-  justify-content: center;
-  align-items: center;
   font-family: BritLight, sans-serif;
-  color: #000;
   font-size: 300px;
   line-height: 250px;
   font-weight: 700;
-  text-align: right;
-  text-decoration: none;
-  transition: text-shadow 200ms ease;
+  text-align: right;  
+  transition: 200ms ease;
 }
 
-.home_hero_link:hover {
+.home_link:hover {
   color: #fff;
   text-shadow: 8px 8px 0px #000;
 }
@@ -209,7 +216,7 @@ body {
   color: #000;
   text-decoration: none;
   font-size: 20px;
-  transition: letter-spacing 200ms ease;
+  transition: 200ms ease;
 }
 
 .home_contacts_grid_div:hover {
@@ -431,14 +438,6 @@ body {
   color: #000;
   font-size: 20px;
   text-align: center;
-}
-
-.footer {
-  margin-bottom: 40px;
-  text-align: center;
-  color: #000;
-  font-size: 20px;
-  text-decoration: none;
 }
 
 
