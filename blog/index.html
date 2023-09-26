@@ -1,40 +1,37 @@
 <!DOCTYPE html>
-<html data-wf-page="62376cbbf022db15b3180e48" data-wf-site="6087d2168ff33de97d640418">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Blog - Main</title>
+  <title>SanaBlog</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="../css/baseweb.css" rel="stylesheet" type="text/css">
   <link href="../css/sanalog.css" rel="stylesheet" type="text/css">
   <link href="../assets/images/favicon.png" rel="icon" type="image/ico">
-  <!--only here to use a line so I can switch seamlessly on VSC-->
+  <!-- Line to switch seamlessly on VSC -->
 </head>
 
 <body class="body">
-  <div id="hero-overlay" class="mobile">
-    <div class="mobile_container w-container">  
-      <h1 class="mobile_heading">Get a real screen.</h1>
-      <p class="mobile_text">Mobile version Coming Soon</p>
-      <a href="https://www.amazon.com/s?k=monitor" target="_blank" class="mobile_button w-button">Buy</a>
-    </div>
+  <div class="mobile">
+    <h1 class="mobile_heading">Get a real screen.</h1>
+    <p class="mobile_text">mobile version coming Soon™</p>
+    <a href="https://www.amazon.com/s?k=monitor" target="_blank" class="mobile_button">Buy</a>
   </div>
-  <a href="/"><img src="../assets/images/LogoBlack.png" loading="lazy" width="300" alt="" class="logoblack"></a>
-  <a href="/"><img src="../assets/images/LogoYellow.png" loading="lazy" width="300" alt="" class="logoyellow"></a>
-  <div data-collapse="all" data-animation="over-left" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="menu_bar w-nav">
-    <div data-w-id="b0865b0e-0706-5648-0033-7e0d8dfe04e1" class="menu_button w-nav-button">
-      <div data-w-id="b0865b0e-0706-5648-0033-7e0d8dfe04e2" data-animation-type="lottie" data-src="../assets/documents/895-hamburger-button-to-back-arrow.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0" class="menu_hamburger"></div>
-    </div>
+
+  <a href="/"><img src="../assets/images/LogoBlack.png" width="300" class="logo"></a>
+  <a href="/"><img src="../assets/images/LogoYellow.png" width="300" class="logo yellow"></a>
+
+  <div id="navmenu" class="menu_sidebar" style="transform: translateX(-380px);">
+    <a href="../about" class="menu_link">about</a>
+    <a href="blog" class="menu_link current">work</a>
+    <a href="../contact" class="menu_link">contact</a>
+    <!-- Remember to add 'current' after menu_link on other pages -->
   </div>
-  <div style="opacity:0" class="menu_bg">
-    <div style="-webkit-transform:translate3d(-350px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-350px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-350px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-350px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="menu_sidebar">
-      <div class="menu_links">
-        <a href="../about" class="menu_link w-button">ABOUT</a>
-        <a href="main" aria-current="page" class="menu_link w-button w--current">WORK</a>
-        <a href="../contact" class="menu_link w-button">CONTACT</a>
-      </div>
-    </div>
+  <div class="menu_bg"></div>
+  <div class="menu_bar">
+    <svg id="burger" class="menu_button" viewBox="0 0 24 24">
+      <path d="M4 18L20 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
+      <path d="M4 12L20 12" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
+      <path d="M4 6L20 6" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
+    </svg>
   </div>
 
   <!--Content Starts Here vvv-->
