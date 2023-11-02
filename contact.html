@@ -1,153 +1,137 @@
 <!DOCTYPE html>
-<html data-wf-page="62376cbbf022db9445180e40" data-wf-site="6087d2168ff33de97d640418">
+<html>
 
 <head>
-  <meta charset="utf-8">
   <title>Contact</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/baseweb.css" rel="stylesheet" type="text/css">
   <link href="css/sanalog.css" rel="stylesheet" type="text/css">
   <link href="assets/images/favicon.png" rel="icon" type="image/ico">
   <!--only here to use a line so I can switch seamlessly on VSC-->
 </head>
 
 <body class="body">
-  <div id="hero-overlay" class="mobile">
-    <div class="mobile_container w-container">
-      <h1 class="mobile_heading">Get a real screen.</h1>
-      <p class="mobile_text">Mobile version Coming Soon</p>
-      <a href="https://www.amazon.com/s?k=monitor" target="_blank" class="mobile_button w-button">Buy</a>
-    </div>
+  <div class="mobile">
+    <h1 class="mobile_heading">Get a real screen.</h1>
+    <p class="mobile_text">mobile version coming Soon™</p>
+    <a href="https://www.amazon.com/s?k=monitor" target="_blank" class="mobile_button">Buy</a>
   </div>
-  <a href="/"><img src="assets/images/LogoBlack.png" loading="lazy" width="300" alt="" class="logoblack"></a>
-  <a href="/"><img src="assets/images/LogoYellow.png" loading="lazy" width="300" alt="" class="logoyellow"></a>
-  <div data-collapse="all" data-animation="over-left" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="menu_bar w-nav">
-    <div data-w-id="4d2bc1eb-ef5a-da1f-bb03-50da0a4001c9" class="menu_button w-nav-button">
-      <div data-w-id="4d2bc1eb-ef5a-da1f-bb03-50da0a4001ca" data-animation-type="lottie" data-src="assets/documents/895-hamburger-button-to-back-arrow.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="2.0020019204587935" data-duration="0" class="menu_hamburger"></div>
-    </div>
+
+  <a href="/"><img src="assets/images/LogoBlack.png" width="300" class="logo"></a>
+  <a href="/"><img src="assets/images/LogoYellow.png" width="300" class="logo yellow"></a>
+
+  <div id="navmenu" class="menu_sidebar" style="transform: translateX(-380px);">
+    <a href="about" class="menu_link">about</a>
+    <a href="blog" class="menu_link">work</a>
+    <a href="contact" class="menu_link current">contact</a>
+    <!-- Remember to add 'current' after menu_link on other pages -->
   </div>
-  <div style="opacity:0" class="menu_bg">
-    <div style="-webkit-transform:translate3d(-350px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-350px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-350px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-350px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="menu_sidebar">
-      <div class="menu_links">
-        <a href="about" class="menu_link w-button">ABOUT</a>
-        <a href="blog/main" class="menu_link w-button">WORK</a>
-        <a href="contact" aria-current="page" class="menu_link w-button w--current">CONTACT</a>
-      </div>
-    </div>
+  <div class="menu_bg"></div>
+  <div class="menu_bar">
+    <svg id="burger" class="menu_button" viewBox="0 0 24 24">
+      <path d="M4 18L20 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
+      <path d="M4 12L20 12" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
+      <path d="M4 6L20 6" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
+    </svg>
   </div>
 
   <!--Content Starts Here vvv-->
 
-  <div id="luxy" class="smoothscroll">
-    <div class="works_flex_archive w-container" style="padding-top: 40vh;">
-      <h1 class="works_heading_archive">Identity</h1>
-      <div class="indiv_rich_text w-richtext">
-        <p>Sanalog is preferably rendered as <code>Sanalog</code>. <code>sanalog_</code> is also used for services that require an @.</p>
-        <p>This page includes lists some services I use. It is not a request to follow or otherwise connect to me. The list is non-exhaustive. If you find me on other services, I don't use them often enough to warrant a link.</p>
-        <p>You can [email: <a href="mailto:me@sanalog.net" style="color:#000e;">me (at) sanalog.net</a>]. For a faster reply, message me on Discord.</p>
+  <div id="luxy">
+    <div class="main_flex">
+      <div class="content" style="padding-top: 30vh;">
+        <article>
+          <h1>Identity</h1>
+          <p>Sanalog is preferably rendered as <code>Sanalog</code>. <code>sanalog_</code> is also used for services that require an @.</p>
+          <p>This page includes lists some services I use. It is not a request to follow or otherwise connect to me. The list is non-exhaustive. If you find me on other services, I don't use them often enough to warrant a link.</p>
+          <p>You can [email: <a href="mailto:me@sanalog.net" style="color:#000e;">me (at) sanalog.net</a>]. For a faster reply, message me on Discord.</p>
+          <h4>‍</h4>
+        </article>
+        <h1 class="works_heading_archive">Social</h1>
+        <div class="home_contacts_grid">
+          <a href="https://twitter.com/sanalog_" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Twitter.svg" loading="lazy" width="30" alt="Twitter Logo">
+            <p class="home_contacts_sns">@sanalog_</p>
+          </a>
+          <a href="https://www.instagram.com/sanalog_" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Instagram.svg" loading="lazy" width="30" alt="Instagram Logo">
+            <p class="home_contacts_sns">@sanalog_</p>
+          </a>
+          <a href="https://discord.com/login" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Discord.svg" loading="lazy" width="30" alt="Discord Logo">
+            <p class="home_contacts_sns">Sanalog#0002</p>
+          </a>
+          <a href="https://www.reddit.com/u/Sanalog" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Reddit.svg" loading="lazy" width="30" alt="Reddit Logo">
+            <p class="home_contacts_sns">u/Sanalog</p>
+          </a>
+          <a href="https://github.com/itsSanalog" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Github.svg" loading="lazy" width="30" alt="GitHub Logo">
+            <p class="home_contacts_sns">@itsSanalog</p>
+          </a>
+          <a href="https://www.linkedin.com/in/[redacted]" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Linkedin.svg" loading="lazy" width="30" alt="LinkedIn Logo">
+            <p class="home_contacts_sns">[redacted]</p>
+          </a>
+          <a href="https://www.youtube.com/@sanalog_" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Youtube.svg" loading="lazy" width="30" alt="YouTube Logo">
+            <p class="home_contacts_sns">Sanalog</p>
+          </a>
+          <a href="https://www.twitch.tv/sanalog" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Twitch.svg" loading="lazy" width="30" alt="Twitch Logo">
+            <p class="home_contacts_sns">Sanalog</p>
+          </a>
+          <a href="https://www.last.fm/user/SanaBeats" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Lastfm.svg" loading="lazy" width="30" alt="Last.fm Logo">
+            <p class="home_contacts_sns">SanaBeats</p>
+          </a>
+        </div>
+        <h1 class="works_heading_archive">Game</h1>
+        <div class="home_contacts_grid">
+          <a href="https://steamcommunity.com/id/sanamanta/" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Steam.svg" loading="lazy" width="30" alt="Steam Logo">
+            <p class="home_contacts_sns">Manta</p>
+          </a>
+          <a href="https://www.minecraft.net/" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Minecraft.svg" loading="lazy" width="30" alt="Minecraft Logo">
+            <p class="home_contacts_sns">Sanalog</p>
+          </a>  
+          <a href="https://playvalorant.com/" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Riot.svg" loading="lazy" width="30" alt="Riot Logo">
+            <p class="home_contacts_sns">Sana#Iog</p>
+          </a>
+          <a href="https://pokemonshowdown.com/users/sanalog" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Showdown.svg" loading="lazy" width="30" alt="Showdown Logo">
+            <p class="home_contacts_sns">Sanalog</p>
+          </a>
+          <a href="https://ch.tetr.io/u/sanalog" target="_blank" class="home_contacts_grid_div">
+            <img src="assets/images/_snslogo/Tetrio.svg" loading="lazy" width="30" alt="Tetr.io Logo">
+            <p class="home_contacts_sns">Sanalog</p>
+          </a>
+        </div>
+        <h4>‍</h4>
         <h4>‍</h4>
       </div>
-      <h1 class="works_heading_archive">Social</h1>
-      <div class="home_contacts_grid">
-        <a href="https://twitter.com/sanalog_" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Twitter.svg" loading="lazy" width="30" alt="Twitter Logo">
-          <p class="home_contacts_sns">@sanalog_</p>
-        </a>
-        <a href="https://www.instagram.com/sanalog_" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Instagram.svg" loading="lazy" width="30" alt="Instagram Logo">
-          <p class="home_contacts_sns">@sanalog_</p>
-        </a>
-        <a href="https://discord.com/login" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Discord.svg" loading="lazy" width="30" alt="Discord Logo">
-          <p class="home_contacts_sns">Sanalog#0002</p>
-        </a>
-        <a href="https://www.reddit.com/u/Sanalog" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Reddit.svg" loading="lazy" width="30" alt="Reddit Logo">
-          <p class="home_contacts_sns">u/Sanalog</p>
-        </a>
-        <a href="https://github.com/itsSanalog" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Github.svg" loading="lazy" width="30" alt="GitHub Logo">
-          <p class="home_contacts_sns">@itsSanalog</p>
-        </a>
-        <a href="https://www.linkedin.com/in/[redacted]" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Linkedin.svg" loading="lazy" width="30" alt="LinkedIn Logo">
-          <p class="home_contacts_sns">[redacted]</p>
-        </a>
-        <a href="https://www.youtube.com/@sanalog_" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Youtube.svg" loading="lazy" width="30" alt="YouTube Logo">
-          <p class="home_contacts_sns">Sanalog</p>
-        </a>
-        <a href="https://www.twitch.tv/sanalog" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Twitch.svg" loading="lazy" width="30" alt="Twitch Logo">
-          <p class="home_contacts_sns">Sanalog</p>
-        </a>
-        <a href="https://www.last.fm/user/SanaBeats" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Lastfm.svg" loading="lazy" width="30" alt="Last.fm Logo">
-          <p class="home_contacts_sns">SanaBeats</p>
-        </a>
+      <div class="footer">
+        <a href="https://github.com/itsSanalog/sanalog.net/blob/main/LICENSE" target="_blank">© 2023 Sanalog</a>
       </div>
-      <h1 class="works_heading_archive">Game</h1>
-      <div class="home_contacts_grid">
-        <a href="https://steamcommunity.com/id/sanamanta/" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Steam.svg" loading="lazy" width="30" alt="Steam Logo">
-          <p class="home_contacts_sns">Manta</p>
-        </a>
-        <a href="https://www.minecraft.net/" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Minecraft.svg" loading="lazy" width="30" alt="Minecraft Logo">
-          <p class="home_contacts_sns">Sanalog</p>
-        </a>  
-        <a href="https://playvalorant.com/" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Riot.svg" loading="lazy" width="30" alt="Riot Logo">
-          <p class="home_contacts_sns">Sana#Iog</p>
-        </a>
-        <a href="https://pokemonshowdown.com/users/sanalog" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Showdown.svg" loading="lazy" width="30" alt="Showdown Logo">
-          <p class="home_contacts_sns">Sanalog</p>
-        </a>
-        <a href="https://ch.tetr.io/u/sanalog" target="_blank" class="home_contacts_grid_div">
-          <img src="assets/images/_snslogo/Tetrio.svg" loading="lazy" width="30" alt="Tetr.io Logo">
-          <p class="home_contacts_sns">Sanalog</p>
-        </a>
-      </div>
-      <h4>‍</h4>
-      <h4>‍</h4>
-    </div>
-    <div class="footer">
-      <a href="https://github.com/itsSanalog/sanalog.net/blob/main/LICENSE" target="_blank" class="footer">© 2023 Sanalog</a>
     </div>
   </div>
 
 
 
+  <script src="js/sanalog.js" type="text/javascript"></script>
+
   <!-- SMOOTH SCROLLING -->
   <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
-  <script charset="utf-8">
+  <script>
   var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
   if (!isMobile) {
         luxy.init({
           wrapper: '#luxy',
-          wrapperSpeed: 0.065,
+          wrapperSpeed: 0.069, //haha 69
       });
   }
   </script>
-
-
-  <!-- SCROLLBAR -->
-  <style>
-  ::-webkit-scrollbar {
-      width: 15px;
-  }
-  ::-webkit-scrollbar-track {
-      background-color: transparent;
-      -webkit-border-radius: 20px;
-      border-radius: 20px;
-  }
-  ::-webkit-scrollbar-thumb {
-      -webkit-border-radius: 20px;
-      border-radius: 20px;
-      background: black;
-  }  
-  </style>
 </body>
+
 </html>

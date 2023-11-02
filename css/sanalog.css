@@ -27,16 +27,83 @@
   background: var(--dark);
 }
 
+
+/* Global Classes */
+
+
 body {
   background-color: var(--accent);
   color: var(--dark);
   font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 0px;
 }
 
 a {
   color: var(--dark);
   text-decoration: none;
 }
+
+article {
+  text-align: justify;
+}
+
+article h1 {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-family: BritLight, sans-serif;
+  font-size: 150px;
+}
+
+article h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+article h3 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+article h4 {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+article p {
+  line-height: 1.5em;
+}
+
+.main_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.footer {
+  margin: 50px;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+
+/* Mobile and Navbar */
+
 
 .mobile {
   display: none;
@@ -146,15 +213,9 @@ a {
   transition: 200ms ease;
 }
 
-.footer {
-  margin: 50px;
-  text-align: center;
-  font-size: 20px;
-  position: absolute;
-  bottom: 0;
-}
 
-/* That should be all the global stuff */
+/* Page Specific Classes */
+
 
 .home_scroller {
   position: fixed;
@@ -175,15 +236,6 @@ a {
 
 .section {
   height: 100%;
-}
-
-.home_flex {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
 }
 
 .home_link {
@@ -325,16 +377,16 @@ a {
   transition: max-height 0.2s ease-out;
 }
 
-.works_flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-}
-
 .works_heading {
   margin-top: 0px;
   margin-bottom: 100px;
+  font-family: BritLight, sans-serif;
+  font-size: 150px;
+}
+
+.works_heading_archive {
+  margin-top: 0px;
+  margin-bottom: 40px;
   font-family: BritLight, sans-serif;
   font-size: 150px;
 }
@@ -354,13 +406,6 @@ a {
   margin-bottom: 15vh;
   font-size: 24px;
   line-height: 30px;
-}
-
-.works_heading_archive {
-  margin-top: 0px;
-  margin-bottom: 40px;
-  font-family: BritLight, sans-serif;
-  font-size: 150px;
 }
 
 .works_flex_archive {
@@ -383,45 +428,6 @@ a {
   font-weight: bold;
 }
 
-.indiv_rich_text h1 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-family: BritLight, GothicA1, sans-serif;
-  font-size: 90px;
-  line-height: 80px;
-  letter-spacing: 2px;
-}
-
-.indiv_rich_text h2 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.indiv_rich_text h3 {
-  margin-top: 0px;
-  margin-bottom: 15px;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: lighter;
-  text-align: justify;
-}
-
-.indiv_rich_text h4 {
-  margin-top: 20px;
-  margin-bottom: 60px;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: lighter;
-}
-
-.indiv_rich_text p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: justify;
-}
-
 .works_instagram {
   color: #000;
   text-decoration: underline;
@@ -441,9 +447,11 @@ a {
 }
 
 
+/* Misc */
+
 
 @media screen and (max-width: 990px) {
-  .logoyellow, .menu_bar, .menu_bg, .home_fullpage, .home_scroller, .smoothscroll {
+  .content, .logoyellow, .menu_bar, .menu_bg, .home_fullpage, .home_scroller {
     display: none;
   }
   
