@@ -55,9 +55,9 @@ article {
 
 article h1 {
   margin-top: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   font-family: BritLight, sans-serif;
-  font-size: 150px;
+  font-size: 100px;
 }
 
 article h2 {
@@ -96,6 +96,13 @@ article p {
   padding: 10px;
   margin: 0 auto;
   max-width: 800px;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-family: BritLight, sans-serif;
+  font-size: 150px;
 }
 
 .footer {
@@ -259,32 +266,30 @@ article p {
   text-shadow: 8px 8px 0px #000;
 }
 
-.home_contacts_grid {
-  margin-top: 10px;
+.contacts_grid {
   margin-bottom: 150px;
   display: grid;
   column-gap: 20px;
   row-gap: 20px;
-  grid-template-columns: 15em 15em 15em;
+  grid-template-columns: 250px 250px 250px;
   grid-template-rows: auto;
 }
 
-.home_contacts_grid_div {
-  color: #000;
-  text-decoration: none;
+.contacts_grid_div {
   font-size: 20px;
   transition: 200ms ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.home_contacts_grid_div:hover {
+.contacts_grid_div:hover {
   letter-spacing: 2px;
 }
 
-.home_contacts_sns {
+.contacts_sns {
   display: inline-block;
-  margin-bottom: 0;
-  margin-left: 3px;
-  line-height: 30px;
+  margin: 20px 10px;
 }
 
 .about_rich_text {
@@ -468,49 +473,45 @@ article p {
 @font-face {
   font-family: 'BritLight';
   src: url('../fonts/britrln.ttf') format('truetype');
-  font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'BritDark';
   src: url('../fonts/britrdn.ttf') format('truetype');
-  font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Helvetica';
   src: url('../fonts/Helvetica.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Helvetica Light';
+  font-family: 'Helvetica';
   src: url('../fonts/Helvetica-Light.ttf') format('truetype');
-  font-weight: 300;
+  font-weight: lighter;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Helvetica Bold';
+  font-family: 'Helvetica';
   src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
-  font-weight: 700;
+  font-weight: bold;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'FiraCode';
   src: url('../fonts/FiraCode-Variable.ttf') format('truetype');
-
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Dohyeon';
   src: url('../fonts/DoHyeon-Regular.ttf') format('truetype');
-  font-weight: 400;
   font-display: swap;
 }
 
