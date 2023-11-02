@@ -44,6 +44,11 @@ a {
   text-decoration: none;
 }
 
+code {
+  font-family: FiraCode, monospace;
+  font-weight: normal;
+}
+
 article {
   text-align: justify;
 }
@@ -464,7 +469,6 @@ article p {
   font-family: 'BritLight';
   src: url('../fonts/britrln.ttf') format('truetype');
   font-weight: 400;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -472,7 +476,6 @@ article p {
   font-family: 'BritDark';
   src: url('../fonts/britrdn.ttf') format('truetype');
   font-weight: 400;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -480,7 +483,6 @@ article p {
   font-family: 'Helvetica';
   src: url('../fonts/Helvetica.ttf') format('truetype');
   font-weight: 400;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -488,7 +490,6 @@ article p {
   font-family: 'Helvetica Light';
   src: url('../fonts/Helvetica-Light.ttf') format('truetype');
   font-weight: 300;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -496,7 +497,13 @@ article p {
   font-family: 'Helvetica Bold';
   src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
   font-weight: 700;
-  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url('../fonts/FiraCode-Variable.ttf') format('truetype');
+
   font-display: swap;
 }
 
@@ -504,13 +511,11 @@ article p {
   font-family: 'Dohyeon';
   src: url('../fonts/DoHyeon-Regular.ttf') format('truetype');
   font-weight: 400;
-  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'GothicA1';
   src: url('../fonts/GothicA1-Black.ttf') format('truetype');
-  font-style: normal;
   font-display: swap;
 }
