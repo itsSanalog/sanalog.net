@@ -1,5 +1,5 @@
 # sanalog.net
-Personal website. Currently not in use.
+Personal website. Currently in not-so-active development (as of Mar 2024).
 
 For an actual description of the site, purpose, development and whatnot, check [sanalog.net/blog/code/sanalog.net](https://sanalog.net/blog/code/sanalog.net).
 

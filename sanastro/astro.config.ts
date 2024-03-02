@@ -5,7 +5,8 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://aurora.thilohohlt.com",
+  site: "https://gh.sanalog.net",
+  // base: "/sanalog.net",
   compressHTML: true,
   scopedStyleStrategy: "class",
   image: {
