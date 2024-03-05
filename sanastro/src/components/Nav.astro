@@ -1,35 +1,104 @@
----
-import ArticleSearchWrapper from "../components/ArticleSearchWrapper.astro";
-import ThemeToggle from "../components/ThemeToggle.svelte";
----
+<a href="/"><img src="/LogoBlack.png" width="300" class="logo"></a>
+<a href="/"><img src="/LogoYellow.png" width="300" class="logo yellow"></a>
 
-<nav>
-  <div class="container">
-    <a href="/">
-      <img src="/favicon.svg" width="32" height="32" alt="Logo" />
-    </a>
-    <slot />
-    <ArticleSearchWrapper />
-    <ThemeToggle client:only="svelte" />
-  </div>
-</nav>
+<div id="navmenu" class="menu_sidebar" style="transform: translateX(-380px);">
+  <a href="about" class="menu_link">about</a>
+  <a href="blog" class="menu_link">work</a>
+  <a href="contact" class="menu_link">contact</a>
+  <!-- Remember to add 'current' after menu_link on other pages -->
+</div>
+<div class="menu_bg"></div>
+<div class="menu_bar">
+  <svg id="burger" class="menu_button" viewBox="0 0 24 24">
+    <path d="M4 18L20 18" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
+    <path d="M4 12L20 12" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
+    <path d="M4 6L20 6" stroke="currentcolor" stroke-width="2" stroke-linecap="round" />
+  </svg>
+</div>
 
 <style>
-  nav {
-    position: sticky;
-    inset-block-start: 0;
-    background-color: var(--secondary-background-color);
-    border-block-end: var(--standard-border);
+  .logo {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    z-index: 700;
+    margin-top: 40px;
+    margin-left: 40px;
   }
 
-  .container {
+  .logo.yellow {
+    z-index: 900;
+    opacity: 0;
+    transition: 200ms ease;
+  }
+
+  .menu_sidebar {
     display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    block-size: var(--nav-height);
-    position: relative;
+    z-index: 800;
+    width: 380px;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--dark);
+    transition: 200ms ease;
   }
 
-  .container > *:first-child {
-    margin-inline-end: auto;
+  .menu_link {
+    padding: 20px;
+    transition: 100ms ease;
+    color: var(--accent);
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .menu_link:hover {
+    letter-spacing: 4px;
+  }
+
+  .menu_link.current {
+    letter-spacing: 0px;
+  }
+
+  .menu_bg {
+    position: fixed;
+    z-index: 600;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 100ms ease;
+  }
+
+  .menu_bar {
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    bottom: 0%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu_button {
+    position: relative;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    transition: 200ms ease;
+  }
+
+  @media screen and (max-width: 990px) {
+    .logoyellow, .menu_bar, .menu_bg {
+      display: none;
+    }
   }
 </style>

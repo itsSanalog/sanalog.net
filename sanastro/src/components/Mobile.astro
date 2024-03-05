@@ -1,0 +1,42 @@
+<div class="mobile">
+  <h1 class="mobile_heading">Get a real screen.</h1>
+  <p class="mobile_text">mobile version coming Soon™</p>
+  <a href="https://www.amazon.com/s?k=monitor" target="_blank" class="mobile_button">Buy</a>
+</div>
+
+<style>
+  .mobile {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    padding: 25vh 10vw;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .mobile_heading {
+    margin: 0px;
+    font-size: 9vw;
+  }
+
+  .mobile_text {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .mobile_button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--dark);
+    border-radius: 20px;
+    color: var(--dark);
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 990px) {
+    .mobile {
+      display: flex;
+    }
+  }
+</style>

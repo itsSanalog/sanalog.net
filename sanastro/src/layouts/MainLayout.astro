@@ -1,0 +1,28 @@
+---
+const { title } = Astro.props;
+
+import "../styles/sanalog.css";
+import Head from "../components/Head.astro";
+import Mobile from "../components/Mobile.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+  <Head {title} />
+  <body>
+    <Mobile />
+    <Nav>
+      <slot name="nav" />
+    </Nav>
+    <main>
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+
+    <script src="../scripts/sanalog.js"></script>
+
+  </body>
+</html>
