@@ -119,43 +119,6 @@ article p {
 /* Page Specific Classes */
 
 
-.home_scroller {
-  position: fixed;
-  top: 15vh;
-  right: 8vw;
-  margin: 0px;
-  transform: rotate(90deg);
-  transform-origin: 0% 100%;
-}
-
-.home_scroller.hidden {
-  display: none;
-}
-
-.home_fullpage {
-  height: 100vh;
-}
-
-.section {
-  height: 100%;
-}
-
-.home_link {
-  z-index: 90;
-  margin-top: 60px;
-  font-family: BritLight, sans-serif;
-  font-size: 300px;
-  line-height: 250px;
-  font-weight: 700;
-  text-align: right;  
-  transition: 200ms ease;
-}
-
-.home_link:hover {
-  color: #fff;
-  text-shadow: 8px 8px 0px #000;
-}
-
 .contacts_grid {
   margin-bottom: 150px;
   display: grid;
