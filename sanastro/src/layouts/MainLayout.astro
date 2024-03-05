@@ -12,17 +12,12 @@ import Footer from "../components/Footer.astro";
   <Head {title} />
   <body>
     <Mobile />
-    <Nav>
-      <slot name="nav" />
-    </Nav>
-    <main>
-      <div class="container">
-        <slot />
-      </div>
-    </main>
-    <Footer />
+    <Nav />
+    <slot />
+    <!-- <Footer /> -->
 
-    <script src="../scripts/sanalog.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <slot name="js" />
 
   </body>
 </html>

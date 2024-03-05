@@ -15,36 +15,6 @@ button.addEventListener("click", () => {
         (document.getElementsByClassName("menu_bg")[0].style.pointerEvents == "auto") ? "none" : "auto";
 });
 
-////// SCROLLER //////
-const scrollers = [
-    { element: document.getElementById('scroller0'), showThreshold: 0 },
-    { element: document.getElementById('scroller1'), showThreshold: 30 },
-    { element: document.getElementById('scroller2'), showThreshold: 60 },
-    { element: document.getElementById('scroller3'), showThreshold: 90 }
-];
-
-function showHide(scrollPercentage) {
-    scrollers.forEach(function (scroller) {
-        if (scrollPercentage >= scroller.showThreshold && scrollPercentage < scroller.showThreshold + 30) {
-            scroller.element.classList.remove('hidden');
-        } else {
-            scroller.element.classList.add('hidden');
-        }
-    });
-}
-
-showHide(0);
-
-window.addEventListener('scroll', function () {
-    const scrollTop = document.documentElement.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight;
-    const clientHeight = document.documentElement.clientHeight || window.innerHeight;
-    const scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
-    
-    console.log(scrollPercentage);
-    showHide(scrollPercentage);
-});
-
 
 
 
