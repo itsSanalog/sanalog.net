@@ -1,9 +1,49 @@
----
-import PageLayout from "../layouts/PageLayout.astro";
+<!DOCTYPE HTML>
+<html>
 
-const description = "Oops! We could not find the page you are looking for. It seems like the content you are seeking has taken a detour or is temporarily unavailable."
----
+<head>
+  <title>404 Error</title>
+  <!-- <meta name="description" content="Sanalog's mini-website to host random stuff" /> -->
+  <!-- <meta name="keywords" content="Picturegame, Sanalog, cum" /> -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="icon" type="image/ico" href="/favicon.ico"/>
+  <style>
+    html
+    { height: 100%;}
+    
+    *
+    { margin: 0;
+    padding: 0;}
 
-<PageLayout title="404 - Page not found" {description}>
-  <p>{description}</p>
-</PageLayout>
+    @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,700&display=swap');
+
+    h1
+    { font-family: 'Do Hyeon', sans-serif;
+      font-size: 150px;
+      color: black;}
+
+    p
+    { font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 25px;
+      color: black;}
+
+    body
+    { height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div id="main">
+    <h1>사공사</h1>
+    <p>404 error - probably my fault.</p>
+  </div>
+</body>
+</html>

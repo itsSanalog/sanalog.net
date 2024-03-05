@@ -1,8 +1,8 @@
 ---
 import { getEntryBySlug, getCollection } from "astro:content";
 import { Image } from "astro:assets";
-import PageLayout from "../layouts/PageLayout.astro";
-import PublicationDate from "../components/PublicationDate.astro";
+import PageLayout from "../../layouts/PageLayout.astro";
+import PublicationDate from "../../components/PublicationDate.astro";
 
 const about = await getEntryBySlug("about", "about");
 const { Content } = await about.render();
@@ -36,3 +36,23 @@ const articles = (await getCollection("blog")).sort(
     }
   </div>
 </PageLayout>
+
+<style>
+  .article-grid {
+    display: grid;
+    gap: var(--size-7);
+  }
+
+  article {
+    border: var(--standard-border);
+  }
+
+  article > header {
+    padding: 0;
+    border-block-end: var(--standard-border);
+  }
+
+  .article-content {
+    padding: var(--size-3);
+  }
+</style>
