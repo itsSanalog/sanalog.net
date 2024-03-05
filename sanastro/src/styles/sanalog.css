@@ -312,15 +312,15 @@ article p {
 
 /* Misc */
 
-
+/* THIS NEEDS FIXING */
 @media screen and (max-width: 990px) {
-  .content, .logoyellow, .menu_bar, .menu_bg, .home_fullpage, .home_scroller {
+  .content, .logo.yellow, .menu_bar, .menu_bg, .menu_button, .home_fullpage, .home_scroller {
     display: none;
   }
   
-  /* .mobile {
+  .mobile {
     display: flex;
-  } */
+  }
 }
 
 @font-face {

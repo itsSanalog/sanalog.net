@@ -6,83 +6,78 @@ import ContactGrid from "../components/ContactGrid.astro";
 
 <MainLayout title="Contact">
   <div id="luxy">
-      <div class="main_flex">
-        <div class="content" style="padding-top: 30vh;">
-          <h1 class="title">Identity</h1>
-          <article style="margin-bottom: 150px;">
-            <p>Sanalog is preferably rendered as <code>Sanalog</code>. <br> <code>sanalog_</code> is also used for services that require an all-lowercase handle.</p>
-            <p>This page lists some of them I use. It is not a request to follow or otherwise connect to me. The list is non-exhaustive. If you find me on other services, I don't use them often enough to warrant a mention, but you're welcome to interact with it, creep.</p>
-            <p>You can <a href="mailto:me@sanalog.net" style="color:#000e;">[email: me (at) sanalog.net</a>]. For a faster reply, message me on Discord.</p>
-          </article>
-          <h1 class="title">Social</h1>
-          <div class="contacts_grid">
-            <ContactGrid
-              link="https://twitter.com/sanalog_"
-              service="Twitter"
-              username="@sanalog_" />
-            <!-- <a href="https://twitter.com/sanalog_" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Twitter.svg" loading="lazy" width="30" alt="Twitter Logo">
-              <p class="contacts_sns">@sanalog_</p>
-            </a> -->
-            <a href="https://www.instagram.com/sanalog_" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Instagram.svg" loading="lazy" width="30" alt="Instagram Logo">
-              <p class="contacts_sns">@sanalog_</p>
-            </a>
-            <a href="https://discord.com/channels/@me/258172826039746561" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Discord.svg" loading="lazy" width="30" alt="Discord Logo">
-              <p class="contacts_sns">sanalog</p>
-            </a>
-            <a href="https://www.reddit.com/u/Sanalog" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Reddit.svg" loading="lazy" width="30" alt="Reddit Logo">
-              <p class="contacts_sns">u/Sanalog</p>
-            </a>
-            <a href="https://github.com/itsSanalog" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Github.svg" loading="lazy" width="30" alt="GitHub Logo">
-              <p class="contacts_sns">@itsSanalog</p>
-            </a>
-            <a href="https://www.linkedin.com/in/[redacted]" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Linkedin.svg" loading="lazy" width="30" alt="LinkedIn Logo">
-              <p class="contacts_sns">[redacted]</p>
-            </a>
-            <a href="https://www.youtube.com/@sanalog_" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Youtube.svg" loading="lazy" width="30" alt="YouTube Logo">
-              <p class="contacts_sns">Sanalog</p>
-            </a>
-            <a href="https://www.twitch.tv/sanalog" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Twitch.svg" loading="lazy" width="30" alt="Twitch Logo">
-              <p class="contacts_sns">Sanalog</p>
-            </a>
-            <a href="https://www.last.fm/user/SanaBeats" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Lastfm.svg" loading="lazy" width="30" alt="Last.fm Logo">
-              <p class="contacts_sns">SanaBeats</p>
-            </a>
-          </div>
-          <h1 class="title">Game</h1>
-          <div class="contacts_grid" style="margin-bottom: 350px;">
-            <a href="https://steamcommunity.com/id/sanamanta/" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Steam.svg" loading="lazy" width="30" alt="Steam Logo">
-              <p class="contacts_sns">Manta</p>
-            </a>
-            <a href="https://www.minecraft.net/" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Minecraft.svg" loading="lazy" width="30" alt="Minecraft Logo">
-              <p class="contacts_sns">Sanalog</p>
-            </a>  
-            <a href="https://playvalorant.com/" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Riot.svg" loading="lazy" width="30" alt="Riot Logo">
-              <p class="contacts_sns">Sana#Iog</p>
-            </a>
-            <a href="https://pokemonshowdown.com/users/sanalog" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Showdown.svg" loading="lazy" width="30" alt="Showdown Logo">
-              <p class="contacts_sns">Sanalog</p>
-            </a>
-            <a href="https://ch.tetr.io/u/sanalog" target="_blank" class="contacts_grid_div">
-              <img src="assets/images/_snslogo/Tetrio.svg" loading="lazy" width="30" alt="Tetr.io Logo">
-              <p class="contacts_sns">Sanalog</p>
-            </a>
-          </div>
+    <div class="main_flex">
+      <div class="content" style="padding-top: 30vh;">
+        <h1 class="title">Identity</h1>
+        <article style="margin-bottom: 150px;">
+          <p>Sanalog is preferably rendered as <code>Sanalog</code>. <br> <code>sanalog_</code> is also used for services that require an all-lowercase handle.</p>
+          <p>This page lists some of them I use. It is not a request to follow or otherwise connect to me. The list is non-exhaustive. If you find me on other services, I don't use them often enough to warrant a mention, but you're welcome to interact with it, creep.</p>
+          <p>You can <a href="mailto:me@sanalog.net" style="color:#000e;">[email: me (at) sanalog.net</a>]. For a faster reply, message me on Discord.</p>
+        </article>
+        <h1 class="title">Social</h1>
+        <div class="contacts_grid">
+          <ContactGrid
+            link="https://twitter.com/sanalog_"
+            service="Twitter"
+            username="@sanalog_" />
+          <ContactGrid
+            link="https://www.instagram.com/sanalog_"
+            service="Instagram"
+            username="@sanalog_" />
+          <ContactGrid
+            link="https://discord.com/channels/@me/258172826039746561"
+            service="Discord"
+            username="sanalog" />
+          <ContactGrid
+            link="https://www.reddit.com/u/Sanalog"
+            service="Reddit"
+            username="u/Sanalog" />
+          <ContactGrid
+            link="https://github.com/itsSanalog"
+            service="GitHub"
+            username="@itsSanalog" />
+          <ContactGrid
+            link="https://www.linkedin.com/in/[redacted]"
+            service="LinkedIn"
+            username="[redacted]" />
+          <ContactGrid
+            link="https://www.youtube.com/@sanalog_"
+            service="YouTube"
+            username="Sanalog" />
+          <ContactGrid
+            link="https://www.twitch.tv/sanalog"
+            service="Twitch"
+            username="Sanalog" />
+          <ContactGrid
+            link="https://www.last.fm/user/SanaBeats"
+            service="Lastfm"
+            username="SanaBeats" />
         </div>
-        <Footer />
+        <h1 class="title">Game</h1>
+        <div class="contacts_grid" style="margin-bottom: 350px;">
+          <ContactGrid
+            link="https://steamcommunity.com/id/sanamanta"
+            service="Steam"
+            username="Manta" />
+          <ContactGrid
+            link="https://www.minecraft.net/"
+            service="Minecraft"
+            username="Sanalog" />
+          <ContactGrid
+            link="https://tracker.gg/valorant/profile/riot/sana%23Iog/overview"
+            service="Riot"
+            username="Sana#Iog" />
+          <ContactGrid
+            link="https://pokemonshowdown.com/users/sanalog"
+            service="Showdown"
+            username="Sanalog" />
+          <ContactGrid
+            link="https://ch.tetr.io/u/sanalog"
+            service="Tetr.io"
+            username="Sanalog" />
+        </div>
       </div>
+      <Footer />
     </div>
   </div>
 
@@ -90,15 +85,15 @@ import ContactGrid from "../components/ContactGrid.astro";
 
   </style>
 
-    <!-- SMOOTH SCROLLING -->
-    <script slot="js" src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
-    <script slot="js">
-    var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
-    if (!isMobile) {
-        luxy.init({
-            wrapper: '#luxy',
-            wrapperSpeed: 0.069, //haha 69
-        });
-    }
-    </script>
+  <!-- SMOOTH SCROLLING -->
+  <script slot="js" src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+  <script slot="js">
+  var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+  if (!isMobile) {
+      luxy.init({
+          wrapper: '#luxy',
+          wrapperSpeed: 0.069, //haha 69
+      });
+  }
+  </script>
 </MainLayout>

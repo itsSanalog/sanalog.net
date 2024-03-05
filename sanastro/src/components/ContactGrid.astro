@@ -4,9 +4,10 @@ const { link, service, username } = Astro.props;
 
 const images = import.meta.glob('../assets/snslogo/*.svg');
 const imagePath = `../assets/snslogo/${service}.svg`;
+// This is cursed and requires files in snslogo to be named exactly the same as the service
 ---
 
 <a href={ link } target="_blank" class="contacts_grid_div">
-    <img src={images[imagePath]} loading="lazy" width="30" alt={ service + " Logo" } />
+    <Image src={images[imagePath]()} width="30" alt={ service + " Logo" } />
     <p class="contacts_sns">{ username }</p>
-</a> 
+</a>
