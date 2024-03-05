@@ -19,7 +19,7 @@ const articles = (await getCollection("blog")).sort(
   </h2>
   <div class="article-grid">
     {
-      articles.map((article) => (
+      articles.map((article) => ( //edit this to match https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
         <article>
           <header>
             <Image src={article.data.cover} alt={article.data.coverAlt} /> 
