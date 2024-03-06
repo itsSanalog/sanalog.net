@@ -105,45 +105,13 @@ article p {
   font-size: 150px;
 }
 
-.footer {
-  margin: 50px;
-  text-align: center;
-  font-size: 20px;
-  position: absolute;
-  bottom: 0;
-}
-
 
 
 
 /* Page Specific Classes */
 
 
-.contacts_grid {
-  margin-bottom: 150px;
-  display: grid;
-  column-gap: 20px;
-  row-gap: 20px;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: auto;
-}
 
-.contacts_grid_div {
-  font-size: 20px;
-  transition: 200ms ease;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.contacts_grid_div:hover {
-  letter-spacing: 2px;
-}
-
-.contacts_sns {
-  display: inline-block;
-  margin: 20px 10px;
-}
 
 .about_rich_text {
   position: relative;
