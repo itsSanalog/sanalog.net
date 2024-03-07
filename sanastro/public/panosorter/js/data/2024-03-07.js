@@ -355,70 +355,70 @@ dataSet[dataSetVersion].characterData = [
   //////////////////////////////
   {
     name: "북극성 (Polaris) ",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
   },
   {
     name: "불면증 (Insomnia)",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
   },
   {
     name: "도착 (Arrival)",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
   },
   {
     name: "우리는 밤이 되면 빛난다 (We Shine at Night)",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
   },
   {
     name: "Parade",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
   },
   {
     name: "스케치북 (Sketchbook)",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
   },
   {
     name: "Imagination",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
   },
   {
     name: "Sound Inside Me, Waves Inside You",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
   },
   {
     name: "개화 (Blossom)",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
   },
   {
     name: "After the Magic",
-    img: "unPi9wv.jpeg",
+    img: "TJCJBVD.jpeg",
     opts: {
       album: ["aftmagic"]
     }
