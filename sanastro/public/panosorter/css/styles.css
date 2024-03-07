@@ -49,7 +49,7 @@
 body {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
-  background-color: var(--flexoki-900);
+  background-color: var(--flexoki-950);
   color: var(--flexoki-200);
 }
 
@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 800px;
+  width: 620px;
   margin: 4em auto;
 }
 
@@ -137,7 +137,7 @@ body {
   width: 25px;
   height: 25px;
   margin: 50px auto;
-  background-color: #d900ff;
+  background-color: var(--flexoki-cyan-400);
 
   border-radius: 100%;  
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -208,6 +208,10 @@ body {
 
 .options > div {
   font-size: 0.8em;
+}
+
+input[type=checkbox]{
+  accent-color:  var(--flexoki-cyan-400);  
 }
 
 label {
