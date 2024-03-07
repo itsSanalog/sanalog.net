@@ -1,0 +1,362 @@
+/* https://9elements.com/css-rule-order/ */
+
+:root {
+  --flexoki-black:       #100F0F;
+  --flexoki-paper:       #FFFCF0;
+
+  --flexoki-950:         #1C1B1A;
+  --flexoki-900:         #282726;
+  --flexoki-850:         #343331;
+  --flexoki-800:         #403E3C;
+  --flexoki-700:         #575653;
+  --flexoki-600:         #6F6E69;
+  --flexoki-500:         #878580;
+  --flexoki-300:         #B7B5AC;
+  --flexoki-200:         #CECDC3;
+  --flexoki-150:         #DAD8CE;
+  --flexoki-100:         #E6E4D9;
+  --flexoki-50:          #F2F0E5;
+
+  --flexoki-red-600:     #AF3029;
+  --flexoki-red-400:     #D14D41;
+
+  --flexoki-orange-600:  #BC5215;
+  --flexoki-orange-400:  #DA702C;
+
+  --flexoki-yellow-900:  #4D3A0B;
+  --flexoki-yellow-600:  #AD8301;
+  --flexoki-yellow-400:  #D0A215;
+  --flexoki-yellow-100:  #FCEEB8;
+
+  --flexoki-green-600:   #66800B;
+  --flexoki-green-400:   #879A39;
+
+  --flexoki-cyan-950:    #142625;
+  --flexoki-cyan-600:    #24837B;
+  --flexoki-cyan-400:    #3AA99F;
+  --flexoki-cyan-50:     #EBF2E7;
+
+  --flexoki-blue-600:    #205EA6;
+  --flexoki-blue-400:    #4385BE;
+
+  --flexoki-purple-600:  #5E409D;
+  --flexoki-purple-400:  #8B7EC8;
+
+  --flexoki-magenta-600: #A02F6F;
+  --flexoki-magenta-400: #CE5D97;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: var(--flexoki-900);
+  color: var(--flexoki-200);
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 800px;
+  margin: 4em auto;
+}
+
+.progress {
+  display: none;
+  width: 600px;
+  margin: 1em auto;
+}
+
+.progressbar {
+  position: relative;
+  width: 595px;
+  margin: 8px 0px 0px 0px;
+  border: 3px solid var(--flexoki-800);
+  border-radius: 12px;
+}
+
+.progresstext {
+  position: absolute;
+  width: 595px;
+  margin: 2px 0px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.progressfill {
+  background-color: var(--flexoki-cyan-600);
+  width: 0%;
+  height: 16px;
+  border-radius: 8px;
+}
+
+.sorter {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-gap: 8px;
+  width: 600px;
+  margin: 0px auto;
+}
+
+.button {
+  background-color: var(--flexoki-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2 / 3;
+  border-radius: 8px;
+  text-align: center;
+  white-space: pre-wrap;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--flexoki-850);
+}
+
+.starting.start.button {
+  grid-row: span 6;
+}
+
+.starting.load.button {
+  grid-row: span 3;
+  display: none;
+}
+
+.sorting.button, .finished.button {
+  grid-row: span 2;
+  display: none;
+}
+
+.loading.button {
+  grid-row: span 6;
+  display: none;
+}
+
+.loading.button > div {
+  width: 25px;
+  height: 25px;
+  margin: 50px auto;
+  background-color: #d900ff;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+/* Animation taken from: http://tobiasahlin.com/spinkit/ */
+
+.loading.button > span {
+  margin: auto auto 20%;
+  font-size: 0.7em;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.sorter > .image {
+  width: 200px;
+  height: 200px;
+  grid-row: 1 / 7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sorter > .text {
+  text-align: center;
+  width: 200px;
+  height: 1em;
+  display: none;
+}
+
+.sorter > .text > p { 
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.sorter > .left {
+  grid-column: 1 / 2;
+}
+
+.sorter > .right {
+  grid-column: 3 / 4;
+}
+
+.options {
+  margin: 4em auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  width: 600px;
+}
+
+.options > div {
+  font-size: 0.8em;
+}
+
+label {
+  cursor: pointer;
+}
+
+label:hover {
+  color: var(--flexoki-500);
+}
+
+.options > .large.option, .options > hr {
+  grid-column: span 3;
+  width: 100%;
+}
+
+.image.selector {
+  margin-top: 4em;
+  width: 600px;
+  display: none;
+}
+
+.time.taken {
+  margin-top: 1em;
+  width: 600px;
+  display: none;
+  font-size: 14px;
+}
+
+.results {
+  font-size: 0.8em;
+  display: flex;
+  align-content: flex-start;
+  width: 600px;
+  margin: 2em auto;
+}
+
+@media all and (min-width: 600px) {
+  .results {
+    flex-flow: column wrap;
+    max-height: calc(5 * (175px + 2px) + 1 * (15px + 2px));
+    /* 2px for borders */
+  }
+}
+
+@media all and (max-width: 600px) {
+  .results {
+    flex-flow: column nowrap;
+  }
+}
+
+.result {
+  height: 22px;
+  margin-bottom: -1px;
+  display: grid;
+  width: 280px;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: FiraCode, monospace;
+  border: 1px solid var(--flexoki-800)
+}
+
+.result.image {
+  height: 152px;
+}
+
+.result.image img {
+  height: 130px;
+}
+
+.result.spacer {
+  height: 1px;
+  background-color: #f00;
+}
+
+.result.head {
+  background-color: var(--flexoki-800);
+}
+
+.result > .left {
+  width: 30px;
+  padding: 4px 10px 4px 0px;
+  grid-column: 1 / 2;
+  text-align: right;
+}
+
+.result.image .left {
+  position: relative;
+}
+
+.result.image > .left span {
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+}
+
+.result > .right {
+  width: 250px;
+  padding: 4px 0px 4px 4px;
+  grid-column: 2 / 3;
+}
+
+.info {
+  width: 600px;
+  line-height: 1.2em;
+}
+
+h3 {
+  margin-bottom: 0.6em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--flexoki-cyan-400);
+}
+
+h4 {
+  margin-bottom: 0.4em;
+  font-family: Helvetica, sans-serif;
+  color: var(--flexoki-500);
+}
+
+.column {
+	float: left;
+	width: 50%;
+  font-family: FiraCode, monospace;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+a {
+  color: var(--flexoki-cyan-400);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../../fonts/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url('../../fonts/FiraCode-Variable.ttf') format('truetype');
+  font-display: swap;
+}
