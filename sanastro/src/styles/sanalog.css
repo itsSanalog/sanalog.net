@@ -1,4 +1,4 @@
-/* https://9elements.com/css-rule-order/ - FAIL */
+  /* https://9elements.com/css-rule-order/ - FAIL */
 
 * {
   box-sizing: border-box;
@@ -111,63 +111,6 @@ article p {
 
 
 /* Page Specific Classes */
-
-
-
-
-.about_rich_text {
-  position: relative;
-  left: 53vw;
-  top: 25vh;
-  width: 37vw;
-}
-
-.about_rich_text h2 {
-  margin-bottom: 0px;
-  font-size: 24px;
-  line-height: 36px;
-}
-
-.about_rich_text p {
-  margin-bottom: 0px;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: justify;
-}
-
-.about_rich_text figure {
-  margin-bottom: 40vh;
-}
-
-.about_rich_text h1 {
-  margin-top: 80px;
-  margin-bottom: 40px;
-  margin-left: -15px;
-  font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
-  font-size: 70px;
-  line-height: 60px;
-}
-
-.about_rich_text a {
-  color: #000;
-  text-decoration: underline;
-}
-
-.about_rich_text a:visited {
-  color: #000;
-}
-
-.about_bigboy {
-  position: absolute;
-  left: 10vw;
-  top: -420px;
-  width: 2000px;
-  transform: rotate(90deg);
-  transform-origin: 0% 100%;
-  font-family: BritDark, sans-serif;
-  font-size: 400px;
-  line-height: 300px;
-}
 
 .works_grid_div {
   color: #000;
