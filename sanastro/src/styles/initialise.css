@@ -312,8 +312,7 @@ footer {
   padding-top: 1em;
 }
 
-iframe,
-video {
+iframe, video {
   border-radius: var(--image-radius);
   display: block;
 }
