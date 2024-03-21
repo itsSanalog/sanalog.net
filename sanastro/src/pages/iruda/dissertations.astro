@@ -1,0 +1,26 @@
+
+
+  <p id="sentence"></p>
+
+
+
+
+
+
+
+
+  <script>
+    const words = [
+    'they', 'are', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'those', 'who', 'that', 'this', 'they', 'bone', 'are', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'second', 'those', 'who', 'media', 'whine', 'alcohol', 'empathy', 'double', 'that', 'this', 'is', 'is', 'is', 'close', 'far', 'the', 'the', 'the', 'dissertation', 'default', 'passive', 'character', 'mind', 'popular', 'rituals', 'contort', 'thwart', 'scale', 'pop', 'blood', 'planet', 'balloon', 'date', 'resonate', 'bark', 'passive', 'five', 'four', 'reflex', 'trial', 'onus', 'idea', 'learn', 'cloud', 'respect', 'flashback', 'charisma', 'walking', 'help', 'help', 'help', 'press', 'fingers', 'bird', 'ground', 'test', 'spring', 'winter', 'tears', 'fracture', 'light', 'ghost', 'sole', 'choir', 'soul', 'string', 'here', 'pop', 'habit', 'squirm', 'display', 'breath', 'tool', 'write', 'line', 'speech', 'water', 'man', 'falcon', 'writhe', 'cognition', 'one', 'type', 'big', 'time', 'words', 'current', 'amble', 'leverage', 'stream', 'parade', 'address', 'hall', 'orate', 'pompous', 'sing', 'lonely', 'manifest', 'thrice', 'design', 'ingest', 'surprise', 'space', 'morning', 'night', 'greet', 'first', 'important', 'distort', 'mountain', 'rail', 'kick', 'stay', 'they', 'are', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'those', 'who', 'that', 'this', 'they', 'are', 'for', 'for', 'for', 'for', 'for', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'those', 'who', 'that', 'this', 'is', 'is', 'is', 'the', 'the', 'the', 'advice', 'competition'
+    ];
+    let sentence = '';
+
+    document.addEventListener('keydown', function(event) {
+      if (event.code === 'Space') {
+        const randomIndex = Math.floor(Math.random() * words.length);
+        console.log(randomIndex);
+        sentence += words[randomIndex] + ' ';        
+        document.getElementById('sentence').textContent = sentence;
+      }
+    });
+  </script>
