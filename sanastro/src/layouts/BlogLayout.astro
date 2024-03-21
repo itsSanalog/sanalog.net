@@ -1,32 +1,67 @@
 ---
-const { title, description, ogImage } = Astro.props;
+const { id, cover, coverAlt, title, description, publicationDate } = Astro.props;
+import { Image } from "astro:assets";
 
-import "open-props/style";
-import "../styles/global.css";
-import "@fontsource/roboto";
-import "@fontsource/roboto/700.css";
-import "@fontsource/jetbrains-mono";
 import Head from "../components/blog/Head.astro";
 import Nav from "../components/blog/Nav.astro";
-import Header from "../components/blog/Header.astro";
 import Footer from "../components/blog/Footer.astro";
+
+import "../styles/initialise.css";
 ---
 
 <html lang="en">
-  <Head {title} {description} {ogImage} />
+  <Head {title} {description} ogImage={cover.src} />
   <body>
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.querySelector('body').classList.add('theme-dark')
+      }
+    </script>
+
     <Nav>
       <slot name="nav" />
     </Nav>
-    <Header {title}>
-      <slot slot="before-title" name="header-before" />
-      <slot name="header" />
-    </Header>
+
     <main>
       <div class="container">
         <slot />
       </div>
     </main>
+    
     <Footer />
+
+    <script>
+      var darkModeToggle = document.querySelector("#theme-toggle");
+
+      function toggleTheme() {
+        document.body.classList.toggle("theme-dark");
+        updateThemeState();
+      }
+
+      function updateThemeState() {
+        let isDarkMode = document.body.classList.contains("theme-dark");
+        let theme = isDarkMode ? "dark" : "light";
+        localStorage.setItem("theme", theme);
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+
+      function initializeTheme() {
+        let isDarkMode = document.body.classList.contains("theme-dark");
+        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      }
+
+      darkModeToggle.addEventListener("click", toggleTheme);
+
+      window.addEventListener('keydown', function(e) {
+        if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+          return;
+        }
+        if (e.key === 'd' || e.key === 'D') {
+          toggleTheme();
+        }
+      });
+
+      initializeTheme();
+    </script>
   </body>
 </html>

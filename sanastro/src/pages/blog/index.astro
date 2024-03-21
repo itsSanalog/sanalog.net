@@ -1,0 +1,48 @@
+---
+import { getEntryBySlug, getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import BlogLayout from "../../layouts/BlogLayout.astro";
+---
+<BlogLayout title="sanaBlog">
+  <main>
+
+    <div class="wrap">
+
+      <p><a href="https://stephango.com/earth" class="muted font-ui">Latest</a></p>
+
+      <div>
+        <a href="https://stephango.com/earth" class="plain">
+          <h2>Earth is becoming sentient</h2>
+          <div class="muted small pb font-ui">
+            <time datetime="2024-02-26T00:00:00+00:00">February 26, 2024</time> · <span class="reading-time" title="Estimated read time">2 minute read</span>
+          </div>
+          <div class="small muted">
+            Humans are not the last level of life’s fractal pattern. The Earth itself is becoming a sentient organism, a new stage of life, a species that exists on a scale never seen before... Keep&nbsp;reading&nbsp;→
+          </div>  
+        </a>
+      </div>
+
+      <hr class="mn2 ms2">
+
+      <p><a href="https://stephango.com/topics" class="muted internal-link font-ui">Topics</a></p>
+
+      <div class="line-height-loose">
+        <a href="https://stephango.com/topics/advice" class="internal-link">advice</a><span class="muted">,</span>
+        <a href="https://stephango.com/topics/competition" class="internal-link">competition</a><span class="muted">,</span>
+        <a href="https://stephango.com/topics/startups" class="internal-link">startups</a><span class="muted">,</span>
+        <a href="https://stephango.com/topics/writing" class="internal-link">writing</a>
+      </div>
+
+      <hr class="mn2 ms2">
+
+      <p class="muted font-ui"><a href="https://stephango.com/writing" class="muted internal-link">Writing</a></p>
+
+      <ul class="list-plain tabular-nums">
+        <li><a href="https://stephango.com/earth" class="internal-link plain"><flex class="align-baseline"><span class="muted ppr flex-shrink small mh nowrap font-ui">2024 · 02</span><u>Earth is becoming sentient</u></flex></a></li>
+        <li><a href="https://stephango.com/vcware" class="internal-link plain"><flex class="align-baseline"><span class="muted ppr flex-shrink small mh nowrap font-ui">2024 · 02</span><u>100% user-supported</u></flex></a></li>
+        <li><a href="https://stephango.com/agents-of-chaos" class="internal-link plain"><flex class="align-baseline"><span class="muted ppr flex-shrink small mh nowrap font-ui">2012 · 11</span><u>Agents of chaos</u></flex></a></li>
+      </ul>
+    
+    </div>
+  </main>
+</BlogLayout>

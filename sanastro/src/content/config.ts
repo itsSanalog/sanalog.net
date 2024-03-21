@@ -8,9 +8,9 @@ const blogCollection = defineCollection({
     cover: image().optional(),
     coverAlt: z.string().optional(),
     title: z.string(),  // required
+    description: z.string().optional(),
     author: z.string().optional(),
     publicationDate: z.date().optional(),
-    description: z.string().optional(),
     // "slug" is a special, reserved property name that is not allowed in custom collection schema
   }),
 });
