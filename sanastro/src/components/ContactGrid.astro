@@ -8,25 +8,25 @@ const imagePath = `../assets/snslogo/${service}.svg`;
 ---
 
 <a href={ link } target="_blank" class="contacts_grid_div">
-    <Image src={images[imagePath]()} width="30" alt={ service + " Logo" } />
-    <p class="contacts_sns">{ username }</p>
+  <Image src={images[imagePath]()} width="30" alt={ service + " Logo" } />
+  <p class="contacts_sns">{ username }</p>
 </a>
 
 <style>
-    .contacts_grid_div {
-      font-size: 20px;
-      transition: 200ms ease;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
+  .contacts_grid_div {
+    font-size: 20px;
+    transition: 200ms ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-    .contacts_grid_div:hover {
-      letter-spacing: 2px;
-    }
+  .contacts_grid_div:hover {
+    letter-spacing: 2px;
+  }
 
-    .contacts_sns {
-      display: inline-block;
-      margin: 20px 10px;
-    }
+  .contacts_sns {
+    display: inline-block;
+    margin: 20px 10px;
+  }
 </style>

@@ -1,0 +1,72 @@
+---
+const { name } = Astro.props;
+---
+
+<button type="button" class="collapsible-button">{ name }</button>
+<div class="collapsible-grid">
+  <slot />
+</div>
+
+<script>
+  var colbutton = document.getElementsByClassName("collapsible-button");
+  var i;
+  for (i = 0; i < colbutton.length; i++) {
+    colbutton[i].addEventListener("click", function() {
+      this.classList.toggle("active1");
+      var grid = this.nextElementSibling;
+      if (grid.style.maxHeight) {
+        grid.style.maxHeight = null;
+        grid.style.marginTop = null;
+      } else {
+        grid.style.maxHeight = grid.scrollHeight + "px";
+        grid.style.marginTop = "1em";
+      }
+    });
+  }
+</script>
+
+<style>
+  .collapsible-button {
+    width: 100%;
+    padding: 0.2em 0.6em;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color-tx-muted);
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .collapsible-button:after {
+    content: "\002B";
+    float: right;
+  }
+
+  .active1:after {
+    content: "\2212";
+  }
+
+  .collapsible-button:hover, .collapsible-button:hover:after,
+  .collapsible-button.active1:hover, .collapsible-button.active1:hover:after{
+    background-color: var(--color-ui-hover);
+    color: var(--color-action);
+  }
+
+  .collapsible-button.active1, .collapsible-button.active1:after {
+    background-color: var(--color-ui-active);
+    color: var(--color-tx-normal);
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .collapsible-grid {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, margin-top 0.2s ease-out;
+  }
+</style>

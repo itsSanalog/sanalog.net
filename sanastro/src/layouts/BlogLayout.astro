@@ -10,47 +10,46 @@ import "../styles/initialise.css";
 ---
 
 <html lang="en">
-  <Head {title} {description} ogImage={cover.src} />
+  <Head {title} {description} ogImage={cover} />
+
   <body>
     <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.querySelector('body').classList.add('theme-dark')
+      if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+        document.querySelector('body').classList.add('theme-light')
       }
     </script>
 
-    <Nav>
-      <slot name="nav" />
-    </Nav>
+    <Nav />
 
     <main>
-      <div class="container">
+      <content>
         <slot />
-      </div>
+      </content>
     </main>
     
     <Footer />
 
     <script>
-      var darkModeToggle = document.querySelector("#theme-toggle");
-
-      function toggleTheme() {
-        document.body.classList.toggle("theme-dark");
-        updateThemeState();
+      var lightModeToggle = document.querySelector("#theme-toggle");
+      
+      function initializeTheme() {
+        let isLightMode = document.body.classList.contains("theme-light");
+        lightModeToggle.setAttribute("aria-checked", isLightMode.toString());
       }
 
       function updateThemeState() {
-        let isDarkMode = document.body.classList.contains("theme-dark");
-        let theme = isDarkMode ? "dark" : "light";
+        let isLightMode = document.body.classList.contains("theme-light");
+        let theme = isLightMode ? "light" : "dark";
         localStorage.setItem("theme", theme);
-        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+        lightModeToggle.setAttribute("aria-checked", isLightMode.toString());
       }
 
-      function initializeTheme() {
-        let isDarkMode = document.body.classList.contains("theme-dark");
-        darkModeToggle.setAttribute("aria-checked", isDarkMode.toString());
+      function toggleTheme() {
+        document.body.classList.toggle("theme-light");
+        updateThemeState();
       }
 
-      darkModeToggle.addEventListener("click", toggleTheme);
+      lightModeToggle.addEventListener("click", toggleTheme);
 
       window.addEventListener('keydown', function(e) {
         if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {

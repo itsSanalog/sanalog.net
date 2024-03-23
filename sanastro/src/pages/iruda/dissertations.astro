@@ -11,16 +11,37 @@
 
   <script>
     const words = [
-    'they', 'are', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'those', 'who', 'that', 'this', 'they', 'bone', 'are', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'second', 'those', 'who', 'media', 'whine', 'alcohol', 'empathy', 'double', 'that', 'this', 'is', 'is', 'is', 'close', 'far', 'the', 'the', 'the', 'dissertation', 'default', 'passive', 'character', 'mind', 'popular', 'rituals', 'contort', 'thwart', 'scale', 'pop', 'blood', 'planet', 'balloon', 'date', 'resonate', 'bark', 'passive', 'five', 'four', 'reflex', 'trial', 'onus', 'idea', 'learn', 'cloud', 'respect', 'flashback', 'charisma', 'walking', 'help', 'help', 'help', 'press', 'fingers', 'bird', 'ground', 'test', 'spring', 'winter', 'tears', 'fracture', 'light', 'ghost', 'sole', 'choir', 'soul', 'string', 'here', 'pop', 'habit', 'squirm', 'display', 'breath', 'tool', 'write', 'line', 'speech', 'water', 'man', 'falcon', 'writhe', 'cognition', 'one', 'type', 'big', 'time', 'words', 'current', 'amble', 'leverage', 'stream', 'parade', 'address', 'hall', 'orate', 'pompous', 'sing', 'lonely', 'manifest', 'thrice', 'design', 'ingest', 'surprise', 'space', 'morning', 'night', 'greet', 'first', 'important', 'distort', 'mountain', 'rail', 'kick', 'stay', 'they', 'are', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'those', 'who', 'that', 'this', 'they', 'are', 'for', 'for', 'for', 'for', 'for', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'those', 'who', 'that', 'this', 'is', 'is', 'is', 'the', 'the', 'the', 'advice', 'competition'
+    'they', 'are', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'those', 'who', 'that', 'this', 'they', 'bone', 'are', 'is', 'of', 'the', 'your', 'maybe', 'on', 'off', 'you', 'me', 'us', 'it', 'them', 'monster', 'second', 'those', 'who', 'media', 'whine', 'alcohol', 'empathy', 'double', 'that', 'this', 'is', 'is', 'is', 'close', 'far', 'the', 'pain', 'pain', 'pain', 'the', 'the', 'dissertation', 'default', 'passive', 'character', 'mind', 'popular', 'on', 'off', 'rituals', 'contort', 'thwart', 'scale', 'pop', 'blood', 'planet', 'balloon', 'date', 'resonate', 'bark', 'passive', 'five', 'four', 'reflex', 'trial', 'onus', 'idea', 'among', 'light', 'learn', 'dogma', 'cloud', 'respect', 'flashback', 'charisma', 'walking', 'help', 'help', 'help', 'press', 'fingers', 'bird', 'ground', 'test', 'spring', 'winter', 'tears', 'fracture', 'light', 'ghost', 'sole', 'choir', 'soul', 'string', 'libido', 'here', 'house', 'inferno', 'pop', 'habit', 'squirm', 'display', 'breath', 'tool', 'write', 'line', 'speech', 'water', 'man', 'create', 'falcon', 'writhe', 'cognition', 'one', 'type', 'big', 'time', 'words', 'current', 'on', 'off', 'amble', 'leverage', 'stream', 'parade', 'address', 'hall', 'orate', 'pompous', 'sing', 'lonely', 'manifest', 'thrice', 'witness', 'design', 'ingest', 'surprise', 'space', 'morning', 'night', 'greet', 'first', 'important', 'distort', 'mountain', 'rail', 'kick', 'stay', 'they', 'are', 'is', 'of', 'the', 'your', 'maybe', 'you', 'fire', 'me', 'us', 'it', 'them', 'those', 'who', 'that', 'this', 'they', 'are', 'for', 'for', 'for', 'for', 'for', 'is', 'of', 'the', 'your', 'maybe', 'you', 'me', 'us', 'it', 'them', 'those', 'who', 'that', 'this', 'is', 'is', 'is', 'the', 'the', 'the', 'advice', 'competition'
     ];
+
     let sentence = '';
+    let wordTimeout;
+    let keyHeld = false;
 
     document.addEventListener('keydown', function(event) {
-      if (event.code === 'Space') {
-        const randomIndex = Math.floor(Math.random() * words.length);
-        console.log(randomIndex);
-        sentence += words[randomIndex] + ' ';        
-        document.getElementById('sentence').textContent = sentence;
+      if (event.code !== 'Escape') {
+        edwardDelay();
+        document.addEventListener('keyup', stopWords);
       }
     });
+
+    function edwardDelay() {
+      if (!keyHeld) {
+        keyHeld = true;
+        edward();
+      }
+    }
+
+    function edward() {
+      const randomIndex = Math.floor(Math.random() * words.length);
+      sentence += words[randomIndex] + ' ';
+      document.getElementById('sentence').textContent = sentence;
+      wordTimeout = setTimeout(edward, 250);
+    }
+
+    function stopWords() {
+      clearTimeout(wordTimeout);
+      keyHeld = false;
+      document.removeEventListener('keyup', stopWords);
+    }
   </script>
