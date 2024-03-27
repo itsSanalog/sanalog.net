@@ -1,7 +1,7 @@
 ---
 const { title, description, ogImage = "" } = Astro.props;
 
-const imageUrl = ogImage ? Astro.url.origin + ogImage : Astro.url.origin + "/cover.jpg";
+// const imageUrl = ogImage ? Astro.url.origin + ogImage : Astro.url.origin + "/cover.jpg";
 ---
 
 <head>
@@ -13,5 +13,5 @@ const imageUrl = ogImage ? Astro.url.origin + ogImage : Astro.url.origin + "/cov
 
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={imageUrl} />
+  <!-- <meta property="og:image" content={imageUrl} /> -->
 </head>

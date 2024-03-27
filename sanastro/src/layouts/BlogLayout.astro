@@ -1,6 +1,5 @@
 ---
-const { id, cover, coverAlt, title, description, publicationDate } = Astro.props;
-import { Image } from "astro:assets";
+const { title, description } = Astro.props;
 
 import Head from "../components/blog/Head.astro";
 import Nav from "../components/blog/Nav.astro";
@@ -10,7 +9,7 @@ import "../styles/initialise.css";
 ---
 
 <html lang="en">
-  <Head {title} {description} ogImage={cover} />
+  <Head {title} {description} />
 
   <body>
     <script>
