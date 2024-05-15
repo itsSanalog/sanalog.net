@@ -17,8 +17,3 @@ button.addEventListener("click", () => {
     document.getElementsByClassName("menu_bg")[0].style.pointerEvents =
         (document.getElementsByClassName("menu_bg")[0].style.pointerEvents == "auto") ? "none" : "auto";
 });
-
-
-
-
-
