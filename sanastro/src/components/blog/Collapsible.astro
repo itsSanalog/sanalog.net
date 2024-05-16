@@ -39,13 +39,17 @@ const { name } = Astro.props;
     font-weight: bold;
   }
 
+  /* Fonts are mono because that happens to be vertically centered with respect to line height, although I'd have preferred leaving it as default */
+
   .collapsible-button:after {
     content: "\002B";
     float: right;
+    font-family: var(--font-mono);
   }
 
   .active1:after {
     content: "\2212";
+    font-family: var(--font-mono);
   }
 
   .collapsible-button:hover, .collapsible-button:hover:after,
