@@ -1,5 +1,5 @@
 ---
-cover: "../../../assets/blog/nix-flake-examples/cover.jpg"
+cover: "../../assets/blog/nix-flake-examples/cover.jpg"
 coverAlt: "Cover image for the blog post"
 title: "Nix flake examples"
 publicationDate: 2023-05-12

@@ -22,17 +22,17 @@ const entries = (await getCollection("blog"));
 
   <Collapsible name="code">
     <a href="#" class="plain">
-      <div><img src="https://i.imgur.com/qPcutdM.png" alt=""></div>
+      <img src="https://i.imgur.com/qPcutdM.png" alt="">
       <h2>Weezer</h2>
       <p>whats with these homies, dissing my girl? why do they gotta front? what did we ever do to these guys that made them so violent?</p>
     </a>
     <a href="#" class="plain">
-      <div><img src="https://i.imgur.com/qPcutdM.png" alt=""></div>
+      <img src="https://i.imgur.com/qPcutdM.png" alt="">
       <h2>Weezer</h2>
       <p>whats with these homies, dissing my girl? why do they gotta front? what did we ever do to these guys that made them so violent?</p>
     </a>
     <a href="#" class="plain">
-      <div><img src="https://i.imgur.com/qPcutdM.png" alt=""></div>
+      <img src="https://i.imgur.com/qPcutdM.png" alt="">
       <h2>Weezer</h2>
       <p>whats with these homies, dissing my girl? why do they gotta front? what did we ever do to these guys that made them so violent?</p>
     </a>
@@ -40,16 +40,19 @@ const entries = (await getCollection("blog"));
 
   <hr class="mn2 ms2">
 
+  <Collapsible name="test">
   {
-    entries.map((entry) => ( //edit this to match https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
-      <Image src={ entry.data.cover } alt={ entry.data.coverAlt } /> 
-      <p> { entry.data.publicationDate } </p>
-      <h3>
-        <a href={ entry.slug }>{ entry.data.title }</a>
-      </h3>
-      <p>{ entry.data.description }</p>
+    entries.map((entry) => ( //doc: https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
+      <a href={ `/blog/${ entry.slug }` } class="plain">
+        <Image src={ entry.data.cover } alt={ entry.data.coverAlt } /> 
+        <h2>{ entry.data.title }</h2>
+        <p>{ entry.data.description }</p>
+      </a>
     ))
   }
+  
+  </Collapsible>
+
 
 
 </BlogLayout>
