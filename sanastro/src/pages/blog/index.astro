@@ -8,7 +8,7 @@ const codeEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("code/");
 });
 const makeEntries = await getCollection("blog", ({ id }) => {
-  return id.startsWith("make/");
+  return id.startsWith("work/");
 })
 const rambleEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("ramble/");
