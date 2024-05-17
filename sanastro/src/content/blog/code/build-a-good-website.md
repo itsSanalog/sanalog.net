@@ -143,7 +143,7 @@ footer {
 
 we have an accessible, and solid looking website:
 
-![Accessible website preview](../../assets/blog/code/build-a-good-website/accessible-website-preview.png)
+![Accessible website preview](../../../assets/blog/code/build-a-good-website/accessible-website-preview.png)
 
 ## Performance 
 
