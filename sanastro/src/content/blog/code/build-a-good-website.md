@@ -1,5 +1,5 @@
 ---
-cover: "../../assets/blog/build-a-good-website/cover.jpg"
+cover: "../../../assets/blog/build-a-good-website/cover.jpg"
 coverAlt: "Cover image for the blog post"
 title: "Build a good website"
 publicationDate: 2023-05-07

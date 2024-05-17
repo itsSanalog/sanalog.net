@@ -3,6 +3,7 @@
 // very useful documentation. Also read Routing and Content Collection
 
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import BlogLayout from "../../layouts/BlogLayout.astro";
 
 // 1. Generate a new path for every collection entry
@@ -18,8 +19,22 @@ export async function getStaticPaths() {
 // 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props;
 const { Content, headings } = await entry.render();
+
+// JavaScript for date
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+let formattedDate = null;
+if (entry.data.publicationDate) {
+  formattedDate = entry.data.publicationDate.toLocaleDateString('en-US', options);
+}
 ---
 
-<BlogLayout id={entry.id} {...entry.data} {headings}>
+<BlogLayout id={ entry.id } { ...entry.data } { headings }>
+  { entry.data.banner && entry.data.bannerAlt && (
+    <Image src={entry.data.banner} alt={entry.data.bannerAlt} />
+  )}
+  <h1>{ entry.data.title }</h1>
+  <h3>{ entry.data.creationDate } { formattedDate } </h3>
+  <p class="ms1" style="font-style: italic;">{ entry.data.description }</p>
+  <!------------------------------->
   <Content />
 </BlogLayout>

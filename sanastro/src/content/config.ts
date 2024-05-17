@@ -7,10 +7,14 @@ const blogCollection = defineCollection({
   schema: ({ image }) => z.object({  // not using ({ image }) will break stuff
     cover: image().optional(),
     coverAlt: z.string().optional(),
+    banner: image().optional(),
+    bannerAlt: z.string().optional(),
+
     title: z.string(),  // required
     description: z.string().optional(),
     author: z.string().optional(),
     publicationDate: z.date().optional(),
+    creationDate: z.string().optional(),
     // "slug" is a special, reserved property name that is not allowed in custom collection schema
   }),
 });

@@ -1,5 +1,5 @@
 ---
-cover: "../../assets/blog/markdown-style-guide/cover.jpg"
+cover: "../../../assets/blog/markdown-style-guide/cover.jpg"
 coverAlt: "Cover image for the blog post"
 title: "Markdown style guide"
 publicationDate: 2023-05-20

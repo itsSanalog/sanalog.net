@@ -608,6 +608,8 @@ pre code {
 /* ------- IMAGE -------*/
 
 img {
+  width: auto;
+  height: auto; /* these stupid things exist because Astro <Image> forces a width and height that must be overridden by these */
   max-width: 100%;
   display: block;
   border-radius: var(--image-radius);
