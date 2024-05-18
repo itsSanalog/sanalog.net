@@ -287,16 +287,17 @@
 html {
   width: 100%;
   height: 100%;
+  font-size: 10px;
 }
 
 body {
   color-scheme: light dark;
   background-color: var(--color-bg-primary);
-  padding: 2rem 0 20rem;
+  padding: 3.2rem 0 32rem;
   color: var(--color-tx-normal);
   line-height: var(--line-height);
   font-family: var(--font-content);
-  font-size: calc(0.9rem + 0.25vw);
+  font-size: calc(1.4rem + 0.25vw);
 }
 
 .small {

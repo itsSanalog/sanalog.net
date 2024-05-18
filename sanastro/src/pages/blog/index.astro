@@ -21,7 +21,7 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
 <BlogLayout title="sanaBlog">
   <p class="muted">Featured</p>
   <a href={ `/blog/${ featuredEntry.slug }` } class="plain">
-    <h2>{ featuredEntry.data.title }</h2>
+    <h2 style="margin-bottom: 1rem;">{ featuredEntry.data.title }</h2>
     <div class="small muted pb">
       <time datetime={ featuredEntry.data.publicationDate }>
         { featuredEntry.data.publicationDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric'}) }
@@ -40,7 +40,7 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
       <a href={ `/blog/${ entry.slug }` } class="plain">
         <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
         {/* use 'entry.data.cover.src' as src if using native <img> tag */}
-        <h2>{ entry.data.title }</h2>
+        <h2 style="margin-top: 1rem;">{ entry.data.title }</h2>
         <p>{ entry.data.description }</p>
       </a>
     ))
@@ -51,7 +51,7 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
       makeEntries.map((entry) => (
       <a href={ `/blog/${ entry.slug }` } class="plain">
         <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
-        <h2>{ entry.data.title }</h2>
+        <h2 style="margin-top: 1rem;">{ entry.data.title }</h2>
         <p>{ entry.data.description }</p>
       </a>
     ))
@@ -62,13 +62,11 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
       talkEntries.map((entry) => (
       <a href={ `/blog/${ entry.slug }` } class="plain">
         <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
-        <h2>{ entry.data.title }</h2>
+        <h2 style="margin-top: 1rem;">{ entry.data.title }</h2>
         <p>{ entry.data.description }</p>
       </a>
     ))
   }
   </Collapsible>
-  
-  <hr class="mn2 ms2">
 
 </BlogLayout>
