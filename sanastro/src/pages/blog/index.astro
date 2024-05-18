@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
 import { Image } from "astro:assets";
 import BlogLayout from "../../layouts/BlogLayout.astro";
 import Collapsible from "../../components/blog/Collapsible.astro";
@@ -9,20 +9,26 @@ const codeEntries = await getCollection("blog", ({ id }) => {
 });
 const makeEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("work/");
-})
+});
 const talkEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("talk/");
-})
+});
+const testEntries = talkEntries.sort((a, b) => {
+  return b.data.sortOrder - a.data.sortOrder;
+});
+const featuredEntry = await getEntry("blog", "talk/the-sprawl");
 ---
 <BlogLayout title="sanaBlog">
   <p class="muted">Featured</p>
-  <a href="[LINK HERE]" class="plain">
-    <h2>TITLE HERE</h2>
-    <div class="muted small pb font-ui">
-      <time datetime="2024-02-20T00:00:00+00:00">February 20, 2024</time> · <span class="reading-time" title="Estimated read time">2 minute read</span>
+  <a href={ `/blog/${ featuredEntry.slug }` } class="plain">
+    <h2>{ featuredEntry.data.title }</h2>
+    <div class="small muted pb">
+      <time datetime={ featuredEntry.data.publicationDate }>
+        { featuredEntry.data.publicationDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric'}) }
+      </time>
     </div>
     <div class="small muted">
-      lorem ipsum... Keep&nbsp;reading&nbsp;→
+      { featuredEntry.body.slice(0, 200) }...
     </div>  
   </a>
 
@@ -42,10 +48,9 @@ const talkEntries = await getCollection("blog", ({ id }) => {
   </Collapsible>
   <Collapsible name="work">
     {
-      makeEntries.map((entry) => ( //doc: https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
+      makeEntries.map((entry) => (
       <a href={ `/blog/${ entry.slug }` } class="plain">
         <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
-        {/* use 'entry.data.cover.src' as src if using native <img> tag */}
         <h2>{ entry.data.title }</h2>
         <p>{ entry.data.description }</p>
       </a>
@@ -54,10 +59,9 @@ const talkEntries = await getCollection("blog", ({ id }) => {
   </Collapsible>
   <Collapsible name="talk..">
     {
-      talkEntries.map((entry) => ( //doc: https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
+      talkEntries.map((entry) => (
       <a href={ `/blog/${ entry.slug }` } class="plain">
         <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
-        {/* use 'entry.data.cover.src' as src if using native <img> tag */}
         <h2>{ entry.data.title }</h2>
         <p>{ entry.data.description }</p>
       </a>

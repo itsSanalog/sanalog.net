@@ -9,6 +9,7 @@ description: ""
 # author:
 publicationDate: 2022-08-04
 # creationDate: "August 2022"
+sortOrder: 10
 ---
 
 The importance of self love is a bullshit dogma. Such a narcissistic concept possesses intrinsic, paradoxical flaws. Self love alone cannot keep a man alive, for death is an easy escape from the commitment to self. Humans need an external motivator to live. A goal to vie for no matter what. Unconditional love.

@@ -9,6 +9,7 @@ description: ""
 # author:
 # publicationDate:
 creationDate: "2020"
+sortOrder: 2
 ---
 
 What is logic? To be 'logical' in an argument is to come to that conclusion via valid relations between premises. How does it relate to emotion? Emotion is a component of instinct: we 'feel' something 'bad' but cannot explain WHY feel bad. Logic is the elucidation of this emotion; using premises, we can explain why something IS bad. Of course, this has numerous other implications. For example, our standards of 'good' and 'bad' have to be defined. There is also the importance in eloquence, for a fantastic command of language is required to express arguments in a clear fashion. Such complexities make robust discourse mentally strenuous.

@@ -12,9 +12,10 @@ const blogCollection = defineCollection({
 
     title: z.string(),  // required
     description: z.string().optional(),
-    author: z.string().optional(),
+    author: z.string().optional().default('Sanalog'),
     publicationDate: z.date().optional(),
     creationDate: z.string().optional(),
+    sortOrder: z.number().optional(),
     // "slug" is a special, reserved property name that is not allowed in custom collection schema
   }),
 });

@@ -9,6 +9,7 @@ description: ""
 # author:
 # publicationDate:
 creationDate: "2020"
+sortOrder: 1
 ---
 
 Passionate activists are just as hard to hold an intelligent debate with as religious believers as both hold a distinct paradigm of viewing the world which makes their opinion ironclad for reasons external to conventional logic.

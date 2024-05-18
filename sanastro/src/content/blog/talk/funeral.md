@@ -1,14 +1,15 @@
 ---
 cover: "../../../assets/blog/talk/funeral/cover.png"
-coverAlt: "Funeral"
+coverAlt: "장례식"
 banner: "../../../assets/blog/talk/funeral/banner.png"
-bannerAlt: "Funeral"
+bannerAlt: "장례식"
 
-title: "Funeral"
+title: "장례식"
 description: ""
 # author:
 publicationDate: 2022-05-02
 # creationDate: "May 2022"
+sortOrder: 8
 ---
 
 내 장례식에는 아무도 없었으면 좋겠어.

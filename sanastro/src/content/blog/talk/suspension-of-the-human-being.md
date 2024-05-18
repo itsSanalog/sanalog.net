@@ -9,6 +9,7 @@ description: ""
 # author:
 publicationDate: 2022-08-04
 # creationDate: "August 2022"
+sortOrder: 9
 ---
 
 Capitalism is inherently inhuman. It divides the people of a nation, modelling them as utterly selfish individual players, and to what result? It is the most self-concerned of them all that wield the most economic power; we are thus compelled to an equivalent standard of self-concernedness, undermining society. Only through a cold, unyielding willingness to ignore the cries of society and the environment in favour of the siren call of money can one become successful. These are characteristics of a reactionary.

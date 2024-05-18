@@ -9,6 +9,7 @@ description: ""
 # author:
 # publicationDate:
 creationDate: "2021"
+sortOrder: 5
 ---
 
 파이팅이라는 말이 싫다.

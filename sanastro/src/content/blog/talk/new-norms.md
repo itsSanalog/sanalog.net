@@ -9,6 +9,7 @@ description: ""
 # author:
 # publicationDate:
 creationDate: "2021"
+sortOrder: 4
 ---
 
 Enriched by liberalised education, enthusiastic youths are brimming with opinions, more than willing to defend them and very much capable of doing so. The accretion of human knowledge, or possibly academia, is changing. Are academics still the intellectual elites? Are politicians still more than just a brand? With modern education and informational systems, it is perfectly conceivable that we may in fact be within reach of what Confucius would define as an ideal society: people enriched in knowledge and wisdom, coexisting without the need for government in an anarchical society outside of the confines of capital and even ownership.

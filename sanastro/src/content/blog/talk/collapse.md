@@ -9,6 +9,7 @@ description: ""
 # author:
 publicationDate: 2021-08-15
 # creationDate: "August 2021"
+sortOrder: 6
 ---
 
 The collapse will happen in my lifetime. Now we may be subservient to the moral compass, capitalism, and jurisprudence, but the turning point that announces a paradigm shift may just as well be tomorrow. Our vital signs are an illusion of normalcy that is too fragile to defend long term predictions of the future.
