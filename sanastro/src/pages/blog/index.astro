@@ -16,7 +16,7 @@ const talkEntries = await getCollection("blog", ({ id }) => {
 const testEntries = talkEntries.sort((a, b) => {
   return b.data.sortOrder - a.data.sortOrder;
 });
-const featuredEntry = await getEntry("blog", "talk/the-sprawl");
+const featuredEntry = await getEntry("blog", "talk/cold-game");
 ---
 <BlogLayout title="sanaBlog">
   <p class="muted">Featured</p>
@@ -28,7 +28,7 @@ const featuredEntry = await getEntry("blog", "talk/the-sprawl");
       </time>
     </div>
     <div class="small muted">
-      { featuredEntry.body.slice(0, 200) }...
+      { featuredEntry.body.slice(0,200) }...
     </div>  
   </a>
 

@@ -9,7 +9,7 @@ description: ""
 # author:
 publicationDate: 2023-11-21
 # creationDate: ""
-sortOrder: 11
+sortOrder: 13
 ---
 
 fuck you groupmates and other people:
@@ -28,9 +28,8 @@ I thought it would end around 4:30, boy
 The Chorus is just   store more and more more   repeated like five times and this is fucking sick
 
 > ..tagline for a series of television ads for New York City department store Bloomingdale’s all through the 1980s.<br>
-This line talks directly to people who are influenced by media to keep on engaging in consumerism.
-
-\- genius
+This line talks directly to people who are influenced by media to keep on engaging in consumerism.<br>
+> -- <cite>Genius</cite>
 
 ok now consider the 'consumerism is killing us' interview from kim some years back and the logical conclusion is this song is about consumerism bad but to me this doesn't make sense because: (because im cooking bullshit)
 
