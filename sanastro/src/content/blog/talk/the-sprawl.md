@@ -1,5 +1,5 @@
 ---
-cover: "../../../assets/blog/ramble/the-sprawl/cover.png"
+cover: "../../../assets/blog/talk/the-sprawl/cover.png"
 coverAlt: "Sonic Youth - The Sprawl"
 # banner: ""
 # bannerAlt: ""

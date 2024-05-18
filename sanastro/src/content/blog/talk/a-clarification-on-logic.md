@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/ramble/a-clarification-on-logic/cover.png"
+cover: "../../../assets/blog/talk/a-clarification-on-logic/cover.png"
 coverAlt: "A Clarification on Logic"
-banner: "../../../assets/blog/ramble/a-clarification-on-logic/banner.png"
+banner: "../../../assets/blog/talk/a-clarification-on-logic/banner.png"
 bannerAlt: "A Clarification on Logic"
 
 title: "A Clarification on Logic"

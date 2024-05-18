@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/ramble/arguing-with-idiots/cover.png"
+cover: "../../../assets/blog/talk/arguing-with-idiots/cover.png"
 coverAlt: "Arguing with Idiots"
-banner: "../../../assets/blog/ramble/arguing-with-idiots/banner.png"
+banner: "../../../assets/blog/talk/arguing-with-idiots/banner.png"
 bannerAlt: "Arguing with Idiots"
 
 title: "Arguing with Idiots"

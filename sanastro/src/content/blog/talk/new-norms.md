@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/ramble/new-norms/cover.png"
+cover: "../../../assets/blog/talk/new-norms/cover.png"
 coverAlt: "New Norms"
-banner: "../../../assets/blog/ramble/new-norms/banner.png"
+banner: "../../../assets/blog/talk/new-norms/banner.png"
 bannerAlt: "New Norms"
 
 title: "New Norms"

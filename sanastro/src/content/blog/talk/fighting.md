@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/ramble/fighting/cover.png"
+cover: "../../../assets/blog/talk/fighting/cover.png"
 coverAlt: "화이팅"
-banner: "../../../assets/blog/ramble/fighting/banner.png"
+banner: "../../../assets/blog/talk/fighting/banner.png"
 bannerAlt: "화이팅"
 
 title: "화이팅"

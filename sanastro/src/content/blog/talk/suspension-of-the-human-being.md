@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/ramble/suspension-of-the-human-being/cover.png"
+cover: "../../../assets/blog/talk/suspension-of-the-human-being/cover.png"
 coverAlt: "Suspension of the Human Being"
-banner: "../../../assets/blog/ramble/suspension-of-the-human-being/banner.png"
+banner: "../../../assets/blog/talk/suspension-of-the-human-being/banner.png"
 bannerAlt: "Suspension of the Human Being"
 
 title: "Suspension of the Human Being"

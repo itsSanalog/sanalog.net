@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/ramble/funeral/cover.png"
+cover: "../../../assets/blog/talk/funeral/cover.png"
 coverAlt: "Funeral"
-banner: "../../../assets/blog/ramble/funeral/banner.png"
+banner: "../../../assets/blog/talk/funeral/banner.png"
 bannerAlt: "Funeral"
 
 title: "Funeral"

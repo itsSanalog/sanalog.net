@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/ramble/collapse/cover.png"
+cover: "../../../assets/blog/talk/collapse/cover.png"
 coverAlt: "Collapse"
-banner: "../../../assets/blog/ramble/collapse/banner.png"
+banner: "../../../assets/blog/talk/collapse/banner.png"
 bannerAlt: "Collapse"
 
 title: "Collapse"

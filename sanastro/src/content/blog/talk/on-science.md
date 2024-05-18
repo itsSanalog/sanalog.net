@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/ramble/on-science/cover.png"
+cover: "../../../assets/blog/talk/on-science/cover.png"
 coverAlt: "On Science"
-banner: "../../../assets/blog/ramble/on-science/banner.png"
+banner: "../../../assets/blog/talk/on-science/banner.png"
 bannerAlt: "On Science"
 
 title: "On Science"

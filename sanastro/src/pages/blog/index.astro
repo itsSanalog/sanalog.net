@@ -10,8 +10,8 @@ const codeEntries = await getCollection("blog", ({ id }) => {
 const makeEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("work/");
 })
-const rambleEntries = await getCollection("blog", ({ id }) => {
-  return id.startsWith("ramble/");
+const talkEntries = await getCollection("blog", ({ id }) => {
+  return id.startsWith("talk/");
 })
 ---
 <BlogLayout title="sanaBlog">
@@ -22,7 +22,7 @@ const rambleEntries = await getCollection("blog", ({ id }) => {
       <time datetime="2024-02-20T00:00:00+00:00">February 20, 2024</time> · <span class="reading-time" title="Estimated read time">2 minute read</span>
     </div>
     <div class="small muted">
-      Humans are not the last level of life’s fractal pattern. The Earth itself is becoming a sentient organism, a new stage of life, a species that exists on a scale never seen before... Keep&nbsp;reading&nbsp;→
+      lorem ipsum... Keep&nbsp;reading&nbsp;→
     </div>  
   </a>
 
@@ -52,9 +52,9 @@ const rambleEntries = await getCollection("blog", ({ id }) => {
     ))
   }
   </Collapsible>
-  <Collapsible name="ramble..">
+  <Collapsible name="talk..">
     {
-      rambleEntries.map((entry) => ( //doc: https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
+      talkEntries.map((entry) => ( //doc: https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
       <a href={ `/blog/${ entry.slug }` } class="plain">
         <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
         {/* use 'entry.data.cover.src' as src if using native <img> tag */}

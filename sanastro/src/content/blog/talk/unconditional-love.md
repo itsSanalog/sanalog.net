@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/ramble/unconditional-love/cover.png"
+cover: "../../../assets/blog/talk/unconditional-love/cover.png"
 coverAlt: "Unconditional Love"
-banner: "../../../assets/blog/ramble/unconditional-love/banner.png"
+banner: "../../../assets/blog/talk/unconditional-love/banner.png"
 bannerAlt: "Unconditional Love"
 
 title: "Unconditional Love"
