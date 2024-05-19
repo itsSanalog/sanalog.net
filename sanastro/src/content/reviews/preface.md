@@ -78,7 +78,7 @@ However, this can be mitigated with a simple HolyC script:
 #include <divine.connection>
 
 int main() {
-	char peeps[6] = {"God", "Allah", "Buddha", "Shiva", "Ra", "Odin"};
+	char peeps[6] = {"God", "?", "?", "?", "?", "?"};
 	int prayer = pray("%s\n", peeps[rand()%7]);
 	return getResponse(prayer);
 }
