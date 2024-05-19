@@ -22,13 +22,18 @@ const blogCollection = defineCollection({
 
 const reviewsCollection = defineCollection({
   type: 'content',
-  schema: z.object({
-    title: z.string(),
-    publicationDate: z.date(),
+  schema: ({ image }) => z.object({
+    cover: image().optional(),
+    coverAlt: z.string().optional(),
+
+    title: z.string(), // required
+    publicationDate: z.date().optional(),
+    sortOrder: z.number().optional(),
+
     scores: z.number().optional(),
     tiers: z.string().optional(),
     stars: z.number().optional(),
-    rating: z.number(),
+    rating: z.number().optional(),
   })
 });
 

@@ -523,6 +523,7 @@ kbd {
 pre {
   border-radius: 4px;
   padding: 1em;
+  font-family: var(--font-mono);
   font-size: 90%;
   border: 1px solid var(--color-ui-normal);
 }    

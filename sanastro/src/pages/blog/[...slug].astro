@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 
 // 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props;
-const { Content, headings } = await entry.render();
+const { Content } = await entry.render();
 
 // JavaScript for date
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -28,7 +28,7 @@ if (entry.data.publicationDate) {
 }
 ---
 
-<BlogLayout id={ entry.id } { ...entry.data } { headings }>
+<BlogLayout id={ entry.id } { ...entry.data }>
   { entry.data.banner && entry.data.bannerAlt && (
     <Image src={entry.data.banner} alt={entry.data.bannerAlt} />
   )}
