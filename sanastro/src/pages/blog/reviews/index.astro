@@ -44,26 +44,27 @@ const { Content } = await preface.render();
 ---
 
 <BlogLayout title="Reviews">
-  <p class="muted">quick links</p>
-  <!-- To use centerdot or | is a good UI question, as well as using &centerdot; over &xB7; for clarity -->
-  <a href="reviews/music"   class="plain mmr">music</a>&centerdot;
-  <a href="reviews/games"    class="plain mml mmr">games</a>&centerdot;
-  <a href="reviews/film"    class="plain mml mmr">film</a>&centerdot;
-  <a href="reviews/webtoon" class="plain mml mmr">webtoon</a>&centerdot;
-  <a href="reviews/tools"    class="plain mml">tools</a>
-  
-  <Content />
+  <content>
+    <p class="muted">quick links</p>
+    <!-- To use centerdot or | is a good UI question, as well as using &centerdot; over &xB7; for clarity -->
+    <a href="reviews/music"   class="plain mmr">music</a>&centerdot;
+    <a href="reviews/games"    class="plain mml mmr">games</a>&centerdot;
+    <a href="reviews/film"    class="plain mml mmr">film</a>&centerdot;
+    <a href="reviews/webtoon" class="plain mml mmr">webtoon</a>&centerdot;
+    <a href="reviews/tools"    class="plain mml">tools</a>
+    
+    <Content />
 
-  <Collapsible name="music">
-    {
-      musicReviews.map((review) => (
-        <a href={ `/blog/${ review.slug }` } class="plain">
-          <Image src={ review.data.cover } alt={ review.data.coverAlt } />
-          <h2 style="margin-top: 1rem;">{ review.data.title }</h2>
-          <p>{ review.data.rating }</p>
-        </a>
-      ))
-    }
-  </Collapsible>
-
+    <!-- <Collapsible name="music">
+      {
+        musicReviews.map((review) => (
+          <a href={ `/blog/${ review.slug }` } class="plain">
+            <Image src={ review.data.cover } alt={ review.data.coverAlt } />
+            <h2 style="margin-top: 1rem;">{ review.data.title }</h2>
+            <p>{ review.data.rating }</p>
+          </a>
+        ))
+      }
+    </Collapsible> -->
+  </content>
 </BlogLayout>

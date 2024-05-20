@@ -29,12 +29,14 @@ if (entry.data.publicationDate) {
 ---
 
 <BlogLayout id={ entry.id } { ...entry.data }>
-  { entry.data.banner && entry.data.bannerAlt && (
-    <Image src={entry.data.banner} alt={entry.data.bannerAlt} />
-  )}
-  <h1 style="margin-bottom: 0.1em;">{ entry.data.title }</h1>
-  <p class="muted" style="margin-top: 0;">{ entry.data.creationDate } { formattedDate } </p>
-  <p class="muted ms2" style="font-style: italic;">{ entry.data.description }</p>
-  <!------------------------------->
-  <Content />
+  <content>
+    { entry.data.banner && entry.data.bannerAlt && (
+      <Image src={entry.data.banner} alt={entry.data.bannerAlt} />
+    )}
+    <h1 style="margin-bottom: 0.1em;">{ entry.data.title }</h1>
+    <p class="muted" style="margin-top: 0;">{ entry.data.creationDate } { formattedDate } </p>
+    <p class="muted ms2" style="font-style: italic;">{ entry.data.description }</p>
+    <!------------------------------->
+    <Content />
+  </content>
 </BlogLayout>

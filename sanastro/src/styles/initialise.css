@@ -361,6 +361,26 @@ content .wide {
   margin-left: calc((Min(100vw, var(--wrap-wide)) - 100%)/-2);
 }
 
+content hr {
+  margin: 2em, 0;
+  display: block;
+  border: 0;
+  background: none;
+  text-align: center;
+  overflow: visible;
+}
+
+content hr:before {
+  content: '\2022\2022\2022';
+  display: inline-block;
+  font-size: calc(.8em + .2vw);
+  margin-left: 0.6em;
+  letter-spacing: 1.25em;
+  color: var(--color-tx-faint);
+  position: relative;
+  top: -0.75em;
+}
+
 .flex { display: flex }
 
 .align-center { align-items: center }
@@ -380,27 +400,6 @@ content .wide {
   max-width: var(--wrap-normal);
   margin-left: auto;
   margin-right: auto;
-}
-
-content hr {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  display: block;
-  border: 0;
-  background: none;
-  text-align: center;
-  overflow: visible;
-}
-
-content hr:before {
-  content: '\2022\2022\2022';
-  display: inline-block;
-  font-size: calc(.8em + .2vw);
-  margin-left: 0.6em;
-  letter-spacing: 1.25em;
-  color: var(--color-tx-faint);
-  position: relative;
-  top: -0.75em;
 }
 
 /* @media (max-width: 1000px) {
