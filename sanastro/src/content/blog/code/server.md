@@ -55,7 +55,7 @@ Samba is used to create a directory (folder) that will be shared on the network.
 2. Run `samba --version` to verify it’s installed.
 3. Run `cd` to go to the home directory (`/home/sanalog/`), then `mkdir sanalog-share`.
 4. Run `sudo nano /etc/samba/smb.conf`. Scroll all the way down and append the following line:
-    
+
     ```markdown
     [sanalog-share]
     	comment = Sanalog Samba Share
@@ -118,7 +118,7 @@ I planned to continue using a world that was running on a different server, so I
 
 Then, `spitgot.yml`, `paper.yml`, and `server.properties` were edited, before the following:
 
-1. Send the world folder to `/home/sanalog/sanalog-share/` from File Explorer by using the SMB share that was set up.
+1. Send the world folder to `/home/sanalog/sanalog-share/` from File Explorer by using the SMB share that was set up
 2. Delete mc-docker from `/home/sanalog/` by using `rmdir`.
 3. Move the world folder from the share folder to home directory by using `mv`.
     - You can rename it in one command, or use `mv` again to rename it to `mc-docker`.
@@ -136,8 +136,11 @@ Different OEMs have different interfaces for their router control panel. [portfo
 1. Access the router control panel. Mine was via `192.168.18.1`.
     - If there are multiple routers daisy chained like my home network is configured, the one connected to the Internet (i.e. the modem) is the one to be configured.
     - Find the WAN (aka public, aka external) IP address.
+
 2. Find `sanalog-server`. It should have the IP `192.168.18.44`.
+
 3. Change IP address allocation from DHCP to Static. This may be called DHCP Reservation or something similar.
+
 4. Forward ports `22`, `445`, and `25565` for `sanalog-server`. `25565` should use `TCP/UDP` while the rest can use `TCP`.
 
 Now, everything that has been previously set up should be accessible from a device that is not on the local network. You can test this by using the external IP address as a server address in Minecraft, logging in, then checking the Docker log by running `docker logs PGMC` from the terminal. The client's IP address should be the external IP address of the client device's network, and not its local IP address.
