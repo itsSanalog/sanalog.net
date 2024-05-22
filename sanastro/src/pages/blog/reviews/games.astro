@@ -1,0 +1,26 @@
+---
+import { getCollection, getEntry } from "astro:content";
+import { Image } from "astro:assets";
+import BlogLayout from "../../../layouts/BlogLayout.astro";
+
+const gameReviews = await getCollection("reviews", ({ id }) => {
+  return id.startsWith("games/");
+});
+gameReviews.sort((a, b) => {
+  return b.data.sortOrder - a.data.sortOrder;
+});
+---
+
+<BlogLayout title="Games">
+  <content>
+    {
+      gameReviews.map((review) => (
+      <a href={ `/blog/${ review.slug }` } class="plain">
+          <Image src={ review.data.cover } alt={ review.data.coverAlt } />
+          <h2 style="margin-top: 1rem;">{ review.data.title }</h2>
+          <p>{ review.data.rating }</p>
+      </a>
+      ))
+    }
+  </content>
+</BlogLayout>

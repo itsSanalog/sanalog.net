@@ -12,7 +12,8 @@ publicationDate: 2023-11-21
 sortOrder: 13
 ---
 
-fuck you groupmates and other people:
+editor's note: this was originally a discord message
+
 # The Spawl and Books and Lyrics (incohrenert)
 
 ### First IMPRESSION
@@ -92,7 +93,3 @@ Chasing what consumerism has always pointed to has failed her, since there is no
 ** the litterbox link expires in 12 hours so libgen it yourself if you ever come back to this hallucinatoric mess of a words
 
 In hindsight i should have linked books 1 2 3 to verse 1, title, and verse 2 by naming the headings as so for clarity but fuck it we ball
-
-<br><br><br>
-
-editor's note: this was originally a discord message

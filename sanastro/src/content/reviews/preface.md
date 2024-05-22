@@ -28,7 +28,7 @@ Yes.
 
 # The Media
 
-I plan to rate and review video games, music, films and shows, webtoons, and stationery. Each medium will have a different number of components, with a mix of scores and tiers. Every review will come with a writeup in addition to the ratings, to delve into my experience and justify some of the values I bestow upon it.
+I plan to rate and review video games, music, films and shows, webtoons, and stationery. Each medium will have a different number of components, with a mix of scores and tiers. Every review will come with a writeup in addition to the ratings, to delve into my experience and justify some of the values I bestow upon it. *<span class="muted">I'll try at least.</span>*
 
 Video games, films, and shows are what you’d expect normal people to have opinions on.
 
@@ -157,4 +157,4 @@ Scores used to be on a 1-5 scale, and 1 being the lowest, I thought it did not d
 
 <br>
 
-Last edited on May 20, 2024
+<span class="muted">last edited on May 20, 2024</span>

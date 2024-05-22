@@ -4,34 +4,6 @@ import { Image } from "astro:assets";
 import BlogLayout from "../../../layouts/BlogLayout.astro";
 import Collapsible from "../../../components/blog/Collapsible.astro";
 
-const musicReviews = await getCollection("reviews", ({ id }) => {
-  return id.startsWith("music/");
-});
-musicReviews.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
-});
-
-const gameReviews = await getCollection("reviews", ({ id }) => {
-  return id.startsWith("games/");
-});
-gameReviews.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
-});
-
-const filmReviews = await getCollection("reviews", ({ id }) => {
-  return id.startsWith("film/");
-});
-filmReviews.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
-});
-
-const mangaReviews = await getCollection("reviews", ({ id }) => {
-  return id.startsWith("manga-webtoons/");
-});
-mangaReviews.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
-});
-
 const toolReviews = await getCollection("reviews", ({ id }) => {
   return id.startsWith("tools/");
 });
@@ -47,11 +19,11 @@ const { Content } = await preface.render();
   <content>
     <p class="muted">quick links</p>
     <!-- To use centerdot or | is a good UI question, as well as using &centerdot; over &xB7; for clarity -->
-    <a href="reviews/music"   class="plain mmr">music</a>&centerdot;
-    <a href="reviews/games"    class="plain mml mmr">games</a>&centerdot;
-    <a href="reviews/film"    class="plain mml mmr">film</a>&centerdot;
-    <a href="reviews/webtoon" class="plain mml mmr">webtoon</a>&centerdot;
-    <a href="reviews/tools"    class="plain mml">tools</a>
+    <a href="/blog/reviews/music"   class="plain mmr">music</a>&centerdot;
+    <a href="/blog/reviews/games"    class="plain mml mmr">games</a>&centerdot;
+    <a href="/blog/reviews/film"    class="plain mml mmr">film</a>&centerdot;
+    <a href="/blog/reviews/webtoon" class="plain mml mmr">webtoon</a>&centerdot;
+    <a href="/blog/reviews/tools"    class="plain mml">tools</a>
     
     <Content />
 
