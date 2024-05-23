@@ -1,13 +1,14 @@
 ---
-# cover:
-# coverAlt:
+# imageLink:
+# imageAlt:
 
 title: Preface
+# artist:
+# releaseDate:
+
 publicationDate: 2023-05-23
 sortOrder: 1
 
-# scores: 
-# tiers:
 # stars:
 # rating:
 ---

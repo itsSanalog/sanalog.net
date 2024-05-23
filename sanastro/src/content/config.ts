@@ -13,8 +13,9 @@ const blogCollection = defineCollection({
     title: z.string(),  // required
     description: z.string().optional(),
     author: z.string().optional().default('Sanalog'),
-    publicationDate: z.date().optional(),
     creationDate: z.string().optional(),
+
+    publicationDate: z.date().optional(),
     sortOrder: z.number().optional(),
     // "slug" is a special, reserved property name that is not allowed in custom collection schema
   }),
@@ -22,16 +23,17 @@ const blogCollection = defineCollection({
 
 const reviewsCollection = defineCollection({
   type: 'content',
-  schema: ({ image }) => z.object({
-    cover: image().optional(),
-    coverAlt: z.string().optional(),
+  schema: z.object({
+    imageLink: z.string().optional(),
+    imageAlt: z.string().optional(),
 
     title: z.string(), // required
+    artist: z.string().optional(),
+    releaseDate: z.date().optional(),
+
     publicationDate: z.date().optional(),
     sortOrder: z.number().optional(),
-
-    scores: z.number().optional(),
-    tiers: z.string().optional(),
+    
     stars: z.number().optional(),
     rating: z.number().optional(),
   })

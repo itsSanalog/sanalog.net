@@ -12,7 +12,7 @@ title: "Tools"
 sortOrder: 1
 ---
 
-# I use things
+# i use things
 
 *<span class="muted">..whether i like them or not.</span>*
 
@@ -32,7 +32,7 @@ It took over four months the twenty-seventh iteration of a parts list before my 
 CPU  | [AMD Ryzen 5 3600](https://pcpartpicker.com/product/9nm323/amd-ryzen-5-3600-36-thz-6-core-processor-100-100000031box) 
 Mobo | [MSI B450I](https://pcpartpicker.com/product/qK6qqs/msi-b450i-gaming-plus-max-wifi-mini-itx-am4-motherboard-b450i-gaming-plus-max-wifi)
 RAM  | [ADATA 16 GB DDR4-3200 CL16](https://pcpartpicker.com/product/qqjBD3/adata-xpg-spectrix-d50-16-gb-2-x-8-gb-ddr4-3200-cl16-memory-ax4u32008g16a-dw50)
-SSD  | [Crucial 500 GB M.2 PCIe 4.0 X4 NVME](https://pcpartpicker.com/product/LDfxFT/crucial-t500-500-gb-m2-2280-pcie-40-x4-nvme-solid-state-drive-ct500t500ssd8)
+SSD  | [Crucial 500 GB M.2 PCIe 4.0 X4 NVMe](https://pcpartpicker.com/product/LDfxFT/crucial-t500-500-gb-m2-2280-pcie-40-x4-nvme-solid-state-drive-ct500t500ssd8)
 GPU  | [Zotac GTX 1660 SUPER 6 GB](https://pcpartpicker.com/product/sFZzK8/zotac-geforce-gtx-1660-super-6-gb-gaming-amp-video-card-zt-t16620d-10m)
 PSU  | Forgot
 Case | [NZXT H210i](https://pcpartpicker.com/product/2XH8TW/nzxt-h210i-mini-itx-tower-case-ca-h210i-w1)
@@ -52,6 +52,15 @@ Controller        | 8BitDo Ultimate
 The ASUS S5602ZA is my primary laptop for all boring and on-the-go tasks. Coming into university, I was adamant that my first laptop from 2015 would suffice. I was wrong, and bought this one within a month of school starting.
 
 It was purchased in 2022 through a Korean retailer, as they come with Hangul legends and without Windows, saving me extra. For ₩1,050,000 (~770 USD) I was able to get a 12700H and a 4K OLED screen, with solid build quality and a decent keyboard. With such value you'd expect me to love it, but I'll never forgive it for replacing my previous laptop.
+
+| Specs | |
+|:---|:---|
+CPU  | Intel i7-12700H
+RAM  | 16 GB DDR4 (8 GB soldered + 8 GB SODIMM)
+SSD  | 512 GB M.2 PCIe 4.0 NVMe 
+Display | 16.0 inch 3840×2400 (16:10!) 60 Hz OLED, 600-nit HDR
+Battery | 70 Wh which doesn't last long in 4K
+I/O | 2x USB-A, 2x Thunderbolt 4, HDMI 2.1,  3.5 mm. Very good.
 
 ## sanalog-server (home server)
 

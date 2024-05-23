@@ -7,20 +7,51 @@ const musicReviews = await getCollection("reviews", ({ id }) => {
   return id.startsWith("music/");
 });
 musicReviews.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
+  return (b.data.sortOrder ?? 0) - (a.data.sortOrder ?? 0);
 });
+
 ---
 
 <BlogLayout title="Music">
   <content>
-    {
-      musicReviews.map((review) => (
-      <a href={ `/blog/${ review.slug }` } class="plain">
-          <Image src={ review.data.cover } alt={ review.data.coverAlt } />
-          <h2 style="margin-top: 1rem;">{ review.data.title }</h2>
-          <p>{ review.data.rating }</p>
-      </a>
-      ))
-    }
+    <h1>music</h1>
+    <table>
+      { musicReviews.map((review) => {
+          // take year from releaseDate
+          const year = new Date(review.data.releaseDate ?? '').getFullYear();
+          return(
+          <tr>
+            <td class="column-image">
+              <a href={ `/blog/reviews/${ review.slug }` }>
+                <img src={ review.data.imageLink } alt={ review.data.imageAlt } />
+              </a>
+            </td>
+            <td>
+              <a href={ `/blog/reviews/${ review.slug }` } class="plain">{ review.data.title }</a>
+              <br />
+              <span class="muted">{ review.data.artist } &centerdot; { year }</span>
+            </td>
+            <td>{ review.data.publicationDate?.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric'}) }</td>
+            <td>{ review.data.rating }</td>
+          </tr>
+      )}) }
+    </table>
   </content>
 </BlogLayout>
+
+<style>
+  .column-image {
+    width: 4em;
+  }
+
+  .column-image img {
+    border-radius: 0;
+    /* transition: border-width 50ms; */
+  }
+
+  .column-image img:hover {
+    border-style: solid;
+    border: 1px solid transparent;
+
+  }
+</style>

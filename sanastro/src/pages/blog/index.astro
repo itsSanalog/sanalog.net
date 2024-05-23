@@ -8,21 +8,21 @@ const codeEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("code/");
 });
 codeEntries.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
+  return (b.data.sortOrder ?? 0) - (a.data.sortOrder ?? 0);
 });
 
 const workEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("work/");
 });
 workEntries.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
+  return (b.data.sortOrder ?? 0) - (a.data.sortOrder ?? 0);
 });
 
 const talkEntries = await getCollection("blog", ({ id }) => {
   return id.startsWith("talk/");
 });
 talkEntries.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
+  return (b.data.sortOrder ?? 0) - (a.data.sortOrder ?? 0);
 });
 
 const featuredEntry = await getEntry("blog", "talk/cold-game");
@@ -35,7 +35,7 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
       <h2 style="margin-bottom: 1rem;">{ featuredEntry.data.title }</h2>
       <div class="small muted pb">
         <time datetime={ featuredEntry.data.publicationDate }>
-          { featuredEntry.data.publicationDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric'}) }
+          { featuredEntry.data.publicationDate?.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric'}) }
         </time>
       </div>
       <div class="small muted">
@@ -46,38 +46,34 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
     <hr class="mn2 ms2">
 
     <Collapsible name="code( );">
-      {
-        codeEntries.map((entry) => ( //doc: https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
+      { codeEntries.map((entry) => ( //doc: https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
           <a href={ `/blog/${ entry.slug }` } class="plain">
             <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
             {/* use 'entry.data.cover.src' as src if using native <img> tag */}
             <h2 style="margin-top: 1rem;">{ entry.data.title }</h2>
             <p>{ entry.data.description }</p>
           </a>
-        ))
-      }
+        )) }
     </Collapsible>
+
     <Collapsible name="work">
-      {
-        workEntries.map((entry) => (
+      { workEntries.map((entry) => (
           <a href={ `/blog/${ entry.slug }` } class="plain">
             <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
             <h2 style="margin-top: 1rem;">{ entry.data.title }</h2>
             <p>{ entry.data.description }</p>
           </a>
-        ))
-      }
+        )) }
     </Collapsible>
+    
     <Collapsible name="talk..">
-      {
-        talkEntries.map((entry) => (
+      { talkEntries.map((entry) => (
           <a href={ `/blog/${ entry.slug }` } class="plain">
             <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
             <h2 style="margin-top: 1rem;">{ entry.data.title }</h2>
             <p>{ entry.data.description }</p>
           </a>
-        ))
-      }
+        )) }
     </Collapsible>
 
     <div class="mn2">
