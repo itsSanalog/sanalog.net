@@ -1,6 +1,6 @@
 ---
 import { getCollection, getEntry } from "astro:content";
-import { Image } from "astro:assets";
+// import { Image } from "astro:assets";
 import BlogLayout from "../../../layouts/BlogLayout.astro";
 
 const musicReviews = await getCollection("reviews", ({ id }) => {
@@ -15,6 +15,12 @@ musicReviews.sort((a, b) => {
 <BlogLayout title="Music">
   <content>
     <h1>music</h1>
+    <select id="sortCriteria">
+      <option value="sortOrder">Sort Order</option>
+      <option value="releaseDate">Release Date</option>
+      <option value="artistName">Artist Name</option>
+    </select>
+    
     <table>
       { musicReviews.map((review) => {
           // take year from releaseDate
@@ -31,7 +37,7 @@ musicReviews.sort((a, b) => {
               <br />
               <span class="muted">{ review.data.artist } &centerdot; { year }</span>
             </td>
-            <td>{ review.data.publicationDate?.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric'}) }</td>
+            <td><span class="muted">{ review.data.publicationDate?.toLocaleDateString('ko-KR') }</span></td>
             <td>{ review.data.rating }</td>
           </tr>
       )}) }
