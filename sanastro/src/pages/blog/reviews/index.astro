@@ -1,15 +1,7 @@
 ---
 import { getCollection, getEntry } from "astro:content";
-import { Image } from "astro:assets";
+// import { Image } from "astro:assets";
 import BlogLayout from "../../../layouts/BlogLayout.astro";
-import Collapsible from "../../../components/blog/Collapsible.astro";
-
-const toolReviews = await getCollection("reviews", ({ id }) => {
-  return id.startsWith("tools/");
-});
-toolReviews.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
-});
 
 const preface = await getEntry("reviews", "preface");
 const { Content } = await preface.render();

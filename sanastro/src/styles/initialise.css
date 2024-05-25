@@ -648,6 +648,19 @@ td img {
 
 
 
+/* ---- FORMS etc. -----*/
+
+select{
+  background-color: var(--color-bg-primary);
+  color: var(--color-tx-normal);
+  border: 1px solid var(--color-ui-normal);
+  border-radius: var(--border-radius);
+}
+option{
+  color: var(--color-tx-normal);
+}
+
+
 /* ------- THEME -------*/
 
 #theme-toggle {

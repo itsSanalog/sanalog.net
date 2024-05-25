@@ -6,27 +6,35 @@ import BlogLayout from "../../../layouts/BlogLayout.astro";
 const musicReviews = await getCollection("reviews", ({ id }) => {
   return id.startsWith("music/");
 });
+// for initial (default) sorting.
 musicReviews.sort((a, b) => {
-  return (b.data.sortOrder ?? 0) - (a.data.sortOrder ?? 0);
+  return (b.data.rating ?? 0) - (a.data.rating ?? 0);
 });
-
 ---
 
 <BlogLayout title="Music">
   <content>
     <h1>music</h1>
-    <select id="sortCriteria">
-      <option value="sortOrder">Sort Order</option>
-      <option value="releaseDate">Release Date</option>
-      <option value="artistName">Artist Name</option>
+    <span class="muted">Sort by: </span>
+    <select id="sortCriteria" class="mt ms1">
+      <option value="rating">Rating</option>
+      <option value="albumTitle">Album title</option>
+      <option value="artistName">Artist name</option>
+      <option value="releaseDate">Release date</option>
+      <option value="publicationDate">Publication date</option>
     </select>
     
-    <table>
+    <table id="reviewsContainer">
       { musicReviews.map((review) => {
           // take year from releaseDate
           const year = new Date(review.data.releaseDate ?? '').getFullYear();
           return(
-          <tr>
+          <tr />
+          <tr data-rating={ review.data.rating }
+              data-album-title={ review.data.title }
+              data-artist-name={ review.data.artist }
+              data-release-date={ review.data.releaseDate }
+              data-publication-date={ review.data.publicationDate }>
             <td class="column-image">
               <a href={ `/blog/reviews/${ review.slug }` }>
                 <img src={ review.data.imageLink } alt={ review.data.imageAlt } />
@@ -60,4 +68,51 @@ musicReviews.sort((a, b) => {
     border: 1px solid transparent;
 
   }
+  
 </style>
+
+
+<script>
+  function sortReviews() {
+    const sortCriteria = document.getElementById('sortCriteria').value;
+    const table = document.getElementById('reviewsContainer');
+    const rows = Array.from(table.getElementsByTagName('tr'));
+
+    rows.sort((a, b) => {
+      let aVal, bVal;
+      switch (sortCriteria) {
+        // For case 'fooBar', `x.dataset.fooBar` in js means `data-foo-bar` in html.
+        case 'rating':
+          aVal = parseFloat(a.dataset.rating) || 0;
+          bVal = parseFloat(b.dataset.rating) || 0;
+          return bVal - aVal;
+        case 'albumTitle':
+          aVal = a.dataset.albumTitle || '';
+          bVal = b.dataset.albumTitle || '';
+          return aVal.localeCompare(bVal);
+        case 'artistName':
+          aVal = a.dataset.artistName || '';
+          bVal = b.dataset.artistName || '';
+          return aVal.localeCompare(bVal);
+        case 'releaseDate':
+          aVal = new Date(a.dataset.releaseDate) || new Date(0);
+          bVal = new Date(b.dataset.releaseDate) || new Date(0);
+          return bVal - aVal;
+        case 'publicationDate':
+          aVal = new Date(a.dataset.publicationDate) || new Date(0);
+          bVal = new Date(b.dataset.publicationDate) || new Date(0);
+          return bVal - aVal;
+      }
+    });
+
+    // remove existing rows
+    while (table.firstChild) {
+      table.removeChild(table.firstChild);
+    }
+
+    // append sorted rows
+    rows.forEach(row => table.appendChild(row));
+  }
+
+  document.getElementById('sortCriteria').addEventListener('change', sortReviews);
+</script>
