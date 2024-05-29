@@ -6,7 +6,7 @@ title: Weezer (Blue Album)
 artist: Weezer
 releaseDate: 1994-05-10
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:

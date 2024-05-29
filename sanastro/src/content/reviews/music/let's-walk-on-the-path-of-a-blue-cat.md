@@ -6,7 +6,7 @@ title: Let’s Walk on the Path of a Blue Cat
 artist: Parannoul
 releaseDate: 2020-01-17
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:

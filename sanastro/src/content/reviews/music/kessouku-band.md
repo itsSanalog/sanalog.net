@@ -6,7 +6,7 @@ title: 結束バンド
 artist: 結束バンド
 releaseDate: 2022-12-25
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:

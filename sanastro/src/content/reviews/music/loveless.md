@@ -6,7 +6,7 @@ title: Loveless
 artist: my bloody valentine
 releaseDate: 1991-11-04
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:

@@ -6,7 +6,7 @@ title: Maggot
 artist: Dazey and the Scouts
 releaseDate: 2017-02-14
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:

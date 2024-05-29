@@ -6,7 +6,7 @@ title: つまんね
 artist: 神聖かまってちゃん
 releaseDate: 2010-12-22
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:

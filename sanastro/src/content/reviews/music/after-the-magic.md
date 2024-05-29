@@ -6,7 +6,7 @@ title: After the Magic
 artist: Parannoul
 releaseDate: 2023-01-28
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:

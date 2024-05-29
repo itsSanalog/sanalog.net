@@ -6,7 +6,7 @@ title: かがやき
 artist: 高木正勝
 releaseDate: 2014-11-19
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:

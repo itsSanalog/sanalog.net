@@ -38,7 +38,7 @@ const releaseDateYear = new Date( entry.data.releaseDate ?? '').getFullYear();
         <h1 style="margin-top: 0.1em;">{ entry.data.title }</h1>
         <p class="muted mt0">{ formattedDate }</p>
       </div>
-      <div class="rating mmr">{ entry.data.rating }</div> 
+      <div class="rating mmr">{ entry.data.rating ?? '' }</div> 
     </div>
     <!------------------------------->
     <Content />

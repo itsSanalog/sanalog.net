@@ -6,7 +6,7 @@ title: 友だちを殺してまで。
 artist: 神聖かまってちゃん
 releaseDate: 2010-03-10
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:

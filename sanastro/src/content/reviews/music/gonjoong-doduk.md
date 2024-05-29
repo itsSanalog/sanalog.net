@@ -6,7 +6,7 @@ title: 공중도덕
 artist: 공중도둑 (Mid‐Air Thief)
 releaseDate: 2015-02-09
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:
