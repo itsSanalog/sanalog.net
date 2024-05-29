@@ -18,6 +18,8 @@ A general purpose home server was a personal goal of mine for a long time.
 
 The server was intended to be a headless Dell OptiPlex with a fourth-generation Intel i5 processor and 8 GB of RAM, but I decided to run it on my old laptop before making a purchase. I wanted to use this server only as a Network Attached Storage (NAS) device, as well as to host a Minecraft server, but ended up giving it extra QoL features.
 
+It runs Ubuntu Server 20.04 and CasaOS. Proxmox would be nice but CasaOS’ GUI is really useful for my family to toy with the server as well.
+
 # Walkthrough
 
 ### Disclaimer

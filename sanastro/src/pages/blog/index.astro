@@ -32,7 +32,7 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
   <div class="wrap">
     <p class="muted">Featured</p>
     <a href={ `/blog/${ featuredEntry.slug }` } class="plain">
-      <h2 style="margin-bottom: 1rem;">{ featuredEntry.data.title }</h2>
+      <h2 style="margin-bottom: 1rem; font-size: 1.5em">{ featuredEntry.data.title }</h2>
       <div class="small muted pb">
         <time datetime={ featuredEntry.data.publicationDate }>
           { featuredEntry.data.publicationDate?.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric'}) }

@@ -140,4 +140,6 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 - <a href="https://learn.microsoft.com/en-us/windows/powertoys/" target=_blank>PowerToys</a>. Also a must-have.
 
+<br>
+
 <span class="muted">last updated on May 20, 2024</span>

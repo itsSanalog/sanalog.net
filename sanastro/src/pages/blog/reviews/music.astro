@@ -27,7 +27,7 @@ musicReviews.sort((a, b) => {
     <table id="reviewsContainer">
       { musicReviews.map((review) => {
           // take year from releaseDate
-          const year = new Date(review.data.releaseDate ?? '').getFullYear();
+          const releaseDateYear = new Date(review.data.releaseDate ?? '').getFullYear();
           return(
           <tr />
           <tr data-rating={ review.data.rating }
@@ -43,7 +43,7 @@ musicReviews.sort((a, b) => {
             <td>
               <a href={ `/blog/reviews/${ review.slug }` } class="plain">{ review.data.title }</a>
               <br />
-              <span class="muted">{ review.data.artist } &centerdot; { year }</span>
+              <span class="muted">{ review.data.artist } &centerdot; { releaseDateYear }</span>
             </td>
             <td><span class="muted">{ review.data.publicationDate?.toLocaleDateString('ko-KR') }</span></td>
             <td>{ review.data.rating }</td>
@@ -66,7 +66,6 @@ musicReviews.sort((a, b) => {
   .column-image img:hover {
     border-style: solid;
     border: 1px solid transparent;
-
   }
   
 </style>

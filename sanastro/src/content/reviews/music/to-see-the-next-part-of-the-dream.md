@@ -10,7 +10,30 @@ publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:
-rating: 0
+rating: 92
 ---
 
-I have been listening to this album for a while now. It is a very good album
+
+A problem child from a troubled no-name artist, loved and hated by music nerds.
+
+# Tracks
+
+## Beautiful World
+
+## Excuse
+
+## Analog Sentimentalism
+
+## White Ceiling
+
+## To See the Next Part of the Dream
+
+## Age of Fluctuation
+
+## Youth Rebellion
+
+## Extra Story
+
+## Chicken
+
+## I Can Feel My Heart Touching You

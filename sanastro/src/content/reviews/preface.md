@@ -146,7 +146,7 @@ The overall rating should be used to compare multiple reviewed items with one an
 
 *Why are scores worth 10% less than tiers?*
 
-I use scores for value judgements, while tiers are generally reserved for objective evaluation. My personal opinion loses worth by virtue of it being mine.
+I use scores for value judgements, while tiers are generally reserved for objective evaluation. My personal opinion loses worth by virtue of it being mine.  	Should the number (`n`) of scores and tiers be different, scores will have 100% weightage, as well as a modified formula to obtain a more accurate average.
 
 *Why not use a multiplier of 91 each so you get a clean 100 max?*
 

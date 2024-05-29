@@ -3,7 +3,6 @@
 // very useful documentation. Also read Routing and Content Collection
 
 import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
 import BlogLayout from "../../../layouts/BlogLayout.astro";
 
 // 1. Generate a new path for every collection entry
@@ -26,17 +25,45 @@ let formattedDate = null;
 if (entry.data.publicationDate) {
   formattedDate = entry.data.publicationDate.toLocaleDateString('en-US', options);
 }
+
+const releaseDateYear = new Date( entry.data.releaseDate ?? '').getFullYear();
 ---
 
 <BlogLayout id={ entry.id } { ...entry.data }>
   <content>
-    { entry.data.banner && entry.data.bannerAlt && (
-      <Image src={entry.data.banner} alt={entry.data.bannerAlt} />
-    )}
-    <h1 style="margin-bottom: 0.1em;">{ entry.data.title }</h1>
-    <p class="muted" style="margin-top: 0;">{ entry.data.creationDate } { formattedDate } </p>
-    <p class="muted ms2" style="font-style: italic;">{ entry.data.description }</p>
+    <div class="flex align-center ms2" style="position: relative; background-color: var(--color-bg-secondary); z-index: -2;">
+      <img class="album-art mmr" src={ entry.data.imageLink } alt={ entry.data.imageAlt } />
+      <div class="mmr">
+        <h3 class="muted mb0">{ entry.data.artist } &centerdot; { releaseDateYear }</h3>
+        <h1 style="margin-top: 0.1em;">{ entry.data.title }</h1>
+        <p class="muted mt0">{ formattedDate }</p>
+      </div>
+      <div class="rating mmr">{ entry.data.rating }</div> 
+    </div>
     <!------------------------------->
     <Content />
   </content>
 </BlogLayout>
+
+<style>
+  .album-art {
+    width: 12em;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .rating {
+    position: absolute;
+    margin-top: auto;
+    right: 0;
+    user-select: none;
+    z-index: -1;
+    
+    color: var(--color-bg-primary);
+    /* color : var(--color-ui-normal); */
+    font-size: 18em; 
+    font-weight: bold;
+    font-family: var(--font-content);
+    letter-spacing: -0.04em;
+  }
+</style>
