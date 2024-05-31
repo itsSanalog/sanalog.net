@@ -11,8 +11,11 @@ sortOrder: 0
 
 # stars:
 rating: 92
----
 
+lastfmLink: https://www.last.fm/music/Parannoul/To+See+the+Next+Part+of+the+Dream
+ytmusicLink: https://music.youtube.com/playlist?list=OLAK5uy_kOqY_9vaez7SEKnmqwT4Hz52Ox5gu5lNc
+spotifyLink: https://open.spotify.com/album/0sLt9EsWnVZgJAO5Sp35YQ
+---
 
 A problem child from a troubled no-name artist, loved and hated by music nerds.
 

@@ -17,6 +17,7 @@ const blogCollection = defineCollection({
 
     publicationDate: z.date().optional(),
     sortOrder: z.number().optional(),
+
     // "slug" is a special, reserved property name that is not allowed in custom collection schema
   }),
 });
@@ -36,6 +37,11 @@ const reviewsCollection = defineCollection({
     
     stars: z.number().optional(),
     rating: z.number().optional(),
+
+    // music can have:
+    // lastfmLink: z.string().optional(),
+    // ytmusicLink: z.string().optional(),
+    // spotifyLink: z.string().optional(),
   })
 });
 

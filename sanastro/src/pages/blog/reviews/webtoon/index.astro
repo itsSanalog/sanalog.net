@@ -1,20 +1,20 @@
 ---
 import { getCollection, getEntry } from "astro:content";
 import { Image } from "astro:assets";
-import BlogLayout from "../../../layouts/BlogLayout.astro";
+import BlogLayout from "../../../../layouts/BlogLayout.astro";
 
-const toolReviews = await getCollection("reviews", ({ id }) => {
-  return id.startsWith("tools/");
+const webtoonReviews = await getCollection("reviews", ({ id }) => {
+  return id.startsWith("webtoon/");
 });
-toolReviews.sort((a, b) => {
+webtoonReviews.sort((a, b) => {
   return b.data.sortOrder - a.data.sortOrder;
 });
 ---
 
-<BlogLayout title="Tools">
+<BlogLayout title="Webtoon">
   <content>
     {
-      toolReviews.map((review) => (
+      webtoonReviews.map((review) => (
       <a href={ `/blog/${ review.slug }` } class="plain">
           <Image src={ review.data.cover } alt={ review.data.coverAlt } />
           <h2 style="margin-top: 1rem;">{ review.data.title }</h2>
