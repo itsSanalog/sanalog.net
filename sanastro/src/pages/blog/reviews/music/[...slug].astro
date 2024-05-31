@@ -7,10 +7,12 @@ import BlogLayout from "../../../../layouts/BlogLayout.astro";
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
-  // Get all entries from the reviews collection
-  const reviewEntries = await getCollection('reviews');
+  // Get all entries from the reviews collection, filter by directory
+  const reviewEntries = await getCollection("reviews", ({ id }) => {
+    return id.startsWith("music/");
+  });
   return reviewEntries.map((entry) => ({
-    // Remove the "music/" prefix from the slug. slice() isn't used for clarity
+    // Remove the "[directory]/" prefix from the slug. slice() isn't used for clarity
     params: { slug: entry.slug.replace(/^(music\/)/,"") },
     props: { entry },
   }));
@@ -32,7 +34,6 @@ const releaseDateYear = new Date( entry.data.releaseDate ?? '').getFullYear();
 
 <BlogLayout id={ entry.id } { ...entry.data }>
   <content>
-    This is the special file
     <div class="flex align-center ms2" style="position: relative; background-color: var(--color-bg-secondary); z-index: -2;">
       <img class="album-art mmr" src={ entry.data.imageLink } alt={ entry.data.imageAlt } />
       <div class="mmr">
