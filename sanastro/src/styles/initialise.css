@@ -513,7 +513,7 @@ kbd {
   background: var(--color-bg-secondary);
   padding: 0.1em 0.2em;
   border-radius: 4px;
-  font-size: 90%;
+  font-size: 85%;
 }    
 
 kbd {
