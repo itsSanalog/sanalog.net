@@ -9,8 +9,10 @@ description: ""
 # author:
 publicationDate: 2023-01-15
 # creationDate: "January 2023"
-sortOrder: 7
+sortOrder: 1
 ---
+
+note: this is very outdated, and my setup has become relatively sophisticated since, but im still a noob at this stuff
 
 # Goals
 

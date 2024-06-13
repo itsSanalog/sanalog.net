@@ -12,7 +12,7 @@ publicationDate: 2023-11-21
 sortOrder: 13
 ---
 
-editor's note: this was originally a discord message
+note: this was originally a discord message
 
 # The Spawl and Books and Lyrics (incohrenert)
 

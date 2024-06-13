@@ -20,5 +20,3 @@ sortOrder: 15
 
 [1](https://sacred-texts.com/bud/tib/psydead.htm)
 [2](https://blog.naver.com/bgwsnirwow/130156559022)
-
-
