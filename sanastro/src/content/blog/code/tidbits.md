@@ -12,6 +12,10 @@ publicationDate: 2024-05-22
 sortOrder: 3
 ---
 
+A collection of the dumbest, littlest things
+
+<br/>
+
 1. ### Last updated
 
 Should `last updated` be at the head of your content, or at the end? To those who revisit the page regularly for updates, the former would obviously be helpful, but it draws precious attention away from the title or header image.
