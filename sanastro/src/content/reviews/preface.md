@@ -33,7 +33,7 @@ I plan to rate and review video games, music, films and shows, webtoons, and sta
 
 Video games, films, and shows are what you’d expect normal people to have opinions on.
 
-Music almost did not make the cut due to it being almost entirely subjective and done to death by many, but it was a good opportunity to share some of the songs that I hold dear to my heart, and to shill my [Last.fm](https://www.last.fm/user/SanaBeats) profile.
+Music almost did not make the cut due to it being almost entirely subjective and done to death by many, but it was a good opportunity to share some of the songs that I hold dear to my heart, and to shill my <a href="https://www.last.fm/user/SanaBeats" target="_blank" class="extlink">Last.fm</a> profile.
 
 Webtoons will likely be nugatory to everybody. I will review Korean works written in Korean, hosted on a Korean platform, in whatever language I feel like. Some of the more popular works have been translated on the foreign version of Naver Webtoon, but the translation quality have generally been disappointing in my experience. Do not expect to see many entries as I have convinced myself that it is not worth the effort. Some Japanese manga might also make it in.
 

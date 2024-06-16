@@ -34,8 +34,8 @@ Each numbered steps are written in direct speech akin to that of a tutorial, but
 
 Ubuntu Server was chosen because the server was intended to be run headlessly, and Ubuntu has a large repository of support articles and forum posts. It is a good starting point for those who have only used distros where the user does not often interact with the terminal (in my case, this was Mint). A complete beginner to Linux might prefer a distro with a proper desktop environment.
 
-1. Go to the [Ubuntu Server](https://ubuntu.com/download/server) page and download the iso image.
-2. Create a boot drive using [Rufus](https://rufus.ie/en/), or through the context menu if you are on Linux.
+1. Go to the <a href="https://ubuntu.com/download/server" target="_blank" class="extlink">Ubuntu Server</a> page and download the iso image.
+2. Create a boot drive using <a href="https://rufus.ie/en/" target="_blank" class="extlink">Rufus</a>, or through the context menu if you are on Linux.
 3. Plug in the USB drive into the laptop.
 4. From the BIOS, select the USB drive as Boot Priority 1.
 5. Follow the steps on screen, but note the following:
@@ -75,7 +75,7 @@ At this point, the network drive can be added on any device on the local network
 
 ## IV. Docker setup
 
-[Docker](https://www.docker.com/) is pretty cool. It allows you to run applications as containers, that can be readily found online. If all goes well, adding features to our server should be as easy as installing apps from the app store. Docker will be used to set up the Minecraft server, as well as a VPN.
+<a href="https://www.docker.com/" target="_blank" class="extlink">Docker</a> is pretty cool. It allows you to run applications as containers, that can be readily found online. If all goes well, adding features to our server should be as easy as installing apps from the app store. Docker will be used to set up the Minecraft server, as well as a VPN.
 
 1. Run `docker --version` to verify that it’s installed.
 2. Run `docker ps`. This should throw an error.
@@ -87,7 +87,7 @@ At this point, the network drive can be added on any device on the local network
 
 1. Create a folder by going to home directory, then running `mkdir mc-docker`.
     - You can verify its creation by running `ls`.
-2. Now go to [marctv’s PaperMC container page](https://hub.docker.com/r/marctv/minecraft-papermc-server), and copy the quick start command. 
+2. Now go to <a href="https://hub.docker.com/r/marctv/minecraft-papermc-server" target="_blank" class="extlink">marctv’s PaperMC container page</a>, and copy the quick start command. 
 3. On your favourite text editor, edit the relevant fields, so that it looks something like:
     
     ```markdown
@@ -135,7 +135,7 @@ Every IP address used in the previous steps was a local IP address. In order to 
 
 SSH uses port `22`, while SMB uses `445`, and Minecraft `25565`. Ports used by these services have to be forwarded so that they work with the external IP. This is also done via changing router settings.
 
-Different OEMs have different interfaces for their router control panel. [portforward.com](http://portforward.com/) might be useful if some of the options seem to be missing or inaccessible.
+Different OEMs have different interfaces for their router control panel. <a href="http://portforward.com/" target="_blank" class="extlink">portforward.com</a> might be useful if some of the options seem to be missing or inaccessible.
 
 1. Access the router control panel. Mine was via `192.168.18.1`.
     - If there are multiple routers daisy chained like my home network is configured, the one connected to the Internet (i.e. the modem) is the one to be configured.

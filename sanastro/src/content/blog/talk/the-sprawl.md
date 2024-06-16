@@ -40,7 +40,7 @@ ok now consider the 'consumerism is killing us' interview from kim some years ba
 ###  LYRICS (i repeat this heading for dramatic effect with no other purpsoe)  \\\  1
 
 `verse 1: "[google it you fuck]"`<br>
-apparently kim gordon borrows from books a lot and this verse an extreme (ly good) example of that because it's literally [straight from one](https://en.wikipedia.org/wiki/The_Stars_at_Noon#cite_note-9). Why does this matter? (it doesn't)
+apparently kim gordon borrows from books a lot and this verse an extreme (ly good) example of that because it's literally <a href="https://en.wikipedia.org/wiki/The_Stars_at_Noon#cite_note-9" target="_blank" class="extlink">straight from one</a>. Why does this matter? (it doesn't)
 - it's about some reporter who went to nicaragua to report (this isn't important)
 - but sike she's actually a hoe (whore (hoe)) because of unfortunate circumstances (we'll come back to this)
 
@@ -50,15 +50,15 @@ The Sprawl -> i tihnk it's fair to assume this refers to the northeast megapolis
 
 > Kim claims to have gotten the title off of a William Gibson novel entitled Mona Lisa Overdrive
 
-this is apparently a part of a trilogy called the sprawl trilogy [(primary source so you better trust this is real)](http://www.sonicyouth.com/mustang/sy/song73.html)
+this is apparently a part of a trilogy called the sprawl trilogy (<a href="http://www.sonicyouth.com/mustang/sy/song73.html" target="_blank" class="extlink">primary source so you better trust this is real</a>)
 
 ### idk anymore  \\\ 3
 
-if you are suicidal enough to read [the autobiography**](https://litter.catbox.moe/7a6ame.epub) which i didn't because i literally do not care, this mf just gives it to us when she mentions _Fiskadoro_ as an inspo for the song.
+if you are suicidal enough to read <a href="https://litter.catbox.moe/7a6ame.epub" target="_blank" class="extlink">the autobiography**</a> which i didn't because i literally do not care, this mf just gives it to us when she mentions _Fiskadoro_ as an inspo for the song.
 
 > In chapter 27 of her memoir, Gordon wrote that she had read one of Denis Johnson’s books titled Fiskadoro, a book that she described as “a haze-filled dream world of a novel about the survivors of nuclear fallout attempting to rebuild their lives and society.”
 
-source: [this rando](https://fromnovelstonotes.wordpress.com/tag/fiskadoro/)
+source: <a href="https://fromnovelstonotes.wordpress.com/tag/fiskadoro/" target="_blank" class="extlink">this rando</a>
 
 - uhhhh it's set 60 years after the fallout but it's still a post apo book i think
 

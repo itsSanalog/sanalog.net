@@ -94,7 +94,7 @@
 
   --color-highlight:      var(--flexoki-yellow-900);
   --color-action:         var(--flexoki-orange-400);
-  --color-selection:    rgba(100, 65, 30, 0.3);
+  --color-selection:    rgba(100, 65, 30, 0.4);
   
   --color-re:             var(--flexoki-red-400);
   --color-re-hover:       var(--flexoki-red-600);
@@ -127,7 +127,7 @@
 
   --color-highlight:      var(--flexoki-yellow-100);
   --color-action:         var(--flexoki-orange-600);
-  --color-selection:    rgba(220, 200, 180, 0.3);
+  --color-selection:    rgba(210, 135, 60, 0.2);
   
   --color-re:             var(--flexoki-red-600);
   --color-re-hover:       var(--flexoki-red-400);
@@ -480,13 +480,13 @@ a.muted {
   text-decoration: none;
 }
 
-/* .extlink {
-  background-image: url("/extlinkarrow.svg");
-  background-position: right 50%;
+.extlink {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_2' data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: rgb(135, 133, 128); stroke-width: 0px; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpath class='cls-1' d='M67.99,91.53L4.92,28.47C-5.11,18.44,1.12.85,15.28.03c.39-.02.78-.03,1.18-.03h60c11.05,0,20,8.95,20,20v60c0,.39-.01.79-.03,1.18-.82,14.16-18.4,20.39-28.43,10.36Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: right 10%;
   background-repeat: no-repeat;
-  background-size: 0.7em;
-  padding-right: 0.75em;
-} */
+  background-size: 0.55em;
+  padding-right: 0.7em;
+}
 
 
 

@@ -18,5 +18,5 @@ sortOrder: 15
 
 <br>
 
-[1](https://sacred-texts.com/bud/tib/psydead.htm)
-[2](https://blog.naver.com/bgwsnirwow/130156559022)
+<a href="https://sacred-texts.com/bud/tib/psydead.htm" target="_blank" class="">1</a>
+<a href="https://blog.naver.com/bgwsnirwow/130156559022" target="_blank" class="">2</a>

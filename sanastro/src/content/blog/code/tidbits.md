@@ -26,7 +26,7 @@ Should it be sentence case, lowercase, or title case?
 
 2. ### Quick links
 
-Should an interpunct (U+00B7) or a vertical bar (U+007C) be used as separators for [these links](http://localhost:4321/blog/reviews)?
+Should an interpunct (U+00B7) or a vertical bar (U+007C) be used as separators for [these links](/blog/reviews)?
 
 In code, should `&centerdot;` be used for clarity or is the conciseness of `&xB7;` more favourable?
 
@@ -38,7 +38,7 @@ In code, should `&centerdot;` be used for clarity or is the conciseness of `&xB7
 
 I don't have that many entries to warrant them.
 
-Side note: Is `Name (A-Z)` better than `Name (ascending)`? Perhaps `Name (alphabetical, ascending)`? What about `Number (High to Low)` compared to `Number: Descending`? Check this out http://contemporary-home-computing.org/turing-complete-user/ and decide for yourself.
+Side note: Is `Name (A-Z)` better than `Name (ascending)`? Perhaps `Name (alphabetical, ascending)`? What about `Number (High to Low)` compared to `Number: Descending`? Check this out: <a href="http://contemporary-home-computing.org/turing-complete-user/" target="_blank" class="extlink">contemporary-home-computing.org/turing-complete-user</a> and decide for yourself.
 
 4. ### Abbreviations
 

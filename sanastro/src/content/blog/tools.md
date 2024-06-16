@@ -29,19 +29,19 @@ It took over four months the twenty-seventh iteration of a parts list before my 
 
 | Specs | |
 |:---|:---|
-CPU  | <a href="https://pcpartpicker.com/product/9nm323/amd-ryzen-5-3600-36-thz-6-core-processor-100-100000031box" target="_blank">AMD Ryzen 5 3600</a>
-Mobo | <a href="https://pcpartpicker.com/product/qK6qqs/msi-b450i-gaming-plus-max-wifi-mini-itx-am4-motherboard-b450i-gaming-plus-max-wifi" target="_blank">MSI B450I</a> 
-RAM  | <a href="https://pcpartpicker.com/product/qqjBD3/adata-xpg-spectrix-d50-16-gb-2-x-8-gb-ddr4-3200-cl16-memory-ax4u32008g16a-dw50" target="_blank">ADATA 16 GB DDR4-3200 CL16</a>
-SSD  | <a href="https://pcpartpicker.com/product/LDfxFT/crucial-t500-500-gb-m2-2280-pcie-40-x4-nvme-solid-state-drive-ct500t500ssd8" target="_blank">Crucial 500 GB M.2 PCIe 4.0 NVMe</a>
-GPU  | <a href="https://pcpartpicker.com/product/sFZzK8/zotac-geforce-gtx-1660-super-6-gb-gaming-amp-video-card-zt-t16620d-10m" target="_blank">Zotac GTX 1660 SUPER 6 GB</a>
+CPU  | <a href="https://pcpartpicker.com/product/9nm323/amd-ryzen-5-3600-36-thz-6-core-processor-100-100000031box" target="_blank" class="extlink">AMD Ryzen 5 3600</a>
+Mobo | <a href="https://pcpartpicker.com/product/qK6qqs/msi-b450i-gaming-plus-max-wifi-mini-itx-am4-motherboard-b450i-gaming-plus-max-wifi" target="_blank" class="extlink">MSI B450I</a> 
+RAM  | <a href="https://pcpartpicker.com/product/qqjBD3/adata-xpg-spectrix-d50-16-gb-2-x-8-gb-ddr4-3200-cl16-memory-ax4u32008g16a-dw50" target="_blank" class="extlink">ADATA 16 GB DDR4-3200 CL16</a>
+SSD  | <a href="https://pcpartpicker.com/product/LDfxFT/crucial-t500-500-gb-m2-2280-pcie-40-x4-nvme-solid-state-drive-ct500t500ssd8" target="_blank" class="extlink">Crucial 500 GB M.2 PCIe 4.0 NVMe</a>
+GPU  | <a href="https://pcpartpicker.com/product/sFZzK8/zotac-geforce-gtx-1660-super-6-gb-gaming-amp-video-card-zt-t16620d-10m" target="_blank" class="extlink">Zotac GTX 1660 SUPER 6 GB</a>
 PSU  | Forgot
-Case | <a href="https://pcpartpicker.com/product/2XH8TW/nzxt-h210i-mini-itx-tower-case-ca-h210i-w1" target="_blank">NZXT H210i</a>
+Case | <a href="https://pcpartpicker.com/product/2XH8TW/nzxt-h210i-mini-itx-tower-case-ca-h210i-w1" target="_blank" class="extlink">NZXT H210i</a>
 
 <br>
 
 | Peripherals     |    |
 |:----------------|:---|
-Primary monitor   | <a href="https://www.rtings.com/monitor/reviews/acer/nitro-xv272u-kvbmiiprzx" target="_blank">Acer XV272U KV, 27 inch 1440p 170 Hz</a> &centerdot; I love this thing
+Primary monitor   | <a href="https://www.rtings.com/monitor/reviews/acer/nitro-xv272u-kvbmiiprzx" target="_blank" class="extlink">Acer XV272U KV, 27 inch 1440p 170 Hz</a> &centerdot; I love this thing
 Secondary monitor | Samsung 27 inch 1080p 60 Hz &centerdot; Broke on me and they gave me an upgrade for free.
 Keyboard          | Ducky One 2 SF &centerdot; One day I'll save enough for a custom.
 Mouse             | Razer Deathadder Elite &centerdot; Been with me for 10 years now!
@@ -93,52 +93,52 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 ## Utilities
 
-- <a href="https://github.com/shapoco/calctus" target="_blank">Calctus</a> is a calculator app with nifty tools that has be indispensably useful for me. It's very well made and quite intuitive to use. The UI is straightforward and the English is perfect despite it being made by a Japanese developer. Comes as a single .exe file at 1.62 MB, and I have it installed on every USB drive I own. Highly recommended.
+- <a href="https://github.com/shapoco/calctus" target="_blank" class="extlink">Calctus</a> is a calculator app with nifty tools that has be indispensably useful for me. It's very well made and quite intuitive to use. The UI is straightforward and the English is perfect despite it being made by a Japanese developer. Comes as a single .exe file at 1.62 MB, and I have it installed on every USB drive I own. Highly recommended.
 
-- <a href="https://100r.co/site/left_electron.html" target=_blank>Left (electron)</a> is a plaintext editor that's very pretty yet still functional. Unfortunately it comes as a large package as it's an Electron app.
+- <a href="https://100r.co/site/left_electron.html" target="_blank" class="extlink">Left (electron)</a> is a plaintext editor that's very pretty yet still functional. Unfortunately it comes as a large package as it's an Electron app.
 
-- <a href="https://aeriform.itch.io/tape" target=_blank>Tape</a>. Project management tool that's very simple and easy to use. I like it a lot.
+- <a href="https://aeriform.itch.io/tape" target="_blank" class="extlink">Tape</a>. Project management tool that's very simple and easy to use. I like it a lot.
 
-- <a href="https://www.notion.so/" target=_blank>Notion</a>. I use this for everything. It's very slow and bloated but I'm too deep in now.
+- <a href="https://www.notion.so/" target="_blank" class="extlink">Notion</a>. I use this for everything. It's very slow and bloated but I'm too deep in now.
 
-- <a href="http://www.uderzo.it/main_products/space_sniffer/" target=_blank>Spacesniffer</a> is a disk space treemap tool like many others, but I like this one for its UI and being portable.
+- <a href="http://www.uderzo.it/main_products/space_sniffer/" target="_blank" class="extlink">Spacesniffer</a> is a disk space treemap tool like many others, but I like this one for its UI and being portable.
 
-- <a href="https://www.wireshark.org/" target=_blank>Wireshark</a>
+- <a href="https://www.wireshark.org/" target="_blank" class="extlink">Wireshark</a>
 
-- <a href="https://bitwarden.com/" target=_blank>Bitwarden</a>. Password manager.
+- <a href="https://bitwarden.com/" target="_blank" class="extlink">Bitwarden</a>. Password manager.
 
-- <a href="https://www.7-zip.org/" target=_blank>7-Zip</a>
+- <a href="https://www.7-zip.org/" target="_blank" class="extlink">7-Zip</a>
 
-- <a href="https://handbrake.fr/" target=_blank>Handbrake</a>. Video transcoder.
+- <a href="https://handbrake.fr/" target="_blank" class="extlink">Handbrake</a>. Video transcoder.
 
 ## Development
 
 - Adobe Creative Cloud: I use Illustrator, Lightroom, Premiere Pro, and After Effects. They all suck.
 
-- <a href="https://www.clipstudio.net/en/" target=_blank>Clip Studio Paint</a>. Bloated and comes with useless cloud stuff, but solid core.
+- <a href="https://www.clipstudio.net/en/" target="_blank" class="extlink">Clip Studio Paint</a>. Bloated and comes with useless cloud stuff, but solid core.
 
-- <a href="https://oklch.com/" target=_blank>OKLCH Color Picker</a>
+- <a href="https://oklch.com/" target="_blank" class="extlink">OKLCH Color Picker</a>
 
 - Fusion 360. This also sucks. I recommend <a href="https://openscad.org/" target="_blank">OpenSCAD</a> or <a href="https://www.freecad.org/" target="_blank">FreeCAD</a> instead.
 
-- <a href="https://ephtracy.github.io/" target=_blank>MagicaVoxel</a>. Amazing voxel editor + animator + renderer that comes in at only 10 MB.
+- <a href="https://ephtracy.github.io/" target="_blank" class="extlink">MagicaVoxel</a>. Amazing voxel editor + animator + renderer that comes in at only 10 MB.
 
-- <a href="https://cadmapper.com/" target=_blank>Cadmapper</a>
+- <a href="https://cadmapper.com/" target="_blank" class="extlink">Cadmapper</a>
 
-- <a href="https://www.lexaloffle.com/pico-8.php" target=_blank>PICO-8</a> is a fantasy console that's fun to use.
+- <a href="https://www.lexaloffle.com/pico-8.php" target="_blank" class="extlink">PICO-8</a> is a fantasy console that's fun to use.
 
-- <a href="https://github.com/microsoft/vscode" target=_blank>VS Code</a>. I also use VScode for LaTeX using <a href="https://yihui.org/tinytex/" target="_blank">TinyTeX</a>.
+- <a href="https://github.com/microsoft/vscode" target="_blank" class="extlink">VS Code</a>. I also use VScode for LaTeX using <a href="https://yihui.org/tinytex/" target="_blank">TinyTeX</a>.
 
-- <a href="https://neovim.io/" target=_blank>Neovim</a>
+- <a href="https://neovim.io/" target="_blank" class="extlink">Neovim</a>
 
-- <a href="https://wandbox.org/" target=_blank>Wandbox</a> is a browser-based compiler that's very useful for quick tests.
+- <a href="https://wandbox.org/" target="_blank" class="extlink">Wandbox</a> is a browser-based compiler that's very useful for quick tests.
 
 
 ## Windows
 
-- <a href="https://github.com/valinet/ExplorerPatcher" target=_blank>ExplorerPatcher</a>. Pretty much a must-have for Windows 11.
+- <a href="https://github.com/valinet/ExplorerPatcher" target="_blank" class="extlink">ExplorerPatcher</a>. Pretty much a must-have for Windows 11.
 
-- <a href="https://learn.microsoft.com/en-us/windows/powertoys/" target=_blank>PowerToys</a>. Also a must-have.
+- <a href="https://learn.microsoft.com/en-us/windows/powertoys/" target="_blank" class="extlink">PowerToys</a>. Also a must-have.
 
 <br>
 
