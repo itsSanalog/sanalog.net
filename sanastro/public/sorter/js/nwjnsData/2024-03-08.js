@@ -23,7 +23,9 @@ dataSet[dataSetVersion].options = [
       { name: "우리의 밤은 당신의 낮보다 아름답다",
         key: "ost03", tooltip: "released Nov 24, 2023" }, // OST
       { name: "NJWMX",
-        key: "njwmx", tooltip: "released Dec 19, 2023" }  // Remix
+        key: "njwmx", tooltip: "released Dec 19, 2023" }, // Remix
+      { name: "How Sweet",
+        key: "sweet", tooltip: "released May 24, 2024" }  // Single
     ]
   },
 
@@ -295,6 +297,20 @@ dataSet[dataSetVersion].characterData = [
       remix: true,
       inst: true
     }
-  }
+  },
   //////////////////////////////
+  {
+    name: "How Sweet",
+    img: "LB8QV0M.png",
+    opts: {
+      album: ["sweet"]
+    }
+  },
+  {
+    name: "Bubble Gum",
+    img: "LB8QV0M.png",
+    opts: {
+      album: ["sweet"]
+    }
+  },
 ];

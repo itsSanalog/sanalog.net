@@ -85,7 +85,7 @@ The former makes intuitive sense at first glance but looking at multiple `index`
       <img src="https://ia801501.us.archive.org/29/items/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00-34442586705_thumb250.jpg" />
     </td>
     <td>
-        <a href="#miniscule" class="plain">Nebulous You</a>
+        <a class="plain">Nebulous You</a>
         <br />
         <span class="muted">Della Zyr &centerdot; 2022</span>
     </td>
@@ -97,7 +97,7 @@ The former makes intuitive sense at first glance but looking at multiple `index`
       <img src="https://ia801501.us.archive.org/29/items/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00-34442586705_thumb250.jpg" />
     </td>
     <td>
-        <a href="#miniscule" class="plain">Nebulous You</a>
+        <a class="plain">Nebulous You</a>
         <br />
         <span class="small">Della Zyr &centerdot; 2022</span>
     </td>
@@ -109,7 +109,7 @@ The former makes intuitive sense at first glance but looking at multiple `index`
       <img src="https://ia801501.us.archive.org/29/items/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00-34442586705_thumb250.jpg" />
     </td>
     <td>
-        <a href="#miniscule" class="plain">Nebulous You</a>
+        <a class="plain">Nebulous You</a>
         <br />
         <span class="small">Della Zyr &centerdot; </span><span class="small muted">2022</span>
     </td>
@@ -135,3 +135,11 @@ The former makes intuitive sense at first glance but looking at multiple `index`
 </style>
 
 **verdict:** muted (first option).
+
+8. ### External links
+
+<a class="extlink">External link indicator before punctuation</a>. Next sentence.
+
+<a class="extlink">External link indicator after punctuation.</a> Next sentence.
+
+**verdict:** <a class="extlink plain">before</a>.
