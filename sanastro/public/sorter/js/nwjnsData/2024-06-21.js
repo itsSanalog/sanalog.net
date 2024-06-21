@@ -1,4 +1,4 @@
-dataSetVersion = "2024-03-07"; // Change this when creating a new data set version. YYYY-MM-DD format.
+dataSetVersion = "2024-06-21"; // Change this when creating a new data set version. YYYY-MM-DD format.
 dataSet[dataSetVersion] = {};
 
 dataSet[dataSetVersion].options = [
@@ -25,7 +25,9 @@ dataSet[dataSetVersion].options = [
       { name: "NJWMX",
         key: "njwmx", tooltip: "released Dec 19, 2023" }, // Remix
       { name: "How Sweet",
-        key: "sweet", tooltip: "released May 24, 2024" }  // Single
+        key: "sweet", tooltip: "released May 24, 2024" }, // Single
+      { name: "Supernatural",
+        key: "super", tooltip: "released Jun 21, 2024" }  // Single
     ]
   },
 
@@ -311,6 +313,21 @@ dataSet[dataSetVersion].characterData = [
     img: "LB8QV0M.png",
     opts: {
       album: ["sweet"]
+    }
+  },
+  //////////////////////////////
+  {
+    name: "Supernatural",
+    img: "aguYyiv.png",
+    opts: {
+      album: ["super"]
+    }
+  },
+  {
+    name: "Right Now",
+    img: "aguYyiv.png",
+    opts: {
+      album: ["super"]
     }
   },
 ];

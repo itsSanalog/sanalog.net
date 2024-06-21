@@ -58,8 +58,8 @@ You grab the retro oracle and gives it a good shake.
 
 <style>
   .eightball {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-color: var(--flexoki-black);
     border: 4px solid var(--flexoki-paper);
     border-radius: 50%;
@@ -69,8 +69,8 @@ You grab the retro oracle and gives it a good shake.
     cursor: pointer;
   }
   .triangle {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,100 100,15 0,15" fill="rgb(0, 0, 204)" /></svg>');
     position: absolute;
     top: 50%;
@@ -81,9 +81,9 @@ You grab the retro oracle and gives it a good shake.
     color: var(--flexoki-paper);
     font-size: 0.9em;
     text-align: center;
-    width: 80px;
+    width: 100px;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -106,7 +106,7 @@ You grab the retro oracle and gives it a good shake.
     "Better not tell you<br>now",
     "Cannot predict<br>now",
     "Concentrate and ask again",
-    "Don't count on it",
+    "Don't count<br>on it",
     "My reply is no",
     "My sources say no",
     "Outlook<br>not so<br>good",
