@@ -41,7 +41,7 @@ Case | <a href="https://pcpartpicker.com/product/2XH8TW/nzxt-h210i-mini-itx-towe
 
 | Peripherals     |    |
 |:----------------|:---|
-Primary monitor   | <a href="https://www.rtings.com/monitor/reviews/acer/nitro-xv272u-kvbmiiprzx" target="_blank" class="extlink">Acer XV272U KV, 27 inch 1440p 170 Hz</a> &centerdot; I love this thing
+Primary monitor   | <a href="https://www.rtings.com/monitor/reviews/acer/nitro-xv272u-kvbmiiprzx" target="_blank" class="extlink">Acer XV272U KV, 27 inch 1440p 170 Hz</a> &centerdot; I love this thing.
 Secondary monitor | Samsung 27 inch 1080p 60 Hz &centerdot; Broke on me and they gave me an upgrade for free.
 Keyboard          | Ducky One 2 SF &centerdot; One day I'll save enough for a custom.
 Mouse             | Razer Deathadder Elite &centerdot; Been with me for 10 years now!
@@ -84,6 +84,7 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 - **Hitachi VC-6025 Oscilloscope** &centerdot; somehow very useful.
 - **Aiwa RX650 Cassette Player** &centerdot; fantastic little thing.
 - **Moondrop Chu 2** &centerdot; lifeline.
+- **Truthear Zero: Red** &centerdot; for uneasy listening.
 - **Nintendo Wii** &centerdot; homebrewed. Easily the best console to exist.
 - **Nintendo Switch** &centerdot; replaced the joysticks with hall effect ones.
 - **Ti-83 Plus** &centerdot; the better one.
@@ -95,7 +96,7 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 - <a href="https://github.com/shapoco/calctus" target="_blank" class="extlink">Calctus</a> is a calculator app with nifty tools that has be indispensably useful for me. It's very well made and quite intuitive to use. The UI is straightforward and the English is perfect despite it being made by a Japanese developer. Comes as a single .exe file at 1.62 MB, and I have it installed on every USB drive I own. Highly recommended.
 
-- <a href="https://100r.co/site/left_electron.html" target="_blank" class="extlink">Left (electron)</a> is a plaintext editor that's very pretty yet still functional. Unfortunately it comes as a large package as it's an Electron app.
+- <a href="https://100r.co/site/left_electron.html" target="_blank" class="extlink">Left (electron)</a> is a plaintext editor that's very pretty yet still functional. Unfortunately it comes in a large package as it's an Electron app.
 
 - <a href="https://aeriform.itch.io/tape" target="_blank" class="extlink">Tape</a>. Project management tool that's very simple and easy to use. I like it a lot.
 
@@ -105,9 +106,11 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 - <a href="https://www.wireshark.org/" target="_blank" class="extlink">Wireshark</a>
 
-- <a href="https://bitwarden.com/" target="_blank" class="extlink">Bitwarden</a>. Password manager.
+- <a href="https://bitwarden.com/" target="_blank" class="extlink">Bitwarden</a>. Password manager. You can self-host it.
 
 - <a href="https://www.7-zip.org/" target="_blank" class="extlink">7-Zip</a>
+
+- <a href="https://ffmpeg.org/" target="_blank" class="extlink">FFmpeg</a>
 
 - <a href="https://handbrake.fr/" target="_blank" class="extlink">Handbrake</a>. Video transcoder.
 
@@ -115,7 +118,7 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 - Adobe Creative Cloud: I use Illustrator, Lightroom, Premiere Pro, and After Effects. They all suck.
 
-- <a href="https://www.clipstudio.net/en/" target="_blank" class="extlink">Clip Studio Paint</a>. Bloated and comes with useless cloud stuff, but solid core.
+- Clip Studio Paint. Bloated and comes with useless cloud stuff, but solid core.
 
 - <a href="https://oklch.com/" target="_blank" class="extlink">OKLCH Color Picker</a>
 
@@ -127,7 +130,7 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 - <a href="https://www.lexaloffle.com/pico-8.php" target="_blank" class="extlink">PICO-8</a> is a fantasy console that's fun to use.
 
-- <a href="https://github.com/microsoft/vscode" target="_blank" class="extlink">VS Code</a>. I also use VScode for LaTeX using <a href="https://yihui.org/tinytex/" target="_blank">TinyTeX</a>.
+- <a href="https://github.com/microsoft/vscode" target="_blank" class="extlink">VS Code</a>. I also use VScode for LaTeX using <a href="https://yihui.org/tinytex/" target="_blank" class="extlink">TinyTeX</a>.
 
 - <a href="https://neovim.io/" target="_blank" class="extlink">Neovim</a>
 
@@ -142,4 +145,4 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 <br>
 
-<span class="muted">last updated on May 20, 2024</span>
+<span class="muted">last updated on Jun 22, 2024</span>
