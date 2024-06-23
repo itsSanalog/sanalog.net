@@ -1,6 +1,6 @@
 ---
 imageLink: "https://cdn.cloudflare.steamstatic.com/steam/apps/464060/library_600x900_2x.jpg"
-imageAlt: "Ruiner"
+imageAlt: "RUINER"
 
 title: RUINER
 artist: Reikon Games

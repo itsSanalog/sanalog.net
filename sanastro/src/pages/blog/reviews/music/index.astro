@@ -26,9 +26,9 @@ musicReviews.sort((a, b) => {
     
     <table id="reviewsContainer">
       { musicReviews.map((review) => {
-          // Take year from releaseDate
-          const releaseDateYear = new Date(review.data.releaseDate ?? '').getFullYear();
-          return(
+        // Take year from releaseDate
+        const releaseDateYear = new Date(review.data.releaseDate ?? '').getFullYear();
+        return(
           <tr />
           <tr data-rating={ review.data.rating }
               data-album-title={ review.data.title }

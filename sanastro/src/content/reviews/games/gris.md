@@ -1,8 +1,8 @@
 ---
 imageLink: "https://cdn.cloudflare.steamstatic.com/steam/apps/683320/library_600x900_2x.jpg"
-imageAlt: "Gris"
+imageAlt: "GRIS"
 
-title: Gris
+title: GRIS
 artist: Nomada Studio
 releaseDate: 2018-12-13
 
