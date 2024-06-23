@@ -1,12 +1,12 @@
 ---
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 // import { Image } from "astro:assets";
 import BlogLayout from "../../../../layouts/BlogLayout.astro";
 
 const musicReviews = await getCollection("reviews", ({ id }) => {
   return id.startsWith("music/");
 });
-// for initial (default) sorting.
+// For initial (default) sorting.
 musicReviews.sort((a, b) => {
   return (b.data.rating ?? 0) - (a.data.rating ?? 0);
 });
@@ -26,7 +26,7 @@ musicReviews.sort((a, b) => {
     
     <table id="reviewsContainer">
       { musicReviews.map((review) => {
-          // take year from releaseDate
+          // Take year from releaseDate
           const releaseDateYear = new Date(review.data.releaseDate ?? '').getFullYear();
           return(
           <tr />
@@ -67,7 +67,6 @@ musicReviews.sort((a, b) => {
     border-style: solid;
     border: 1px solid transparent;
   }
-  
 </style>
 
 
@@ -104,12 +103,12 @@ musicReviews.sort((a, b) => {
       }
     });
 
-    // remove existing rows
+    // Remove existing rows
     while (table.firstChild) {
       table.removeChild(table.firstChild);
     }
 
-    // append sorted rows
+    // Append sorted rows
     rows.forEach(row => table.appendChild(row));
   }
 
