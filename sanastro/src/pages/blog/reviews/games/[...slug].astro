@@ -6,11 +6,11 @@ import BlogLayout from "../../../../layouts/BlogLayout.astro";
 export async function getStaticPaths() {
   // Get all entries from the reviews collection, filter by directory
   const reviewEntries = await getCollection("reviews", ({ id }) => {
-    return id.startsWith("music/");
+    return id.startsWith("games/");
   });
   return reviewEntries.map((entry) => ({
     // Remove the "[directory]/" prefix from the slug. slice() isn't used for clarity
-    params: { slug: entry.slug.replace(/^(music\/)/,"") },
+    params: { slug: entry.slug.replace(/^(games\/)/,"") },
     props: { entry },
   }));
 }
@@ -47,8 +47,8 @@ const releaseDateYear = new Date( entry.data.releaseDate ?? '').getFullYear();
 
 <style>
   .album-art {
-    width: 12em;
-    height: auto;
+    width: auto;
+    height: 12em;
     border-radius: 0;
   }
 
