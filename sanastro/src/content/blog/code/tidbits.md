@@ -12,9 +12,9 @@ publicationDate: 2024-05-22
 sortOrder: 3
 ---
 
-A collection of the dumbest, littlest things.
+A collection of the dumbest, littlest things. In no particular order.
 
-<br/>
+<br>
 
 1. ### Last updated
 
@@ -22,11 +22,26 @@ Should `last updated` be at the head of your content, or at the end? To those wh
 
 Should it be sentence case, lowercase, or title case?
 
-**verdict:** at the feet, in lowercase.
+**verdict:** <a href="#lastupdate">at the feet</a>, in lowercase.
 
 2. ### Quick links
 
-Should an interpunct (U+00B7) or a vertical bar (U+007C) be used as separators for [these links](/blog/reviews)?
+Should an interpunct (U+00B7) or a vertical bar (U+007C) be used as separators for these [quick links](/blog/reviews)?
+
+<div class="flex justify-center mmb">
+  <a class="plain mmr">music</a>&centerdot;
+  <a class="plain mml mmr">games</a>&centerdot;
+  <a class="plain mml mmr">film</a>&centerdot;
+  <a class="plain mml mmr">webtoon</a>&centerdot;
+  <a class="plain mml">tools</a>
+</div>
+<div class="flex justify-center">
+  <a class="plain mmr">music</a>&VerticalLine;
+  <a class="plain mml mmr">games</a>&VerticalLine;
+  <a class="plain mml mmr">film</a>&VerticalLine;
+  <a class="plain mml mmr">webtoon</a>&VerticalLine;
+  <a class="plain mml">tools</a>
+</div>
 
 In code, should `&centerdot;` be used for clarity or is the conciseness of `&xB7;` more favourable?
 
@@ -55,14 +70,16 @@ Side note: Is `Name (A-Z)` better than `Name (ascending)`? Perhaps `Name (alphab
 **verdict:** abbreviated.
 
 5. ### slice
+
 ```js
 return reviewEntries.map((entry) => ({
-// Remove the "[directory]/" prefix from the slug. slice() isn't used for clarity
-params: { slug: entry.slug.replace(/^(music\/)/,"") },
-props: { entry },
+  // Removes "[directory]/" prefix from the slug. slice() isn't used for clarity
+  params: { slug: entry.slug.replace(/^(music\/)/,"") },
+  props: { entry },
 }));
 ```
-Regex sucks and `slice()` should be more performant, yet I went with regex in this case.
+
+Regex sucks to use and `slice()` should be more performant, yet I went with regex in this case. Ask yourself if you agree with me.
 
 6. ### File structure
 ```
@@ -77,7 +94,7 @@ Regex sucks and `slice()` should be more performant, yet I went with regex in th
 ```
 The former makes intuitive sense at first glance but looking at multiple `index` files in your editor can be annoying. Pick your poison.
 
-7. ### Does this matter
+7. ### Music table
 
 <table id="reviewsContainer">
   <tr>
@@ -143,3 +160,13 @@ The former makes intuitive sense at first glance but looking at multiple `index`
 <a class="extlink">External link indicator after punctuation.</a> Next sentence.
 
 **verdict:** <a class="extlink plain">before</a>.
+
+9. ### Mie density
+
+![Various render settings](../../../assets/blog/code/tidbits/compare.png)
+
+**verdict:** full lighting (first option).
+
+<br>
+
+<span id="lastupdate" class="muted">last updated on Jun 26, 2024</span>

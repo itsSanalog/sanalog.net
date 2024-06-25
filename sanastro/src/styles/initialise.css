@@ -395,6 +395,7 @@ content hr:before {
 
 .align-center { align-items: center }
 .align-baseline { align-items: baseline }
+.justify-center { justify-content: center }
 
 .flex-grow { flex-grow: 1 }
 .flex-shrink { flex-shrink: 1 }

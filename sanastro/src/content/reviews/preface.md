@@ -17,7 +17,7 @@ sortOrder: 1
 
 The obvious disclaimer is that all of the above reviews include some degree of personal opinion, from which subjectivity inevitably presents itself. Test environments come into play as well - the monitors I use to watch movies may not accurately depict the colour grading sequence the director intended. The monitors (the other kind) I use to listen to music deemphasise bass. Even humidity affects how ink flows on paper. Needless to say, this has minimal impact on the actual review and should rightly be dismissed as ‘nerd shit’, but still detailed below are some of the measures I have taken to try abate this ‘problem’, as well as full transparency behind the numbers, letters, and other gizmos that I will use frequently.
 
-More importantly, please recognise that my reviews are not meant to be read by people. These are not buyers’ guides, nor are they meant to be featured on rtings.com. A personal belief of mine is that reviews of media (take that as you will) are only relevant if the reviewer has the knowledge and ability to replicate, imitate, or otherwise create an entirely new product in the same category as the reviewed medium. Empathy alone is not enough to appreciate the processes behind creative endeavours, especially regarding personal or experimental content. Despite having dabbled in game development, music production, and drawing, I am not qualified to be a reviewer by my own standards.
+More importantly, please recognise that my reviews are not meant to be read by people. These are not buyers’ guides, nor are they meant to be featured on rtings.com. A personal belief of mine is that reviews of media (take that as you will) are only relevant if the reviewer has the knowledge and ability to replicate, imitate, or otherwise create an entirely new product in the same class of the reviewed medium. Empathy alone is not enough to fully appreciate the processes behind creative endeavours, especially regarding personal or experimental content. Despite having dabbled in game development, music production, and drawing, I am not qualified to be a reviewer by my own standards.
 
 *Then what the hell is this?*
 
@@ -69,24 +69,9 @@ Turning these abstract concepts into tangible structures and values is not too d
 
 An issue with this system is that I cannot make an impartial decision, instead being forced to take a stand. Using a scale of 1 to 5 would mean 3/5 = 60% would be considered ‘average’ position-wise, which is unintuitive. By introducing 0, we have ourselves 6 values, but no integer median.
 
-In fact, for a scale of a to b, the proportional value only aligns with the percentile (positional average) when a = 0 and b = 2n, such that there are 2n+1 values. However, even numbers below 10 feel awkward and 10 was too large for my taste.
+In fact, for a scale of a to b, the proportional value only aligns with the percentile (positional average) when a = 0 and b = 2n, such that there are 2n+1 steps. However, even numbers below 10 feel awkward and 10 was too large for my taste.
 
 Something like a Likert scale also encounters the same issue, where you run into a dilemma of whether your lowest rating should warrant a 0% or some positive value.
-
-However, this can be mitigated with a simple HolyC script:
-
-```c
-#include <divine.connection>
-
-int main() {
-	char peeps[6] = {"God", "?", "?", "?", "?", "?"};
-	int prayer = pray("%s\n", peeps[rand()%7]);
-	return getResponse(prayer);
-}
-```
-*<p class="muted">If it wasn't obvious, I have no idea how C works at all.</p>*
-
-<br>
 
 ## Scores (aka points)
 
@@ -132,7 +117,7 @@ The overall rating is calculated as below:
 
 For example, a pen with a perfect comfort score of 5, A-tier durability, and two value stars will get a rating of 91. A pencil with a comfort score of 3, B-tier durability and one value star will get 60, while a highlighter with a comfort score of 1, C-tier durability and no value stars will only deserve 19.
 
-A me would likely get a negative rating.
+I would likely get a negative rating.
 
 Note that this means scores and tiers are distributed to be 100%, 80%, 60%, 40%, 20%, and 0% rather than 100%, 75%, 50%, 25%, 0%. Again, 3 out of 5 and B-tiers should mean above average, so this is by design.
 
@@ -156,6 +141,6 @@ Integers.
 
 Scores used to be on a 1-5 scale, and 1 being the lowest, I thought it did not deserve to contribute to the overall rating. The penalty was essentially to force a 0, 2, 3, 4, 5 system (or S, A, B, C, F). This was rather unintuitive and was later changed, but I decided to keep the penalty regardless.
 
-<br>
+<!-- <br>
 
-<span class="muted">last edited on May 20, 2024</span>
+<span class="muted">last edited on May 20, 2024</span> -->
