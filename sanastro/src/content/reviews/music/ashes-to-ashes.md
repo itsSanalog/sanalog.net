@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia801701.us.archive.org/12/items/mbid-ca92f4e6-c3d9-45eb-9793-bdb6a668699f/mbid-ca92f4e6-c3d9-45eb-9793-bdb6a668699f-27621244051_thumb500.jpg"
+imageLink: "https://ia801701.us.archive.org/12/items/mbid-ca92f4e6-c3d9-45eb-9793-bdb6a668699f/mbid-ca92f4e6-c3d9-45eb-9793-bdb6a668699f-27621244051_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: Ashes to Ashes

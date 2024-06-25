@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia601000.us.archive.org/28/items/mbid-aaf9fb14-d3af-43d7-b6f3-882c520aa6f6/mbid-aaf9fb14-d3af-43d7-b6f3-882c520aa6f6-19535225900_thumb500.jpg"
+imageLink: "https://ia601000.us.archive.org/28/items/mbid-aaf9fb14-d3af-43d7-b6f3-882c520aa6f6/mbid-aaf9fb14-d3af-43d7-b6f3-882c520aa6f6-19535225900_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: Maggot

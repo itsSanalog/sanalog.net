@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia801304.us.archive.org/22/items/mbid-3cefa359-a572-4bc8-b7c3-e69a542bc5e2/mbid-3cefa359-a572-4bc8-b7c3-e69a542bc5e2-11186061534_thumb500.jpg"
+imageLink: "https://ia801304.us.archive.org/22/items/mbid-3cefa359-a572-4bc8-b7c3-e69a542bc5e2/mbid-3cefa359-a572-4bc8-b7c3-e69a542bc5e2-11186061534_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: "Velocity : Design : Comfort"

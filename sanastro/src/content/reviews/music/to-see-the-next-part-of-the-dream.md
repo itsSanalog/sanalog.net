@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia801802.us.archive.org/34/items/mbid-bb1a27fa-2a72-488e-94f8-a36b12e85343/mbid-bb1a27fa-2a72-488e-94f8-a36b12e85343-31430808324_thumb500.jpg"
+imageLink: "https://ia801802.us.archive.org/34/items/mbid-bb1a27fa-2a72-488e-94f8-a36b12e85343/mbid-bb1a27fa-2a72-488e-94f8-a36b12e85343-31430808324_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: To See the Next Part of the Dream

@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia802800.us.archive.org/14/items/mbid-a75a08c0-4e86-420f-9ae8-e01ffd19b702/mbid-a75a08c0-4e86-420f-9ae8-e01ffd19b702-21004022660_thumb500.jpg"
+imageLink: "https://ia802800.us.archive.org/14/items/mbid-a75a08c0-4e86-420f-9ae8-e01ffd19b702/mbid-a75a08c0-4e86-420f-9ae8-e01ffd19b702-21004022660_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: 공중도덕

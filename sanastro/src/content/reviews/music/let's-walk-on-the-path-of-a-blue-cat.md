@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia802801.us.archive.org/9/items/mbid-7fb140e2-5a4f-4d4b-bb47-c78895f8f2e9/mbid-7fb140e2-5a4f-4d4b-bb47-c78895f8f2e9-25217043594_thumb500.jpg"
+imageLink: "https://ia802801.us.archive.org/9/items/mbid-7fb140e2-5a4f-4d4b-bb47-c78895f8f2e9/mbid-7fb140e2-5a4f-4d4b-bb47-c78895f8f2e9-25217043594_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: Let’s Walk on the Path of a Blue Cat

@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia802209.us.archive.org/22/items/mbid-49567ff5-c097-4809-a8e1-ba73a35f0d22/mbid-49567ff5-c097-4809-a8e1-ba73a35f0d22-31647281846_thumb500.jpg"
+imageLink: "https://ia802209.us.archive.org/22/items/mbid-49567ff5-c097-4809-a8e1-ba73a35f0d22/mbid-49567ff5-c097-4809-a8e1-ba73a35f0d22-31647281846_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: her abiding memory

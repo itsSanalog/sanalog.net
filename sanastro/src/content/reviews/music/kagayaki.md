@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia803402.us.archive.org/25/items/mbid-eca400b7-1457-4534-b0a4-11c60e2abfae/mbid-eca400b7-1457-4534-b0a4-11c60e2abfae-28499914395_thumb500.jpg"
+imageLink: "https://ia803402.us.archive.org/25/items/mbid-eca400b7-1457-4534-b0a4-11c60e2abfae/mbid-eca400b7-1457-4534-b0a4-11c60e2abfae-28499914395_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: かがやき

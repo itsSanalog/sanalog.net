@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia800207.us.archive.org/22/items/mbid-c358fc17-b99f-4e84-a1ee-fd3ba931a0d5/mbid-c358fc17-b99f-4e84-a1ee-fd3ba931a0d5-38328991111_thumb500.jpg"
+imageLink: "https://ia800207.us.archive.org/22/items/mbid-c358fc17-b99f-4e84-a1ee-fd3ba931a0d5/mbid-c358fc17-b99f-4e84-a1ee-fd3ba931a0d5-38328991111_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: Power Andre 99

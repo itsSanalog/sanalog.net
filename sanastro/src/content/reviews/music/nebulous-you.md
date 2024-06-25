@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia801501.us.archive.org/29/items/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00-34442586705_thumb500.jpg"
+imageLink: "https://ia801501.us.archive.org/29/items/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00-34442586705_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: 모호함 속의 너 Nebulous You

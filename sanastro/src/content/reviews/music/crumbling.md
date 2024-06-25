@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia902802.us.archive.org/24/items/mbid-09971491-77c9-4a86-92ff-0c2d41a8377c/mbid-09971491-77c9-4a86-92ff-0c2d41a8377c-25050218252_thumb500.jpg"
+imageLink: "https://ia902802.us.archive.org/24/items/mbid-09971491-77c9-4a86-92ff-0c2d41a8377c/mbid-09971491-77c9-4a86-92ff-0c2d41a8377c-25050218252_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: 무너지기 (Crumbling)

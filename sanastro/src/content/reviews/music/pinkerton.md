@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia800206.us.archive.org/20/items/mbid-ea71991d-cf38-44fc-acc4-467eb94ed799/mbid-ea71991d-cf38-44fc-acc4-467eb94ed799-38221121992_thumb500.jpg"
+imageLink: "https://ia800206.us.archive.org/20/items/mbid-ea71991d-cf38-44fc-acc4-467eb94ed799/mbid-ea71991d-cf38-44fc-acc4-467eb94ed799-38221121992_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: Pinkerton

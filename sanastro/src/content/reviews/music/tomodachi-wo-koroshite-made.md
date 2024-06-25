@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia803204.us.archive.org/3/items/mbid-bfa1c56e-c137-46b8-ad1e-941163e53bf3/mbid-bfa1c56e-c137-46b8-ad1e-941163e53bf3-27492618213_thumb500.jpg"
+imageLink: "https://ia803204.us.archive.org/3/items/mbid-bfa1c56e-c137-46b8-ad1e-941163e53bf3/mbid-bfa1c56e-c137-46b8-ad1e-941163e53bf3-27492618213_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: 友だちを殺してまで。
