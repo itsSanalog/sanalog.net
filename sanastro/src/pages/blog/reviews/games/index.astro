@@ -12,6 +12,12 @@ gameReviews.sort((a, b) => {
 });
 ---
 
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
 <BlogLayout title="Games">
   <content>
     <h1>games of the video variety</h1>
@@ -41,7 +47,7 @@ gameReviews.sort((a, b) => {
 </BlogLayout>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap'); */ /* Typeface imported in Head because it doesn't precede other statements */
 
   .game-grid {
     display: grid;
@@ -83,7 +89,7 @@ gameReviews.sort((a, b) => {
     rotate: -5deg;
     margin-top: 1.4rem;
     margin-bottom: 0.5em;
-    font-family: "Kalam", cursive;
+    font-family: "Kalam", cursive; /* This typeface is only used in this page */
     font-weight: 400;
   }
 </style>
