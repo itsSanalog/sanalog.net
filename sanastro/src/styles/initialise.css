@@ -750,15 +750,3 @@ option{
   src: url('/fonts/FiraCode-Variable.ttf') format('truetype');
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'Dohyeon';
-  src: url('/fonts/DoHyeon-Regular.ttf') format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GothicA1';
-  src: url('/fonts/GothicA1-Black.ttf') format('truetype');
-  font-display: swap;
-}
