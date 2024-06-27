@@ -64,16 +64,12 @@
   --flexoki-red-400:     #D14D41;
   --flexoki-orange-600:  #BC5215;
   --flexoki-orange-400:  #DA702C;
-  --flexoki-yellow-900:  #4D3A0B;
   --flexoki-yellow-600:  #AD8301;
   --flexoki-yellow-400:  #D0A215;
-  --flexoki-yellow-100:  #FCEEB8;
   --flexoki-green-600:   #66800B;
   --flexoki-green-400:   #879A39;
-  --flexoki-cyan-950:    #142625;
   --flexoki-cyan-600:    #24837B;
   --flexoki-cyan-400:    #3AA99F;
-  --flexoki-cyan-50:     #EBF2E7;
   --flexoki-blue-600:    #205EA6;
   --flexoki-blue-400:    #4385BE;
   --flexoki-purple-600:  #5E409D;
@@ -92,7 +88,6 @@
   --color-tx-muted:       var(--flexoki-500);
   --color-tx-faint:       var(--flexoki-700);
 
-  --color-highlight:      var(--flexoki-yellow-900);
   --color-action:         var(--flexoki-orange-400);
   --color-selection:    rgba(100, 65, 30, 0.4);
   
@@ -125,7 +120,6 @@
   --color-tx-muted:       var(--flexoki-600);
   --color-tx-faint:       var(--flexoki-300);
 
-  --color-highlight:      var(--flexoki-yellow-100);
   --color-action:         var(--flexoki-orange-600);
   --color-selection:    rgba(210, 135, 60, 0.2);
   
