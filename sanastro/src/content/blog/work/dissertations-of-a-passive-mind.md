@@ -12,4 +12,4 @@ publicationDate: 2022-03-22
 sortOrder: 1
 ---
 
-<a href="/iruda/dissertations">connect here</a>.
+pseudorandom word vending machine. <a href="/iruda/dissertations">connect here</a>.

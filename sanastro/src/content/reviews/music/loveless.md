@@ -2,7 +2,7 @@
 imageLink: "https://ia802708.us.archive.org/10/items/mbid-b85a7189-f986-45f2-98d9-67e831e988c3/mbid-b85a7189-f986-45f2-98d9-67e831e988c3-36140396673_thumb250.jpg"
 imageAlt: "Album cover"
 
-title: Loveless
+title: loveless
 artist: my bloody valentine
 releaseDate: 1991-11-04
 
