@@ -1,0 +1,64 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<MainLayout title="About">
+  <div id="luxy" class="smoothscroll">
+    <div class="about_rich_text">
+      <h1>Who are you?</h1>
+      <a class="test">test</a>
+      <h2>// My Characteristics</h2>
+      <p>I am a jack of all trades, with specific experiences and expertise in virtually any sector, especially regarding creative mediums.</p>
+      <p>My work processes favour creativity and innovative approaches to tasks. This is accompanied by heavy, yet uncluttered documentation with a focus on presentation.</p>
+        <a href="/blog/main">You can find my showcase and blog posts here.</a>
+    </div>
+    <Footer />
+  </div>
+
+  <style>
+    .about_rich_text {
+      position: relative;
+      left: 25vw;
+      top: 2vh;
+      width: 37vw;
+    }
+  </style>
+
+  <!-- SMOOTH SCROLLING -->
+  <script slot="js" src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+  <script slot="js">
+  var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+  if (!isMobile) {
+      luxy.init({
+          wrapper: '#luxy',
+          wrapperSpeed: 0.1,
+      });
+  }
+  </script>
+</MainLayout>
+
+<script>
+  const list = shuffle([
+    'Hi',
+    '你好',
+    '안녕',
+  ])
+
+  let choice = 0;
+  const message = document.querySelector('.test')
+  function swap(){
+    choice = ++choice % list.length
+    message.innerText = list[choice]
+  }
+  swap()
+  setInterval(swap, 1000)
+
+  function shuffle(array){
+    for(let i=array.length-1; i>0; i--){
+      const j = Math.floor(Math.random() * i)
+      ;[array[i], array[j]] = [array[j], array[i]]
+    }
+    return array
+  }
+</script>
