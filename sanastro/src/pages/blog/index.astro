@@ -30,7 +30,7 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
 
 <BlogLayout title="sanaBlog">
   <div class="wrap">
-    <p class="muted">Featured</p>
+    <p class="muted">welcome to the blog with no blog posts. the featured item today is:</p>
     <a href={ `/blog/${ featuredEntry.slug }` } class="plain">
       <h2 style="margin-bottom: 1rem; font-size: 1.5em">{ featuredEntry.data.title }</h2>
       <div class="small muted pb">

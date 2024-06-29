@@ -1,26 +1,116 @@
 ---
-import { getCollection, getEntry } from "astro:content";
-import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+// import { Image } from "astro:assets";
 import BlogLayout from "../../../../layouts/BlogLayout.astro";
 
-const webtoonReviews = await getCollection("reviews", ({ id }) => {
+const toonReviews = await getCollection("reviews", ({ id }) => {
   return id.startsWith("webtoon/");
 });
-webtoonReviews.sort((a, b) => {
-  return b.data.sortOrder - a.data.sortOrder;
+// For initial (default) sorting.
+toonReviews.sort((a, b) => {
+  return (b.data.rating ?? 0) - (a.data.rating ?? 0);
 });
 ---
 
 <BlogLayout title="Webtoon">
   <content>
-    {
-      webtoonReviews.map((review) => (
-      <a href={ `/blog/${ review.slug }` } class="plain">
-          <Image src={ review.data.cover } alt={ review.data.coverAlt } />
-          <h2 style="margin-top: 1rem;">{ review.data.title }</h2>
-          <p>{ review.data.rating }</p>
-      </a>
-      ))
-    }
+    <h1>toons on the web</h1>
+    <span class="muted">Sort by: </span>
+    <select id="sortCriteria" class="mt ms1">
+      <option value="rating">Rating</option>
+      <option value="title">Title</option>
+      <option value="authorName">Author name</option>
+      <option value="releaseDate">Release date</option>
+      <option value="publicationDate">Publication date</option>
+    </select>
+    
+    <table id="reviewsContainer">
+      { toonReviews.map((review) => {
+        // Take year from releaseDate
+        const releaseDateYear = new Date(review.data.releaseDate ?? '').getFullYear();
+        return(
+          <tr />
+          <tr data-rating={ review.data.rating }
+              data-title={ review.data.title }
+              data-author-name={ review.data.artist }
+              data-release-date={ review.data.releaseDate }
+              data-publication-date={ review.data.publicationDate }>
+            <td class="column-image">
+              <a href={ `/blog/reviews/${ review.slug }` }>
+                <img src={ review.data.imageLink } alt={ review.data.imageAlt } />
+              </a>
+            </td>
+            <td>
+              <a href={ `/blog/reviews/${ review.slug }` } class="plain">{ review.data.title }</a>
+              <br />
+              <span class="muted">{ review.data.artist } &centerdot; { releaseDateYear }</span>
+            </td>
+            <td><span class="muted">{ review.data.publicationDate?.toLocaleDateString('ko-KR') }</span></td>
+            <td>{ review.data.rating }</td>
+          </tr>
+      )}) }
+    </table>
   </content>
 </BlogLayout>
+
+<style>
+  .column-image {
+    width: 7em;
+  }
+
+  .column-image img {
+    border-radius: 0;
+    /* transition: border-width 50ms; */
+  }
+
+  /* .column-image img:hover {
+    border-style: solid;
+    border: 1px solid transparent;
+  } */
+</style>
+
+
+<script>
+  function sortReviews() {
+    const sortCriteria = document.getElementById('sortCriteria').value;
+    const table = document.getElementById('reviewsContainer');
+    const rows = Array.from(table.getElementsByTagName('tr'));
+
+    rows.sort((a, b) => {
+      let aVal, bVal;
+      switch (sortCriteria) {
+        // For case 'fooBar', `x.dataset.fooBar` in js means `data-foo-bar` in html.
+        case 'rating':
+          aVal = parseFloat(a.dataset.rating) || 0;
+          bVal = parseFloat(b.dataset.rating) || 0;
+          return bVal - aVal;
+        case 'title':
+          aVal = a.dataset.title || '';
+          bVal = b.dataset.title || '';
+          return aVal.localeCompare(bVal);
+        case 'authorName':
+          aVal = a.dataset.authorName || '';
+          bVal = b.dataset.authorName || '';
+          return aVal.localeCompare(bVal);
+        case 'releaseDate':
+          aVal = new Date(a.dataset.releaseDate) || new Date(0);
+          bVal = new Date(b.dataset.releaseDate) || new Date(0);
+          return bVal - aVal;
+        case 'publicationDate':
+          aVal = new Date(a.dataset.publicationDate) || new Date(0);
+          bVal = new Date(b.dataset.publicationDate) || new Date(0);
+          return bVal - aVal;
+      }
+    });
+
+    // Remove existing rows
+    while (table.firstChild) {
+      table.removeChild(table.firstChild);
+    }
+
+    // Append sorted rows
+    rows.forEach(row => table.appendChild(row));
+  }
+
+  document.getElementById('sortCriteria').addEventListener('change', sortReviews);
+</script>

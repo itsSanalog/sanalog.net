@@ -42,6 +42,9 @@ const reviewsCollection = defineCollection({
     // lastfmLink: z.string().optional(),
     // ytmusicLink: z.string().optional(),
     // spotifyLink: z.string().optional(),
+
+    // webtoon can have:
+    // webtoonLink: z.string().optional(),
   })
 });
 
