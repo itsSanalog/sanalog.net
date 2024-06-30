@@ -30,7 +30,7 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
 
 <BlogLayout title="sanaBlog">
   <div class="wrap">
-    <p class="muted">welcome to the blog with no blog posts. the featured item today is:</p>
+    <p>sanaBlog is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">a blog that is not</a>. The featured item today is:</p>
     <a href={ `/blog/${ featuredEntry.slug }` } class="plain">
       <h2 style="margin-bottom: 1rem; font-size: 1.5em">{ featuredEntry.data.title }</h2>
       <div class="small muted pb">
@@ -79,9 +79,10 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
     <div class="mn2">
       <!-- <span class="muted mmr">permanent links:</span> -->
       <a href="/blog/reviews" class="blog-button mmr">reviews</a>
-      <a href="/blog/photos" class="blog-button mmr">photos</a>
+      <a href="/blog/gallery" class="blog-button mmr">gallery</a>
       <a href="/blog/tools" class="blog-button mmr">tools</a>
-      <a href="/blog/todo" class="blog-button">to-do</a>
+      <a href="/blog/todo" class="blog-button mmr">to-do</a>
+      <a href="/blog/links" class="blog-button">links</a>
     </div>
 
   </div>
