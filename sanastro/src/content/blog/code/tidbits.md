@@ -167,6 +167,20 @@ The former makes intuitive sense at first glance but looking at multiple `index`
 
 **verdict:** full lighting (first option).
 
+10. ### Intro
+
+It was difficult choosing between these three:
+
+1. <p>Welcome to <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">my blog that is not</a>.
+
+2. <p>This is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">my blog that is not</a>.
+
+3. <p>sanaBlog is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">a blog that is not</a>.
+
+While the differences look (and arguably, are) insignificant, I still struggled over this as it was one of the first thing a newcomer would read on my site, as well as it being a defining headline that ultimately dictates if they are welcome or not.
+
+**verdict:** 3, though I might opt for it to be random.
+
 <br>
 
 <span id="lastupdate" class="muted">last updated on Jun 26, 2024</span>
