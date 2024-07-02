@@ -16,7 +16,7 @@ A collection of the dumbest, littlest things. In no particular order.
 
 <br>
 
-1. ### Last updated
+1. ### last updated
 
 Should `last updated` be at the head of your content, or at the end? To those who revisit the page regularly for updates, the former would obviously be helpful, but it draws precious attention away from the title or header image.
 
@@ -24,7 +24,7 @@ Should it be sentence case, lowercase, or title case?
 
 **verdict:** <a href="#lastupdate">at the feet</a>, in lowercase.
 
-2. ### Quick links
+2. ### quick links
 
 Should an interpunct (U+00B7) or a vertical bar (U+007C) be used as separators for these [quick links](/blog/reviews)?
 
@@ -47,7 +47,7 @@ In code, should `&centerdot;` be used for clarity or is the conciseness of `&xB7
 
 **verdict:** `&centerdot;`.
 
-3. ### Ascending
+3. ### ascending
 
 *Why don't you provide ascending or descending sort options?* (aka: should i?)
 
@@ -55,7 +55,7 @@ I don't have that many entries to warrant them.
 
 Side note: Is `Name (A-Z)` better than `Name (ascending)`? Perhaps `Name (alphabetical, ascending)`? What about `Number (High to Low)` compared to `Number: Descending`? Check this out: <a href="http://contemporary-home-computing.org/turing-complete-user/" target="_blank" class="extlink">contemporary-home-computing.org/turing-complete-user</a> and decide for yourself.
 
-4. ### Abbreviations
+4. ### abbreviations
 
 |||
 |:-----|:---|
@@ -81,7 +81,7 @@ return reviewEntries.map((entry) => ({
 
 Regex sucks to use and `slice()` should be more performant, yet I went with regex in this case. Ask yourself if you agree with me.
 
-6. ### File structure
+6. ### file structure
 ```
 📂parent                            📂parent
  ├─📂foo                             ├─📂foo
@@ -94,7 +94,7 @@ Regex sucks to use and `slice()` should be more performant, yet I went with rege
 ```
 The former makes intuitive sense at first glance but looking at multiple `index` files in your editor can be annoying. Pick your poison.
 
-7. ### Music table
+7. ### music table
 
 <table id="reviewsContainer">
   <tr>
@@ -153,7 +153,7 @@ The former makes intuitive sense at first glance but looking at multiple `index`
 
 **verdict:** muted (first option).
 
-8. ### External links
+8. ### external links
 
 <a class="extlink">External link indicator before punctuation</a>. Next sentence.
 
@@ -161,25 +161,48 @@ The former makes intuitive sense at first glance but looking at multiple `index`
 
 **verdict:** <a class="extlink plain">before</a>.
 
-9. ### Mie density
+9. ### mie density
 
 ![Various render settings](../../../assets/blog/code/tidbits/compare.png)
 
 **verdict:** full lighting (first option).
 
-10. ### Intro
+10. ### intro
 
 It was difficult choosing between these three:
 
-1. <p>Welcome to <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">my blog that is not</a>.
+1. Welcome to <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">my blog that is not</a>.
 
-2. <p>This is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">my blog that is not</a>.
+2. This is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">my blog that is not</a>.
 
-3. <p>sanaBlog is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">a blog that is not</a>.
+3. sanaBlog is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">a blog that is not</a>.
 
 While the differences look (and arguably, are) insignificant, I still struggled over this as it was one of the first thing a newcomer would read on my site, as well as it being a defining headline that ultimately dictates if they are welcome or not.
 
 **verdict:** 3, though I might opt for it to be random.
+
+11. ### vending machines
+
+<div class="wide">
+
+  ![Various image settings](../../../assets/blog/code/tidbits/spread.png)
+</div>
+<p class="small muted c">left to right: 250px B&W, 250px B/W/R, 400px B&W, 400px B/W/R</p>
+
+**verdict:** 250px B&W.
+
+12. ### capital letters
+
+rUle oF ThUMb for capitalisation:
+1. Sentences should be in sentence case. If a period is warranted, so is an initial capital.
+
+2. Buttons, links, and UI elements need not be capitalised, especially if they are `<muted>` or `<faint>`. Exceptions to this are common UI elements such as `Sort by:`, which should follow conventions for user familiarity.
+
+3. Page titles are free game. Stylised however I want.
+
+4. Unique headings should be capitalised. Headings for a list (like this one) need not be.
+
+5. **any of the above should be ignored and broken if deemed fit.**
 
 <br>
 
