@@ -28,14 +28,15 @@ While I dare categorise these entries, note that it's simply for convenience. Pl
 
 - <a href="https://100r.co/site/home.html" target="_blank" class="extlink">Hundred Rabbits</a>
 
-- <a href="https://maya.land/" target="_blank" class="extlink">maya.land</a>
-
-
-### Art (in a narrow sense)
-
 - <a href="https://moon-sun.xyz/" target="_blank" class="extlink">ROCKER</a>
 
+- <a href="https://maya.land/" target="_blank" class="extlink">maya.land</a>
+
 - <a href="https://sixey.es/" target="_blank" class="extlink">SIX_EYES</a>
+
+- <a href="https://vin.gg/" target="_blank" class="extlink">vin.gg</a>
+
+### Art (in a narrow sense)
 
 - <a href="https://nezu.world/" target="_blank" class="extlink">nezu.world</a>
 
