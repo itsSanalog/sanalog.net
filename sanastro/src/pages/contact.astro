@@ -84,23 +84,26 @@ import ContactGrid from "../components/ContactGrid.astro";
     </div>
     <Footer />
   </div>
+</MainLayout>
 
-  <style>
-    .contacts_grid {
-      margin-bottom: 150px;
-      display: grid;
-      column-gap: 20px;
-      row-gap: 20px;
-      grid-template-columns: 250px 250px 250px;
-      grid-template-rows: auto;
-    }
 
-    /* also check ContactGrid component for more CSS */
-  </style>
+<style>
+  .contacts_grid {
+    margin-bottom: 150px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: auto;
+  }
 
-  <!-- SMOOTH SCROLLING -->
-  <script slot="js" src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
-  <script slot="js">
+  /* also check ContactGrid component for more CSS */
+</style>
+
+
+<!-- SMOOTH SCROLLING -->
+<script slot="inlineJS" src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+<script>
   var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
   if (!isMobile) {
       luxy.init({
@@ -108,5 +111,4 @@ import ContactGrid from "../components/ContactGrid.astro";
           wrapperSpeed: 0.1,
       });
   }
-  </script>
-</MainLayout>
+</script>
