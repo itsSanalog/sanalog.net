@@ -196,7 +196,7 @@ While the differences look (and arguably, are) insignificant, I still struggled 
 rUle oF ThUMb for capitalisation:
 1. Sentences should be in sentence case. If a period is warranted, so is an initial capital.
 
-2. Buttons, links, and UI elements need not be capitalised, especially if they are `<muted>` or `<faint>`. Exceptions to this are common UI elements such as `Sort by:`, which should follow conventions for user familiarity.
+2. Buttons, links, and UI elements need not be capitalised, especially if they are `muted` or `faint`. Exceptions to this are common UI elements such as `Sort by:`, which should follow conventions for user familiarity.
 
 3. Page titles are free game. Stylised however I want.
 
@@ -206,4 +206,10 @@ rUle oF ThUMb for capitalisation:
 
 <br>
 
-<span id="lastupdate" class="muted">last updated on Jun 26, 2024</span>
+13. ### is an unlucky number
+
+**verdict:** maybe.
+
+<br>
+
+<span id="lastupdate" class="muted">last updated on Jul 2, 2024</span>
