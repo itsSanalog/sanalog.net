@@ -5,16 +5,12 @@ coverAlt: "tidbits"
 # bannerAlt: "tidbits"
 
 title: "tidbits"
-description: ""
+description: "A collection of the dumbest, littlest things. In no particular order."
 # author:
 publicationDate: 2024-05-22
 # creationDate: "May 2024"
 sortOrder: 3
 ---
-
-A collection of the dumbest, littlest things. In no particular order.
-
-<br>
 
 1. ### last updated
 
@@ -171,11 +167,11 @@ The former makes intuitive sense at first glance but looking at multiple `index`
 
 It was difficult choosing between these three:
 
-1. Welcome to <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">my blog that is not</a>.
+1. Welcome to <a class="extlink">my blog that is not</a>.
 
-2. This is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">my blog that is not</a>.
+2. This is <a class="extlink">my blog that is not</a>.
 
-3. sanaBlog is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">a blog that is not</a>.
+3. sanaBlog is <a class="extlink">a blog that is not</a>.
 
 While the differences look (and arguably, are) insignificant, I still struggled over this as it was one of the first thing a newcomer would read on my site, as well as it being a defining headline that ultimately dictates if they are welcome or not.
 

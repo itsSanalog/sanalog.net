@@ -50,8 +50,8 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
           <a href={ `/blog/${ entry.slug }` } class="plain">
             <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
             {/* use 'entry.data.cover.src' as src if using native <img> tag */}
-            <h2 style="margin-top: 1rem;">{ entry.data.title }</h2>
-            <p>{ entry.data.description }</p>
+            <h2 class="mt mb0">{ entry.data.title }</h2>
+            <p class="mt small muted">{ entry.data.description }</p>
           </a>
         )) }
     </Collapsible>
@@ -60,8 +60,8 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
       { workEntries.map((entry) => (
           <a href={ `/blog/${ entry.slug }` } class="plain">
             <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
-            <h2 style="margin-top: 1rem;">{ entry.data.title }</h2>
-            <p>{ entry.data.description }</p>
+            <h2 class="mt mb0">{ entry.data.title }</h2>
+            <p class="mt small muted">{ entry.data.description }</p>
           </a>
         )) }
     </Collapsible>
@@ -70,8 +70,8 @@ const featuredEntry = await getEntry("blog", "talk/cold-game");
       { talkEntries.map((entry) => (
           <a href={ `/blog/${ entry.slug }` } class="plain">
             <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
-            <h2 style="margin-top: 1rem;">{ entry.data.title }</h2>
-            <p>{ entry.data.description }</p>
+            <h2 class="mt mb0">{ entry.data.title }</h2>
+            <p class="mt small muted">{ entry.data.description }</p>
           </a>
         )) }
     </Collapsible>
