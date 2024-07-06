@@ -15,7 +15,7 @@ sortOrder: 1
 
 # Preface
 
-The obvious disclaimer is that all of the above reviews include some degree of personal opinion, from which subjectivity inevitably presents itself. Test environments come into play as well - the monitors I use to watch movies may not accurately depict the colour grading sequence the director intended. The monitors (the other kind) I use to listen to music deemphasise bass. Even humidity affects how ink flows on paper. Needless to say, this has minimal impact on the actual review and should rightly be dismissed as ‘nerd shit’, but still detailed below are some of the measures I have taken to try abate this ‘problem’, as well as full transparency behind the numbers, letters, and other gizmos that I will use frequently.
+The obvious disclaimer is that all of the above reviews include some degree of personal opinion, from which subjectivity inevitably presents itself. Test environments come into play as well--the monitors I use to watch movies may not accurately depict the colour grading sequence the director intended. The monitors (the other kind) I use to listen to music deemphasise bass. Even humidity affects how ink flows on paper. Needless to say, this has minimal impact on the actual review and should rightly be dismissed as ‘nerd shit’, but still detailed below are some of the measures I have taken to try abate this ‘problem’, as well as full transparency behind the numbers, letters, and other gizmos that I will use frequently.
 
 More importantly, please recognise that my reviews are not meant to be read by people. These are not buyers’ guides, nor are they meant to be featured on rtings.com. A personal belief of mine is that reviews of media (take that as you will) are only relevant if the reviewer has the knowledge and ability to replicate, imitate, or otherwise create an entirely new product in the same class of the reviewed medium. Empathy alone is not enough to fully appreciate the processes behind creative endeavours, especially regarding personal or experimental content. Despite having dabbled in game development, music production, and drawing, I am not qualified to be a reviewer by my own standards.
 
@@ -113,7 +113,7 @@ The overall rating is calculated as below:
 [<span style="color: var(--color-bl)">90*Σ(scores)/5n</span> + <span style="color: var(--color-gr)">100*Σ(tiers)/5n</span>]/2 + <span style="color: var(--color-ye)">3*stars</span> − <span style="color: var(--color-re)">9*(no. of 0’s)</span> − <span style="color: var(--color-re)">10*(no. of F's)</span>
 </pre>
 
-…which *should* give us a nice integer somewhere in the ballpark of 0-100.<a href="#rfn:1" id="fn:1" class="footnote">*</a>
+…which *should* give us a nice integer somewhere in the ballpark of 0–100.<a href="#rfn:1" id="fn:1" class="footnote">*</a>
 
 For example, a pen with a perfect comfort score of 5, A-tier durability, and two value stars will get a rating of 91. A pencil with a comfort score of 3, B-tier durability and one value star will get 60, while a highlighter with a comfort score of 1, C-tier durability and no value stars will only deserve 19.
 
@@ -139,7 +139,7 @@ Integers.
 
 *What’s with the negative penalty for 0 or F?*
 
-Scores used to be on a 1-5 scale, and 1 being the lowest, I thought it did not deserve to contribute to the overall rating. The penalty was essentially to force a 0, 2, 3, 4, 5 system (or S, A, B, C, F). This was rather unintuitive and was later changed, but I decided to keep the penalty regardless.
+Scores used to be on a 1–5 scale, and 1 being the lowest, I thought it did not deserve to contribute to the overall rating. The penalty was essentially to force a 0, 2, 3, 4, 5 system (or S, A, B, C, F). This was rather unintuitive and was later changed, but I decided to keep the penalty regardless.
 
 <!-- <br>
 

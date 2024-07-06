@@ -206,6 +206,22 @@ rUle oF ThUMb for capitalisation:
 
 **verdict:** maybe.
 
+14. ### note
+
+Should notes have a period? Should they come italicised? Should they be muted? Not sure how informal or prominent I want them to be.
+
+- Note: this was originally a discord message
+
+- Note: this was originally a discord message.
+
+- *Note: this was originally a discord message*
+
+- *Note: this was originally a discord message.*
+
+This was hard, and I notice a trend: the less important a decision is, the harder it is for me to make.
+
+**verdict:** italicised with period. Not muted.
+
 <br>
 
 <span id="lastupdate" class="muted">last updated on Jul 2, 2024</span>

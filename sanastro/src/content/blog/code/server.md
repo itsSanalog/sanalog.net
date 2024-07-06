@@ -12,7 +12,7 @@ publicationDate: 2023-01-15
 sortOrder: 1
 ---
 
-note: this is very outdated, and my setup has become relatively sophisticated since, but im still a noob at this stuff
+A log of how I first set up a small home server. This is very outdated, and my setup has become relatively sophisticated since, but I'm still a noob at this stuff.
 
 # Goals
 
@@ -159,10 +159,10 @@ The remaining steps are not absolutely necessary, but they will help in making t
 
 Here is a sneak peek, so that some steps can be skipped if there is no need for them:
 
-- DDNS redirect - keep external IP private
-- Portainer - manage Docker containers using a web GUI.
-- Wireguard - create a VPN to the local network.
-- Headless mode - keep server running with lid closed and screen off.
+- DDNS redirect &centerdot; keep external IP private
+- Portainer &centerdot; manage Docker containers using a web GUI.
+- Wireguard &centerdot; create a VPN to the local network.
+- Headless mode &centerdot; keep server running with lid closed and screen off.
 
 ### Useful commands
 
@@ -180,4 +180,4 @@ Here is a sneak peek, so that some steps can be skipped if there is no need for 
 
 <br><br><br>
 
-note: the remaining sections have been omitted as i remade the whole thing from scratch based on CasaOS.
+*Note: the remaining sections have been omitted as i remade the whole thing from scratch based on CasaOS.*
