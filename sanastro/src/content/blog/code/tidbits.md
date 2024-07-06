@@ -53,15 +53,19 @@ Side note: Is `Name (A-Z)` better than `Name (ascending)`? Perhaps `Name (alphab
 
 4. ### abbreviations
 
-|||
-|:-----|:---|
-| CPU  | Processor
-| Mobo | Motherboard
-| RAM  | Memory
-| SSD  | Storage
-| GPU  | Video Card
-| PSU  | Power Supply
-| Case | Case
+<div style="overflow:auto; width:25em;">
+
+| |      |      |
+|-|:-----|:-----|
+| | CPU  | Processor
+| | Mobo | Motherboard
+| | RAM  | Memory
+| | SSD  | Storage
+| | GPU  | Video Card
+| | PSU  | Power Supply
+| | Case | Case
+
+</div>
 
 **verdict:** abbreviated.
 
@@ -78,16 +82,18 @@ return reviewEntries.map((entry) => ({
 Regex sucks to use and `slice()` should be more performant, yet I went with regex in this case. Ask yourself if you agree with me.
 
 6. ### file structure
-```
-📂parent                            📂parent
- ├─📂foo                             ├─📂foo
- │  ├─📜index.html                   │  └─📜(stuff)
- │  └─📜(stuff)                      ├─📜foo.html
- ├─📂bar                  or         ├─📂bar
- │  ├─📜index.html                   │  └─📜(stuff)
- │  └─📜(stuff)                      ├─📜bar.html
- └─📂qux                             └─📂qux
-```
+
+<pre style="overflow:auto; margin:auto">
+        📂parent                            📂parent
+        ├─📂foo                             ├─📂foo
+        │  ├─📜index.html                   │  └─📜(stuff)
+        │  └─📜(stuff)                      ├─📜foo.html
+        ├─📂bar                  or         ├─📂bar
+        │  ├─📜index.html                   │  └─📜(stuff)
+        │  └─📜(stuff)                      ├─📜bar.html
+        └─📂qux                             └─📂qux
+</pre>
+
 The former makes intuitive sense at first glance but looking at multiple `index` files in your editor can be annoying. Pick your poison.
 
 7. ### music table
@@ -98,9 +104,9 @@ The former makes intuitive sense at first glance but looking at multiple `index`
       <img src="https://ia801501.us.archive.org/29/items/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00-34442586705_thumb250.jpg" />
     </td>
     <td>
-        <a class="plain">Nebulous You</a>
-        <br />
-        <span class="muted">Della Zyr &centerdot; 2022</span>
+      <a class="plain">Nebulous You</a>
+      <br />
+      <span class="muted">Della Zyr &centerdot; 2022</span>
     </td>
     <td><span class="muted">2020. 2. 12.</span></td>
     <td>78</td>
@@ -110,9 +116,9 @@ The former makes intuitive sense at first glance but looking at multiple `index`
       <img src="https://ia801501.us.archive.org/29/items/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00-34442586705_thumb250.jpg" />
     </td>
     <td>
-        <a class="plain">Nebulous You</a>
-        <br />
-        <span class="small">Della Zyr &centerdot; 2022</span>
+      <a class="plain">Nebulous You</a>
+      <br />
+      <span class="small">Della Zyr &centerdot; 2022</span>
     </td>
     <td><span class="muted">2020. 2. 12.</span></td>
     <td>78</td>
@@ -122,9 +128,9 @@ The former makes intuitive sense at first glance but looking at multiple `index`
       <img src="https://ia801501.us.archive.org/29/items/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00/mbid-0b73a715-d02f-40bd-b881-23e0e26f4b00-34442586705_thumb250.jpg" />
     </td>
     <td>
-        <a class="plain">Nebulous You</a>
-        <br />
-        <span class="small">Della Zyr &centerdot; </span><span class="small muted">2022</span>
+      <a class="plain">Nebulous You</a>
+      <br />
+      <span class="small">Della Zyr &centerdot; </span><span class="small muted">2022</span>
     </td>
     <td><span class="muted">2020. 2. 12.</span></td>
     <td>78</td>

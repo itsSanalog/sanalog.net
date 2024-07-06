@@ -109,7 +109,7 @@ Something like a Likert scale also encounters the same issue, where you run into
 
 The overall rating is calculated as below:
 
-<pre style="overflow: auto; ">
+<pre style="overflow: auto">
 [<span style="color: var(--color-bl)">90*Σ(scores)/5n</span> + <span style="color: var(--color-gr)">100*Σ(tiers)/5n</span>]/2 + <span style="color: var(--color-ye)">3*stars</span> − <span style="color: var(--color-re)">9*(no. of 0’s)</span> − <span style="color: var(--color-re)">10*(no. of F's)</span>
 </pre>
 

@@ -16,6 +16,18 @@ Silicon is ubiquitous! I often get asked to help configure different systems, bu
 
 Let's take a look at how different chipmakers name and categorise their products. It's the chips of the personal computing space that one would make the most use of understanding, so those are what we'll focus on.
 
+<details>
+  <summary>Complete tier list — click to expand</summary>
+  <table class="mmt" style="width:20em">
+    <tr><td style="padding:0.5em; width:3em" class="c bg-re-2">S</td><td class="ppl"></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-or-2">A</td><td class="ppl"></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-ye-2">B</td><td class="ppl"></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-gr-2">C</td><td class="ppl"><a href="#intel">Intel Core</a></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-bl-2">D</td><td class="ppl"></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-pu-2">F</td><td class="ppl"></td></tr>
+  </table>
+</details>
+
 # Intel
 
 Let's look at Intel's *Intel Core* lineup, which replaced Pentium as Intel's main consumer CPU line.
@@ -24,7 +36,7 @@ Doing a web search for 'Intel Core processor naming scheme' gives us two main re
 
 Their current flagship desktop CPU name looks like this:
 
-<pre style="overflow: auto; ">
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
 <span style="color: var(--color-bl)">Intel® Core™</span> <span style="color: var(--color-gr)">i9</span> processor <span style="color: var(--color-ye)">14</span><span style="color: var(--color-re)">900</span><span style="color: var(--color-ma)">K</span>
 </pre>
 
@@ -60,7 +72,7 @@ Still, this is fine. In fact, I would argue that it was smart of Intel to margin
 Bad news. All of the above is now outdated. Shame. At the end of 2023, Intel announced a revision of their naming scheme for Core series processors. This has made a lot of people very angry and been widely regarded as a bad move. As of writing this, we are stuck in an awkward transitionary phase where consumers are faced with two different rules from the same company. It's a whole mess.
 
 We now have something like:
-<pre style="overflow: auto; ">
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
 <span style="color: var(--color-bl)">Intel® Core™</span> <span style="color: var(--color-gr)">7</span> processor <span style="color: var(--color-ye)">1</span><span style="color: var(--color-re)">50</span><span style="color: var(--color-ma)">U</span>
 </pre>
 
@@ -74,7 +86,7 @@ Overall, this doesn't change much. Why did they bother?
 
 ### What in the Ultra
 
-<pre style="overflow: auto; ">
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
 <span style="color: var(--color-bl)">Intel® Core™ Ultra</span> <span style="color: var(--color-gr)">9</span> processor <span style="color: var(--color-ye)">1</span><span style="color: var(--color-re)">85</span><span style="color: var(--color-ma)">H</span>
 </pre>
 
@@ -86,7 +98,7 @@ It's because of the 'Ultra' lineup that was newly introduced. Let's see what it 
 
 If we look past the marketing jargon, the brand reboot makes sense. Intel has adopted the chiplet architecture for its latest <a href="https://en.wikipedia.org/wiki/Meteor_Lake" target="_blank" class="extlink">Meteor Lake</a> microarchitecture, finally abandoning monolithic silicon dies. This conveniently comes with NPUs as they say above, just in time for the AI fever.
 
-Clearly Intel wants to distinguish their disaggregated multi-chip module (MCM) processors from their existing products, so an Ultra branding was introduced. While they are at it, they thought it was a good time to refresh the mainline series' names as well. Fair enough, but there are certain hiccups in their execution that are simply infuriating:
+Clearly, Intel wants to distinguish their disaggregated multi-chip module (MCM) processors from their existing products, so an Ultra branding was introduced. While they were at it, they thought it was a good time to refresh the mainline series' names as well. Fair enough, but there are certain hiccups in their execution that are simply infuriating:
 
 1. An Ultra processor is never necessarily better than a non-Ultra one. Horrid.
 
@@ -102,14 +114,14 @@ Despite such radical changes, the processor numbering system did not change much
 
 ## Overall thoughts
 
-Intel's influence on the market has made even the average Joe aware of the i_ moniker, only for them to throw it away. Either way, the 3/5/7/9 tier numbering has a fundamental problem in that it does not differentiate generations. That number can be a good gauge of performance, but only if you are looking at processors from comparable generations. This matters less when one is choosing a brand new computer, but the second hand market is rampant with sellers who take terribly underpowered, older i7's and pose as if they are more performant than a newer gen i5. It is truly saddening to hear stories of people who talk about getting a steal of a used PC, only for me to find out that it's something like an i7-6700K (granted, that is quite useable).
+Intel's influence on the market has made even the average Joe aware of the i_ moniker, only for them to throw it away. Either way, the 3/5/7/9 tier numbering has a fundamental problem in that it does not differentiate generations. Tiering can be a good gauge of performance, but only if you are looking at processors from comparable generations. This matters less when one is choosing a brand-new computer, but the second-hand market is rampant with sellers who take terribly underpowered, older i7's and pose them as they are more performant than a newer gen i5. It is truly saddening to hear stories of people who talk about getting a steal of a used PC, only for me to find out that it's something like an i7-6700K (granted, that is quite usable).
 
-Given a simple introduction, the processor number format is uncomplicated to understand and reasonably coherent. Regrettably, no part of a product's name suggests some absolute measure of performance, but that's the norm and relative performance is what consumers look for anyway.
+Given a simple introduction, the processor number format is uncomplicated to understand and reasonably coherent. Regrettably, no part of a product's name indicates some absolute measure of performance, but that's the norm, and relative performance is what consumers look for anyway.
 
-While the controversial naming refresh is justified, the Ultra designation feels like a knee-jerk reaction to the emergence of AI. Some Ultra models can be outperformed by non-Ultra processors, so what does the term Ultra even mean to the end user? To me, it's not much more than a marketing gimmick.
+While the controversial naming refresh is justified, the Ultra designation feels like a knee-jerk reaction to the emergence of AI. Some Ultra models can be outperformed by non-Ultra processors, so what does the term Ultra even mean to the end user? To me, it's little more than a marketing gimmick.
 
-Overall, it's hard to mix two products up, and most terms mean something. Numbering is logical, even if they require a manual to understand. Intel's naming scheme of their *Intel Core* series CPUs would earn itself a solid B tier, **if and only if** Ultra was out of the equation. Otherwise, C tier it is.
+Overall, it's hard to mix two products up, and most of the terms mean something. Numbering is logical, even if it requires a manual to understand. Intel's naming scheme of their *Intel Core* series CPUs would earn itself a solid B tier, **if and only if** Ultra was out of the equation. Otherwise, C tier it is.
 
-
+# AMD
 
 <!-- new chipmakers are disrupting the status quo. -->
