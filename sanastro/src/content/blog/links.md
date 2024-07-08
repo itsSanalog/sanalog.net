@@ -84,6 +84,8 @@ While I dare categorise these entries, note that it's simply for convenience. Pl
 
 - <a href="https://en.wikipedia.org/wiki/Wikipedia:Language_recognition_chart" target="_blank" class="extlink">Wikipedia language recognition chart</a>
 
+- <a href="https://practicaltypography.com/" target="_blank" class="extlink">Practical Typography</a>
+
 - <a href="https://davidmathlogic.com/colorblind/" target="_blank" class="extlink">Coloring for Colorblindness</a>
 
 - <a href="https://castel.dev/post/research-workflow/" target="_blank" class="extlink">My Mathematics PhD research workflow</a>
@@ -125,6 +127,10 @@ Also check out my [tools page](/blog/tools#utilities) for non-browser-based soft
 - <a href="https://quberten.com/Gambit-identity-remastered-2020" target="_blank" class="extlink">Gambit's identity remastered 2020</a>
 
 - <a href="https://afplay2.tistory.com/" target="_blank" class="extlink">공군이 내놓은 디자인</a>
+
+<br>
+
+How are these ordered? Arbitrarily. Within each category, I try to group them in invisible subcategories, which are then chronologically sorted based on when I discovered each item. Even then, I don't hesitate to swap entries around if it looks or feels right to do so.
 
 <br>
 

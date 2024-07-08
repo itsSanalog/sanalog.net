@@ -7,14 +7,21 @@ coverAlt: "Naming Logic"
 title: "Naming Logic"
 description: "Ranking processor naming schemes from various manufacturers."
 # author:
-publicationDate: 2024-07-04
+publicationDate: 2024-07-06
 # creationDate: "July 2022"
 sortOrder: 2
 ---
 
-Silicon is ubiquitous! I often get asked to help configure different systems, but this industry of making rocks think has been so dynamic and fast-moving that what little knowledge I have is apparently outdated. I think such a situation is relatable to many.
+Silicon is ubiquitous! I often get asked to help configure different systems, but this industry of making rocks think has been so dynamic and fast-moving that what little knowledge I had was apparently outdated.
 
-Let's take a look at how different chipmakers name and categorise their products. It's the chips of the personal computing space that one would make the most use of understanding, so those are what we'll focus on.
+As I tried to catch up, it occured to me that such a situation was relatable to many--this is bad. It is important that consumers understand what they are buying, without having to be an expert. A good naming scheme enables this, allowing buyers to be informed and not misled or overwhelmed, or otherwise feel incompetent. A good naming scheme:
+- is honest.
+- is intuitive.
+- is jargon-less and succint, yet thorough.
+- is not language-bound.
+- is long-lasting.
+ 
+Let's take a look at how different chipmakers name and categorise their products, ranking them in the process. It's the chips of the personal computing space that one would make the most use of understanding, so those are what we'll focus on.
 
 <details>
   <summary>Complete tier list — click to expand</summary>
@@ -23,14 +30,14 @@ Let's take a look at how different chipmakers name and categorise their products
     <tr><td style="padding:0.5em" class="c bg-or-2">A</td><td class="ppl"></td></tr>
     <tr><td style="padding:0.5em" class="c bg-ye-2">B</td><td class="ppl"></td></tr>
     <tr><td style="padding:0.5em" class="c bg-gr-2">C</td><td class="ppl"><a href="#intel">Intel Core</a></td></tr>
-    <tr><td style="padding:0.5em" class="c bg-bl-2">D</td><td class="ppl"></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-bl-2">D</td><td class="ppl"><a href="#amd">AMD Ryzen</a></td></tr>
     <tr><td style="padding:0.5em" class="c bg-pu-2">F</td><td class="ppl"></td></tr>
   </table>
 </details>
 
 # Intel
 
-Let's look at Intel's *Intel Core* lineup, which replaced Pentium as Intel's main consumer CPU line.
+We will first look at Intel's *Intel Core* lineup, which replaced Pentium as Intel's main consumer CPU line.
 
 Doing a web search for 'Intel Core processor naming scheme' gives us two main results: <a href="https://www.intel.com/content/www/us/en/processors/processor-numbers.html" target="_blank" class="extlink">A Brief Guide to Our Latest Processor and Naming Updates</a> and <a href="https://www.intel.com/content/www/us/en/gaming/resources/gaming-processor-names.html" target="_blank" class="extlink">Intel® Processor Names for Gaming Computers</a>. The second article is full of the word 'gaming', but it is comprehensive enough and not only for gamers. The two are similar in content.
 
@@ -80,7 +87,7 @@ Changes:
 
 - The 'i' branding is dropped, and the number is called a 'Brand Level' now.
 - Generations has been reset to 1, and are called 'Series' now.
-- SKU has been shortened to two digits, bringing the overall processor number to three digits (previously 4-5).
+- SKU has been shortened to two digits, bringing the overall processor number to three digits (previously 4–5).
 
 Overall, this doesn't change much. Why did they bother?
 
@@ -114,7 +121,7 @@ Despite such radical changes, the processor numbering system did not change much
 
 ## Overall thoughts
 
-Intel's influence on the market has made even the average Joe aware of the i_ moniker, only for them to throw it away. Either way, the 3/5/7/9 tier numbering has a fundamental problem in that it does not differentiate generations. Tiering can be a good gauge of performance, but only if you are looking at processors from comparable generations. This matters less when one is choosing a brand-new computer, but the second-hand market is rampant with sellers who take terribly underpowered, older i7's and pose them as they are more performant than a newer gen i5. It is truly saddening to hear stories of people who talk about getting a steal of a used PC, only for me to find out that it's something like an i7-6700K (granted, that is quite usable).
+Intel's influence on the market has made even the average Joe aware of the i_ moniker, only for them to throw it away. Either way, the 3/5/7/9 tier numbering has a fundamental problem in that it does not differentiate generations. Tiering can be a good gauge of performance, but only if you are looking at processors from comparable generations. This matters less when one is choosing a brand-new computer, but the second-hand market is rampant with sellers who take terribly underpowered, older i7's and pose them as being more performant than a newer gen i5. It is truly saddening to hear stories of people who talk about getting a steal of a used PC, only for me to find out that it's something like an i7-6700K (granted, that is quite usable).
 
 Given a simple introduction, the processor number format is uncomplicated to understand and reasonably coherent. Regrettably, no part of a product's name indicates some absolute measure of performance, but that's the norm, and relative performance is what consumers look for anyway.
 
@@ -124,4 +131,58 @@ Overall, it's hard to mix two products up, and most of the terms mean something.
 
 # AMD
 
+AMD's main consumer desktop/laptop processor lineup is *AMD Ryzen*.
+
+Search engines do not return an official guide from AMD when queried 'AMD Ryzen processor naming scheme', so deduct some imaginary points for that. A <a href="https://www.amd.com/en/products/specifications/processors.html" target="_blank" class="extlink">spec sheet</a> exists, but this has close to zero value when it comes to deciphering their processor names.
+
+Their current flagship desktop CPU name looks like this:
+
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">9</span><span style="color: var(--color-re)">50</span><span style="color: var(--color-ma)">X</span>
+</pre>
+
+Because there is no official guide, let me include another example to aid understanding:
+
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-gr)">5</span> <span style="color: var(--color-ye)">3</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">00</span>
+</pre>
+
+The lone number denotes the segment. It's an open secret that 3/5/7/9 are used to leverage on Intel's already ubiquitous branding. AMD does not deserve flak for this. No room for superfluous pride that would only confuse consumers. Could you imagine if they went with even numbers instead and made '10', only for Intel to introduce '11' the next year and so on?
+
+The first number (yellow) in the processor name is the generation. Higher is better. *<span class="muted">Funnily enough, starting from gen 4, you can add each digit of the year of the generation to get the generation itself (e.g. 2 + 0 + 2 + 3 = 7).</span>*
+
+The next digit is the performance level, ranging from 3 to 9<sup><a href="#rfn:2" id="fn:2" class="footnote">1</a></sup>. Again, higher is better. This and segment both indicate performance, so it's no surprise that there is a relation. Level 3 usually belongs to Ryzen 3, 5 and 6 to Ryzen 5, and so on. However, this is rather arbitrary and you are often faced with something stupid like 8 belonging to both Ryzen 7 and Ryzen 9. Despite this, it is simple and the added granularity is welcome.
+
+The final two digits constitute the model number, leaving room for speed bumps or SKU differentiation if needed. As a whole, these four numbers work very similarly to Intel's system, making it decent.
+
+Finally, AMD yet again takes from Intel's book for its suffix, condensing information into a single letter of the alphabet. I won't list them all, but they are just as non-intuitive as Intel's, despite being slightly more coherent.
+
+### In motion, in 3D
+
+One suffix, however, stands out from the rest: 'X3D'. The X3D title is reserved for CPUs that are supercharged with extra L3 cache, benefitting from *AMD 3D V-Cache™ Technology* which just means vertically stacked L3 cache modules. The performance lead that these CPUs have over their competition has made the term widely used. The special label takes full advantage of the chips' popularity in a marketing move that I consider to be very successful. It does not contradict any part the original naming scheme, and does not cost any clarity. Good job, AMD.
+
+## AMD, again.. again
+
+Take a look at this horrifying image.
+
+![](../../../assets/blog/work/naming-logic/amdchart.jpg)
+
+Notice anything wrong? It invalidates whatever we just established. This image explains the new naming scheme starting from the 7000 series, **for the mobile line only**.
+
+Why? Why would they do this?
+
+## Deep sigh into the distance
+
+We aren't done yet. Remember Ultra? The exact same shenanigan goes on over at Team Red with the *AMD Ryzen™ AI 9* and *AMD Ryzen™ AI 9 HX* series.
+
+
+
 <!-- new chipmakers are disrupting the status quo. -->
+
+
+
+
+
+<div class="footnotes">
+  <a href="#fn:2" id="rfn:2" class="reversefootnote mr">1</a><span class="muted">I am aware 1 and 2 is used, but they are usually reserved for Athlon processors, not Ryzen, which is why they were excluded. However, I am also aware of outliers such as the AMD Ryzen™ 5 7235HS or AMD Ryzen™ 3 5125C. Still, I chose not to discuss them considering these are extremely rare.</span>
+</div>
