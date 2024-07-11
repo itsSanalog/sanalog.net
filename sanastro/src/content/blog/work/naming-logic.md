@@ -41,7 +41,7 @@ We will first look at Intel's *Intel Core* lineup, which replaced Pentium as Int
 
 Doing a web search for 'Intel Core processor naming scheme' gives us two main results: <a href="https://www.intel.com/content/www/us/en/processors/processor-numbers.html" target="_blank" class="extlink">A Brief Guide to Our Latest Processor and Naming Updates</a> and <a href="https://www.intel.com/content/www/us/en/gaming/resources/gaming-processor-names.html" target="_blank" class="extlink">Intel® Processor Names for Gaming Computers</a>. The second article is full of the word 'gaming', but it is comprehensive enough and not only for gamers. The two are similar in content.
 
-Their current flagship desktop CPU name looks like this:
+Their current flagship desktop CPU name looks like this:<sup><a href="#rfn:1" id="fn:1" class="footnote">1</a></sup>
 
 <pre class="c" style="overflow: auto; width:25em; margin:auto">
 <span style="color: var(--color-bl)">Intel® Core™</span> <span style="color: var(--color-gr)">i9</span> processor <span style="color: var(--color-ye)">14</span><span style="color: var(--color-re)">900</span><span style="color: var(--color-ma)">K</span>
@@ -51,9 +51,9 @@ Their current flagship desktop CPU name looks like this:
 
 The brand modifier `i_` is an iconic term that serves its purpose excellently, managing to penetrate and reside in the minds of the general consumer since its introduction in 2010. Ask any person and they could probably tell you an i7 is a 'good' processor. Despite i3 being conveniently left out in the article, there are four tiers: i3, i5, i7, and i9, with the last one only introduced in 2017. Very intuitive.
 
-In the above example, `14` indicates generation, while `900` is the SKU number. In both, higher is better. While not immediately transparent, this is a good enough system anyone could use to compare two products quickly. Big number, big good.
+In the above example, `14` indicates generation, while `900` is the SKU number. In both, higher is better. While not immediately transparent, this is a good enough formula anyone could use to compare two products quickly. Big number, big good.
 
-The suffix is opaque, with arbitrary letters denoting some arbitrary variation. Below is a non-comprehensive list taken from <a href="https://www.intel.com/content/www/us/en/support/articles/000058567/processors/intel-core-processors.html" target="_blank" class="extlink">Intel's documentation</a>, but as you can see it's a complete mess, even after I picked the most useful.
+The suffix is opaque, with arbitrary letters denoting some arbitrary variation. Below is a non-comprehensive list taken from <a href="https://www.intel.com/content/www/us/en/support/articles/000058567/processors/intel-core-processors.html" target="_blank" class="extlink">Intel's documentation</a>; as you can see, it's a complete mess, even after I picked the most useful.
 
 |   |   |
 |:-:|:--|
@@ -67,11 +67,11 @@ The suffix is opaque, with arbitrary letters denoting some arbitrary variation. 
 | H | High performance for mobile |
 | U | Mobile power efficient |
 | Y | Mobile extremely low power |
-| P<a href="#rfn:1" id="fn:1" class="footnote">*</a> | Performance optimised for thin and light laptops
+| P<a href="#rfn:a" id="fn:a" class="footnote">*</a> | Performance optimised for thin and light laptops
 
-<a href="#fn:1" id="rfn:1" class="reversefootnote mr">*</a><span class="muted">As far as I could tell, P has been deprecated in favour of H.</span>
+<a href="#fn:a" id="rfn:a" class="reversefootnote mr">*</a><span class="muted">As far as I could tell, P has been deprecated in favour of H.</span>
 
-Still, this is fine. In fact, I would argue that it was smart of Intel to marginalise the series name by including them in the form of a single letter suffix. By putting such indication in the periphery, inexperienced buyers are less likely to be overwhelmed. If you are the kind of person to need an unlocked CPU so you can overclock it, you wouldn't have a problem with this scheme either.
+Still, this is fine. In fact, I would argue that it was smart of Intel to marginalise the series name by including them in the form of a single letter suffix. By putting such indication in the periphery, inexperienced buyers are less likely to be overwhelmed. If you are the kind of person to have the need and knowledge of an overclock-enabled CPU, you wouldn't have a problem with this system either.
 
 
 ## Intel, again
@@ -86,7 +86,7 @@ We now have something like:
 Changes:
 
 - The 'i' branding is dropped, and the number is called a 'Brand Level' now.
-- Generations has been reset to 1, and are called 'Series' now.
+- Generation has been reset to 1, and are called 'Series' now.
 - SKU has been shortened to two digits, bringing the overall processor number to three digits (previously 4–5).
 
 Overall, this doesn't change much. Why did they bother?
@@ -97,7 +97,7 @@ Overall, this doesn't change much. Why did they bother?
 <span style="color: var(--color-bl)">Intel® Core™ Ultra</span> <span style="color: var(--color-gr)">9</span> processor <span style="color: var(--color-ye)">1</span><span style="color: var(--color-re)">85</span><span style="color: var(--color-ma)">H</span>
 </pre>
 
-It's because of the 'Ultra' lineup that was newly introduced. Let's see what it means.
+It's because of the 'Ultra' name that was newly introduced. Let's see what it means.
 
 > In addition to Intel® Core™ processor, we have also introduced Intel® Core™ Ultra processors. Designed for premium laptops, these advanced processors will usher in the age of the AI PC by featuring Intel’s first integrated neural processing unit, or NPU, for power-efficient AI acceleration and local inference on PC.
 
@@ -105,7 +105,7 @@ It's because of the 'Ultra' lineup that was newly introduced. Let's see what it 
 
 If we look past the marketing jargon, the brand reboot makes sense. Intel has adopted the chiplet architecture for its latest <a href="https://en.wikipedia.org/wiki/Meteor_Lake" target="_blank" class="extlink">Meteor Lake</a> microarchitecture, finally abandoning monolithic silicon dies. This conveniently comes with NPUs as they say above, just in time for the AI fever.
 
-Clearly, Intel wants to distinguish their disaggregated multi-chip module (MCM) processors from their existing products, so an Ultra branding was introduced. While they were at it, they thought it was a good time to refresh the mainline series' names as well. Fair enough, but there are certain hiccups in their execution that are simply infuriating:
+Clearly, Intel wants to distinguish their disaggregated multi-chip module (MCM) processors from their existing products, so the Ultra branding was introduced. While they were at it, they thought it was a good time to refresh the mainline series' names as well. Fair enough, but there are certain hiccups in their execution that are simply infuriating:
 
 1. An Ultra processor is never necessarily better than a non-Ultra one. Horrid.
 
@@ -125,7 +125,7 @@ Intel's influence on the market has made even the average Joe aware of the i_ mo
 
 Given a simple introduction, the processor number format is uncomplicated to understand and reasonably coherent. Regrettably, no part of a product's name indicates some absolute measure of performance, but that's the norm, and relative performance is what consumers look for anyway.
 
-While the controversial naming refresh is justified, the Ultra designation feels like a knee-jerk reaction to the emergence of AI. Some Ultra models can be outperformed by non-Ultra processors, so what does the term Ultra even mean to the end user? To me, it's little more than a marketing gimmick.
+While the controversial naming refresh is justified, the Ultra designation feels like a knee-jerk reaction to the emergence of AI. Some Ultra models can be outperformed by non-Ultra processors, so what does the term *Ultra* even mean to the end user? To me, it's little more than a marketing gimmick.
 
 Overall, it's hard to mix two products up, and most of the terms mean something. Numbering is logical, even if it requires a manual to understand. Intel's naming scheme of their *Intel Core* series CPUs would earn itself a solid B tier, **if and only if** Ultra was out of the equation. Otherwise, C tier it is.
 
@@ -149,11 +149,11 @@ Because there is no official guide, let me include another example to aid unders
 
 The lone number denotes the segment. It's an open secret that 3/5/7/9 are used to leverage on Intel's already ubiquitous branding. AMD does not deserve flak for this. No room for superfluous pride that would only confuse consumers. Could you imagine if they went with even numbers instead and made '10', only for Intel to introduce '11' the next year and so on?
 
-The first number (yellow) in the processor name is the generation. Higher is better. *<span class="muted">Funnily enough, starting from gen 4, you can add each digit of the year of the generation to get the generation itself (e.g. 2 + 0 + 2 + 3 = 7).</span>*
+The first number (yellow) in the processor name is the generation. This is directly linked to architecture. Higher is better.
 
-The next digit is the performance level, ranging from 3 to 9<sup><a href="#rfn:2" id="fn:2" class="footnote">1</a></sup>. Again, higher is better. This and segment both indicate performance, so it's no surprise that there is a relation. Level 3 usually belongs to Ryzen 3, 5 and 6 to Ryzen 5, and so on. However, this is rather arbitrary and you are often faced with something stupid like 8 belonging to both Ryzen 7 and Ryzen 9. Despite this, it is simple and the added granularity is welcome.
+The next digit is the performance level, ranging from 3 to 9.<sup><a href="#rfn:2" id="fn:2" class="footnote">2</a></sup> Again, higher is better. This and segment both indicate performance, so it's no surprise that there is a relation. Level 3 usually belongs to Ryzen 3, 5 and 6 to Ryzen 5, and so on. However, this is rather arbitrary and you are often faced with something stupid like 8 belonging to both Ryzen 7 and Ryzen 9. Despite this, it is simple and the added granularity is welcome.
 
-The final two digits constitute the model number, leaving room for speed bumps or SKU differentiation if needed. As a whole, these four numbers work very similarly to Intel's system, making it decent.
+The final two digits constitute the model number, leaving room for speed bumps or SKU differentiation if needed. As a whole, these four numbers work very similarly to Intel's formula, making it decent.
 
 Finally, AMD yet again takes from Intel's book for its suffix, condensing information into a single letter of the alphabet. I won't list them all, but they are just as non-intuitive as Intel's, despite being slightly more coherent.
 
@@ -165,11 +165,21 @@ One suffix, however, stands out from the rest: 'X3D'. The X3D title is reserved 
 
 Take a look at this horrifying image.
 
-![](../../../assets/blog/work/naming-logic/amdchart.jpg)
+![](../../../assets/blog/work/naming-logic/amdchart.png)
 
 Notice anything wrong? It invalidates whatever we just established. This image explains the new naming scheme starting from the 7000 series, **for the mobile line only**.
 
-Why? Why would they do this?
+Why on Earth would they do this??
+
+Generation has been sneakily replaced to year of release. If we look past the completely arbitrary indexing of numbers to years,<sup><a href="#rfn:b" id="fn:b" class="footnote">†</a></sup> it doesn't seem like this changes much. Indeed, this change is trivial, but only for the highest-end models. Minor refreshes of previous generation CPUs have traditionally reflected their architecture in their title, for example the upcoming 5800XT, upgrade of the 5800X from 2020. Under this system, however, AMD can easily get away with calling a 7640U refresh a 9650U processor, making it sound much better than it truthfully is. Awful.
+
+Market segment is the same as performance level and deserves the same praise and criticism.
+
+Architecture is new. I suppose it is nice to see it being explicit about itself, even if that came at the cost of jeopardizing the entire established system in pursuit of a worse one.
+
+Feature isolation is also effectively the same as differentiator digits. Same goes for the form factor suffix.
+
+<a href="#fn:b" id="rfn:b" class="reversefootnote mr">†</a><span class="muted">Funnily enough, starting from year 4 (2020), you can add each digit of the year of the generation to get the generation itself (e.g. 2 + 0 + 2 + 3 = 7). This is of course just a coincidence and they really did it to avoid regressing to smaller starting numbers.</span>
 
 ## Deep sigh into the distance
 
@@ -184,5 +194,7 @@ We aren't done yet. Remember Ultra? The exact same shenanigan goes on over at Te
 
 
 <div class="footnotes">
-  <a href="#fn:2" id="rfn:2" class="reversefootnote mr">1</a><span class="muted">I am aware 1 and 2 is used, but they are usually reserved for Athlon processors, not Ryzen, which is why they were excluded. However, I am also aware of outliers such as the AMD Ryzen™ 5 7235HS or AMD Ryzen™ 3 5125C. Still, I chose not to discuss them considering these are extremely rare.</span>
+  <a href="#fn:1" id="rfn:1" class="reversefootnote mr">1</a><span class="muted">Up until ever so recently, the norm was something like 'Intel Core i7-8700K Processor', with 'processor' coming after the model. As stupid as the change is, this arrangement is technically obsolete, which is why I did not include it in the main section.</span>
+
+  <a href="#fn:2" id="rfn:2" class="reversefootnote mr">2</a><span class="muted">I am aware 1 and 2 are used, but they are usually reserved for Athlon processors, not Ryzen, which is why they were excluded. However, I am also aware of outliers such as the Ryzen 5 7235HS or Ryzen 3 5125C. Still, I chose not to discuss them considering these are extremely rare.</span>
 </div>
