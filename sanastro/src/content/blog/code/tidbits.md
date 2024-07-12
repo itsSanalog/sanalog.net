@@ -228,7 +228,7 @@ This was hard, and I notice a trend: the less important a decision is, the harde
 
 **verdict:** italicised with period. Not muted.
 
-15. CPU
+15. ### CPU
 
 <pre class="c" style="overflow: auto; margin:auto">
 <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>     /     <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>

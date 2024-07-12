@@ -199,26 +199,12 @@ The hell is this? The colour vomit should already suggest this is a disaster, bu
 
 `9` is the segment as usual. I'm not sure why 3 was chosen for first-gen products, but the digit is equivalent to the generation digit in other systems. `6` and `7` refer to performance level and the final digit is the SKU differentiator.
 
-So what the hell is `HX` doing in the middle of all that?
+So what the hell is `HX` doing in the middle of all that? Apparently, '9' and '9 HX' are distinct segments in AMD's <a href="https://www.amd.com/en/products/processors/laptop/ryzen.html#:~:text=AMD%20Ryzen%E2%84%A2%20Processor%20Portfolio" target="_blank" class="extlink">portfolio</a>, bringing the complete roundup to: 3, 5, 7, 9, AI 9, and AI 9 HX. Yes. It's not a form factor or TDP suffix! The 'HX' in Ryzen 9 7945HX is distinct from that in Ryzen AI 9 HX 370.
 
-AMD has allegedly decided not to introduce a whole range of SKUs that previously existed, namely U (ultra-low power) and H(S) (high performance) models and instead OEMs are now allowed to configure the APU thermals as they see fit ranging from 15 to 54 W.
+So what about the actual form factor? AMD has allegedly decided not to introduce a whole range of SKUs that previously existed, namely U (ultra-low power) and H(S) (high performance) models and instead OEMs are now allowed to configure the APU thermals as they see fit ranging from 15 to 54 W.
 
 <pre class="c" style="overflow: auto; margin:auto">
 <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>     /     <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>
-</pre>
-<br>
-<pre class="c" style="overflow: auto; width:25em; margin:auto">
-<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>
-------
-<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>
-</pre>
-<br>
-<pre class="c" style="overflow: auto; width:25em; margin:auto">
-<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>
-</pre>
-<br>
-<pre class="c" style="overflow: auto; width:25em; margin:auto">
-<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>
 </pre>
 
 
