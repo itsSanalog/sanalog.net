@@ -228,6 +228,20 @@ This was hard, and I notice a trend: the less important a decision is, the harde
 
 **verdict:** italicised with period. Not muted.
 
+15. CPU
+
+<pre class="c" style="overflow: auto; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>     /     <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>
+</pre>
+<br>
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>
+------
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>
+</pre>
+
+**verdict:** one line (first option).
+
 <br>
 
-<span id="lastupdate" class="muted">last updated on Jul 2, 2024</span>
+<span id="lastupdate" class="muted">last updated on Jul 13, 2024</span>

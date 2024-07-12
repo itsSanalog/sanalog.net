@@ -94,7 +94,7 @@ Overall, this doesn't change much. Why did they bother?
 ### What in the Ultra
 
 <pre class="c" style="overflow: auto; width:25em; margin:auto">
-<span style="color: var(--color-bl)">Intel® Core™ Ultra</span> <span style="color: var(--color-gr)">9</span> processor <span style="color: var(--color-ye)">1</span><span style="color: var(--color-re)">85</span><span style="color: var(--color-ma)">H</span>
+<span style="color: var(--color-bl)">Intel® Core™</span> <span style="color: var(--color-cy)">Ultra</span> <span style="color: var(--color-gr)">9</span> processor <span style="color: var(--color-ye)">1</span><span style="color: var(--color-re)">85</span><span style="color: var(--color-ma)">H</span>
 </pre>
 
 It's because of the 'Ultra' name that was newly introduced. Let's see what it means.
@@ -125,7 +125,7 @@ Intel's influence on the market has made even the average Joe aware of the i_ mo
 
 Given a simple introduction, the processor number format is uncomplicated to understand and reasonably coherent. Regrettably, no part of a product's name indicates some absolute measure of performance, but that's the norm, and relative performance is what consumers look for anyway.
 
-While the controversial naming refresh is justified, the Ultra designation feels like a knee-jerk reaction to the emergence of AI. Some Ultra models can be outperformed by non-Ultra processors, so what does the term *Ultra* even mean to the end user? To me, it's little more than a marketing gimmick.
+While the controversial naming refresh is justified, the Ultra designation feels like a knee-jerk reaction to the emergence of AI. Some Ultra models can be outperformed by non-Ultra processors, so what does the term even mean to the end user? To me, it's little more than a marketing gimmick.
 
 Overall, it's hard to mix two products up, and most of the terms mean something. Numbering is logical, even if it requires a manual to understand. Intel's naming scheme of their *Intel Core* series CPUs would earn itself a solid B tier, **if and only if** Ultra was out of the equation. Otherwise, C tier it is.
 
@@ -183,8 +183,43 @@ Feature isolation is also effectively the same as differentiator digits. Same go
 
 ## Deep sigh into the distance
 
-We aren't done yet. Remember Ultra? The exact same shenanigan goes on over at Team Red with the *AMD Ryzen™ AI 9* and *AMD Ryzen™ AI 9 HX* series.
+We aren't done yet. Remember Ultra? The exact same shenanigan goes on over at Team Red with the *AMD Ryzen AI 300* series. As of writing, there are only two models out:
 
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ma)">HX</span> <span style="color: var(--color-ye)">3</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">0</span>
+</pre>
+<br>
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">3</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">5</span>
+</pre>
+
+The hell is this? The colour vomit should already suggest this is a disaster, but let's break it down anyway.
+
+`AI` is new. I maintain that this is jumping onto a hype train and thus a marketing move that actively deteriorates the integrity of the naming scheme.<sup><a href="#rfn:3" id="fn:3" class="footnote">3</a></sup> But let's quickly move on since that's been discussed.
+
+`9` is the segment as usual. I'm not sure why 3 was chosen for first-gen products, but the digit is equivalent to the generation digit in other systems. `6` and `7` refer to performance level and the final digit is the SKU differentiator.
+
+So what the hell is `HX` doing in the middle of all that?
+
+AMD has allegedly decided not to introduce a whole range of SKUs that previously existed, namely U (ultra-low power) and H(S) (high performance) models and instead OEMs are now allowed to configure the APU thermals as they see fit ranging from 15 to 54 W.
+
+<pre class="c" style="overflow: auto; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>     /     <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>
+</pre>
+<br>
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>
+------
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>
+</pre>
+<br>
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>
+</pre>
+<br>
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>
+</pre>
 
 
 <!-- new chipmakers are disrupting the status quo. -->
@@ -197,4 +232,6 @@ We aren't done yet. Remember Ultra? The exact same shenanigan goes on over at Te
   <a href="#fn:1" id="rfn:1" class="reversefootnote mr">1</a><span class="muted">Up until ever so recently, the norm was something like 'Intel Core i7-8700K Processor', with 'processor' coming after the model. As stupid as the change is, this arrangement is technically obsolete, which is why I did not include it in the main section.</span>
 
   <a href="#fn:2" id="rfn:2" class="reversefootnote mr">2</a><span class="muted">I am aware 1 and 2 are used, but they are usually reserved for Athlon processors, not Ryzen, which is why they were excluded. However, I am also aware of outliers such as the Ryzen 5 7235HS or Ryzen 3 5125C. Still, I chose not to discuss them considering these are extremely rare.</span>
+
+  <a href="#fn:3" id="rfn:3" class="reversefootnote mr">3</a><span class="muted">Maybe that's why a whole new scheme was introduced? So it could be abandoned once the craze subsides? I wouldn't be surprised.</span>
 </div>
