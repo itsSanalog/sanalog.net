@@ -85,8 +85,8 @@ We now have something like:
 
 Changes:
 
-- The 'i' branding is dropped, and the number is called a 'Brand Level' now.
-- Generation has been reset to 1, and are called 'Series' now.
+- The 'i' branding has been dropped. Number is called a 'Brand Level' now.
+- Generation has been reset to 1. Called 'Series' now.
 - SKU has been shortened to two digits, bringing the overall processor number to three digits (previously 4–5).
 
 Overall, this doesn't change much. Why did they bother?
@@ -111,7 +111,7 @@ Clearly, Intel wants to distinguish their disaggregated multi-chip module (MCM) 
 
 2. There is an overlap between Core Ultra 5 / 7 and Core 5 / 7.
 
-3. Every Raptor Lake chip followed the old naming scheme, but the <a href="https://en.wikipedia.org/wiki/Raptor_Lake#Raptor_Lake-U_Refresh" target="_blank" class="extlink">Raptor Lake-U Refresh</a> debuted under the new naming scheme as 'Intel Core 7 150U' and such. WHY?
+3. Every Raptor Lake chip followed the old convention, but the <a href="https://en.wikipedia.org/wiki/Raptor_Lake#Raptor_Lake-U_Refresh" target="_blank" class="extlink">Raptor Lake-U Refresh</a> debuted under the new naming scheme as 'Intel Core 7 150U' and such. WHY?
 
 4. What the NPU provides to the end user is either useless or underwhelming, although this should change as time passes and software takes better advantage of the hardware capabilities.
 
@@ -121,7 +121,7 @@ Despite such radical changes, the processor numbering system did not change much
 
 ## Overall thoughts
 
-Intel's influence on the market has made even the average Joe aware of the i_ moniker, only for them to throw it away. Either way, the 3/5/7/9 tier numbering has a fundamental problem in that it does not differentiate generations. Tiering can be a good gauge of performance, but only if you are looking at processors from comparable generations. This matters less when one is choosing a brand-new computer, but the second-hand market is rampant with sellers who take terribly underpowered, older i7's and pose them as being more performant than a newer gen i5. It is truly saddening to hear stories of people who talk about getting a steal of a used PC, only for me to find out that it's something like an i7-6700K (granted, that is quite usable).
+Intel's influence on the market has made even the average Joe aware of the i_ moniker, only for them to throw it away. Either way, the 3/5/7/9 tier numbering has a fundamental problem in that it does not differentiate generations. Tiering can be a good gauge of performance, but only if you are looking at models from comparable generations. This matters less when one is choosing a brand-new computer, but the second-hand market is rampant with sellers who take terribly underpowered, older i7's and pose them as being more performant than a newer gen i5. It is truly saddening to hear stories of people who talk about getting a steal of a used PC, only for me to find out that it's something like an i7-6700K (granted, that is quite usable).
 
 Given a simple introduction, the processor number format is uncomplicated to understand and reasonably coherent. Regrettably, no part of a product's name indicates some absolute measure of performance, but that's the norm, and relative performance is what consumers look for anyway.
 
@@ -151,7 +151,7 @@ The lone number denotes the segment. It's an open secret that 3/5/7/9 are used t
 
 The first number (yellow) in the processor name is the generation. This is directly linked to architecture. Higher is better.
 
-The next digit is the performance level, ranging from 3 to 9.<sup><a href="#rfn:2" id="fn:2" class="footnote">2</a></sup> Again, higher is better. This and segment both indicate performance, so it's no surprise that there is a relation. Level 3 usually belongs to Ryzen 3, 5 and 6 to Ryzen 5, and so on. However, this is rather arbitrary and you are often faced with something stupid like 8 belonging to both Ryzen 7 and Ryzen 9. Despite this, it is simple and the added granularity is welcome.
+The next digit is the performance level, ranging from 3 to 9.<sup><a href="#rfn:2" id="fn:2" class="footnote">2</a></sup> Again, higher is better. This and segment both indicate performance, so it's no surprise that there is a relation. Level 3 usually belongs to Ryzen 3, levels 5 and 6 to Ryzen 5, and so on. However, this is rather arbitrary and you are often faced with something stupid like 8 belonging to both Ryzen 7 and Ryzen 9. Despite this, it is simple and the added granularity is welcome.
 
 The final two digits constitute the model number, leaving room for speed bumps or SKU differentiation if needed. As a whole, these four numbers work very similarly to Intel's formula, making it decent.
 
@@ -159,7 +159,7 @@ Finally, AMD yet again takes from Intel's book for its suffix, condensing inform
 
 ### In motion, in 3D
 
-One suffix, however, stands out from the rest: 'X3D'. The X3D title is reserved for CPUs that are supercharged with extra L3 cache, benefitting from *AMD 3D V-Cache™ Technology* which just means vertically stacked L3 cache modules. The performance lead that these CPUs have over their competition has made the term widely used. The special label takes full advantage of the chips' popularity in a marketing move that I consider to be very successful. It does not contradict any part the original naming scheme, and does not cost any clarity. Good job, AMD.
+One suffix, however, stands out from the rest: 'X3D'. The X3D title is reserved for CPUs that are supercharged with extra L3 cache, benefitting from *AMD 3D V-Cache™ Technology* which just means vertically stacked L3 cache modules. The performance lead that these CPUs have over their competition has made the term widely used. The special label takes full advantage of the chips' popularity in a marketing move that I consider to be very successful. It does not contradict any part the original naming scheme and does not cost any clarity. Good job, AMD.
 
 ## AMD, again.. again
 
@@ -171,7 +171,7 @@ Notice anything wrong? It invalidates whatever we just established. This image e
 
 Why on Earth would they do this??
 
-Generation has been sneakily replaced to year of release. If we look past the completely arbitrary indexing of numbers to years,<sup><a href="#rfn:b" id="fn:b" class="footnote">†</a></sup> it doesn't seem like this changes much. Indeed, this change is trivial, but only for the highest-end models. Minor refreshes of previous generation CPUs have traditionally reflected their architecture in their title, for example the upcoming 5800XT, upgrade of the 5800X from 2020. Under this system, however, AMD can easily get away with calling a 7640U refresh a 9650U processor, making it sound much better than it truthfully is. Awful.
+Generation has been sneakily replaced to year of release. If we look past the completely arbitrary indexing of numbers to years,<sup><a href="#rfn:b" id="fn:b" class="footnote">†</a></sup> it doesn't seem like this changes much. Indeed, this change is trivial, but only for the highest-end models. Minor refreshes of previous generation CPUs have traditionally reflected their architecture in their title, for example the upcoming 5800XT, upgrade of the 5800X from 2020. Under this system, however, AMD can easily get away with calling a 7640U refresh a 9640U processor, making it sound much better than it truthfully is. Awful.
 
 Market segment is the same as performance level and deserves the same praise and criticism.
 
@@ -197,16 +197,39 @@ The hell is this? The colour vomit should already suggest this is a disaster, bu
 
 `AI` is new. I maintain that this is jumping onto a hype train and thus a marketing move that actively deteriorates the integrity of the naming scheme.<sup><a href="#rfn:3" id="fn:3" class="footnote">3</a></sup> But let's quickly move on since that's been discussed.
 
-`9` is the segment as usual. I'm not sure why 3 was chosen for first-gen products, but the digit is equivalent to the generation digit in other systems. `6` and `7` refer to performance level and the final digit is the SKU differentiator.
+`9` is the segment as usual. I'm not sure why 3 was chosen for a first-gen product, but the digit is equivalent to the generation digit in other systems. `6` and `7` refer to performance level and the final digit is the SKU differentiator.
 
 So what the hell is `HX` doing in the middle of all that? Apparently, '9' and '9 HX' are distinct segments in AMD's <a href="https://www.amd.com/en/products/processors/laptop/ryzen.html#:~:text=AMD%20Ryzen%E2%84%A2%20Processor%20Portfolio" target="_blank" class="extlink">portfolio</a>, bringing the complete roundup to: 3, 5, 7, 9, AI 9, and AI 9 HX. Yes. It's not a form factor or TDP suffix! The 'HX' in Ryzen 9 7945HX is distinct from that in Ryzen AI 9 HX 370.
 
-So what about the actual form factor? AMD has allegedly decided not to introduce a whole range of SKUs that previously existed, namely U (ultra-low power) and H(S) (high performance) models and instead OEMs are now allowed to configure the APU thermals as they see fit ranging from 15 to 54 W.
+What about the actual form factor? They have been cut--OEMs can now configure the TDP however they see fit. They can also hide that information in some obscure footnote. I cannot even fathom how such a ridiculous decision was made.
+
+What this means is that 9 and 9 HX effectively mean 9 and 11, but even AMD must have thought 11 was too far. If that's the case, why not something like:
 
 <pre class="c" style="overflow: auto; margin:auto">
 <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span>     /     <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-cy)">AI</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span>
 </pre>
 
+I even kept the 'AI'! But try saying "Ryzen AI nine ninety-seven hundred" out loud. So, if suffixes are somehow useless now, why not:
+
+<pre class="c" style="overflow: auto; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">00</span><span style="color: var(--color-ma)">AI</span>      /     <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">9</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">50</span><span style="color: var(--color-ma)">AI</span>
+</pre>
+
+If we are willing to break the status quo, we can bring back the 3, and the extra 0 can be tossed to produce "Ryzen nine three-seventy AI", which I think is much better:
+
+<pre class="c" style="overflow: auto; margin:auto">
+<span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-gr)">9</span> <span style="color: var(--color-ye)">3</span><span style="color: var(--color-or)">7</span><span style="color: var(--color-re)">0</span><span style="color: var(--color-ma)">AI</span>      /     <span style="color: var(--color-bl)">AMD Ryzen™</span> <span style="color: var(--color-gr)">7</span> <span style="color: var(--color-ye)">3</span><span style="color: var(--color-or)">6</span><span style="color: var(--color-re)">5</span><span style="color: var(--color-ma)">AI</span>
+</pre>
+
+## Overall thoughts
+
+AMD's desktop CPU series has a solid naming scheme that was strategically created to ease Intel customers into buying Ryzen, seeing Intel's market dominance at the time of Ryzen's creation. It affirms the higher-is-better rule and makes comparisons between Ryzen products relatively easy.
+
+However, the mobile lineup compromised any consistency they had, instead introducing a more complex and arguably dysfunctiontal framework. Furthermore, keeping the formula different from the main desktop line is sin. You know you're doing something wrong when this <a href="https://i.imgur.com/u5cCtha.png" target="_blank" class="extlink">gag gift of an object</a> had to be made.
+
+Did they have to make it even more convoluted with their AI lineup? They did anyway.
+
+AMD fails many tests on what it takes to create a *good* naming scheme. While it may not be trying to be mendacious, the needless complexities sure feel unfair. Clouding customers' judgement with a wall of unintuitive numbers is just going to disinterest them, forcing the use of even more buzzwords. I understand that this behaviour might be favourable to shareholders, but looking at the system in a vacuum, *AMD Ryzen* barely gets a D from me.
 
 <!-- new chipmakers are disrupting the status quo. -->
 
