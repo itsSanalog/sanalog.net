@@ -14,7 +14,7 @@ sortOrder: 2
 
 Silicon is ubiquitous! I often get asked to help configure different systems, but this industry of making rocks think has been so dynamic and fast-moving that what little knowledge I had was apparently outdated.
 
-As I tried to catch up, it occured to me that such a situation was relatable to many--this is bad. It is important that consumers understand what they are buying, without having to be an expert. A good naming scheme enables this, allowing buyers to be informed and not misled or overwhelmed, or otherwise feel incompetent. A good naming scheme:
+As I tried to catch up, it occured to me that such a situation was relatable to many--this is bad. It is important that consumers understand what they are buying, without having to be an expert. A good naming scheme enables this, allowing buyers to be informed and not misled or overwhelmed, or otherwise feel incompetent. A good naming scheme
 - is honest.
 - is intuitive.
 - is jargon-less and succint, yet thorough.
@@ -28,7 +28,7 @@ Let's take a look at how different chipmakers name and categorise their products
   <table class="mmt" style="width:20em">
     <tr><td style="padding:0.5em; width:3em" class="c bg-re-2">S</td><td class="ppl"></td></tr>
     <tr><td style="padding:0.5em" class="c bg-or-2">A</td><td class="ppl"></td></tr>
-    <tr><td style="padding:0.5em" class="c bg-ye-2">B</td><td class="ppl"></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-ye-2">B</td><td class="ppl"><a href="#apple">Apple silicon</a></td></tr>
     <tr><td style="padding:0.5em" class="c bg-gr-2">C</td><td class="ppl"><a href="#intel">Intel Core</a></td></tr>
     <tr><td style="padding:0.5em" class="c bg-bl-2">D</td><td class="ppl"><a href="#amd">AMD Ryzen</a></td></tr>
     <tr><td style="padding:0.5em" class="c bg-pu-2">F</td><td class="ppl"></td></tr>
@@ -78,7 +78,7 @@ Still, this is fine. In fact, I would argue that it was smart of Intel to margin
 
 Bad news. All of the above is now outdated. Shame. At the end of 2023, Intel announced a revision of their naming scheme for Core series processors. This has made a lot of people very angry and been widely regarded as a bad move. As of writing this, we are stuck in an awkward transitionary phase where consumers are faced with two different rules from the same company. It's a whole mess.
 
-We now have something like:
+We now have something like this:
 <pre class="c" style="overflow: auto; width:25em; margin:auto">
 <span style="color: var(--color-bl)">Intel® Core™</span> <span style="color: var(--color-gr)">7</span> processor <span style="color: var(--color-ye)">1</span><span style="color: var(--color-re)">50</span><span style="color: var(--color-ma)">U</span>
 </pre>
@@ -101,7 +101,7 @@ It's because of the 'Ultra' name that was newly introduced. Let's see what it me
 
 > In addition to Intel® Core™ processor, we have also introduced Intel® Core™ Ultra processors. Designed for premium laptops, these advanced processors will usher in the age of the AI PC by featuring Intel’s first integrated neural processing unit, or NPU, for power-efficient AI acceleration and local inference on PC.
 
-...what?
+*...what?*
 
 If we look past the marketing jargon, the brand reboot makes sense. Intel has adopted the chiplet architecture for its latest <a href="https://en.wikipedia.org/wiki/Meteor_Lake" target="_blank" class="extlink">Meteor Lake</a> microarchitecture, finally abandoning monolithic silicon dies. This conveniently comes with NPUs as they say above, just in time for the AI fever.
 
@@ -166,6 +166,7 @@ One suffix, however, stands out from the rest: 'X3D'. The X3D title is reserved 
 Take a look at this horrifying image.
 
 ![](../../../assets/blog/work/naming-logic/amdchart.png)
+<p class="small muted c">the horrifying image</p>
 
 Notice anything wrong? It invalidates whatever we just established. This image explains the new naming scheme starting from the 7000 series, **for the mobile line only**.
 
@@ -199,7 +200,7 @@ The hell is this? The colour vomit should already suggest this is a disaster, bu
 
 `9` is the segment as usual. I'm not sure why 3 was chosen for a first-gen product, but the digit is equivalent to the generation digit in other systems. `6` and `7` refer to performance level and the final digit is the SKU differentiator.
 
-So what the hell is `HX` doing in the middle of all that? Apparently, '9' and '9 HX' are distinct segments in AMD's <a href="https://www.amd.com/en/products/processors/laptop/ryzen.html#:~:text=AMD%20Ryzen%E2%84%A2%20Processor%20Portfolio" target="_blank" class="extlink">portfolio</a>, bringing the complete roundup to: 3, 5, 7, 9, AI 9, and AI 9 HX. Yes. It's not a form factor or TDP suffix! The 'HX' in Ryzen 9 7945HX is distinct from that in Ryzen AI 9 HX 370.
+So what the hell is `HX` doing in the middle of all that? Apparently, '9' and '9 HX' are distinct segments in AMD's <a href="https://www.amd.com/en/products/processors/laptop/ryzen.html#:~:text=AMD%20Ryzen%E2%84%A2%20Processor%20Portfolio" target="_blank" class="extlink">portfolio</a>, bringing the complete roundup to 3, 5, 7, 9, AI 9, and AI 9 HX. Yes. It's not a form factor or TDP suffix! The 'HX' in Ryzen 9 7945HX is distinct from that in Ryzen AI 9 HX 370.
 
 What about the actual form factor? They have been cut--OEMs can now configure the TDP however they see fit. They can also hide that information in some obscure footnote. I cannot even fathom how such a ridiculous decision was made.
 
@@ -223,17 +224,89 @@ If we are willing to break the status quo, we can bring back the 3, and the extr
 
 ## Overall thoughts
 
-AMD's desktop CPU series has a solid naming scheme that was strategically created to ease Intel customers into buying Ryzen, seeing Intel's market dominance at the time of Ryzen's creation. It affirms the higher-is-better rule and makes comparisons between Ryzen products relatively easy.
+AMD's desktop CPU series has a solid naming scheme that was strategically created to ease Intel customers into buying Ryzen, given Intel's market dominance at the time of Ryzen's creation. It affirms the higher-is-better rule and makes comparisons between Ryzen products relatively easy.
 
-However, the mobile lineup compromised any consistency they had, instead introducing a more complex and arguably dysfunctiontal framework. Furthermore, keeping the formula different from the main desktop line is sin. You know you're doing something wrong when this <a href="https://i.imgur.com/u5cCtha.png" target="_blank" class="extlink">gag gift of an object</a> had to be made.
+However, the mobile lineup compromised any consistency they had, instead introducing a more complex and arguably dysfunctional framework. Furthermore, keeping the formula different from the main desktop line is sin. You know you're doing something wrong when this <a href="https://i.imgur.com/u5cCtha.png" target="_blank" class="extlink">gag gift of an object</a> had to be made.
 
 Did they have to make it even more convoluted with their AI lineup? They did anyway.
 
-AMD fails many tests on what it takes to create a *good* naming scheme. While it may not be trying to be mendacious, the needless complexities sure feel unfair. Clouding customers' judgement with a wall of unintuitive numbers is just going to disinterest them, forcing the use of even more buzzwords. I understand that this behaviour might be favourable to shareholders, but looking at the system in a vacuum, *AMD Ryzen* barely gets a D from me.
+AMD fails many tests on what it takes to create a *good* naming scheme. While it may not be trying to be mendacious, the needless complexities sure feel unfair. Clouding customers' judgement with a wall of unintuitive numbers is just going to disinterest them, forcing the use of even more buzzwords. I understand that this approach might be favourable to shareholders, but looking at the system in a vacuum, *AMD Ryzen* barely gets a D from me.
 
-<!-- new chipmakers are disrupting the status quo. -->
+# Apple
 
+A relatively new player, Apple's offerings come in the form of *Apple silicon*, specifically the 'M' series.
 
+These processors cannot be purchased standalone, but come integrated in <a href="https://support.apple.com/en-us/116943" target="_blank" class="extlink">various hardware</a>. Because of this, examining this will be slightly different.
+
+Though M4 was just released, Apple's most powerful chip as of now is named:
+
+<pre class="c" style="overflow: auto; width:25em; margin:auto">M2 Ultra</pre>
+
+I'm not going to bother colour-coding this because it's so minimal. `2` is generation. `Ultra` is one of four versions in a generation: the base model, Pro, Max, and Ultra.
+
+![](../../../assets/blog/work/naming-logic/applechips.png)
+<p class="small muted c">the graph plots itself</p>
+
+That's it! An M2 Max is better than an M2 Pro, M3 is better than M1, M2 Ultra is better than M3 Pro... It cannot get simpler than that, and consumers appreciate the clarity. In fact, I can include every M-series chip in a small table:
+
+<!--
+| Name     | Release | CPU Cores (P/E) | GPU Cores | NPU (TOPS) | Memory Bandwidth |
+|:---------|:-------:|:---------------:|:---------:|:----------:|:----------------:|
+| M1       | Q4 2020 | 4 / 4           | 7, 8      | 11         | 68.25 GB/s       |
+| M1 Pro   | Q4 2021 | 6, 8 / 2        | 14, 16    | 11         | 204.8 GB/s       |
+| M1 Max   | Q4 2021 | 8 / 2           | 24, 32    | 11         | 409.6 GB/s       |
+| M1 Ultra | Q1 2022 | 16 / 4          | 48, 64    | 22         | 81.92 GB/s       |
+| M2       | Q2 2022 | 4 / 4           | 8–10      | 15.8       | 102.4 GB/s       |
+| M2 Pro   | Q1 2023 | 6, 8 / 2        | 16, 19    | 15.8       | 204.8 GB/s       |
+| M2 Max   | Q1 2023 | 8 / 4           | 30, 38    | 15.8       | 409.6 GB/s       |
+| M2 Ultra | Q2 2023 | 16 / 8          | 60, 76    | 31.6       | 819.2 GB/s       |
+| M3       | Q4 2023 | 4 / 4           | 8, 10     | 18         | 102.4 GB/s       |
+| M3 Pro   | Q4 2023 | 5, 6 / 6        | 14, 18    | 18         | 153.6 GB/s       |
+| M3 Max   | Q4 2023 | 10, 12 / 4      | 30, 40    | 18         | 409.6 GB/s       |
+| M4       | Q2 2024 | 3, 4 / 6        | 10        | 38         | 120.0 GB/s       |
+-->
+
+<table>
+  <tr><th class="l">Name</th><th class="c">Release</th><th class="c">CPU Cores (P/E)</th><th class="c">GPU Cores</th><th class="c">NPU (TOPS)</th><th class="c">Memory Bandwidth</th><th></th></tr>
+  <tr><td>M1</td><td class="c pr0">Q4 2020</td><td class="r" style="padding-right: 4rem">4 / 4</td><td class="c pr0">7, 8</td><td class="l" style="padding-left: 4rem">11</td><td class="c pr0">68.25 GB/s</td><td></td></tr>
+  <tr><td>M1 Pro</td><td class="c pr0">Q4 2021</td><td class="r" style="padding-right: 4rem">6, 8 / 2</td><td class="c pr0">14, 16</td><td class="l" style="padding-left: 4rem">11</td><td class="c pr0">204.8 GB/s</td><td></td></tr>
+  <tr><td>M1 Max</td><td class="c pr0">Q4 2021</td><td class="r" style="padding-right: 4rem">8 / 2</td><td class="c pr0">24, 32</td><td class="l" style="padding-left: 4rem">11</td><td class="c pr0">409.6 GB/s</td><td></td></tr>
+  <tr><td>M1 Ultra</td><td class="c pr0">Q1 2022</td><td class="r" style="padding-right: 4rem">16 / 4</td><td class="c pr0">48, 64</td><td class="l" style="padding-left: 4rem">22</td><td class="c pr0">81.92 GB/s</td><td></td></tr>
+  <tr><td>M2</td><td class="c pr0">Q2 2022</td><td class="r" style="padding-right: 4rem">4 / 4</td><td class="c pr0">8–10</td><td class="l" style="padding-left: 4rem">15.8</td><td class="c pr0">102.4 GB/s</td><td></td></tr>
+  <tr><td>M2 Pro</td><td class="c pr0">Q1 2023</td><td class="r" style="padding-right: 4rem">6, 8 / 2</td><td class="c pr0">16, 19</td><td class="l" style="padding-left: 4rem">15.8</td><td class="c pr0">204.8 GB/s</td><td></td></tr>
+  <tr><td>M2 Max</td><td class="c pr0">Q1 2023</td><td class="r" style="padding-right: 4rem">8 / 4</td><td class="c pr0">30, 38</td><td class="l" style="padding-left: 4rem">15.8</td><td class="c pr0">409.6 GB/s</td><td></td></tr>
+  <tr><td>M2 Ultra</td><td class="c pr0">Q2 2023</td><td class="r" style="padding-right: 4rem">16 / 8</td><td class="c pr0">60, 76</td><td class="l" style="padding-left: 4rem">31.6</td><td class="c pr0">819.2 GB/s</td><td></td></tr>
+  <tr><td>M3</td><td class="c pr0">Q4 2023</td><td class="r" style="padding-right: 4rem">4 / 4</td><td class="c pr0">8, 10</td><td class="l" style="padding-left: 4rem">18</td><td class="c pr0">102.4 GB/s</td><td></td></tr>
+  <tr><td>M3 Pro</td><td class="c pr0">Q4 2023</td><td class="r" style="padding-right: 4rem">5, 6 / 6</td><td class="c pr0">14, 18</td><td class="l" style="padding-left: 4rem">18</td><td class="c pr0">153.6 GB/s</td><td></td></tr>
+  <tr><td>M3 Max</td><td class="c pr0">Q4 2023</td><td class="r" style="padding-right: 4rem">10, 12 / 4</td><td class="c pr0">30, 40</td><td class="l" style="padding-left: 4rem">18</td><td class="c pr0">409.6 GB/s</td><td></td></tr>
+  <tr><td>M4</td><td class="c pr0">Q2 2024</td><td class="r" style="padding-right: 4rem">3, 4 / 6</td><td class="c pr0">10</td><td class="l" style="padding-left: 4rem">38</td><td class="c pr0">120.0 GB/s</td><td></td></tr>
+</table>
+
+Wait a second. Why does the same chip come with different numbers of cores?
+
+## The catch
+
+Apple is not just a chip manufacturer. These processors always come packaged in their devices, so to get the full picture we have to investigate those products as well.
+
+It is true--the same M3 chip can come with eight or ten cores depending on the configuration of the MacBook you're getting it with. Same goes for for the iPads. In fact, variations are present in every single M-series chip available. With this problem in mind, it's almost as if the M_ designations are only as good as 'Ryzen _', omitting the cryptic numbers that come after it, and sweeping the details under the rug.
+
+To their credit, Apple has strategies to explicate these details instead of hiding them:
+
+1. Their website's comparison tool is solid, spelling out the differences across and within generations, models, and even product lineups. Seriously. Try comparing a thirteen-inch MacBook Air to the $10,000 Mac Pro. You can!
+
+2. Apple controls the sales and packaging of all of their products. Plaques and labels make it obvious how many cores you are spending (a lot of) your money on, no matter where you purchase from.
+
+Finally, their customers simply don't care. The same goes for other brands, but Apple especially so. All an average consumer needs to know is that Pro is better, Max is more better, and Ultra most better. Sure it's not thorough, but it does check every other box.
+
+## Overall thoughts
+
+Apple's naming of their M-series chips are not perfect. Nevertheless, the uncluttered names are a refreshing take that only Apple can pull off. Their small lineup and distinct modus operandi enables such a manageable convention that somehow works quite well.
+
+When choosing a product, one can find exactly what they want quickly, with the help of Apple's website. Customers *might* be confused at differing core counts on the same chip, but Apple's hand-holding approach quickly clears any doubt, catalysing the purchase process. This is a cheeky strategy but one I can get behind.
+
+Apple's naming of their products are famously insufferable<sup><a href="#rfn:4" id="fn:4" class="footnote">4</a></sup> but this is the one exception, earning them a well deserved A-tier--A for Apple.
+
+*<span class="muted">Now if only they could fix the rest...</span>*
 
 
 
@@ -243,4 +316,6 @@ AMD fails many tests on what it takes to create a *good* naming scheme. While it
   <a href="#fn:2" id="rfn:2" class="reversefootnote mr">2</a><span class="muted">I am aware 1 and 2 are used, but they are usually reserved for Athlon processors, not Ryzen, which is why they were excluded. However, I am also aware of outliers such as the Ryzen 5 7235HS or Ryzen 3 5125C. Still, I chose not to discuss them considering these are extremely rare.</span>
 
   <a href="#fn:3" id="rfn:3" class="reversefootnote mr">3</a><span class="muted">Maybe that's why a whole new scheme was introduced? So it could be abandoned once the craze subsides? I wouldn't be surprised.</span>
+
+  <a href="#fn:4" id="rfn:4" class="reversefootnote mr">4</a><span class="muted">Do you want an 'iPad Air' or an 'iPad Air' that's worse? How about the 'iPad Air' that's newer and better?</span>
 </div>

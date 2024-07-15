@@ -242,6 +242,42 @@ This was hard, and I notice a trend: the less important a decision is, the harde
 
 **verdict:** one line (first option).
 
+16. ### Colons
+
+> bringing the complete roundup to 3, 5, 7, 9, AI 9, and AI 9 HX.
+
+<span>Correct and used.</span>
+
+> bringing the complete roundup to: 3, 5, 7, 9, AI 9, and AI 9 HX.
+
+Incorrect, not used.
+
+> `Ultra` is one of four versions in a generation: the base model, Pro, Max, and Ultra.
+
+Correct and used.
+
+> `Ultra` is one of four versions in a generation the base model, Pro, Max, and Ultra.
+
+Incorrect, not used.
+
+> Their current flagship desktop CPU name looks like this: [preformatted text]
+
+Correct and used.
+
+> If that’s the case, why not something like: [preformatted text]
+
+Incorrect but still used.
+
+> So, if suffixes are somehow useless now, why not: [preformatted text]
+
+Also incorrect but used.
+
+> Apple's most powerful chip as of now is named: [preformatted text]
+
+Also incorrect but used.
+
+**verdict:** I'm not a good writer.
+
 <br>
 
 <span id="lastupdate" class="muted">last updated on Jul 13, 2024</span>

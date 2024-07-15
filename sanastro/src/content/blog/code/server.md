@@ -32,7 +32,7 @@ Each numbered steps are written in direct speech akin to that of a tutorial, but
 
 ## I. Install Ubuntu Server
 
-Ubuntu Server was chosen because the server was intended to be run headlessly, and Ubuntu has a large repository of support articles and forum posts. It is a good starting point for those who have only used distros where the user does not often interact with the terminal (in my case, this was Mint). A complete beginner to Linux might prefer a distro with a proper desktop environment.
+Ubuntu Server was chosen because the server was intended to be run headlessly, and Ubuntu has a large repository of support articles and forum posts. It is a good starting point for those who have only used distros where the user does not often interact with the terminal. (In my case, this was Mint.) A complete beginner to Linux might prefer a distro with a proper desktop environment.
 
 1. Go to the <a href="https://ubuntu.com/download/server" target="_blank" class="extlink">Ubuntu Server</a> page and download the iso image.
 2. Create a boot drive using <a href="https://rufus.ie/en/" target="_blank" class="extlink">Rufus</a>, or through the context menu if you are on Linux.
