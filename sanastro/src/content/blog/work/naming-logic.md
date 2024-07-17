@@ -25,12 +25,12 @@ Let's take a look at how different chipmakers name and categorise their products
 
 <details>
   <summary>Complete tier list — click to expand</summary>
-  <table class="mmt" style="width:20em">
+  <table class="mmt" style="width:23em">
     <tr><td style="padding:0.5em; width:3em" class="c bg-re-2">S</td><td class="ppl"></td></tr>
-    <tr><td style="padding:0.5em" class="c bg-or-2">A</td><td class="ppl"></td></tr>
-    <tr><td style="padding:0.5em" class="c bg-ye-2">B</td><td class="ppl"><a href="#apple">Apple silicon</a></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-or-2">A</td><td class="ppl"><a href="#apple">Apple silicon</a></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-ye-2">B</td><td class="ppl"></td></tr>
     <tr><td style="padding:0.5em" class="c bg-gr-2">C</td><td class="ppl"><a href="#intel">Intel Core</a></td></tr>
-    <tr><td style="padding:0.5em" class="c bg-bl-2">D</td><td class="ppl"><a href="#amd">AMD Ryzen</a></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-bl-2">D</td><td class="ppl"><a href="#amd">AMD Ryzen</a><a class="mml" href="#qualcomm">Qualcomm Snapdragon</a></td></tr>
     <tr><td style="padding:0.5em" class="c bg-pu-2">F</td><td class="ppl"></td></tr>
   </table>
 </details>
@@ -131,7 +131,7 @@ Overall, it's hard to mix two products up, and most of the terms mean something.
 
 # AMD
 
-AMD's main consumer desktop/laptop processor lineup is *AMD Ryzen*.
+AMD's main consumer desktop/laptop processor brand is AMD *Ryzen*.
 
 Search engines do not return an official guide from AMD when queried 'AMD Ryzen processor naming scheme', so deduct some imaginary points for that. A <a href="https://www.amd.com/en/products/specifications/processors.html" target="_blank" class="extlink">spec sheet</a> exists, but this has close to zero value when it comes to deciphering their processor names.
 
@@ -230,7 +230,7 @@ However, the mobile lineup compromised any consistency they had, instead introdu
 
 Did they have to make it even more convoluted with their AI lineup? They did anyway.
 
-AMD fails many tests on what it takes to create a *good* naming scheme. While it may not be trying to be mendacious, the needless complexities sure feel unfair. Clouding customers' judgement with a wall of unintuitive numbers is just going to disinterest them, forcing the use of even more buzzwords. I understand that this approach might be favourable to shareholders, but looking at the system in a vacuum, *AMD Ryzen* barely gets a D from me.
+AMD fails many tests on what it takes to create a *good* naming scheme. While it may not be trying to be mendacious, the needless complexities sure feel unfair. Clouding customers' judgement with a wall of unintuitive numbers is just going to disinterest them, forcing the use of even more buzzwords. I understand that this approach might be favourable to shareholders, but looking at the system in a vacuum, *Ryzen* gets a D from me.
 
 # Apple
 
@@ -300,15 +300,133 @@ Finally, their customers simply don't care. The same goes for other brands, but 
 
 ## Overall thoughts
 
-Apple's naming of their M-series chips are not perfect. Nevertheless, the uncluttered names are a refreshing take that only Apple can pull off. Their small lineup and distinct modus operandi enables such a manageable convention that somehow works quite well.
+Apple's M-series chip names are not perfect. Nevertheless, the uncluttered names are a refreshing take that only Apple can pull off. Their small lineup and distinct modus operandi enables such a manageable convention that somehow works quite well.
 
 When choosing a product, one can find exactly what they want quickly, with the help of Apple's website. Customers *might* be confused at differing core counts on the same chip, but Apple's hand-holding approach quickly clears any doubt, catalysing the purchase process. This is a cheeky strategy but one I can get behind.
 
 Apple's naming of their products are famously insufferable<sup><a href="#rfn:4" id="fn:4" class="footnote">4</a></sup> but this is the one exception, earning them a well deserved A-tier--A for Apple.
 
-*<span class="muted">Now if only they could fix the rest...</span>*
+*<span class="muted">Now if only  could fix the rest...</span>*
 
+# Qualcomm
 
+New chipmakers are disrupting the status quo. Qualcomm entering the mobile PC market isn't exactly new,<sup><a href="#rfn:5" id="fn:5" class="footnote">5</a></sup> but they only became serious contenders with the introduction of the *Snapdragon X* series chips.
+
+*Note: these chips' atrocious names inspired me to write this entire thing.*
+
+Since you made it this far, *reader*, let's play a game. I will not name their current best processor, instead listing all of them. Your job is to guess which is the best one, and the next best, and so on. Drag the pieces as you wish to rank them.
+
+<div style="width:15em; margin:2em auto 2em auto;" id="dragqueen">
+  <div class="draggable pa mb c font-mono" draggable="true" id="item1">X1E-84-100</div>
+  <div class="draggable pa mb c font-mono" draggable="true" id="item2">X1E-00-1DE</div>
+  <div class="draggable pa mb c font-mono" draggable="true" id="item3">X1E-78-100</div>
+  <div class="draggable pa mb c font-mono" draggable="true" id="item4">X1P-64-100</div>
+  <div class="draggable pa mb c font-mono" draggable="true" id="item4">X1E-80-100</div>
+</div>
+
+<style>
+  .draggable {
+    background-color: var(--color-ui-normal);
+    border-radius: 4px;
+    cursor: move;
+  }
+  
+  .draggable:hover {
+    background-color: var(--color-ui-hover);
+  }
+
+  .dragging {
+      opacity: 0.3;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const draggables = document.querySelectorAll('.draggable');
+    const container = document.getElementById('dragqueen');
+
+    draggables.forEach(draggable => {
+      draggable.addEventListener('dragstart', () => {
+        draggable.classList.add('dragging');
+      });
+
+      draggable.addEventListener('dragend', () => {
+        draggable.classList.remove('dragging');
+      });
+    });
+
+    container.addEventListener('dragover', e => {
+      e.preventDefault();
+      const afterElement = getDragAfterElement(container, e.clientY);
+      const draggingElement = document.querySelector('.dragging');
+      if (afterElement == null) {
+        container.appendChild(draggingElement);
+      } else {
+        container.insertBefore(draggingElement, afterElement);
+      }
+    });
+
+    function getDragAfterElement(container, y) {
+      const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')];
+
+      return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+        if (offset < 0 && offset > closest.offset) {
+          return { offset: offset, element: child };
+        } else {
+          return closest;
+        }
+      }, { offset: Number.NEGATIVE_INFINITY }).element;
+    }
+  });
+</script>
+
+<details>
+  <summary>Answer — click to expand</summary>
+  <table class="mmt">
+    <tr><th class="l">Name</th><th class="c">Cores</th><th>Max clock</th><th>Boost clock</th><th>GPU (TFLOPS)</th><th>NPU (TOPS)</th></tr>
+    <tr><td class="pr0">X1E-00-1DE</td><td class="c pr0">12</td><td class="c pr0">3.8GHz</td><td class="c pr0">4.3GHz</td><td class="c pr0">4.6</td><td class="c pr0">45</td></tr>
+    <tr><td class="pr0">X1E-84-100</td><td class="c pr0">12</td><td class="c pr0">3.8GHz</td><td class="c pr0">4.2GHz</td><td class="c pr0">4.6</td><td class="c pr0">45</td></tr>
+    <tr><td class="pr0">X1E-80-100</td><td class="c pr0">12</td><td class="c pr0">3.4GHz</td><td class="c pr0">4.0GHz</td><td class="c pr0">3.8</td><td class="c pr0">45</td></tr>
+    <tr><td class="pr0">X1E-78-100</td><td class="c pr0">12</td><td class="c pr0">3.4GHz</td><td class="c pr0">   -   </td><td class="c pr0">3.8</td><td class="c pr0">45</td></tr>
+    <tr><td class="pr0">X1P-64-100</td><td class="c pr0">10</td><td class="c pr0">3.4GHz</td><td class="c pr0">   -   </td><td class="c pr0">3.8</td><td class="c pr0">45</td></tr>
+  </table>
+</details>
+
+Technically speaking, the full name should include the branding as well, but it doesn't help:
+
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">Snapdragon X</span> <span style="color: var(--color-gr)">Elite</span> <span style="color: var(--color-bl)">X</span><span style="color: var(--color-ye)">1</span><span style="color: var(--color-gr)">E</span>-<span style="color: var(--color-or)">00</span>-<span>1DE</span>
+</pre>
+<br>
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">Snapdragon X</span> <span style="color: var(--color-gr)">Plus</span> <span style="color: var(--color-bl)">X</span><span style="color: var(--color-ye)">1</span><span style="color: var(--color-gr)">P</span>-<span style="color: var(--color-or)">64</span>-<span>100</span>
+</pre>
+
+How do you screw up with this small of a lineup? I genuinely cannot understand.
+
+`X` is branding. Fair enough. `1` is (or hopefully is) generation. Also fair.
+
+`E` / `P` distinguishes Elite from Plus. Why they need this when 'Snapdragon X Elite' is spelled out is beyond me.
+
+Despite how *obvious* it is, just in case you weren't able to instantly figure it out, the orange digits are the maximum possible clock speeds of each chip, multiplied by twenty... **unless it can boost to 4.3GHz**, because then it is 00. *Duh*. This is super intuitive and totally comprehensible.
+
+The `100` has no purpose. It is simply there. Unless of course it's the `1DE` model.
+
+Where is any mention of the GPU performance level? Sure you can omit the core count and NPU performance if they are all the same, but the X1E-00-1DE and X1E-84-100 have better GPUs than the rest with no indication whatsoever.
+
+What is the point of Elite and Plus? The X1E-78-100 lacks the boost clock the other Elite models have, but refuses to fall under Plus by virtue of its core count.
+
+## Overall thoughts
+
+Obnoxious. Qualcomm's entry into the market is exciting, bringing unprecedented efficiency to the Windows laptop market. But it is almost as if they don't want consumers to buy their products, or at least do so blindly.
+
+I don't want to know what would happen when they introduce more models down the road. D tier.
+
+# NVIDIA
+
+Moving on to GPUs, *GeForce* is Nvidia's consumer graphics card brand.
 
 <div class="footnotes">
   <a href="#fn:1" id="rfn:1" class="reversefootnote mr">1</a><span class="muted">Up until ever so recently, the norm was something like 'Intel Core i7-8700K Processor', with 'processor' coming after the model. As stupid as the change is, this arrangement is technically obsolete, which is why I did not include it in the main section.</span>
@@ -318,4 +436,6 @@ Apple's naming of their products are famously insufferable<sup><a href="#rfn:4" 
   <a href="#fn:3" id="rfn:3" class="reversefootnote mr">3</a><span class="muted">Maybe that's why a whole new scheme was introduced? So it could be abandoned once the craze subsides? I wouldn't be surprised.</span>
 
   <a href="#fn:4" id="rfn:4" class="reversefootnote mr">4</a><span class="muted">Do you want an 'iPad Air' or an 'iPad Air' that's worse? How about the 'iPad Air' that's newer and better?</span>
+
+  <a href="#fn:5" id="rfn:5" class="reversefootnote mr">5</a><span class="muted">Windows on ARM has been a thing since Windows RT in 2012. More recently, Snapdragon-based CPUs were Qualcomm's entry into the Windows PC market back in 2018, under a partnership with Microsoft to bring Windows 10 to ARM.</span>
 </div>
