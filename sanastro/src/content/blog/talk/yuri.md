@@ -16,7 +16,7 @@ sortOrder: 15
 
 ㅅㅂ 난 가야겠다
 
-<br>
-
-<a href="https://sacred-texts.com/bud/tib/psydead.htm" target="_blank" class="">1</a>
-<a href="https://blog.naver.com/bgwsnirwow/130156559022" target="_blank" class="">2</a>
+<div class="footnotes">
+  <a href="https://sacred-texts.com/bud/tib/psydead.htm" target="_blank" class="">1</a>
+  <a href="https://blog.naver.com/bgwsnirwow/130156559022" target="_blank" class="">2</a>
+</div>

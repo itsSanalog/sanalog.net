@@ -420,9 +420,9 @@ What is the point of Elite and Plus? The X1E-78-100 lacks the boost clock the ot
 
 ## Overall thoughts
 
-Obnoxious. Qualcomm's entry into the market is exciting, bringing unprecedented efficiency to the Windows laptop market. But it is almost as if they don't want consumers to buy their products, or at least do so blindly.
+Obnoxious. Qualcomm's entry into the market is exciting, bringing unprecedented efficiency to the Windows laptop market. But it is almost as if they don't want consumers to buy their products, or at least do so knowing what they're paying for.
 
-I don't want to know what would happen when they introduce more models down the road. D tier.
+I don't want to know what would happen when they introduce more models down the road. D tier, barely.
 
 # NVIDIA
 
@@ -450,7 +450,9 @@ You might have also seen something like '3060 Ti' or '2080 Super', or even '4070
 
 Nvidia is far from a saint. Their naming of GeForce graphics cards aren't free from sin either. For example, there exists two versions of the RTX 3050--one with 8 GB of VRAM and the other with 6 GB. Still, their convention is one of the rare ones with a backbone, having kept the same scheme since the 200 series from 2008.
 
-The numbers are short and sweet, providing just the right amount of information. They are intuitive and roll off the tongue. A child could tell you 4090 is bigger and better than 2070. The suffixes might be cringey but never superfluous. Furthermore, that cringe is forgotten if you stick with it for a decade. Nvidia's *GeForce* belongs to A tier.
+The numbers are short and sweet, providing just the right amount of information. They are intuitive and roll off the tongue. A child could tell you 4090 is bigger and better than 2070. The suffixes might be cringey but never superfluous. Furthermore, that cringe is forgotten if you stick with it for a decade. Nvidia's *GeForce* names belong in A tier.
+
+
 
 <div class="footnotes">
   <a href="#fn:1" id="rfn:1" class="reversefootnote mr">1</a><span class="muted">Up until ever so recently, the norm was something like 'Intel Core i7-8700K Processor', with 'processor' coming after the model. As stupid as the change is, this arrangement is technically obsolete, which is why I did not include it in the main section.</span>
