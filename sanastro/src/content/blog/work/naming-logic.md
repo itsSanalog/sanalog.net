@@ -27,7 +27,7 @@ Let's take a look at how different chipmakers name and categorise their products
   <summary>Complete tier list — click to expand</summary>
   <table class="mmt" style="width:23em">
     <tr><td style="padding:0.5em; width:3em" class="c bg-re-2">S</td><td class="ppl"></td></tr>
-    <tr><td style="padding:0.5em" class="c bg-or-2">A</td><td class="ppl"><a href="#apple">Apple silicon</a></td></tr>
+    <tr><td style="padding:0.5em" class="c bg-or-2">A</td><td class="ppl"><a href="#apple">Apple silicon</a><a class="mml" href="#nvidia">Nvidia GeForce</a></td></tr>
     <tr><td style="padding:0.5em" class="c bg-ye-2">B</td><td class="ppl"></td></tr>
     <tr><td style="padding:0.5em" class="c bg-gr-2">C</td><td class="ppl"><a href="#intel">Intel Core</a></td></tr>
     <tr><td style="padding:0.5em" class="c bg-bl-2">D</td><td class="ppl"><a href="#amd">AMD Ryzen</a><a class="mml" href="#qualcomm">Qualcomm Snapdragon</a></td></tr>
@@ -288,7 +288,7 @@ Wait a second. Why does the same chip come with different numbers of cores?
 
 Apple is not just a chip manufacturer. These processors always come packaged in their devices, so to get the full picture we have to investigate those products as well.
 
-It is true--the same M3 chip can come with eight or ten cores depending on the configuration of the MacBook you're getting it with. Same goes for for the iPads. In fact, variations are present in every single M-series chip available. With this problem in mind, it's almost as if the M_ designations are only as good as 'Ryzen _', omitting the cryptic numbers that come after it, and sweeping the details under the rug.
+It is true--the same M3 chip can come with eight or ten cores depending on the configuration of the MacBook you're getting it with. Same goes for for the iPads. In fact, variations are present in every single M-series chip available. With this problem in mind, it's almost as if the M_ designations are only as good as 'Ryzen _', omitting the cryptic numbers that come after it and sweeping the details under the rug.
 
 To their credit, Apple has strategies to explicate these details instead of hiding them:
 
@@ -300,11 +300,11 @@ Finally, their customers simply don't care. The same goes for other brands, but 
 
 ## Overall thoughts
 
-Apple's M-series chip names are not perfect. Nevertheless, the uncluttered names are a refreshing take that only Apple can pull off. Their small lineup and distinct modus operandi enables such a manageable convention that somehow works quite well.
+Apple's M-series chip names are not perfect. Nevertheless, the uncluttered names are a refreshing take that only Apple can pull off. Their small lineup and distinct modus operandi enable such a manageable convention that somehow works quite well.
 
-When choosing a product, one can find exactly what they want quickly, with the help of Apple's website. Customers *might* be confused at differing core counts on the same chip, but Apple's hand-holding approach quickly clears any doubt, catalysing the purchase process. This is a cheeky strategy but one I can get behind.
+When choosing a product, one can find exactly what they want quickly, with the help of Apple's website. Customers *might* be confused by differing core counts on the same chip, but Apple's hand-holding approach quickly clears any doubt, catalysing the purchase process. This is a cheeky strategy but one I can get behind.
 
-Apple's naming of their products are famously insufferable<sup><a href="#rfn:4" id="fn:4" class="footnote">4</a></sup> but this is the one exception, earning them a well deserved A-tier--A for Apple.
+Apple's naming of their products is famously insufferable<sup><a href="#rfn:4" id="fn:4" class="footnote">4</a></sup> but this is the one exception, earning them a well deserved A tier--A for Apple.
 
 *<span class="muted">Now if only  could fix the rest...</span>*
 
@@ -397,11 +397,11 @@ Since you made it this far, *reader*, let's play a game. I will not name their c
 Technically speaking, the full name should include the branding as well, but it doesn't help:
 
 <pre class="c" style="overflow: auto; width:25em; margin:auto">
-<span style="color: var(--color-bl)">Snapdragon X</span> <span style="color: var(--color-gr)">Elite</span> <span style="color: var(--color-bl)">X</span><span style="color: var(--color-ye)">1</span><span style="color: var(--color-gr)">E</span>-<span style="color: var(--color-or)">00</span>-<span>1DE</span>
+<span style="color: var(--color-bl)">Snapdragon X</span> <span style="color: var(--color-gr)">Elite</span> <span style="color: var(--color-bl)">X</span><span style="color: var(--color-ye)">1</span><span style="color: var(--color-gr)">E</span>-<span style="color: var(--color-re)">00</span>-<span>1DE</span>
 </pre>
 <br>
 <pre class="c" style="overflow: auto; width:25em; margin:auto">
-<span style="color: var(--color-bl)">Snapdragon X</span> <span style="color: var(--color-gr)">Plus</span> <span style="color: var(--color-bl)">X</span><span style="color: var(--color-ye)">1</span><span style="color: var(--color-gr)">P</span>-<span style="color: var(--color-or)">64</span>-<span>100</span>
+<span style="color: var(--color-bl)">Snapdragon X</span> <span style="color: var(--color-gr)">Plus</span> <span style="color: var(--color-bl)">X</span><span style="color: var(--color-ye)">1</span><span style="color: var(--color-gr)">P</span>-<span style="color: var(--color-re)">64</span>-<span>100</span>
 </pre>
 
 How do you screw up with this small of a lineup? I genuinely cannot understand.
@@ -412,9 +412,9 @@ How do you screw up with this small of a lineup? I genuinely cannot understand.
 
 Despite how *obvious* it is, just in case you weren't able to instantly figure it out, the orange digits are the maximum possible clock speeds of each chip, multiplied by twenty... **unless it can boost to 4.3GHz**, because then it is 00. *Duh*. This is super intuitive and totally comprehensible.
 
-The `100` has no purpose. It is simply there. Unless of course it's the `1DE` model.
+The `100` has no purpose. It is simply there. Unless, of course, it's the `1DE` model.
 
-Where is any mention of the GPU performance level? Sure you can omit the core count and NPU performance if they are all the same, but the X1E-00-1DE and X1E-84-100 have better GPUs than the rest with no indication whatsoever.
+Where is any mention of the GPU performance level? Sure, you can omit the core count and NPU performance if they are all the same, but the X1E-00-1DE and X1E-84-100 have better GPUs than the rest with no indication whatsoever.
 
 What is the point of Elite and Plus? The X1E-78-100 lacks the boost clock the other Elite models have, but refuses to fall under Plus by virtue of its core count.
 
@@ -427,6 +427,30 @@ I don't want to know what would happen when they introduce more models down the 
 # NVIDIA
 
 Moving on to GPUs, *GeForce* is Nvidia's consumer graphics card brand.
+
+Querying 'Nvidia GeForce naming scheme' yields plenty of third party results, but I'd still like to praise the official <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/compare/" target="_blank" class="extlink">comparision tools</a> for being very comprehensive and well laid out. The only thing missing are benchmarks but I understand why no company would include that.
+
+<pre class="c" style="overflow: auto; width:25em; margin:auto">
+<span style="color: var(--color-bl)">GeForce</span> <span style="color: var(--color-gr)">RTX</span> <span style="color: var(--color-ye)">40</span><span style="color: var(--color-re)">90</span>
+</pre>
+
+`RTX` as a prefix defines the product category. Every new GPU from Nvidia comes with RTX as they are cards with significant ray tracing capabilities. Older GTX cards are still sold by Nvidia, but only the 16 series cards.
+
+The first two digits indicate the series. 40 is newer than 30, which is newer than 20. 16 is slightly awkward, as they were released alongside the 20 series. But they were targeted specifically at the mid-range market, and thus worse than the 20 series. This is okay! Recognise that while a new generation introduces a new series, the numbers are still tied to the technology being used, not date of release. A refresh of a 30 series card will still be called '30__' as long as it uses the Ampere architecture, along with relevant technology like PCIe Gen 4. The system keeps Nvidia honest.
+
+The remaining two digits specify performance. 90 > 80 > 70 > 60 > 50. Simple as that.
+
+You might have also seen something like '3060 Ti' or '2080 Super', or even '4070 Ti Super'. What's up with those?
+
+### How do you pronounce 'Ti'
+
+'Ti' is just reserved for models with a modest performance boost compared to the base model, usually CUDA cores or a few gigabytes of VRAM. 'Super' indicates a refresh meant to upgrade or replace the non-super versions. It too is a small spec bump, with more cores, VRAM, or a higher clock speed. The two, combined, give consumers more options, providing in-between tiers of products to pick from, as a full tier jump can be quite burdening.
+
+## Overall thoughts
+
+Nvidia is far from a saint. Their naming of GeForce graphics cards aren't free from sin either. For example, there exists two versions of the RTX 3050--one with 8 GB of VRAM and the other with 6 GB. Still, their convention is one of the rare ones with a backbone, having kept the same scheme since the 200 series from 2008.
+
+The numbers are short and sweet, providing just the right amount of information. They are intuitive and roll off the tongue. A child could tell you 4090 is bigger and better than 2070. The suffixes might be cringey but never superfluous. Furthermore, that cringe is forgotten if you stick with it for a decade. Nvidia's *GeForce* belongs to A tier.
 
 <div class="footnotes">
   <a href="#fn:1" id="rfn:1" class="reversefootnote mr">1</a><span class="muted">Up until ever so recently, the norm was something like 'Intel Core i7-8700K Processor', with 'processor' coming after the model. As stupid as the change is, this arrangement is technically obsolete, which is why I did not include it in the main section.</span>
