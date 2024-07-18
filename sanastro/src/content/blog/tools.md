@@ -24,7 +24,7 @@ A list of different items and tools I use frequently. For detailed thoughts on a
 
 I use this machine for most things, whenever possible. It was a modest build when I chose the parts and built it back in March 2021, and a bit dated now. Regardless, it fulfills all my needs, I love it, and don't plan to replace any parts anytime soon. It runs Windows 10.
 
-It took over four months the twenty-seventh iteration of a parts list before my dad got sick of me and offered to pay for the case if I just bought the damn thing. I've been using it as is ever since.
+It took over four months and the twenty-seventh iteration of a parts list before my dad got sick of me and offered to pay for the case if I just bought the damn thing. I've been using it as is ever since.
 
 
 | Specs | |
@@ -73,6 +73,9 @@ RAM  | 8 GB LPDDR3 1600 MHz
 SSD  | 256 GB 
 
 It runs Ubuntu Server 20.04 and CasaOS. Proxmox would be nice but CasaOS' GUI is really useful for my family to toy with the server as well.
+
+![](../../assets/blog/tools/sanalog-server.png)
+<p class="small muted c">i enjoy my terminal</p>
 
 ## SisterIV (phone)
 
