@@ -96,6 +96,8 @@ While I dare categorise these entries, note that it's simply for convenience. Pl
 
 - <a href="https://www3.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html" target="_blank" class="extlink">NTU Regex Tutorial</a>
 
+- <a href="https://unece.org/DAM/trans/main/sc3/publications/SIGNI_2019_e.pdf" target="_blank" class="extlink">European Code for Signs and Signals on Inland Waterways</a>
+
 ## Utilities
 
 Also check out my [tools page](/blog/tools#utilities) for non-browser-based software.

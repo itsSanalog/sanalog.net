@@ -5,11 +5,13 @@ coverAlt: "rounded-corners"
 # bannerAlt: ""
 
 title: "Rounded Corners"
-description: "In defense of gaude."
+description: "In defense of gaud."
 # author:
 publicationDate: 2024-07-20
 # creationDate: "July 2022"
 sortOrder: 4
 ---
 
-hidden
+https://grumpy.website/
+
+https://en.wikipedia.org/wiki/Wirth%27s_law
