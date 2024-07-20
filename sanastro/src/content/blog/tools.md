@@ -24,7 +24,7 @@ A list of different items and tools I use frequently. For detailed thoughts on a
 
 I use this machine for most things, whenever possible. It was a modest build when I chose the parts and built it back in March 2021, and a bit dated now. Regardless, it fulfills all my needs, I love it, and don't plan to replace any parts anytime soon. It runs Windows 10.
 
-It took over four months and the twenty-seventh iteration of a parts list before my dad got sick of me and offered to pay for the case if I just bought the damn thing. I've been using it as is ever since.
+It took over four months and twenty-seven iterations of a parts list before my dad got sick of me and offered to pay for the case if I just bought the damn thing. I've been using it as is ever since.
 
 
 | Specs | |
@@ -148,4 +148,4 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 <br>
 
-<span class="muted">last updated on Jun 22, 2024</span>
+<span class="muted">last updated on Jul 15, 2024</span>
