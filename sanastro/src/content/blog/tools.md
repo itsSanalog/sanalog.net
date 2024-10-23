@@ -125,7 +125,7 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 - <a href="https://oklch.com/" target="_blank" class="extlink">OKLCH Color Picker</a>
 
-- Fusion 360. This also sucks. I recommend <a href="https://openscad.org/" target="_blank">OpenSCAD</a> or <a href="https://www.freecad.org/" target="_blank">FreeCAD</a> instead.
+- Fusion 360. This also sucks. I recommend <a href="https://openscad.org/" target="_blank" class="extlink">OpenSCAD</a> or <a href="https://www.freecad.org/" target="_blank" class="extlink">FreeCAD</a> instead.
 
 - <a href="https://ephtracy.github.io/" target="_blank" class="extlink">MagicaVoxel</a>. Amazing voxel editor + animator + renderer that comes in at only 10 MB.
 
