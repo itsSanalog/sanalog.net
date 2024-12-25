@@ -24,7 +24,11 @@ dataSet[dataSetVersion].options = [
       { name: "After the Magic",
         key: "aftmagic", tooltip: "released Jan 28, 2023" },
       { name: "After the Night",
-        key: "aftnight", tooltip: "released Mar 25, 2023" } // Live
+        key: "aftnight", tooltip: "released Mar 25, 2023" }, // Live
+      { name: "Scattersun",
+        key: "scatrsun", tooltip: "released Jun 12, 2024" }, // Collab
+      { name: "Sky Hundred",
+        key: "skyhndrd", tooltip: "released Aug 03, 2024" }
     ]
   },
   // {
@@ -487,6 +491,148 @@ dataSet[dataSetVersion].characterData = [
       album: ["aftnight"],
       live: true
     }
-  }
+  },
   //////////////////////////////
+  {
+    name: "Quiet",
+    img: "7mvfyBi.jpeg",
+    opts: {
+      album: ["scatrsun"],
+      collab: true
+    }
+  },
+  {
+    name: "Wrong Signal (feat. Mudd the student)",
+    img: "7mvfyBi.jpeg",
+    opts: {
+      album: ["scatrsun"],
+      collab: true
+    }
+  },
+  {
+    name: "Double Bind",
+    img: "7mvfyBi.jpeg",
+    opts: {
+      album: ["scatrsun"],
+      collab: true
+    }
+  },
+  {
+    name: "Ascension (feat. agatka)",
+    img: "7mvfyBi.jpeg",
+    opts: {
+      album: ["scatrsun"],
+      collab: true
+    }
+  },
+  {
+    name: "Lullaby for a Memory",
+    img: "7mvfyBi.jpeg",
+    opts: {
+      album: ["scatrsun"],
+      collab: true
+    }
+  },
+  {
+    name: "Soliloquy",
+    img: "7mvfyBi.jpeg",
+    opts: {
+      album: ["scatrsun"],
+      collab: true
+    }
+  },
+  {
+    name: "Scattersun",
+    img: "7mvfyBi.jpeg",
+    opts: {
+      album: ["scatrsun"],
+      collab: true
+    }
+  },
+  {
+    name: "Circular Motion",
+    img: "7mvfyBi.jpeg",
+    opts: {
+      album: ["scatrsun"],
+      collab: true
+    }
+  },
+  //////////////////////////////
+  {
+    name: "주마등 (A Lot Can Happen)",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "황금빛 강 (Gold River)",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "Maybe Somewhere",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "고통없이 (Painless)",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "암전고백 (Lights Off Repentance)",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "Evoke Me",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "No One Talks About It Anymore",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "시계 (Backwards)",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "후회하는 의미 (Meaning of Regret)",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  },
+  {
+    name: "환상 (Fantasy)",
+    img: "cwGSRlp.jpeg",
+    opts: {
+      album: ["skyhndrd"]
+    }
+  }
 ];
