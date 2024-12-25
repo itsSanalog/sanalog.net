@@ -594,13 +594,6 @@ dataSet[dataSetVersion].characterData = [
     }
   },
   {
-    name: "",
-    img: "cwGSRlp.jpeg",
-    opts: {
-      album: ["skyhndrd"]
-    }
-  },
-  {
     name: "Evoke Me",
     img: "cwGSRlp.jpeg",
     opts: {
