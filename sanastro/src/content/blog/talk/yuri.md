@@ -7,8 +7,8 @@ coverAlt: "도입부"
 title: "도입부"
 description: ""
 # author:
-publicationDate: 2022-06-06
-# creationDate: "June 2022"
+publicationDate: 2024-06-06
+# creationDate: "June 2024"
 sortOrder: 15
 ---
 

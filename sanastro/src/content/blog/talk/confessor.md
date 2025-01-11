@@ -7,8 +7,8 @@ coverAlt: "Confessor"
 title: "Confessor"
 description: ""
 # author:
-publicationDate: 2022-06-18
-# creationDate: "June 2022"
+publicationDate: 2024-06-18
+# creationDate: "June 2024"
 sortOrder: 16
 ---
 
