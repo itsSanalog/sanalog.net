@@ -28,7 +28,9 @@ dataSet[dataSetVersion].options = [
       { name: "Scattersun",
         key: "scatrsun", tooltip: "released Jun 12, 2024" }, // Collab
       { name: "Sky Hundred",
-        key: "skyhndrd", tooltip: "released Aug 03, 2024" }
+        key: "skyhndrd", tooltip: "released Aug 03, 2024" },
+      { name: "See Ya! Remix",
+        key: "seeyarmx", tooltip: "released Dec 31, 2024" }  // Collab
     ]
   },
   // {
@@ -626,6 +628,15 @@ dataSet[dataSetVersion].characterData = [
     img: "cwGSRlp.jpeg",
     opts: {
       album: ["skyhndrd"]
+    }
+  },
+  //////////////////////////////
+  {
+    name: "See Ya! Remix",
+    img: "rwZChfC.jpeg",
+    opts: {
+      album: ["seeyarmx"],
+      collab: true
     }
   }
 ];
