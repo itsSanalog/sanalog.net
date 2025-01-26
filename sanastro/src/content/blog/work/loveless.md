@@ -40,9 +40,8 @@ In their debut album *Crystallized*, Tokyo Shoegazer had already proven they are
 
 No wonder their rendition of *only shallow* is scarily accurate to the original. While their insistence on recording in purely analogue format might be pedantry, the band’s determination to get the sounds on point is evident in the very technically impressive opening track.
 
-> しかし、Tokyo Shoegazerって、恥ずかしいバンド名といい、完コピっぷりといい、ネタバンドかと思ったら、実際に活動してるっぽいですね。カバーするなら新しい解釈で演奏するべきです。オリジナルと異なるアイディアがないのなら、発表する価値はないと思います。
-
-<span class="muted">*However, Tokyo Shoegazer, with its embarrassing band name and its perfect copy, made me think they were a joke band […]. If you’re going to cover a song, you should do it with a fresh interpretation. If you don't have any different ideas from the original, I don't think it is worth publishing.*</span>
+> *しかし、Tokyo Shoegazerって、恥ずかしいバンド名といい、完コピっぷりといい、ネタバンドかと思ったら、実際に活動してるっぽいですね。カバーするなら新しい解釈で演奏するべきです。オリジナルと異なるアイディアがないのなら、発表する価値はないと思います。*
+> <span class="muted">However, Tokyo Shoegazer, with its embarrassing band name and its perfect copy, made me think they were a joke band […]. If you’re going to cover a song, you should do it with a fresh interpretation. If you don't have any different ideas from the original, I don't think it is worth publishing.</span>
 
 But it really falls apart when you consider that this is a tribute album, not a practice session. Instrumentally, I can appreciate the muddier guitars and the richer sounds, even at the expense of less dreamy vocals. From 3:42 onwards, I was ready for some extra flair but was instead met with meaningless ambience and a disappointing end to the song.
 
@@ -128,10 +127,10 @@ After the initial confusion of the first verse, you are met with a pause, as if 
 
 > Espero que la versión de "When You Sleep" sea un chiste, nada más que una broma (De mal gusto por cierto. ¿POR QUÉ MEZCLAN LOS VERSOS CON EL ESTRIBILLO?) ya que la encuentro muy insultante.
 
-lmao
+<span class="muted">lmao</span>
 
-I mean, one would not be wrong to call this moeshit, but they shouldn't dismiss this cover because it's "too kawaii for my depression album" or whatever. The album has nine artists on it, cohesion is not to be expected anyway. I personally find this approach incredibly refreshing and memorable. It even has some substance beyond just being a neat novelty. Shonen Knife expressing their love for *loveless* the Shonen Knife way is not subject to your (or my) scrutiny or approval. What is not to love about people having fun?
-
+I mean, one would not be wrong to call this moeshit, but they shouldn't dismiss this cover because it's "too kawaii for my depression album" or whatever. The album has nine artists on it, cohesion is not to be expected anyway. I personally find this approach incredibly refreshing and memorable. It even has some substance beyond just being a neat novelty. Shonen Knife expressing their love for *loveless* the Shonen Knife way is not subject to your scrutiny nor approval. What is not to love about people having fun?
+z
 ## 조월 (Jowall)
 
 Jowall does everything, being an OG member of <a href="http://byul.org" target="blank" class="extlink">byul.org</a> and Underwears Band. In his own world however, he’s the master of manipulating <a href="https://www.weiv.co.kr/archives/23176" target="blank" class="extlink">lyrical noise</a>, with the compilation album *To Celebrate Nothing* being a great demonstration of his craft. ‘Rustic yet grand’ is a phrase I’ve seen used to describe Jowall’s works, and it has stuck with me. It’s true. That is exactly how it sounds and it is wonderful every single time, this one no exception.
@@ -141,15 +140,13 @@ Jowall does everything, being an OG member of <a href="http://byul.org" target="
 Usually, Jowall’s singing involves raw, grounded voices that tie you down in an otherwise cosmic experience. This time, they appear to have slight reverb, which is rather unprecedented. After multiple listens, what I think is happening is an homage to the original recording of *when you sleep*. The iconic androgynous vocals were the brainchild of frustrated Kevin Shields giving up on trying to get them right in one take.
 
 > On "When You Sleep" it sounds like me and Bilinda singing together, but it's just me – me slowed down and me speeded up at the same time. Some songs we sang over and over until we got bored – usually between 12 and 18 times. I started sorting through the tapes and it did my head in, so I just played them all together and it was really good – like one, vaguely distinct voice.
-- Kevin Shields
-> 
+> – Kevin Shields
 
 With this in mind, listening to Jowall again makes it quite apparent that something similar is going on. I will even postulate that the effect is done with tape speed manipulation, as neither of the layered vocals sound like traditional pitch shifting.
 
 Another trademark of Jowall’s sound is the unique modulation. His chords like to be suddenly dented or ‘cave in’, accompanied by a complete change in soundscape. A lot of his tracks play two different games in their own territories—warm and rustic to harsh and distorted—but they clash together at the song’s climax. At 21:46, you’re fucking hit with it.
 
 > 지금도 기억나는 게, 그 터지는 부분에서 약간 일그러지는 소리가 나죠. 오버로드 되는 것처럼. 그런데 실제로 오버로드 되는 소리는 아니고, 그런 이어폰이 찢어지는 듯한 효과를 내고 싶어서, 이거저거 많이 해봤던 기억이 나네요.
-> 
 
 *I still remember, the part where it explodes makes a slightly distorted sound, like it’s overloaded. I remember trying a lot of different things to create an effect as if your earphones were being torn apart, while not actually overloading the sound.*
 
