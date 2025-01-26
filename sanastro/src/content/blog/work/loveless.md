@@ -4,7 +4,7 @@ coverAlt: "loveless"
 # banner: "../../../assets/blog/work/loveless/banner.png"
 # bannerAlt: "loveless"
 
-title: "loveless"
+title: "Lovelesses"
 description: "Comparing loveless covers from Korea and Japan."
 # author:
 publicationDate: 2025-01-31
