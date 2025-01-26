@@ -41,7 +41,7 @@ In their debut album *Crystallized*, Tokyo Shoegazer had already proven they are
 No wonder their rendition of *only shallow* is scarily accurate to the original. While their insistence on recording in purely analogue format might be pedantry, the band’s determination to get the sounds on point is evident in the very technically impressive opening track.
 
 > *しかし、Tokyo Shoegazerって、恥ずかしいバンド名といい、完コピっぷりといい、ネタバンドかと思ったら、実際に活動してるっぽいですね。カバーするなら新しい解釈で演奏するべきです。オリジナルと異なるアイディアがないのなら、発表する価値はないと思います。*
-> <span class="muted">However, Tokyo Shoegazer, with its embarrassing band name and its perfect copy, made me think they were a joke band […]. If you’re going to cover a song, you should do it with a fresh interpretation. If you don't have any different ideas from the original, I don't think it is worth publishing.</span>
+> <p class="muted">However, Tokyo Shoegazer, with its embarrassing band name and its perfect copy, made me think they were a joke band […]. If you’re going to cover a song, you should do it with a fresh interpretation. If you don't have any different ideas from the original, I don't think it is worth publishing.</p>
 
 But it really falls apart when you consider that this is a tribute album, not a practice session. Instrumentally, I can appreciate the muddier guitars and the richer sounds, even at the expense of less dreamy vocals. From 3:42 onwards, I was ready for some extra flair but was instead met with meaningless ambience and a disappointing end to the song.
 
@@ -140,6 +140,7 @@ Jowall does everything, being an OG member of <a href="http://byul.org" target="
 Usually, Jowall’s singing involves raw, grounded voices that tie you down in an otherwise cosmic experience. This time, they appear to have slight reverb, which is rather unprecedented. After multiple listens, what I think is happening is an homage to the original recording of *when you sleep*. The iconic androgynous vocals were the brainchild of frustrated Kevin Shields giving up on trying to get them right in one take.
 
 > On "When You Sleep" it sounds like me and Bilinda singing together, but it's just me – me slowed down and me speeded up at the same time. Some songs we sang over and over until we got bored – usually between 12 and 18 times. I started sorting through the tapes and it did my head in, so I just played them all together and it was really good – like one, vaguely distinct voice.
+>
 > – Kevin Shields
 
 With this in mind, listening to Jowall again makes it quite apparent that something similar is going on. I will even postulate that the effect is done with tape speed manipulation, as neither of the layered vocals sound like traditional pitch shifting.

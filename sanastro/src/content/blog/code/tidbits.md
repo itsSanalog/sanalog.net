@@ -281,12 +281,13 @@ Also incorrect but used.
 17. ### Quotes
 
 > *しかし、Tokyo Shoegazerって、恥ずかしいバンド名といい、完コピっぷりといい、ネタバンドかと思ったら、実際に活動してるっぽいですね。カバーするなら新しい解釈で演奏するべきです。オリジナルと異なるアイディアがないのなら、発表する価値はないと思います。*
-> <span class="muted">However, Tokyo Shoegazer, with its embarrassing band name and its perfect copy, made me think they were a joke band […]. If you’re going to cover a song, you should do it with a fresh interpretation. If you don't have any different ideas from the original, I don't think it is worth publishing.</span>
+> <p class="muted">However, Tokyo Shoegazer, with its embarrassing band name and its perfect copy, made me think they were a joke band […]. If you’re going to cover a song, you should do it with a fresh interpretation. If you don't have any different ideas from the original, I don't think it is worth publishing.</p>
 
 I suppose this is the way to go about translated text. The way blockquotes work aren't standard so I'm basing mine loosely off <a href="https://en.wikipedia.org/wiki/Template:Blockquote" target="_blank" class="extlink">Wikipedia</a>.
 
 > On "When You Sleep" it sounds like me and Bilinda singing together, but it's just me – me slowed down and me speeded up at the same time. Some songs we sang over and over until we got bored – usually between 12 and 18 times. I started sorting through the tapes and it did my head in, so I just played them all together and it was really good – like one, vaguely distinct voice.
-> – Kevin Shields
+> 
+>– Kevin Shields
 
 I use an en dash here for no good justified reason.
 
