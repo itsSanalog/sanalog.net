@@ -5,7 +5,7 @@ coverAlt: "loveless"
 # bannerAlt: "loveless"
 
 title: "loveless"
-description: "comparing loveless covers from Korea and Japan."
+description: "Comparing loveless covers from Korea and Japan."
 # author:
 publicationDate: 2025-01-31
 # creationDate: "January 2025"
