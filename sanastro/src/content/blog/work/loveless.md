@@ -1,8 +1,8 @@
 ---
 cover: "../../../assets/blog/work/loveless/cover.png"
 coverAlt: "loveless"
-banner: "../../../assets/blog/work/loveless/banner.png"
-bannerAlt: "loveless"
+# banner: "../../../assets/blog/work/loveless/banner.png"
+# bannerAlt: "loveless"
 
 title: "Lovelesses"
 description: "Comparing loveless covers from Korea and Japan."
