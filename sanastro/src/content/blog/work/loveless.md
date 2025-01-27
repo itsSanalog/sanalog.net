@@ -1,8 +1,8 @@
 ---
 cover: "../../../assets/blog/work/loveless/cover.png"
 coverAlt: "loveless"
-# banner: "../../../assets/blog/work/loveless/banner.png"
-# bannerAlt: "loveless"
+banner: "../../../assets/blog/work/loveless/banner.png"
+bannerAlt: "loveless"
 
 title: "Lovelesses"
 description: "Comparing loveless covers from Korea and Japan."
@@ -147,9 +147,8 @@ With this in mind, listening to Jowall again makes it quite apparent that someth
 
 Another trademark of Jowall’s sound is the unique modulation. His chords like to be suddenly dented or ‘cave in’, accompanied by a complete change in soundscape. A lot of his tracks play two different games in their own territories—warm and rustic to harsh and distorted—but they clash together at the song’s climax. At 21:46, you’re fucking hit with it.
 
-> 지금도 기억나는 게, 그 터지는 부분에서 약간 일그러지는 소리가 나죠. 오버로드 되는 것처럼. 그런데 실제로 오버로드 되는 소리는 아니고, 그런 이어폰이 찢어지는 듯한 효과를 내고 싶어서, 이거저거 많이 해봤던 기억이 나네요.
-
-*I still remember, the part where it explodes makes a slightly distorted sound, like it’s overloaded. I remember trying a lot of different things to create an effect as if your earphones were being torn apart, while not actually overloading the sound.*
+> *지금도 기억나는 게, 그 터지는 부분에서 약간 일그러지는 소리가 나죠. 오버로드 되는 것처럼. 그런데 실제로 오버로드 되는 소리는 아니고, 그런 이어폰이 찢어지는 듯한 효과를 내고 싶어서, 이거저거 많이 해봤던 기억이 나네요.*
+> <p class="muted">I still remember, the part where it explodes makes a slightly distorted sound, like it’s overloaded. I remember trying a lot of different things to create an effect as if your earphones were being torn apart, while not actually overloading the sound.</p>
 
 Thank god he put in the effort, because it paid off. The resulting sequence is sublime, transmitting so much energy and emotion in such a short burst. Before you know it, it is washed away.
 
