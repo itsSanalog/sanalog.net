@@ -387,6 +387,16 @@ content hr:before {
 
 .flex { display: flex }
 
+.flex-column { 
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row { 
+  display: flex;
+  flex-direction: row;
+}
+
 .align-center { align-items: center }
 .align-baseline { align-items: baseline }
 .justify-center { justify-content: center }
