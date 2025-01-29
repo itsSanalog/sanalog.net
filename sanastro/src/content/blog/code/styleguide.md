@@ -40,7 +40,8 @@ You are seeing the result of my efforts by reading this, but I've also explicitl
 
   .square {
     aspect-ratio: 1 / 1;
-
+    border: 1px solid var(--color-ui-hover);
+    border-radius: var(--border-radius)
   }
 </style>
 
@@ -51,13 +52,13 @@ You are seeing the result of my efforts by reading this, but I've also explicitl
     <h2>And this is how H2 does</h2>
     <h3>H3 and H4 look the same</h3>
     <h5>H5 forces uppercase!</h5>
-    <p>Normal text is rendered like this. Text can be in *italics*, **bolded**, <span class="muted">muted</span>, or <span class="faint">muted even more</span>.</p>
+    <p class="mn2">Normal text is rendered like this. Text can be in *italics*, **bolded**, <span class="muted">muted</span>, or <span class="faint">muted even more</span>.</p>
     <p class="small">Small text is used for descriptions or captions.</p>
     <p class="smaller">Smaller text is there for you in those rare moments when you need to whisper something.</p>
-    <a>Links are underlined like this</a>.
+    <a class="mn2">Links are underlined like this</a>.
     <br>
     <a class="extlink">External links are marked with an arrow</a>.
-    <ul>
+    <ul class="mn2">
       <li>This is a list item.</li>
         <ul>
           <li>Of course they can be nested.</li>
@@ -66,19 +67,19 @@ You are seeing the result of my efforts by reading this, but I've also explicitl
     <ol>
       <li>And indexed as well.</li>
     </ol>
-    <blockquote>
+    <blockquote class="mn2">
       <p>Blockquotes look like this</p>
     </blockquote>
-    <kbd>K</kbd><kbd>E</kbd><kbd>Y</kbd><kbd>S</kbd> and <code>code</code> both use <code>monospace</code>.
+    <kbd class="mn2">K</kbd><kbd>E</kbd><kbd>Y</kbd><kbd>S</kbd> and <code>code</code> both use <code>monospace</code>.
     <div class="swatch mn4">
-      <img class="bg-re"></img>
-      <img class="bg-or"></img>
-      <img class="bg-ye"></img>
-      <img class="bg-gr"></img>
-      <img class="bg-cy"></img>
-      <img class="bg-bl"></img>
-      <img class="bg-pu"></img>     
-      <img class="bg-ma"></img>
+      <div class="square bg-re"></div>
+      <div class="square bg-or"></div>
+      <div class="square bg-ye"></div>
+      <div class="square bg-gr"></div>
+      <div class="square bg-cy"></div>
+      <div class="square bg-bl"></div>
+      <div class="square bg-pu"></div>     
+      <div class="square bg-ma"></div>
     </div>
   </div>
 
@@ -111,7 +112,7 @@ Notably, things like this:
 ⠀⠀⠀⠀⠀⠉⠛⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣶⣶⡿⠀⠀⠀⠀⠀⠀⠉⠁⢸⣶⡟⠁⠀⠾⠟⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
   </pre>
-
+  <br>
   | Table heading 1 | Table heading 2 |
   |:----------------|:----------------|
   Item A | Description aa

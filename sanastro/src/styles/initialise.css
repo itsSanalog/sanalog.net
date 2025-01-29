@@ -518,7 +518,7 @@ kbd {
   font-family: var(--font-mono);
   background: var(--color-bg-secondary);
   padding: 0.1em 0.2em;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   font-size: 85%;
 }    
 
@@ -527,7 +527,7 @@ kbd {
 }    
 
 pre {
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   padding: 1em;
   font-family: var(--font-mono);
   font-size: 90%;
