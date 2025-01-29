@@ -450,8 +450,9 @@ h4 {
 
 h5 {
   text-transform: uppercase;
-  margin-bottom: 1em;
   font-size: 1.4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
