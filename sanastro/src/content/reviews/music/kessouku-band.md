@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia904701.us.archive.org/4/items/mbid-c988920d-4b43-4399-a6e6-c9e551cf2f4c/mbid-c988920d-4b43-4399-a6e6-c9e551cf2f4c-34437814072_thumb250.jpg"
+imageLink: "https://ia904508.us.archive.org/2/items/mbid-c988920d-4b43-4399-a6e6-c9e551cf2f4c/mbid-c988920d-4b43-4399-a6e6-c9e551cf2f4c-34437814072_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: 結束バンド

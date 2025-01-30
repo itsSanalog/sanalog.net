@@ -71,7 +71,8 @@ You are seeing the result of my efforts by reading this, but I've also explicitl
       <p>Blockquotes look like this</p>
     </blockquote>
     <kbd class="mn2">K</kbd><kbd>E</kbd><kbd>Y</kbd><kbd>S</kbd> and <code>code</code> both use <code>monospace</code>.
-    <div class="swatch mn4">
+    <p class="mn2 mb">Colors:</p>
+    <div class="swatch">
       <div class="square bg-re"></div>
       <div class="square bg-or"></div>
       <div class="square bg-ye"></div>
@@ -112,12 +113,24 @@ Notably, things like this:
 ⠀⠀⠀⠀⠀⠉⠛⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣶⣶⡿⠀⠀⠀⠀⠀⠀⠉⠁⢸⣶⡟⠁⠀⠾⠟⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
   </pre>
-  <br>
-  | Table heading 1 | Table heading 2 |
-  |:----------------|:----------------|
-  Item A | Description aa
-  Item B | Description bb
-  Item C | Description cc
+  <table class="mn1">
+    <tr>
+      <td>Table heading 1</td>
+      <td>Table heading 2</td>
+    </tr>
+    <tr>
+      <td>Item A</td>
+      <td>Description aa</td>
+    </tr>
+    <tr>
+      <td>Item B</td>
+      <td>Description bb</td>
+    </tr>
+    <tr>
+      <td>Item C</td>
+      <td>Description cc</td>
+    </tr>
+  </table>
   </div>
 </div>
 
