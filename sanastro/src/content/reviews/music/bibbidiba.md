@@ -6,7 +6,7 @@ title: ビビデバ
 artist: 星街すいせい
 releaseDate: 2024-03-23
 
-# publicationDate: 2024-05-23
+publicationDate: 2025-02-01
 sortOrder: 0
 
 # stars:
