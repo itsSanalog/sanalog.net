@@ -6,11 +6,11 @@ title: To See the Next Part of the Dream
 artist: Parannoul
 releaseDate: 2021-02-23
 
-publicationDate: 2024-05-23
+# publicationDate: 2024-05-23
 sortOrder: 0
 
 # stars:
-rating: 92
+rating: 0
 
 lastfmLink: https://www.last.fm/music/Parannoul/To+See+the+Next+Part+of+the+Dream
 ytmusicLink: https://music.youtube.com/playlist?list=OLAK5uy_kOqY_9vaez7SEKnmqwT4Hz52Ox5gu5lNc
