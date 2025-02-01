@@ -25,11 +25,15 @@ Composed and written by Tsumiki (ツミキ), his impressive musical talent and o
 
 # Bassline
 
-In the intro, a mix of synth bass and slap bass is used, but something sounds off about the slap bass. I'm fairly certain it's VST. However it's made, it gives an effect of having poisitioned each and every note one by one, rather than recorded, if that makes sense.
+In the intro, a blend of synth bass and slap bass sets the stage, but something sounds a little off about the slap bass. I’m fairly certain it’s a VST, and while it’s hard to pinpoint exactly how it’s made, it gives the impression of having placed each and every note one by one, rather than recorded live—if that makes sense.
 
-Around the 28-second mark, the mood changes as the song enters its first verse. Here, it changes to a normal bass, but I think this is a VST too. This part too seems to be meticulously crafted one by one. It takes a massive amount of effort to create such a feeling while sounding natural by planting each bass note, but Tsumiki seems determined not to take any shortcuts, displaying what almost feels like craftsmanship.
+At the 28-second mark, the mood shifts as the song enters its first verse. The bass transitions to a more traditional sound, though I suspect this, too, is a VST. The bassline here feels just as meticulously crafted, as if each note was individually positioned. It takes a massive amount of effort to create such a feeling while maintaining a natural flow, but Tsumiki seems determined to avoid shortcuts, resulting in what feels like true craftsmanship.
 
-In the chorus that starts around 45 seconds, the bass changes yet again, into something that's often seen in trap or drill. It seems like Tsumiki started with a sine wave synth and overlaid sub-bass peaks on top of it—a common technique used in trap music to produce a smoother bass texture. This hint of trap allows a surprising yet natural transition as the rap part comes at a 1:22 and the song completely switches to trap style. The flow of using the bass commonly used in trap then immediately moving onto trap is surely intentional, used to brilliant effect.
+When the chorus kicks in at 45 seconds in, the bass changes yet again, into something that's often seen in trap or drill. It seems like Tsumiki started with a sine wave synth and overlaid sub-bass peaks on top—a common technique used in trap to produce that smooth, deep bass texture. This hint of trap allows a surprising yet natural transition as the rap section comes at a 1:22 and the song fully embraces the trap style. The flow of using the bass commonly used in trap then immediately moving onto trap is surely intentional, used to brilliant effect.
+
+### The seamless shift from a trap-inspired bassline into the rap section feels deliberate and is executed brilliantly.
+
+
 
 But that's not the end! Vibes shift from 1:47 as yet another genre swap occurs, this time to electronica. Despite lasting just around 8 seconds, the drums (especially hi-hat usage) makes it unmistakeable. Furthermore, the bass waveform morphs yet again, into a powerful and gritty saw bass.
 
