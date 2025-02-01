@@ -10,7 +10,7 @@ releaseDate: 2024-03-23
 sortOrder: 0
 
 # stars:
-rating: 0
+rating: 67
 ---
 
 A short review covering Suisei's biggest hit, and its bassline.
