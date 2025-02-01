@@ -17,7 +17,7 @@ When I migrated and rebuilt this site using <a href="https://astro.build/" targe
 - Intuitive navigation
 - Minimising everything else
 
-You are seeing the result of my efforts by reading this, but I've also explicitly compiled a stylesheet:
+You are seeing the result of my efforts by being here, but I've also explicitly compiled a stylesheet:
 
 <style>
   .stylesheet {
@@ -133,6 +133,16 @@ Notably, things like this:
   </table>
   </div>
 </div>
+
+# Typography
+
+The two keywords I used were *comfortable* and *consistent*. Fortunately, it's rather easy for me to achieve these two goals. Without reinventing the wheel, all I have to do is employ something that's tried and tested, as well as familiar to users. What better candidate is there than Helvetica? For monospace
+
+# Navigation
+
+## Logo
+
+# Example CSS
 
 For sanaBlog, I use two CSS files: A modified version of `normalize.css` by <a href="https://github.com/necolas" target= "_blank" class="extlink" >Nicolas Gallagher</a>, and `initialise.css` for everything else. CSS specific to individual pages is included directly within their respective files. Let's see how I made this page by walking through `initialise.css` and explore the reasoning behind some of the design choices I’ve made.
 
