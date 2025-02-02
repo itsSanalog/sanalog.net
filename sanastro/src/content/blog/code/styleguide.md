@@ -136,11 +136,38 @@ Notably, things like this:
 
 # Typography
 
-The two keywords I used were *comfortable* and *consistent*. Fortunately, it's rather easy for me to achieve these two goals. Without reinventing the wheel, all I have to do is employ something that's tried and tested, as well as familiar to users. What better candidate is there than Helvetica? For monospace
+The two keywords I used were *comfortable* and *consistent*. Fortunately, it's rather easy for me to achieve these two goals. Without reinventing the wheel, all I have to do is employ something that's tried and tested, as well as familiar to users. What better candidate is there than Helvetica? For monospace applications, I opted for <a href="https://github.com/tonsky/FiraCode" target= "_blank" class="extlink" >Fira Code</a>, a great typeface system with many ligature options and features.
+
+Spacing, hierarchy, alignment, and kerning were adjusted to feel as vanilla as possible, whatever that means. There is no real standard I followed, I mostly eyeballed everything
 
 # Navigation
 
 ## Logo
+
+I am a huge fan of logo-on-top-left-that-is-a-home-button's. It is an essential element that I will try to incorporate into every site or page I create. It reminds the user where they are on the Internet, and acts as a lighthouse to always go back home whenever they are lost or done with the content on the page they are on. The sanaBlog logo is an SVG element with two layers, so that it can respond to hover state and change its color.
+
+## Responsiveness
+
+Orange kawaii <3
+
+## Buttons
+
+Navigation buttons and links follow a single rule: be visible without the need to scroll down. The best example of this is the [home page](/blog), where collapsible elements are used so that permanent pages on the bottom are immediately visible to the user. The same principle was applied in the [reviews page](/blog/reviews). Hover effects on buttons include a background highlight on top of the ubiquitous text highlight, to emphasise the difference between a button and a link by defining the button's boundaries.
+
+The `code();`, `work`, and `talk..` buttons are action buttons that do not bring the user to a new page. This is in contrast to the buttons below, which link directly to their respective pages. The absence/presence of an underline differentiate the two types of buttons.
+
+Because reviews and the gallery page are likely to be frequently updated—and thus frequently visited—a copy resides in the top navigation bar as well.
+
+# Styling
+
+## Palette
+
+Usually, a cohesive and attractive color scheme takes a long time to perfect, especially if it has to be unique as well. For sanaBlog, I decided to forgo the entire process, and use a pre-existing color system. I incorporated <a href="https://github.com/kepano/flexoki" target= "_blank" class="extlink" >Flexoki</a>, a color scheme emulating ink on paper for an analog look that I've come to love.
+
+## Aesthetic
+
+There is no specific aesthetic genre I am in pursuit of with this site, though minimalism would be quite close. 
+
 
 # Example CSS
 
@@ -186,10 +213,6 @@ I'm being pretty honest here. I wanted to experiment with functional (atomic) CS
 ```
 
 Here, I’ve established some foundational variables. `--wrap-normal` is set to 70 characters wide with a line height of 1.5 for comfortable reading. I also incorporated the ever-controversial rounded corners just so I could ![rant about them](/blog/work/rounded-corners).
-
-## Colors
-
-Next, I incorporated <a href="https://github.com/kepano/flexoki" target= "_blank" class="extlink" >Flexoki</a>, a color scheme emulating ink on paper for an analog look that I've come to love.
 
 ## Spacing
 
