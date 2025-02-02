@@ -166,7 +166,7 @@ Usually, a cohesive and attractive color scheme takes a long time to perfect, es
 
 ## Aesthetic
 
-There is no specific aesthetic genre I am in pursuit of with this site, though minimalism would be quite close. 
+There is no specific aesthetic genre I am in pursuit of with this site, though minimalism would be quite close. Making things *look* good isn't something I entirely forgo in my design process (in fact, it's quite high up the list) but it is not a priority either, as I discuss in [Rounded Corners]().
 
 
 # Example CSS
