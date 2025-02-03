@@ -136,27 +136,23 @@ Notably, things like this:
 
 # Typography
 
-The two keywords I used were *comfortable* and *consistent*. Fortunately, it's rather easy for me to achieve these two goals. Without reinventing the wheel, all I have to do is employ something that's tried and tested, as well as familiar to users. What better candidate is there than Helvetica? For monospace applications, I opted for <a href="https://github.com/tonsky/FiraCode" target= "_blank" class="extlink" >Fira Code</a>, a great typeface system with many ligature options and features.
+The two keywords I used were *comfortable* and *consistent*. Fortunately, it's rather easy for me to achieve these two goals. Without reinventing the wheel, all I had to do is employ something that's tried and true, as well as familiar to users. What better choice than Helvetica? For monospace applications, I opted for <a href="https://github.com/tonsky/FiraCode" target= "_blank" class="extlink" >Fira Code</a>, a great typeface system that offers plenty of ligature options and features.
 
-Spacing, hierarchy, alignment, and kerning were adjusted to feel as vanilla as possible, whatever that means. There is no real standard I followed, I mostly eyeballed everything
+Spacing, hierarchy, alignment, and kerning were adjusted to feel as vanilla as possible, whatever that means. There is no real standard I followed, I mostly eyeballed everything.
 
 # Navigation
 
 ## Logo
 
-I am a huge fan of logo-on-top-left-that-is-a-home-button's. It is an essential element that I will try to incorporate into every site or page I create. It reminds the user where they are on the Internet, and acts as a lighthouse to always go back home whenever they are lost or done with the content on the page they are on. The sanaBlog logo is an SVG element with two layers, so that it can respond to hover state and change its color.
-
-## Responsiveness
-
-Orange kawaii <3
+I am a huge fan of logo-on-top-left-that-is-a-home-button's. It is an essential element that I try to incorporate into every site or page I create. The logo serves as a helpful anchor for users,reminding them where they are on the Internet. It's also a lighthouse to always go back home whenever they are lost or finished exploring a page. The sanaBlog logo is an SVG element with two layers, so that it can respond to hover states and change its color.
 
 ## Buttons
 
-Navigation buttons and links follow a single rule: be visible without the need to scroll down. The best example of this is the [home page](/blog), where collapsible elements are used so that permanent pages on the bottom are immediately visible to the user. The same principle was applied in the [reviews page](/blog/reviews). Hover effects on buttons include a background highlight on top of the ubiquitous text highlight, to emphasise the difference between a button and a link by defining the button's boundaries.
+Navigation buttons and links follow a single rule: be visible without the need to scroll down. The best example of this is the [home page](/blog), where collapsible elements ensure permanent pages at the bottom of the page are immediately accessible. The same principle applies to the [reviews page](/blog/reviews). Hover effects on buttons include a background highlight on top of the usual text highlight, to visually distinguish buttons from regular links by clearly defining their boundaries.
 
-The `code();`, `work`, and `talk..` buttons are action buttons that do not bring the user to a new page. This is in contrast to the buttons below, which link directly to their respective pages. The absence/presence of an underline differentiate the two types of buttons.
+The `code();`, `work`, and `talk..` buttons are action buttons—they don't navigate to a new page. This is in contrast to the buttons below, which link directly to their respective pages. The presence or absence of an underline help differentiate the two types of buttons.
 
-Because reviews and the gallery page are likely to be frequently updated—and thus frequently visited—a copy resides in the top navigation bar as well.
+Since [reviews](/blog/reviews) and the [gallery](/blog/gallery) are likely to be updated frequently—and thus frequently visited—a copy resides in the top navigation bar as well.
 
 # Styling
 
@@ -166,12 +162,19 @@ Usually, a cohesive and attractive color scheme takes a long time to perfect, es
 
 ## Aesthetic
 
-There is no specific aesthetic genre I am in pursuit of with this site, though minimalism would be quite close. Making things *look* good isn't something I entirely forgo in my design process (in fact, it's quite high up the list) but it is not a priority either, as I discuss in [Rounded Corners]().
+There is no specific aesthetic genre I am in pursuit of with this site, though minimalism would be a close description. Making things *look* good isn't something I entirely forgo in my design process (in fact, it's quite high up the list) but it is not a priority either, as I discuss in [Rounded Corners](/blog/work/rounded-corners).
 
+That being said, thumbnails of individual posts are stylised by category—3D renders and dithered images are used *just because*. The [games](/blog/reviews/games/) page has no regard for practicality. I use lowercase if I feel like it. The point being, I try to define play areas as much as I can, instead of imposing a 'no play' rule everywhere.
+
+# Tidbits
+
+Every time I create a new page or entry, I find myself stuck in decision <a href="https://www.google.com/maps/@32.7594465,-97.06505,952m" target= "_blank" class="extlink">hell</a>. These micro-decisions seem trivial, but I simply cannot sleep at night if I notice a stray line break or an unwanted indent somewhere until I fix it. To maintain consistency (and my sanity), I created [tidbits](/blog/code/tidbits). Broad guiding principles and hyperspecific choices are both essential in producing a visually appealing and comfortable experience.
+
+<hr>
 
 # Example CSS
 
-For sanaBlog, I use two CSS files: A modified version of `normalize.css` by <a href="https://github.com/necolas" target= "_blank" class="extlink" >Nicolas Gallagher</a>, and `initialise.css` for everything else. CSS specific to individual pages is included directly within their respective files. Let's see how I made this page by walking through `initialise.css` and explore the reasoning behind some of the design choices I’ve made.
+For sanaBlog, I use two CSS files: A modified version of `normalize.css` by <a href="https://github.com/necolas" target= "_blank" class="extlink">Nicolas Gallagher</a>, and `initialise.css` for everything else. CSS specific to individual pages is included directly within their respective files. Let's see how I made this page by walking through `initialise.css` and explore the reasoning behind some of the design choices I’ve made.
 
 ## Objective
 
@@ -212,7 +215,7 @@ I'm being pretty honest here. I wanted to experiment with functional (atomic) CS
 }
 ```
 
-Here, I’ve established some foundational variables. `--wrap-normal` is set to 70 characters wide with a line height of 1.5 for comfortable reading. I also incorporated the ever-controversial rounded corners just so I could ![rant about them](/blog/work/rounded-corners).
+Here, I’ve established some foundational variables. `--wrap-normal` is set to 70 characters wide with a line height of 1.5 for comfortable reading. I also incorporated the ever-controversial rounded corners just so I could [rant about them](/blog/work/rounded-corners).
 
 ## Spacing
 
@@ -296,7 +299,7 @@ Here is the bulk of the styling. Let's break it down into parts:
   background: var(--color-ui-normal);
 }
 ```
-<p class="small muted c">scrollbar hijacking is controversial but i'm for it</p>
+<p class="small muted c">scrollbar hijacking is controversial but i'm for it.</p>
 
 ### Basic text
 
@@ -388,7 +391,7 @@ pre code {
   background-color: transparent;
 }    
 ```
-<p class="small muted c">`code` has a background that needs to be removed if in a code block</p>
+<p class="small muted c">`code` has a background that needs to be removed if in a code block.</p>
 
 ```css
 img {
@@ -405,4 +408,4 @@ This is obviously not comprehensive. I've excluded many elements and classes, bu
 
 <br>
 
-<span id="lastupdate" class="muted">last updated on Jan 31, 2025</span>
+<span id="lastupdate" class="muted">last updated on Feb 3, 2025</span>
