@@ -16,7 +16,7 @@ sortOrder: 1
 
 *<span class="muted">..whether i like them or not.</span>*
 
-A list of different items and tools I use frequently. For detailed thoughts on a specific product, check out [reviews/tools](/blog/reviews/tools) or click on individual links below.
+A list of tools I use frequently. For detailed thoughts on a specific product, check out [reviews/tools](/blog/reviews/tools) or click on individual links below.
 
 # Computers
 
