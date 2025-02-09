@@ -36,6 +36,8 @@ While I dare categorise these entries, note that it's simply for convenience. Pl
 
 - <a href="https://vin.gg/" target="_blank" class="extlink">vin.gg</a>
 
+- <a href="https://ayu.land/" target="_blank" class="extlink">ayu.land</a>
+
 ### Art (in a narrow sense)
 
 - <a href="https://nezu.world/" target="_blank" class="extlink">nezu.world</a>
