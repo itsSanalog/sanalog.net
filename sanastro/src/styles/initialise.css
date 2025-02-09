@@ -479,7 +479,7 @@ a:hover {
 }
 
 a:focus {
-  background-color: var(--color-bg-hover);
+  background-color: var(--color-bg-secondary);
 }
 
 a.plain,
