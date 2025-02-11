@@ -30,12 +30,14 @@ Sanalog is currently in active duty, cooking three meals a day for ~60 people. I
 
 # Why
 
-I like making things. <span style="font-family: 'Comic Neue'">Design is my passion</span>. It's a wonderful realm of countless disciplines, and the only one where I can enjoy:
+I like making things. <b style="font-family: 'Comic Neue'">Design is my passion</b>. It's a wonderful realm of countless disciplines, and the only one where I can enjoy:
+
 - Writing
 - Graphics and visualisation
 - Programming
 - 3D modelling
 - Games
+
 ..all at once.
 
 This site exists for me. For me to learn, remember, and reminisce (more likely, cringe at). It is a place for me to write, for its own sake, not necessarily for someone else to read. It is public though, for someone with a weird taste in reading to enjoy.
