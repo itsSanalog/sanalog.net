@@ -1,3 +1,9 @@
+---
+import { Image } from 'astro:assets';
+import fitiethdiv from '../assets/snslogo/fifty.svg';
+---
+
+
 <footer class="wrap mn4 r">
   <hr/>
   <div class="wrap flex-row justify-center align-center">
@@ -8,7 +14,7 @@
       <img class="footer-icon" style="height: 2em;" alt="XXIIVV webring" src="https://webring.xxiivv.com/icon.black.svg"/>
     </a>
     <a>
-      <img class="footer-icon" alt="ROKA 50th Infantry Division" src="/snslogo/fifty.svg"/>
+      <Image src={fifiethdiv} alt="ROKA 50th Infantry Division" />
     </a>
     <div style="flex-grow: 1">
       <a class="muted" style="text-decoration: none; font-variant: oldstyle-nums;" href="https://github.com/itsSanalog/sanalog.net/blob/main/LICENSE" target="_blank">sanalog 2025</a>
