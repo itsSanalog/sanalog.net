@@ -22,7 +22,19 @@ sortOrder: 1
 
 # What
 
-sanaBlog or 산아록 is a website to archive and share what I [see](/blog/gallery), [write](/blog), and [use](/blog/reviews). There are notes, rants, reviews, projects, photos... many things. I try to update most of them regularly.
+sanaBlog or 산아록 is a notebook in webpage form. It is part of sanalog.net, the personal website and playspace of Sanalog.
+
+Its purpose is to be a secretary of sorts—a second brain. A place where I archive various information, experiences, or emotions. It shares what I [see](/blog/gallery), [write](/blog), and [use](/blog/reviews). There are notes, rants, reviews, projects, photos... many things. sanaBlog grows and changes as I do the same. As such, I try to update most of them regularly.
+
+### Meta
+
+sanaBlog is a static site hosted on <a href="https://pages.github.com/" target="_blank" class="extlink">GitHub Pages</a>. It is built using <a href="https://astro.build/" target="_blank" class="extlink">Astro</a>, with HTML, CSS, and a touch of JavaScript. Content is written using Markdown. More details in [wesbite](/blog/code/wesbite).
+
+sanaBlog's code is under the MIT license, and all content is under the BY-NC-SA 4.0 license.
+
+sanaBlog is part of the <a href="https://webring.adilene.net/index.php" target="_blank" class="extlink">Vocaloid webring</a>.
+
+<!-- <a href="https://webring.xxiivv.com" target="_blank" class="extlink">xxiivv webring</a> -->
 
 # Who
 
@@ -50,3 +62,5 @@ Though I cannot swear by it, I will try to:
 - Write content that is accurate and correct (to my best knowledge).
 - Credit relevant sources.
 - Be entertaining. This is very difficult.
+
+Questions, feedback, or suggestions are always welcome. You can <a href="mailto:me@sanalog.net">email: me (at) sanalog.net</a>.
