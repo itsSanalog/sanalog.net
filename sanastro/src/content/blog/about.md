@@ -60,10 +60,6 @@ I like making things. <b style="font-family: 'Comic Neue'">Design is my passion<
 
 This site exists for me. For me to learn, remember, and reminisce (more likely, cringe at). It is a place for me to write but not necessarily for someone else to read. It is public though, for someone with a weird taste in reading to enjoy.
 
-Merveilles is a collective of forward-thinking individuals who strive to better each other and their surroundings through constant creation and play. This community project is aimed at the establishment of new ways of speaking, seeing and organizing. A warm welcome to any like-minded people who feel these ideals resonate with them.
-
-We're trying to build a community that welcomes multidisciplinarity, with somewhat high standards of discourse, focusing on the topics of experimental art, music & code. We ask of our members to consider the impact of their works on the environment, and to optimize toward living more sustainably.
-
 # How
 
 Though I cannot swear by it, I will try to:
