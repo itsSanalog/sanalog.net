@@ -20,17 +20,19 @@ sortOrder: 1
 
 *<span class="muted">..that would be me.</span>*
 
+A self-introduction.
+
 # What
 
 sanaBlog or 산아록 is a notebook in webpage form. It is part of sanalog.net, the personal website and playspace of Sanalog.
 
-Its purpose is to be a secretary of sorts—a second brain. A place where I archive various information, experiences, or emotions. It shares what I [see](/blog/gallery), [write](/blog), and [use](/blog/reviews). There are notes, rants, reviews, projects, photos... many things. sanaBlog grows and changes as I do the same. As such, I try to update most of them regularly.
+Its purpose is to be a secretary of sorts—a second brain. It archives various information, experiences, or emotions. It shares what I [see](/blog/gallery), [create](/blog), and [spend time with](/blog/reviews). Content comes in the form of articles, rants, reviews, stories, project logs, photos... many things. sanaBlog grows and changes as I do. As such, I try to update most content regularly.
 
 ### Meta
 
 sanaBlog is a static site hosted on <a href="https://pages.github.com/" target="_blank" class="extlink">GitHub Pages</a>. It is built using <a href="https://astro.build/" target="_blank" class="extlink">Astro</a>, with HTML, CSS, and a touch of JavaScript. Content is written using Markdown. More details in [wesbite](/blog/code/wesbite).
 
-sanaBlog's code is under the MIT license, and all content is under the BY-NC-SA 4.0 license.
+sanaBlog's code is under the <a target="_balnk" class="extlink" href="https://github.com/itsSanalog/sanalog.net/blob/main/LICENSE" target="_blank">MIT license</a>, and all content is under the <a target="_blank" class="extlink" href="https://creativecommons.org/licenses/by-nc-sa/4.0">BY-NC-SA 4.0 license</a>.
 
 sanaBlog is part of the <a href="https://webring.adilene.net/index.php" target="_blank" class="extlink">Vocaloid webring</a>.
 
@@ -38,7 +40,11 @@ sanaBlog is part of the <a href="https://webring.adilene.net/index.php" target="
 
 # Who
 
-Sanalog is currently in active duty, cooking three meals a day for ~60 people. I am also a Field Radio Operator and Drill Instructor when they need me to be. Guess that's how it is when the entire base is ran by such few people. I update sanaBlog on my phone.
+Sanalog likes to play. Sanalog is:
+
+Currently in active duty, cooking three meals a day for ~60 people. I am also a Field Radio Operator and Drill Instructor when they need me to be. Guess that's how it is when the entire base is ran by such few people. I update sanaBlog on my phone.
+
+Sanalog operates under the [credo](/blog/credo).
 
 # Why
 
@@ -52,7 +58,11 @@ I like making things. <b style="font-family: 'Comic Neue'">Design is my passion<
 
 ..all at once.
 
-This site exists for me. For me to learn, remember, and reminisce (more likely, cringe at). It is a place for me to write, for its own sake, not necessarily for someone else to read. It is public though, for someone with a weird taste in reading to enjoy.
+This site exists for me. For me to learn, remember, and reminisce (more likely, cringe at). It is a place for me to write but not necessarily for someone else to read. It is public though, for someone with a weird taste in reading to enjoy.
+
+Merveilles is a collective of forward-thinking individuals who strive to better each other and their surroundings through constant creation and play. This community project is aimed at the establishment of new ways of speaking, seeing and organizing. A warm welcome to any like-minded people who feel these ideals resonate with them.
+
+We're trying to build a community that welcomes multidisciplinarity, with somewhat high standards of discourse, focusing on the topics of experimental art, music & code. We ask of our members to consider the impact of their works on the environment, and to optimize toward living more sustainably.
 
 # How
 
