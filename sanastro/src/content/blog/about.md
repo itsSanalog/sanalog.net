@@ -28,7 +28,7 @@ sanaBlog or 산아록 is a notebook in webpage form. It is part of sanalog.net, 
 
 Its purpose is to be a secretary of sorts—a second brain. It archives various information, experiences, or emotions. It shares what I [see](/blog/gallery), [create](/blog), and [spend time with](/blog/reviews). Content comes in the form of articles, rants, reviews, stories, project logs, photos... many things. sanaBlog grows and changes as I do. As such, I try to update most content regularly.
 
-### Meta
+## Meta
 
 sanaBlog is a static site hosted on <a href="https://pages.github.com/" target="_blank" class="extlink">GitHub Pages</a>. It is built using <a href="https://astro.build/" target="_blank" class="extlink">Astro</a>, with HTML, CSS, and a touch of JavaScript. Content is written using Markdown. More details in [wesbite](/blog/code/wesbite).
 
@@ -42,7 +42,7 @@ sanaBlog is part of the <a href="https://webring.adilene.net/index.php" target="
 
 Sanalog likes to play. Sanalog is:
 
-Currently in active duty, cooking three meals a day for ~60 people. I am also a Field Radio Operator and Drill Instructor when they need me to be. Guess that's how it is when the entire base is ran by such few people. I update sanaBlog on my phone.
+> Currently in active duty, cooking three meals a day for ~60 people. I am also a Field Radio Operator and Drill Instructor when they need me to be. Guess that's how it is when the entire base is ran by such few people. I update sanaBlog on my phone.
 
 Sanalog operates under the [credo](/blog/credo).
 
@@ -68,7 +68,7 @@ I try to:
 
 - Ensure 'correct' spelling, punctuation, and grammar.
 - Create content that is accurate and correct to my best knowledge.
-- Create content that is welcoming, accessible, and entertaining.
+- Create content that is welcoming, accessible, and enjoyable.
 - Credit relevant sources.
 
 Questions, feedback, or suggestions are always welcome. You can <a href="mailto:me@sanalog.net">email: me (at) sanalog.net</a>.
