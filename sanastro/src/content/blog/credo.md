@@ -14,9 +14,26 @@ sortOrder: 1
 
 # credo
 
-*<span class="muted">..also known as polaris.</span>*
+*<span class="muted">..you am i.</span>*
 
 A set of beliefs and waypoints.
+
+# Polaris
+
+The Polaris code governs behaviour.
+
+# Kochab
+
+The Kochab code governs design.
+
+# Pherkad
+
+The Pherkad code governs content.
+
+# Yildun
+
+The Yildun code governs the credo.
+
 
 <!-- Merveilles is a collective of forward-thinking individuals who strive to better each other and their surroundings through constant creation and play. This community project is aimed at the establishment of new ways of speaking, seeing and organizing. A warm welcome to any like-minded people who feel these ideals resonate with them.
 

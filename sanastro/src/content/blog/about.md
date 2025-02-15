@@ -62,11 +62,13 @@ This site exists for me. For me to learn, remember, and reminisce (more likely, 
 
 # How
 
-Though I cannot swear by it, I will try to:
+sanaBlog's content is created under the [Pherkad code](/blog/credo#pherkad), part of the [credo](/blog/credo).
 
-- Ensure 'correct' spelling, puntuation, grammar,
-- Write content that is accurate and correct (to my best knowledge).
+I try to:
+
+- Ensure 'correct' spelling, punctuation, and grammar.
+- Create content that is accurate and correct to my best knowledge.
+- Create content that is welcoming, accessible, and entertaining.
 - Credit relevant sources.
-- Be entertaining. This is very difficult.
 
 Questions, feedback, or suggestions are always welcome. You can <a href="mailto:me@sanalog.net">email: me (at) sanalog.net</a>.
