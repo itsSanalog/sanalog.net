@@ -32,7 +32,7 @@ Its purpose is to be a secretary of sorts—a second brain. It archives various 
 
 sanaBlog is a static site hosted on <a href="https://pages.github.com/" target="_blank" class="extlink">GitHub Pages</a>. It is built using <a href="https://astro.build/" target="_blank" class="extlink">Astro</a>, with HTML, CSS, and a touch of JavaScript. Content is written using Markdown. More details in [wesbite](/blog/code/wesbite).
 
-sanaBlog's code is under the <a target="_balnk" class="extlink" href="https://github.com/itsSanalog/sanalog.net/blob/main/LICENSE" target="_blank">MIT license</a>, and all content is under the <a target="_blank" class="extlink" href="https://creativecommons.org/licenses/by-nc-sa/4.0">BY-NC-SA 4.0 license</a>.
+sanaBlog's code is under the <a target="_blank" class="extlink" href="https://github.com/itsSanalog/sanalog.net/blob/main/LICENSE">MIT license</a>, and all content is under the <a target="_blank" class="extlink" href="https://creativecommons.org/licenses/by-nc-sa/4.0">BY-NC-SA 4.0 license</a>.
 
 sanaBlog is part of the <a href="https://webring.adilene.net/index.php" target="_blank" class="extlink">Vocaloid webring</a>.
 
@@ -48,15 +48,7 @@ Sanalog operates under the [credo](/blog/credo).
 
 # Why
 
-I like making things. <b style="font-family: 'Comic Neue'">Design is my passion</b>. It's a wonderful realm of countless disciplines, and the only one where I can enjoy:
-
-- Writing
-- Graphics and visualisation
-- Programming
-- 3D modelling
-- Games
-
-..all at once.
+I like making things. <b style="font-family: 'Comic Neue'">Design is my passion</b>. It's a wonderful realm of countless disciplines, and the only one where I can enjoy them all at once.
 
 This site exists for me. For me to learn, remember, and reminisce (more likely, cringe at). It is a place for me to write but not necessarily for someone else to read. It is public though, for someone with a weird taste in reading to enjoy.
 
