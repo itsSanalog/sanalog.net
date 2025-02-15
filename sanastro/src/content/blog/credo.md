@@ -30,24 +30,19 @@ My work processes favour creativity and innovative approaches to tasks. This is 
 
 > In a wicked world, relying upon experience from a single domain is not only limiting, it can be disastrous.
 
-In <a target="_blank" class="extlink" href="https://www.goodreads.com/book/show/255132.The_Medici_Effect">*The Medici Effect*</a> enough, have an intense ardour for intellectual cross-pollination.
-
-
-
-
-We're trying to build a community that welcomes multidisciplinarity, with somewhat high standards of discourse, focusing on the topics of experimental art, music & code. We ask of our members to consider the impact of their works on the environment, and to optimize toward living more sustainably. -->
+It is thus not surprising that have an intense ardour for <a target="_blank" class="extlink" href="https://www.goodreads.com/book/show/255132.The_Medici_Effect">intellectual cross-pollination</a>.
 
 # Polaris
 
 The Polaris code governs behaviour.
 
-##### Better yourself.
-
-Anything you do,
-
 ##### Play is good.
 
-Play is good. Play is constant creation. Play is constant problem solving and play is constant quitting. The speed and efficiency in which one gains experience is almost cheating.
+Play is good. Play is constant creation. Play is constant problem solving and play is constant quitting. The speed and efficiency in which one gains experience through play is almost cheating.
+
+##### Better yourself.
+
+Anything you do, be aware of what you have earned. So much as a smile is a good enough incentive to do something.
 
 ##### Better the world.
 
@@ -57,26 +52,45 @@ The Confucian ideal society resonates with me, one where the people are enriched
 
 The Kochab code governs design.
 
+Good design
+
+- is innovative
+- makes a product useful
+- is aesthetic
+- makes a product understandable
+- is unobtrusive
+- is honest
+- is long-lasting
+- is thorough down to the last detail
+- is environmentally-friendly
+- is as little design as possible
+
+Additionally:
+
+Good design should be iterated. It should be ethical. Good design should be international and non-discriminatory. Good design should be *fun*.
+
 # Pherkad
 
 The Pherkad code governs content.
 
 ##### Ensure optimal presentation.
 
+There are countless approaches to this. A few out of a million things to care about:
 
-- prioritise human readable formats
-
-With images or other visual media:
-- be sensible in choosing between vectors and rasters
-- be reasonable with fidelity and compression
+- Practice 'correct' spelling, punctuation, and grammar.
+- Prioritise human readable formats.
+- Be consistent in style and hierarchy.
+- Be sensible in choosing file formats (e.g. vectors/rasters).
+- Be reasonable with fidelity and compression.
+- Account for accessibility or technical edge cases.
 
 ##### Create content that is accurate and correct.
 
-There is no place for content that is made to mislead or misinform.
+There is no place for content made to mislead or misinform.
 
 ##### Create content that is welcoming, accessible, and enjoyable.
 
-
+Fuck discrimination. Fuck reactionaries. Fuck boring spreadsheets reporting on quarterly earnings.
 
 ##### Credit sources.
 
@@ -91,4 +105,3 @@ The credo is not to be *followed*. The credo is not a railway track. The credo i
 ##### The credo is not immutable.
 
 The credo changes.
-
