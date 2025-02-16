@@ -20,7 +20,7 @@ sortOrder: 1
   <path d="M 73.917 309.14 L 48.917 327.89 L 48.917 227.89 C 48.917 200.276 71.303 177.89 98.917 177.89 C 126.531 177.89 148.917 200.276 148.917 227.89 C 148.917 255.504 126.531 277.89 98.917 277.89 C 89.81 277.89 81.271 275.455 73.917 271.201 L 73.917 309.14 Z M 148.917 127.89 L 148.917 194.712 C 138.168 178.545 119.787 167.89 98.917 167.89 C 97.754 167.89 96.599 167.923 95.453 167.988 L 148.917 127.89 Z M 98.917 202.89 C 85.11 202.89 73.917 214.083 73.917 227.89 C 73.917 241.697 85.11 252.89 98.917 252.89 C 112.724 252.89 123.917 241.697 123.917 227.89 C 123.917 214.083 112.724 202.89 98.917 202.89 Z" style="fill: var(--color-tx-normal)"/>
 </svg>
 
-A set of beliefs and waypoints. Under construction.
+A set of beliefs and waypoints.
 
 # Introduction
 
@@ -28,9 +28,11 @@ I enjoy learning. I enjoy experiencing things, especially regarding creative med
 
 My work processes favour creativity and innovative approaches to tasks. This is accompanied by heavy, yet uncluttered documentation with a focus on clarity. I try to apply the various knowledge and skills I have acquired in the past, gaining a deeper understanding of them in the process.
 
+It is thus not surprising that I have an intense ardour for <a target="_blank" class="extlink" href="https://www.goodreads.com/book/show/255132.The_Medici_Effect">intellectual cross-pollination</a>.
+
 > In a wicked world, relying upon experience from a single domain is not only limiting, it can be disastrous.
 
-It is thus not surprising that have an intense ardour for <a target="_blank" class="extlink" href="https://www.goodreads.com/book/show/255132.The_Medici_Effect">intellectual cross-pollination</a>.
+I created the credo to remind myself of the things I love and how I should act. The credo is split into four codes. Their names borrow inspiration from the little bear (little dipper) constellation, as an homage to seafarers using the perpetually visible to safeguard themselves on their parlous journeys.
 
 # Polaris
 
