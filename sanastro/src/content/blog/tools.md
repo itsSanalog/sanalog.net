@@ -16,7 +16,17 @@ sortOrder: 1
 
 *<span class="muted">..whether i like them or not.</span>*
 
-A list of tools I use frequently. For detailed thoughts on a specific product, check out [reviews/tools](/blog/reviews/tools) or click on individual links below.
+A list of tools I use frequently. For detailed thoughts on a specific item, check out [reviews/tools](/blog/reviews/tools).
+
+<p class="muted">quick links</p>
+<a href="#everyday" class=mmr>everyday</a>&centerdot;
+<a href="#computers" class="mml mmr">computers</a>&centerdot;
+<a href="#other-electronics" class="mml mmr">other electronics</a>&centerdot;
+<a href="#software" class="mml mmr">software</a>&centerdot;
+<a href="#audio" class="mml mmr">audio</a>&centerdot;
+<a href="#kitchen" class="mml">kitchen</a>
+
+# Everyday
 
 # Computers
 
@@ -83,15 +93,12 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 # Other Electronics
 *<span class="muted">most of these are technically computers</span>*
-- **Fujifilm X-A3 Camera** &centerdot; semi-broken, but it works enough.
-- **Hitachi VC-6025 Oscilloscope** &centerdot; somehow very useful.
-- **Aiwa RX650 Cassette Player** &centerdot; fantastic little thing.
-- **Moondrop Chu 2** &centerdot; lifeline.
-- **Truthear Zero: Red** &centerdot; for uneasy listening.
+- **Fujifilm X-A3 camera** &centerdot; semi-broken, but it works enough.
+- **Hitachi VC-6025 oscilloscope** &centerdot; somehow very useful.
 - **Nintendo Wii** &centerdot; homebrewed. Easily the best console to exist.
 - **Nintendo Switch** &centerdot; replaced the joysticks with hall effect ones.
-- **Ti-83 Plus** &centerdot; the better one.
-- **Ti-84 Plus CE** &centerdot; the worse one.
+- **Ti-83 Plus caculator** &centerdot; the better one.
+- **Ti-84 Plus CE calculator** &centerdot; the worse one.
 
 # Software
 
@@ -146,6 +153,26 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 - <a href="https://learn.microsoft.com/en-us/windows/powertoys/" target="_blank" class="extlink">PowerToys</a>. Also a must-have.
 
+# Audio
+
+- **Aiwa RX650 cassette player** &centerdot; fantastic little thing.
+- **Sony Walkman WM-FX200 cassette player** &centerdot; for twee pop.
+- **Moondrop Chu 2 IEM** &centerdot; lifeline.
+- **Truthear Zero: Red IEM** &centerdot; for uneasy listening.
+- **Rega Planar P1 turntable**
+- **Triangle LN01A**
+- **Beocenter 1500** &centerdot; a beautiful all-in-one machine.
+
+# Kitchen
+
+- Chef's knife
+- Cleaver
+- Wooden cutting board
+- Stainless steel pots and skillet
+- Non-stick pan
+- Wok
+- Ramyun pot
+
 <br>
 
-<span class="muted">last updated on Jul 15, 2024</span>
+<span class="muted">last updated on Mar 01, 2025</span>
