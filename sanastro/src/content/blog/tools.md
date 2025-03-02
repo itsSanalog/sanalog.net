@@ -18,15 +18,20 @@ sortOrder: 1
 
 A list of tools I use frequently. For detailed thoughts on a specific item, check out [reviews/tools](/blog/reviews/tools).
 
-<p class="muted">quick links</p>
-<a href="#everyday" class=mmr>everyday</a>&centerdot;
-<a href="#computers" class="mml mmr">computers</a>&centerdot;
-<a href="#other-electronics" class="mml mmr">other electronics</a>&centerdot;
-<a href="#software" class="mml mmr">software</a>&centerdot;
-<a href="#audio" class="mml mmr">audio</a>&centerdot;
-<a href="#kitchen" class="mml">kitchen</a>
 
-# Everyday
+<details>
+  <summary>Chapters — click to expand</summary>
+    <!-- <a href="#everyday">everyday</a><br> -->
+    <a href="#computers">computers</a><br>
+    <a href="#other-electronics">other electronics</a><br>
+    <a href="#software">software</a><br>
+    <a href="#hardware">hardware</a><br>
+    <a href="#audio">audio</a><br>
+    <a href="#kitchen">kitchen</a>
+</details>
+
+
+<!-- # Everyday -->
 
 # Computers
 
@@ -146,12 +151,16 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 
 - <a href="https://wandbox.org/" target="_blank" class="extlink">Wandbox</a> is a browser-based compiler that's very useful for quick tests.
 
-
 ## Windows
 
 - <a href="https://github.com/valinet/ExplorerPatcher" target="_blank" class="extlink">ExplorerPatcher</a>. Pretty much a must-have for Windows 11.
 
 - <a href="https://learn.microsoft.com/en-us/windows/powertoys/" target="_blank" class="extlink">PowerToys</a>. Also a must-have.
+
+# Hardware
+
+- Xiaomi electric precision screwdriver
+- Blackfox Bean Gen 2 folding knife
 
 # Audio
 
