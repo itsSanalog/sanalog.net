@@ -5,11 +5,11 @@ coverAlt: "Dissertations of a Passive Mind"
 # bannerAlt: "Dissertations of a Passive Mind"
 
 title: "Dissertations of a Passive Mind"
-description: ""
+description: "Pseudorandom word vending machine."
 # author:
 publicationDate: 2022-03-22
 # creationDate: "March 2022"
 sortOrder: 1
 ---
 
-pseudorandom word vending machine. <a href="/iruda/dissertations">connect here</a>.
+<a href="/iruda/dissertations">connect</a>.

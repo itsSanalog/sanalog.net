@@ -7,8 +7,9 @@ const preface = await getEntry("reviews", "preface");
 const { Content } = await preface.render();
 ---
 
-<BlogLayout title="Reviews">
+<BlogLayout>
   <content>
+
     <p class="muted">quick links</p>
     <!-- To use centerdot or | is a good UI question, as well as using &centerdot; over &xB7; for clarity -->
     <a href="/blog/reviews/music" class="plain mmr">music</a>&centerdot;
