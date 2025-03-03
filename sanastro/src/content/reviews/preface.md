@@ -2,7 +2,7 @@
 # imageLink:
 # imageAlt:
 
-title: Preface
+title: whatever
 # artist:
 # releaseDate:
 
@@ -12,6 +12,20 @@ sortOrder: 1
 # stars:
 # rating:
 ---
+
+# Reviews
+
+*<span class="muted">..of what, exactly?</span>*
+
+An archive of things I have interacted with.
+
+<p class="muted">quick links</p>
+<!-- To use centerdot or | is a good UI question, as well as using &centerdot; over &xB7; for clarity -->
+<a href="/blog/reviews/music" class="plain mmr">music</a>&centerdot;
+<a href="/blog/reviews/games" class="plain mml mmr">games</a>&centerdot;
+<a href="/blog/reviews/film" class="plain mml mmr">film</a>&centerdot;
+<a href="/blog/reviews/webtoon" class="plain mml mmr">webtoon</a>&centerdot;
+<a href="/blog/reviews/tools" class="plain mml">tools</a>
 
 # Preface
 

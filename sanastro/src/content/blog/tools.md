@@ -18,7 +18,6 @@ sortOrder: 1
 
 A list of tools I use frequently. For detailed thoughts on a specific item, check out [reviews/tools](/blog/reviews/tools).
 
-
 <details>
   <summary>Chapters — click to expand</summary>
     <!-- <a href="#everyday">everyday</a><br> -->
@@ -29,7 +28,6 @@ A list of tools I use frequently. For detailed thoughts on a specific item, chec
     <a href="#audio">audio</a><br>
     <a href="#kitchen">kitchen</a>
 </details>
-
 
 <!-- # Everyday -->
 
