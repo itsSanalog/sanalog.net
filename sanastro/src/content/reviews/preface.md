@@ -13,7 +13,7 @@ sortOrder: 1
 # rating:
 ---
 
-# Reviews
+# reviews
 
 *<span class="muted">..of what, exactly?</span>*
 
