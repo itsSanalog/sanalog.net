@@ -2,7 +2,7 @@ import { defineConfig, squooshImageService } from "astro/config";
 import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import svelte from "@astrojs/svelte";
-// import sitemap from '@astrojs/sitemap';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,5 +27,5 @@ export default defineConfig({
       ],
     ],
   },
-  integrations: [svelte()], //sitemap()
+  integrations: [svelte(), sitemap()],
 });
