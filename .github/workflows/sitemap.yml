@@ -28,10 +28,10 @@ jobs:
       - name: Generate diagram from sitemap
         run: node .github/scripts/draw.js
         
-      # - name: Detect changes and commit, then push
-      #   run: |
-      #     git config --global user.name 'GitHub Action'
-      #     git config --global user.email 'action@github.com'
-      #     git add src/pages/sitsemap-diagram.md
-      #     git diff --staged --quiet || git commit -m "Update sitemap diagram"
-      #     git push
+      - name: Detect changes and commit, then push
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add astro/src/content/blog/sitemap.md
+          git diff --staged --quiet || git commit -m "Update sitemap diagram"
+          git push

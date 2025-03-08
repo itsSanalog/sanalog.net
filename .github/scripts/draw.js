@@ -1,4 +1,4 @@
-// THIS WAS MADE WITH COPILOT BECAUSE I REALLY COULDNT BE ARSED TO FIGURE IT OUT MYSELF
+// THIS WAS FIRST MADE WITH COPILOT BECAUSE I REALLY COULDNT BE ARSED TO FIGURE IT OUT MYSELF
 
 
 const fs = require('fs');
@@ -8,10 +8,13 @@ const xml2js = require('xml2js');
 // Parse the XML sitemap
 async function main() {
   try {
+    const rootDir = process.cwd();
+    const astroDir = path.join(rootDir, 'sanastro');
+    
     // Read the generated sitemap.xml
-    const sitemapPath = path.join(process.cwd(), 'dist', 'sitemap-index.xml');
+    const sitemapPath = path.join(astroDir, 'dist', 'sitemap-index.xml');
     // If using the basic sitemap format without index
-    const fallbackPath = path.join(process.cwd(), 'dist', 'sitemap-0.xml');
+    const fallbackPath = path.join(astroDir, 'dist', 'sitemap-0.xml');
     
     const sitemapExists = fs.existsSync(sitemapPath);
     const fallbackExists = fs.existsSync(fallbackPath);
@@ -36,7 +39,7 @@ async function main() {
       for (const sitemap of result.sitemapindex.sitemap) {
         const loc = sitemap.loc[0];
         const filename = path.basename(loc);
-        const individualSitemapPath = path.join(process.cwd(), 'dist', filename);
+        const individualSitemapPath = path.join(astroDir, 'dist', filename);
         
         if (fs.existsSync(individualSitemapPath)) {
           const individualSitemapXml = fs.readFileSync(individualSitemapPath, 'utf8');
@@ -121,37 +124,45 @@ async function main() {
     
     buildAsciiTree(pages);
     
-    // Update the markdown file
-    const markdown = `---
-title: Sitemap Diagram
-layout: ../sanastro/layouts/BlogLayout.astro
+    // Create or update the markdown file
+    const markdown = 
+`---
+# cover:
+# coverAlt:
+# banner:
+# bannerAlt:
+
+title: "Sitemap"
+# description: ""
+# author:
+# publicationDate: ${new Date().toISOString().split('T')[0]}
+# creationDate: 
+sortOrder: 1
 ---
 
-# Site Structure Diagram
-
-Mermaid diagram:
+# Sitemap
 
 \`\`\`mermaid
 ${mermaidDiagram}
 \`\`\`
 
-## Fallback ASCII Tree
-
-ASCII version:
-
 \`\`\`
 ${asciiTree}
 \`\`\`
+
+<br>
+
+<span class="muted">last updated on ${new Date().toISOString().split('T')[0]}</span>
 `;
 
     // Make sure the directory exists
-    const outputDir = path.join(process.cwd(), 'src', 'pages');
+    const outputDir = path.join(astroDir, 'src', 'content', 'blog');
     fs.mkdirSync(outputDir, { recursive: true });
     
-    // Write the markdown file
-    fs.writeFileSync(path.join(outputDir, 'sitemap-diagram.md'), markdown);
+    // Write the markdown file to the new location
+    fs.writeFileSync(path.join(outputDir, 'sitemap.md'), markdown);
     
-    console.log('Sitemap diagram generated successfully!');
+    console.log('Sitemap diagram generated successfully at src/content/blog/sitemap.md!');
     
   } catch (error) {
     console.error('Error generating sitemap diagram:', error);
