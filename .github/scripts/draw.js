@@ -140,11 +140,9 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-# Sitemap
-
-// \`\`\`mermaid
-// ${mermaidDiagram}
-// \`\`\`
+\`\`\`mermaid
+${mermaidDiagram}
+\`\`\`
 
 <pre>
 ${asciiTree}
