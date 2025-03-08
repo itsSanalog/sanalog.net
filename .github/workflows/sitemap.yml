@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-generate:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,9 +18,6 @@ jobs:
           
       - name: Install dependencies
         run: npm install
-        
-      - name: Build site
-        run: npm run build
         
       - name: Install xml2js for parsing
         run: npm install xml2js
