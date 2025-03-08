@@ -1,34 +1,46 @@
 name: Generate Sitemap Diagram
 
 on:
-  push:
-    branches: [ main ]
+  # Run after the Astro build is complete
+  workflow_run:
+    workflows: ["Deploy Astro to GitHub Pages"]
+    types:
+      - completed
+  # Also allow manual trigger
   workflow_dispatch:
 
 jobs:
-  generate:
+  generate-sitemap:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
       
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
-          
-      - name: Install dependencies
-        run: npm install
-        
-      - name: Install xml2js for parsing
+      
+      - name: Install dependencies in sanastro directory
+        run: |
+          cd sanastro
+          npm install
+      
+      - name: Install xml2js
         run: npm install xml2js
-        
+      
+      - name: Build Astro site first to generate sitemap
+        # /dist is in .gitignore, so the files aren't present for draw.js to work with. Build is now included in the workflow so /dist will exist when the script runs.
+        working-directory: sanastro
+        run: npm run build
+      
       - name: Generate diagram from sitemap
         run: node .github/scripts/draw.js
-        
-      - name: Detect changes and commit, then push
+      
+      - name: Commit and push if there are changes
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add astro/src/content/blog/sitemap.md
+          git add sanastro/src/content/blog/sitemap.md
           git diff --staged --quiet || git commit -m "Update sitemap diagram"
           git push
