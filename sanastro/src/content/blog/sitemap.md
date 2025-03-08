@@ -12,10 +12,8 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-# Sitemap
-
-// ```mermaid
-// graph TD
+```mermaid
+graph TD
     home["home"]
     about["about"]
     blog["blog"]
@@ -182,7 +180,7 @@ sortOrder: 1
     iruda_sorter_parannoul["parannoul"]
     iruda_sorter --> iruda_sorter_parannoul
 
-// ```
+```
 
 <pre>
 Site Structure
