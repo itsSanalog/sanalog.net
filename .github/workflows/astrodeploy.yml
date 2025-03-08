@@ -1,31 +1,57 @@
 name: Deploy Astro to GitHub Pages
 
 on:
-  workflow_run:
-    workflows: ["Generate Sitemap Diagram"]
-    types:
-      - completed
+  push:
+    branches: [main]
 
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
+# Allow job to clone the repo and deploy
 permissions:
   contents: read
   pages: write
   id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
-      - name: Install, build, and upload your site output
-        uses: withastro/action@v2
-        with:
-            path: sanastro # The root location of your Astro project inside the repository. (optional)
-            # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
-            # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+  generate-sitemap-and-build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+        
+        - name: Setup Node.js
+          uses: actions/setup-node@v4
+          with:
+            node-version: '18'
+        
+        - name: Install dependencies in sanastro directory
+          run: |
+            cd sanastro
+            npm install
+        
+        - name: Install xml2js
+          run: npm install xml2js
+        
+        - name: Build
+          # /dist is in .gitignore, so the files aren't present for draw.js to work with. Build is now included in the workflow so /dist will exist when the script runs.
+          uses: withastro/action@v2
+          with:
+              path: sanastro # The root location of Astro project
+          
+          # Fallback:
+          # working-directory: sanastro
+          # run: npm run build
+        
+        - name: Generate diagram from sitemap
+          run: node .github/scripts/draw.js
+        
+        # - name: Commit and push if there are changes
+        #   run: |
+        #     git config --global user.name 'GitHub Action'
+        #     git config --global user.email 'action@github.com'
+        #     git add sanastro/src/content/blog/sitemap.md
+        #     git diff --staged --quiet || git commit -m "Update sitemap diagram"
+        #     git push
 
   deploy:
     needs: build
