@@ -1,12 +1,9 @@
 name: Generate Sitemap Diagram
 
 on:
-  # Run after the Astro build is complete
-  workflow_run:
-    workflows: ["Deploy Astro to GitHub Pages"]
-    types:
-      - completed
-  # Also allow manual trigger
+  push:
+  branches: [main]
+  
   workflow_dispatch:
 
 jobs:
