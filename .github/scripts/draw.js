@@ -135,24 +135,24 @@ async function main() {
 title: "Sitemap"
 # description: ""
 # author:
-# publicationDate: ${new Date().toISOString().split('T')[0]}
+# publicationDate:
 # creationDate: 
 sortOrder: 1
 ---
 
 # Sitemap
 
-\`\`\`mermaid
-${mermaidDiagram}
-\`\`\`
+// \`\`\`mermaid
+// ${mermaidDiagram}
+// \`\`\`
 
-\`\`\`
+<pre>
 ${asciiTree}
-\`\`\`
+</pre>
 
 <br>
 
-<span class="muted">last updated on ${new Date().toISOString().split('T')[0]}</span>
+<span class="muted">last updated on ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
 `;
 
     // Make sure the directory exists
