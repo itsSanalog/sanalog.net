@@ -7,15 +7,15 @@
 title: "Sitemap"
 # description: ""
 # author:
-# publicationDate: 2025-03-08
+# publicationDate:
 # creationDate: 
 sortOrder: 1
 ---
 
 # Sitemap
 
-```mermaid
-graph TD
+// ```mermaid
+// graph TD
     home["home"]
     about["about"]
     blog["blog"]
@@ -182,9 +182,9 @@ graph TD
     iruda_sorter_parannoul["parannoul"]
     iruda_sorter --> iruda_sorter_parannoul
 
-```
+// ```
 
-```
+<pre>
 Site Structure
 ============
 
@@ -274,8 +274,8 @@ Site Structure
 │   │   ├── newjeans
 │   │   ├── parannoul
 
-```
+</pre>
 
 <br>
 
-<span class="muted">last updated on 2025-03-08</span>
+<span class="muted">last updated on March 8, 2025</span>
