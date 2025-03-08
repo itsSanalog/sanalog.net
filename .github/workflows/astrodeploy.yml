@@ -2,9 +2,9 @@ name: Deploy Astro to GitHub Pages
 
 on:
   workflow_run:
-  workflows: ["Generate Sitemap Diagram"]
-  types:
-    - completed
+    workflows: ["Generate Sitemap Diagram"]
+      types:
+        - completed
 
   workflow_dispatch:
 
