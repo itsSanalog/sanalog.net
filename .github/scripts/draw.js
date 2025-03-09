@@ -151,7 +151,7 @@ async function main() {
       }
     }
     
-    addToMermaid(grflowchartoupedPages);
+    addToMermaid(groupedPages);
     
     // Also generate ASCII tree as fallback
     let asciiTree = `ASCII version\n`;
