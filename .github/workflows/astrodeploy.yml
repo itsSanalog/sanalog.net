@@ -33,25 +33,18 @@ jobs:
           run: npm install xml2js
         
         - name: Build
-          # /dist is in .gitignore, so the files aren't present for draw.js to work with. Build is now included in the workflow so /dist will exist when the script runs.
+          # /dist is in .gitignore, so the xml isn't present for draw.js to work with. Build is included in the workflow so /dist will exist when the script runs.
           uses: withastro/action@v2
           with:
               path: sanastro # The root location of Astro project
-          
-          # Fallback:
-          # working-directory: sanastro
-          # run: npm run build
         
         - name: Generate diagram from sitemap
           run: node .github/scripts/draw.js
         
-        - name: Copy sitemap.md to build output
-          run: cp sanastro/src/content/blog/sitemap.md sanastro/dist/blog/sitemap.md
-
-        # - name: Upload Pages artifact
-        #   uses: actions/upload-pages-artifact@v3
-        #   with:
-        #     path: 'sanastro/dist'
+        - name: Build again with sitemap
+          uses: withastro/action@v2
+          with:
+              path: sanastro # The root location of Astro project
 
   deploy:
     needs: generate-sitemap-and-build
