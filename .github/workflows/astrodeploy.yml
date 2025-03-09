@@ -32,11 +32,11 @@ jobs:
         - name: Install xml2js
           run: npm install xml2js
         
-        - name: Build
+        - name: Build for xml
           # /dist is in .gitignore, so the xml isn't present for draw.js to work with. Build is included in the workflow so /dist will exist when the script runs.
-          uses: withastro/action@v2
-          with:
-              path: sanastro # The root location of Astro project
+          # Astro action creates an artifact. when it runs again it tries to create a second artifact with the same name and causes a conflict. So use npm run build.
+          working-directory: sanastro
+          run: npm run build
         
         - name: Generate diagram from sitemap
           run: node .github/scripts/draw.js
