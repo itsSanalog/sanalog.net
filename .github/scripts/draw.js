@@ -86,27 +86,72 @@ async function main() {
       }
     });
     
-    // Generate Mermaid diagram
-    let mermaidDiagram = `graph TD\n`;
+    // Group section pages and count content
+    function groupAndCountPages(obj) {
+      for (const [key, value] of Object.entries(obj)) {
+        if (Object.keys(value.children).length > 0) {
+          // Count content pages in specific sections we want to group
+          if (['reviews_music', 'reviews_games', 'reviews_webtoon', 'talk'].some(section => key.includes(section))) {
+            value.contentCount = Object.keys(value.children).length;
+            value.children = {}; // Remove individual content pages
+          } else {
+            groupAndCountPages(value.children);
+          }
+        }
+      }
+      return obj;
+    }
     
-    function addToMermaid(obj, parentId = null) {
+    // Group content pages
+    const groupedPages = groupAndCountPages(structuredClone(pages));
+        
+    // Generate Mermaid diagram
+    let mermaidDiagram = `flowchart TD
+
+    %% Mermaid diagram styling
+    classDef root fill:#ffffff,stroke:#333,stroke-width:2px,color:#333,font-weight:bold
+    classDef section fill:#e6f3ff,stroke:#0077b6,stroke-width:1px,color:#0077b6,font-weight:bold
+    classDef subsection fill:#f0f7ff,stroke:#4895ef,stroke-width:1px,color:#4895ef
+    classDef content fill:#f8f9fa,stroke:#adb5bd,stroke-width:1px,color:#495057
+    classDef countNode fill:#ffedd8,stroke:#f4a261,stroke-width:1px,color:#e76f51,font-style:italic
+    `;
+    
+    function addToMermaid(obj, parentId = null, depth = 0) {
       for (const [key, value] of Object.entries(obj)) {
         const id = parentId ? `${parentId}_${key}` : key;
-        const displayName = key.replace(/-/g, ' ');
+        let displayName = key.replace(/-/g, ' ');
         
-        mermaidDiagram += `    ${id}["${displayName}"]\n`;
+        // Add content count if available
+        if (value.contentCount) {
+          displayName = `${displayName} (${value.contentCount} items)`;
+          mermaidDiagram += `    ${id}["${displayName}"]\n`;
+          mermaidDiagram += `    class ${id} countNode\n`;
+        } else {
+          mermaidDiagram += `    ${id}["${displayName}"]\n`;
+          
+          // Apply classes based on depth
+          if (depth === 0) {
+            mermaidDiagram += `    class ${id} root\n`;
+          } else if (depth === 1) {
+            mermaidDiagram += `    class ${id} section\n`;
+          } else if (depth === 2) {
+            mermaidDiagram += `    class ${id} subsection\n`;
+          } else {
+            mermaidDiagram += `    class ${id} content\n`;
+          }
+        }
         
         if (parentId) {
-          mermaidDiagram += `    ${parentId} --> ${id}\n`;
+          mermaidDiagram += `    ${parentId} -->|"${key.replace(/-/g, ' ')}"| ${id}\n`;
         }
         
         if (Object.keys(value.children).length > 0) {
-          addToMermaid(value.children, id);
+          addToMermaid(value.children, id, depth + 1);
         }
       }
     }
     
-    addToMermaid(pages);
+    addToMermaid(grflowchartoupedPages);
     
     // Also generate ASCII tree as fallback
     let asciiTree = `ASCII version\n`;
