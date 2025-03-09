@@ -13,281 +13,154 @@ const { Content } = await sitemap.render();
   
   mermaid.initialize({ 
     startOnLoad: true,
-    theme: document.body.classList.contains("theme-light") ? "light" : "dark",
+    theme: document.body.classList.contains("theme-light") ? "default" : "dark",
   });
   
-  // Add event listener for theme changes and update chart if needed
-  const themeToggle = document.querySelector("#theme-toggle");
-  if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
-      setTimeout(() => {
-        const isLightTheme = document.body.classList.contains('theme-light');
-        document.querySelectorAll(".mermaid svg").forEach(svg => {
-          // Store current viewBox and transform
-          const currentViewBox = svg.getAttribute('viewBox');
-          const currentTransform = svg.querySelector('g')?.getAttribute('transform');
+  // Re-render diagram on theme toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.querySelector("#theme-toggle");
+    if (themeToggle) {
+      themeToggle.addEventListener("click", () => {
+        // Wait for theme class to update
+        setTimeout(() => {
+          const isLightTheme = document.body.classList.contains('theme-light');
           
-          // Re-render with new theme
+          // Re-render with appropriate theme
           mermaid.initialize({ 
-            theme: isLightTheme ? 'neutral' : 'dark',
-            startOnLoad: false 
-          });
-          mermaid.init(undefined, document.querySelectorAll(".mermaid:not([data-processed])"));
-          
-          // Restore viewBox and transform after re-render
-          setTimeout(() => {
-            const newSvg = document.querySelector(".mermaid svg");
-            if (newSvg && currentViewBox) {
-              newSvg.setAttribute('viewBox', currentViewBox);
-              if (currentTransform) {
-                newSvg.querySelector('g')?.setAttribute('transform', currentTransform);
-              }
+            theme: isLightTheme ? "default" : "dark",
+            startOnLoad: false,
+            flowchart: {
+              curve: 'basis',
+              diagramPadding: 8,
+              nodeSpacing: 80,
+              rankSpacing: 120
             }
-          }, 100);
-        });
-      }, 100);
-    });
-  }
-  
-  // Add zoom and pan functionality after mermaid renders
+          });
+          
+          // Get all mermaid diagrams and re-render them
+          document.querySelectorAll(".mermaid").forEach(diagram => {
+            // Store zoom/pan state if possible
+            const svg = diagram.querySelector('svg');
+            let transform = '';
+            if (svg) {
+              const g = svg.querySelector('g');
+              if (g) transform = g.getAttribute('transform') || '';
+            }
+            
+            // Remove the 'data-processed' attribute to allow re-rendering
+            diagram.removeAttribute('data-processed');
+            
+            // Reinitialize the diagram
+            mermaid.init(undefined, diagram);
+            
+            // Restore transform after a delay to ensure rendering is complete
+            if (transform) {
+              setTimeout(() => {
+                const newSvg = diagram.querySelector('svg');
+                if (newSvg) {
+                  const newG = newSvg.querySelector('g');
+                  if (newG) newG.setAttribute('transform', transform);
+                }
+              }, 200);
+            }
+          });
+        }, 100);
+      });
+    }
+  });
+
+  // Add zoom and pan functionality after Mermaid renders
   document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
-      setupZoomPan();
-    }, 1000); // Delay to ensure mermaid has rendered
-  });
-  
-  function setupZoomPan() {
-    const mermaidContainer = document.querySelector('.mermaid-container');
-    const svg = mermaidContainer?.querySelector('svg');
-    
-    if (!svg) return;
-    
-    // Make sure SVG takes full width of container
-    svg.setAttribute('width', '100%');
-    svg.setAttribute('height', '100%');
-    
-    let viewBox = svg.getAttribute('viewBox')?.split(' ').map(Number) || [0, 0, 1000, 1000];
-    const originalViewBox = [...viewBox];
-    
-    // Initial scale and position
-    let scale = 1;
-    let translateX = 0;
-    let translateY = 0;
-    let isDragging = false;
-    let startX, startY;
-    
-    // Store the transform group for manipulation
-    const g = svg.querySelector('g');
-    
-    // Controls container
-    const controls = document.createElement('div');
-    controls.className = 'mermaid-controls';
-    controls.innerHTML = `
-      <button id="zoom-in" aria-label="Zoom In">+</button>
-      <button id="zoom-out" aria-label="Zoom Out">-</button>
-      <button id="reset" aria-label="Reset View">Reset</button>
-    `;
-    mermaidContainer.appendChild(controls);
-    
-    // Style controls
-    const style = document.createElement('style');
-    style.textContent = `
-      .mermaid-container {
-        position: relative;
-        overflow: hidden;
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        max-height: 80vh;
-        margin: 2rem 0;
-      }
+      // Find the SVG rendered by Mermaid
+      const svg = document.querySelector('.mermaid svg');
+      if (!svg) return;
       
-      .mermaid-controls {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        z-index: 100;
-        background: var(--bg-color);
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        display: flex;
-        gap: 5px;
-      }
+      // Make SVG responsive
+      svg.setAttribute('width', '100%');
+      svg.setAttribute('height', '100%');
       
-      .mermaid-controls button {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 1px solid var(--border-color);
-        background: var(--bg-color);
-        color: var(--text-color);
-        font-size: 16px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+      // Store original viewBox
+      const originalViewBox = svg.getAttribute('viewBox');
       
-      .mermaid-controls button:hover {
-        background: var(--hover-color, #f0f0f0);
-      }
+      // Variables for pan and zoom
+      let scale = 1;
+      let translateX = 0;
+      let translateY = 0;
+      let isDragging = false;
+      let startX, startY;
       
-      .mermaid svg {
-        cursor: grab;
-      }
-      
-      .mermaid svg.grabbing {
-        cursor: grabbing;
-      }
-    `;
-    document.head.appendChild(style);
-    
-    // Zoom functions
-    function zoomIn() {
-      scale *= 1.2;
-      updateTransform();
-    }
-    
-    function zoomOut() {
-      scale *= 0.8;
-      if (scale < 0.1) scale = 0.1;
-      updateTransform();
-    }
-    
-    function resetView() {
-      scale = 1;
-      translateX = 0;
-      translateY = 0;
-      svg.setAttribute('viewBox', originalViewBox.join(' '));
-      g.setAttribute('transform', '');
-    }
-    
-    function updateTransform() {
+      // Find the transform group
+      const g = svg.querySelector('g');
       if (!g) return;
-      g.setAttribute('transform', `translate(${translateX}, ${translateY}) scale(${scale})`);
-    }
-    
-    // Event listeners for controls
-    document.getElementById('zoom-in')?.addEventListener('click', zoomIn);
-    document.getElementById('zoom-out')?.addEventListener('click', zoomOut);
-    document.getElementById('reset')?.addEventListener('click', resetView);
-    
-    // Mouse events for drag
-    svg.addEventListener('mousedown', (e) => {
-      if (e.button !== 0) return; // Only left mouse button
-      isDragging = true;
-      svg.classList.add('grabbing');
-      startX = e.clientX;
-      startY = e.clientY;
-      e.preventDefault();
-    });
-    
-    window.addEventListener('mousemove', (e) => {
-      if (!isDragging) return;
       
-      const dx = (e.clientX - startX) / scale;
-      const dy = (e.clientY - startY) / scale;
-      
-      translateX += dx;
-      translateY += dy;
-      
-      startX = e.clientX;
-      startY = e.clientY;
-      
-      updateTransform();
-    });
-    
-    window.addEventListener('mouseup', () => {
-      isDragging = false;
-      svg.classList.remove('grabbing');
-    });
-    
-    // Wheel zoom
-    svg.addEventListener('wheel', (e) => {
-      e.preventDefault();
-      const zoomFactor = e.deltaY > 0 ? 0.9 : 1.1;
-      
-      // Get mouse position relative to SVG
-      const svgRect = svg.getBoundingClientRect();
-      const mouseX = e.clientX - svgRect.left;
-      const mouseY = e.clientY - svgRect.top;
-      
-      // Calculate scaling around mouse position
-      const oldScale = scale;
-      scale *= zoomFactor;
-      if (scale < 0.1) scale = 0.1;
-      if (scale > 10) scale = 10;
-      
-      // Adjust translation to zoom toward mouse position
-      const scaleFactor = scale / oldScale - 1;
-      translateX -= mouseX * scaleFactor / oldScale;
-      translateY -= mouseY * scaleFactor / oldScale;
-      
-      updateTransform();
-    });
-    
-    // Handle touch events for mobile
-    let touchStartX, touchStartY;
-    
-    svg.addEventListener('touchstart', (e) => {
-      if (e.touches.length === 1) {
+      // Mouse events for dragging/panning
+      svg.addEventListener('mousedown', (e) => {
+        if (e.button !== 0) return; // Only left mouse button
         isDragging = true;
-        touchStartX = e.touches[0].clientX;
-        touchStartY = e.touches[0].clientY;
+        svg.style.cursor = 'grabbing';
+        startX = e.clientX;
+        startY = e.clientY;
         e.preventDefault();
-      }
-    });
-    
-    svg.addEventListener('touchmove', (e) => {
-      if (!isDragging || e.touches.length !== 1) return;
-      
-      const dx = (e.touches[0].clientX - touchStartX) / scale;
-      const dy = (e.touches[0].clientY - touchStartY) / scale;
-      
-      translateX += dx;
-      translateY += dy;
-      
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
-      
-      updateTransform();
-      e.preventDefault();
-    });
-    
-    svg.addEventListener('touchend', () => {
-      isDragging = false;
-    });
-    
-    // Add URL behavior - clicking on node navigates to that page
-    svg.querySelectorAll('.node').forEach(node => {
-      node.style.cursor = 'pointer';
-      node.addEventListener('click', (e) => {
-        const textElement = node.querySelector('text');
-        if (!textElement) return;
-        
-        // Get the node ID to determine the path
-        const nodeId = node.id;
-        if (!nodeId) return;
-        
-        // Convert from mermaid node ID to path
-        const pathSegments = nodeId.split('_');
-        let url = '/';
-        
-        // Skip "home" node as it's the root
-        if (pathSegments[0] === 'home') {
-          // Navigate to home
-          window.location.href = '/';
-          return;
-        }
-        
-        // Build URL from path segments
-        url = '/' + pathSegments.join('/').replace(/_/g, '/');
-        
-        // Navigate to the URL
-        window.location.href = url;
       });
-    });
-  }
+      
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        
+        const dx = (e.clientX - startX) / scale;
+        const dy = (e.clientY - startY) / scale;
+        
+        translateX += dx;
+        translateY += dy;
+        
+        startX = e.clientX;
+        startY = e.clientY;
+        
+        updateTransform();
+      });
+      
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+        svg.style.cursor = 'grab';
+      });
+      
+      // Mouse wheel for zooming
+      svg.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        
+        // Determine zoom direction
+        const zoomFactor = e.deltaY > 0 ? 0.9 : 1.1;
+        
+        // Get mouse position relative to SVG
+        const rect = svg.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        // Calculate zoom centered on mouse position
+        const oldScale = scale;
+        scale *= zoomFactor;
+        
+        // Set reasonable limits
+        if (scale < 0.2) scale = 0.2;
+        if (scale > 5) scale = 5;
+        
+        // Adjust translation to zoom toward mouse position
+        const factor = scale / oldScale - 1;
+        translateX -= mouseX * factor / oldScale;
+        translateY -= mouseY * factor / oldScale;
+        
+        updateTransform();
+      });
+      
+      // Update transform with current values
+      function updateTransform() {
+        g.setAttribute('transform', \`translate(\${translateX}, \${translateY}) scale(\${scale})\`);
+      }
+      
+      // Initialize cursor
+      svg.style.cursor = 'grab';
+    }, 1000); // Delay to ensure Mermaid has rendered
+  });
 </script>
 
 <BlogLayout title="Sitemap">
@@ -296,12 +169,8 @@ const { Content } = await sitemap.render();
     
     <p class="muted"><em>..mapping pages makes this more of an index</em></p>
     <p class="mmb">A sitemap of sanaBlog. Work in progress.</p>
-
-    <div class="mermaid-container">
-      <div class="mermaid">
-        <Content />
-      </div>
-    </div>
+    
+    <Content />
 
   </content>
 </BlogLayout>

@@ -58,64 +58,107 @@ async function main() {
     const pages = {};
     const site = new URL(urls[0].loc[0]).origin;
     
+    // Define content sections to group
+    const contentSections = [
+      'blog/code',
+      'blog/work',
+      'blog/talk',
+      'blog/reviews/music',
+      'blog/reviews/games',
+      'blog/reviews/webtoon',
+      'blog/reviews/film',
+      'blog/reviews/tools'
+    ];
+    
+    // Process URLs and build page hierarchy
     urls.forEach(url => {
       const fullUrl = url.loc[0];
-      const path = new URL(fullUrl).pathname;
+      const urlPath = new URL(fullUrl).pathname;
       
-      if (path === '/') {
+      if (urlPath === '/') {
         pages['home'] = { path: '/', children: {} };
         return;
       }
       
-      // Split the path into segments
-      const segments = path.split('/').filter(Boolean);
+      // Skip specific files that shouldn't be in the sitemap
+      if (['/404.html', '/robots.txt', '/favicon.ico'].includes(urlPath)) {
+        return;
+      }
       
-      // Build the hierarchy
-      let current = pages;
-      for (let i = 0; i < segments.length; i++) {
-        const segment = segments[i];
-        const segmentPath = '/' + segments.slice(0, i+1).join('/');
-        
-        if (!current[segment]) {
-          current[segment] = { path: segmentPath, children: {} };
+      // Split path into segments
+      const segments = urlPath.split('/').filter(Boolean);
+      
+      // Check if this path belongs to a content section we want to group
+      let shouldGroup = false;
+      let groupPath = '';
+      
+      for (const section of contentSections) {
+        const sectionSegments = section.split('/');
+        if (segments.length > sectionSegments.length &&
+            sectionSegments.every((seg, i) => segments[i] === seg)) {
+          shouldGroup = true;
+          groupPath = section;
+          break;
         }
+      }
+      
+      if (shouldGroup) {
+        // For content pages, just add to count in their parent section
+        const groupSegments = groupPath.split('/');
+        let current = pages;
         
-        if (i < segments.length - 1) {
+        for (let i = 0; i < groupSegments.length; i++) {
+          const segment = groupSegments[i];
+          const segmentPath = '/' + groupSegments.slice(0, i+1).join('/');
+          
+          if (!current[segment]) {
+            current[segment] = { 
+              path: segmentPath, 
+              children: {},
+              contentCount: 0 
+            };
+          }
+          
+          if (i === groupSegments.length - 1) {
+            // We're at the content section, increment count
+            current[segment].contentCount = (current[segment].contentCount || 0) + 1;
+          }
+          
+          current = current[segment].children;
+        }
+      } else {
+        // For structure pages, add them normally
+        let current = pages;
+        
+        for (let i = 0; i < segments.length; i++) {
+          const segment = segments[i];
+          const segmentPath = '/' + segments.slice(0, i+1).join('/');
+          
+          if (!current[segment]) {
+            current[segment] = { path: segmentPath, children: {} };
+          }
+          
           current = current[segment].children;
         }
       }
     });
-    
-    // Group section pages and count content
-    function groupAndCountPages(obj) {
-      for (const [key, value] of Object.entries(obj)) {
-        if (Object.keys(value.children).length > 0) {
-          // Count content pages in specific sections we want to group
-          if (['reviews_music', 'reviews_games', 'reviews_webtoon', 'talk'].some(section => key.includes(section))) {
-            value.contentCount = Object.keys(value.children).length;
-            value.children = {}; // Remove individual content pages
-          } else {
-            groupAndCountPages(value.children);
-          }
-        }
-      }
-      return obj;
-    }
-    
-    // Group content pages
-    const groupedPages = groupAndCountPages(structuredClone(pages));
+
         
     // Generate Mermaid diagram
-    let mermaidDiagram = `flowchart TD
+    let mermaidDiagram = `flowchart LR
 
-    %% Mermaid diagram styling
-    classDef root fill:#ffffff,stroke:#333,stroke-width:2px,color:#333,font-weight:bold
-    classDef section fill:#e6f3ff,stroke:#0077b6,stroke-width:1px,color:#0077b6,font-weight:bold
-    classDef subsection fill:#f0f7ff,stroke:#4895ef,stroke-width:1px,color:#4895ef
-    classDef content fill:#f8f9fa,stroke:#adb5bd,stroke-width:1px,color:#495057
-    classDef countNode fill:#ffedd8,stroke:#f4a261,stroke-width:1px,color:#e76f51,font-style:italic
-    `;
+    %% Theme and styling
+    classDef root fill:#f4f6f8,stroke:#1a73e8,stroke-width:3px,color:#1a73e8,font-weight:bold
+    classDef section fill:#e8f0fe,stroke:#4285f4,stroke-width:2px,color:#4285f4,font-weight:bold
+    classDef subsection fill:#f1f8e9,stroke:#43a047,stroke-width:1.5px,color:#2e7d32
+    classDef content fill:#ffffff,stroke:#90a4ae,stroke-width:1px,color:#546e7a
+    classDef countNode fill:#fff8e1,stroke:#ffb74d,stroke-width:1.5px,color:#e65100,font-style:italic
     
+    %% Layout direction and spacing
+    linkStyle default stroke:#bdbdbd,stroke-width:1.5px
+    `;
+
+    // Add nodes and links
     function addToMermaid(obj, parentId = null, depth = 0) {
       for (const [key, value] of Object.entries(obj)) {
         const id = parentId ? `${parentId}_${key}` : key;
@@ -126,6 +169,9 @@ async function main() {
           displayName = `${displayName} (${value.contentCount} items)`;
           mermaidDiagram += `    ${id}["${displayName}"]\n`;
           mermaidDiagram += `    class ${id} countNode\n`;
+          
+          // Add URL link for navigation
+          mermaidDiagram += `    click ${id} "${value.path}" _self\n`;
         } else {
           mermaidDiagram += `    ${id}["${displayName}"]\n`;
           
@@ -139,10 +185,14 @@ async function main() {
           } else {
             mermaidDiagram += `    class ${id} content\n`;
           }
+          
+          // Add URL link for navigation
+          mermaidDiagram += `    click ${id} "${value.path}" _self\n`;
         }
         
         if (parentId) {
-          mermaidDiagram += `    ${parentId} -->|"${key.replace(/-/g, ' ')}"| ${id}\n`;
+          // Add logical connection hierarchy
+          mermaidDiagram += `    ${parentId} --> ${id}\n`;
         }
         
         if (Object.keys(value.children).length > 0) {
@@ -151,20 +201,26 @@ async function main() {
       }
     }
     
-    addToMermaid(groupedPages);
+    addToMermaid(pages);
     
     // Also generate ASCII tree as fallback
     let asciiTree = `ASCII version\n`;
     asciiTree += `=============\n\n`;
     
     function buildAsciiTree(obj, indent = '') {
-      for (const [key, value] of Object.entries(obj)) {
-        asciiTree += `${indent}├── ${key}\n`;
+      const entries = Object.entries(obj);
+      entries.forEach(([key, value], index) => {
+        const isLast = index === entries.length - 1;
+        const connector = isLast ? '└── ' : '├── ';
+        const contentInfo = value.contentCount ? ` (${value.contentCount} items)` : '';
+        
+        asciiTree += `${indent}${connector}${key}${contentInfo}\n`;
         
         if (Object.keys(value.children).length > 0) {
-          buildAsciiTree(value.children, `${indent}│   `);
+          const childIndent = indent + (isLast ? '    ' : '│   ');
+          buildAsciiTree(value.children, childIndent);
         }
-      }
+      });
     }
     
     buildAsciiTree(pages);
@@ -185,15 +241,18 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-<!--commit test 1-->
+<div class="wide">
+  <pre class="mermaid">
+    ${mermaidDiagram}
+  </pre>
+</div>
 
-<pre class="wide mermaid">
-${mermaidDiagram}
-</pre>
-
-<pre>
-${asciiTree}
-</pre>
+<details>
+  <summary>ASCII version — click to expand</summary>
+  <pre>
+    ${asciiTree}
+  </pre>
+</details>
 
 <br>
 
