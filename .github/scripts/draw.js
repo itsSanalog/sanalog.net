@@ -229,6 +229,8 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
+<!--${mermaidDiagram}-->
+
 <pre class="wide mermaid">
 ${mermaidDiagram}
 </pre>
