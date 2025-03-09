@@ -229,7 +229,12 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-<!--${mermaidDiagram}-->
+<details>
+  <summary>DEBUG</summary>
+  <pre>
+  ${asciiTree}
+  </pre>
+</details>
 
 <pre class="wide mermaid">
 ${mermaidDiagram}
