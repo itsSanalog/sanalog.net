@@ -1,6 +1,5 @@
 // THIS WAS FIRST MADE WITH COPILOT BECAUSE I REALLY COULDNT BE ARSED TO FIGURE IT OUT MYSELF
 
-
 const fs = require('fs');
 const path = require('path');
 const xml2js = require('xml2js');
@@ -13,7 +12,6 @@ async function main() {
     
     // Read the generated sitemap.xml
     const sitemapPath = path.join(astroDir, 'dist', 'sitemap-index.xml');
-    // If using the basic sitemap format without index
     const fallbackPath = path.join(astroDir, 'dist', 'sitemap-0.xml');
     
     const sitemapExists = fs.existsSync(sitemapPath);
@@ -28,7 +26,7 @@ async function main() {
       throw new Error('Sitemap file not found');
     }
     
-    // If it's a sitemap index, we need to fetch the actual sitemaps
+    // Parse sitemap
     const parser = new xml2js.Parser();
     const result = await parser.parseStringPromise(sitemapXml);
     
@@ -56,21 +54,7 @@ async function main() {
     
     // Extract page paths and organize by hierarchy
     const pages = {};
-    const site = new URL(urls[0].loc[0]).origin;
     
-    // Define content sections to group
-    const contentSections = [
-      'blog/code',
-      'blog/work',
-      'blog/talk',
-      'blog/reviews/music',
-      'blog/reviews/games',
-      'blog/reviews/webtoon',
-      'blog/reviews/film',
-      'blog/reviews/tools'
-    ];
-    
-    // Process URLs and build page hierarchy
     urls.forEach(url => {
       const fullUrl = url.loc[0];
       const urlPath = new URL(fullUrl).pathname;
@@ -80,98 +64,103 @@ async function main() {
         return;
       }
       
-      // Skip specific files that shouldn't be in the sitemap
-      if (['/404.html', '/robots.txt', '/favicon.ico'].includes(urlPath)) {
-        return;
-      }
-      
-      // Split path into segments
+      // Split the path into segments
       const segments = urlPath.split('/').filter(Boolean);
       
-      // Check if this path belongs to a content section we want to group
-      let shouldGroup = false;
-      let groupPath = '';
+      // Skip if not under /blog
+      if (segments[0] !== 'blog') return;
       
-      for (const section of contentSections) {
-        const sectionSegments = section.split('/');
-        if (segments.length > sectionSegments.length &&
-            sectionSegments.every((seg, i) => segments[i] === seg)) {
-          shouldGroup = true;
-          groupPath = section;
-          break;
-        }
-      }
-      
-      if (shouldGroup) {
-        // For content pages, just add to count in their parent section
-        const groupSegments = groupPath.split('/');
-        let current = pages;
+      // Build the hierarchy
+      let current = pages;
+      for (let i = 0; i < segments.length; i++) {
+        const segment = segments[i];
+        const segmentPath = '/' + segments.slice(0, i+1).join('/');
         
-        for (let i = 0; i < groupSegments.length; i++) {
-          const segment = groupSegments[i];
-          const segmentPath = '/' + groupSegments.slice(0, i+1).join('/');
-          
-          if (!current[segment]) {
-            current[segment] = { 
-              path: segmentPath, 
-              children: {},
-              contentCount: 0 
-            };
-          }
-          
-          if (i === groupSegments.length - 1) {
-            // We're at the content section, increment count
-            current[segment].contentCount = (current[segment].contentCount || 0) + 1;
-          }
-          
-          current = current[segment].children;
+        if (!current[segment]) {
+          current[segment] = { 
+            path: segmentPath, 
+            children: {},
+            contentCount: 0
+          };
         }
-      } else {
-        // For structure pages, add them normally
-        let current = pages;
         
-        for (let i = 0; i < segments.length; i++) {
-          const segment = segments[i];
-          const segmentPath = '/' + segments.slice(0, i+1).join('/');
-          
-          if (!current[segment]) {
-            current[segment] = { path: segmentPath, children: {} };
-          }
-          
+        if (i < segments.length - 1) {
           current = current[segment].children;
+        } else {
+          // This is a leaf node (content page)
+          current[segment].isContent = true;
         }
       }
     });
 
+    // Group pages and count content
+    function groupPages(obj) {
+      const contentCategories = {};
+      
+      // First pass: identify content categories
+      for (const [key, value] of Object.entries(obj)) {
+        if (Object.keys(value.children).length > 0) {
+          // Get category from first path segment
+          const category = key.split('_')[0];
+          if (!contentCategories[category]) {
+            contentCategories[category] = [];
+          }
+          contentCategories[category].push(key);
+        }
+      }
+      
+      // Second pass: process each node
+      for (const [key, value] of Object.entries(obj)) {
+        // If this is a section with children
+        if (Object.keys(value.children).length > 0) {
+          // Count content pages
+          let contentCount = 0;
+          for (const childValue of Object.values(value.children)) {
+            if (childValue.isContent) {
+              contentCount++;
+            }
+          }
+          
+          // If it has content pages, store the count and clear children
+          if (contentCount > 0) {
+            value.contentCount = contentCount;
+            value.children = {}; // Remove individual content pages
+          } else {
+            // Recursively process its children
+            groupPages(value.children);
+          }
+        }
+      }
+      
+      return obj;
+    }
+    
+    // Group content pages
+    const groupedPages = groupPages(structuredClone(pages));
         
     // Generate Mermaid diagram
-    let mermaidDiagram = `flowchart LR
+    let mermaidDiagram = `flowchart TD
 
-    %% Theme and styling
-    classDef root fill:#f4f6f8,stroke:#1a73e8,stroke-width:3px,color:#1a73e8,font-weight:bold
-    classDef section fill:#e8f0fe,stroke:#4285f4,stroke-width:2px,color:#4285f4,font-weight:bold
-    classDef subsection fill:#f1f8e9,stroke:#43a047,stroke-width:1.5px,color:#2e7d32
-    classDef content fill:#ffffff,stroke:#90a4ae,stroke-width:1px,color:#546e7a
-    classDef countNode fill:#fff8e1,stroke:#ffb74d,stroke-width:1.5px,color:#e65100,font-style:italic
-    
-    %% Layout direction and spacing
-    linkStyle default stroke:#bdbdbd,stroke-width:1.5px
+      %% Styling
+      classDef root fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#333,font-weight:bold,font-size:16px
+      classDef section fill:#e6f2ff,stroke:#0066cc,stroke-width:1px,color:#0066cc,font-weight:bold,font-size:14px
+      classDef subsection fill:#f0f7ff,stroke:#4895ef,stroke-width:1px,color:#4895ef,font-size:14px
+      classDef content fill:#f8f9fa,stroke:#adb5bd,stroke-width:1px,color:#495057,font-size:13px
+      classDef countNode fill:#fff8f0,stroke:#f4a261,stroke-width:1px,color:#e76f51,font-style:italic,font-size:13px
+      
+      linkStyle default stroke:#999,stroke-width:1px
     `;
 
-    // Add nodes and links
     function addToMermaid(obj, parentId = null, depth = 0) {
       for (const [key, value] of Object.entries(obj)) {
         const id = parentId ? `${parentId}_${key}` : key;
         let displayName = key.replace(/-/g, ' ');
         
         // Add content count if available
-        if (value.contentCount) {
-          displayName = `${displayName} (${value.contentCount} items)`;
+        if (value.contentCount && value.contentCount > 0) {
+          displayName = `${displayName} (${value.contentCount})`;
           mermaidDiagram += `    ${id}["${displayName}"]\n`;
           mermaidDiagram += `    class ${id} countNode\n`;
-          
-          // Add URL link for navigation
-          mermaidDiagram += `    click ${id} "${value.path}" _self\n`;
         } else {
           mermaidDiagram += `    ${id}["${displayName}"]\n`;
           
@@ -185,13 +174,10 @@ async function main() {
           } else {
             mermaidDiagram += `    class ${id} content\n`;
           }
-          
-          // Add URL link for navigation
-          mermaidDiagram += `    click ${id} "${value.path}" _self\n`;
         }
         
         if (parentId) {
-          // Add logical connection hierarchy
+          // Cleaner label without the path
           mermaidDiagram += `    ${parentId} --> ${id}\n`;
         }
         
@@ -201,7 +187,9 @@ async function main() {
       }
     }
     
-    addToMermaid(pages);
+    addToMermaid(groupedPages);
+
+    
     
     // Also generate ASCII tree as fallback
     let asciiTree = `ASCII version\n`;
@@ -223,7 +211,7 @@ async function main() {
       });
     }
     
-    buildAsciiTree(pages);
+    buildAsciiTree(groupedPages);
     
     // Create or update the markdown file
     const markdown = 
@@ -242,13 +230,13 @@ sortOrder: 1
 ---
 
 <pre class="wide mermaid">
-  ${mermaidDiagram}
+${mermaidDiagram}
 </pre>
 
 <details>
   <summary>ASCII version — click to expand</summary>
   <pre>
-    ${asciiTree}
+  ${asciiTree}
   </pre>
 </details>
 
