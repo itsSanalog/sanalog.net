@@ -12,7 +12,7 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-```mermaid
+<pre class="mermaid">
 graph TD
     home["home"]
     about["about"]
@@ -180,7 +180,7 @@ graph TD
     iruda_sorter_parannoul["parannoul"]
     iruda_sorter --> iruda_sorter_parannoul
 
-```
+</pre>
 
 <pre>
 Site Structure
@@ -276,4 +276,4 @@ Site Structure
 
 <br>
 
-<span class="muted">last updated on March 8, 2025</span>
+<span class="muted">last updated on March 9, 2025</span>
