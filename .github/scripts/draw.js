@@ -241,11 +241,9 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-<div class="wide">
-  <pre class="mermaid">
-    ${mermaidDiagram}
-  </pre>
-</div>
+<pre class="wide mermaid">
+  ${mermaidDiagram}
+</pre>
 
 <details>
   <summary>ASCII version — click to expand</summary>
