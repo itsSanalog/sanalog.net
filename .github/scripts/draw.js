@@ -109,8 +109,8 @@ async function main() {
     addToMermaid(pages);
     
     // Also generate ASCII tree as fallback
-    let asciiTree = `Site Structure\n`;
-    asciiTree += `============\n\n`;
+    let asciiTree = `ASCII version\n`;
+    asciiTree += `=============\n\n`;
     
     function buildAsciiTree(obj, indent = '') {
       for (const [key, value] of Object.entries(obj)) {
@@ -140,7 +140,7 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-<pre class="mermaid">
+<pre class="wide mermaid">
 ${mermaidDiagram}
 </pre>
 
