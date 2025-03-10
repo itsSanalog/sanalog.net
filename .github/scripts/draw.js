@@ -52,91 +52,45 @@ async function main() {
       urls = result.urlset.url;
     }
     
-    // Extract page paths and organize by hierarchy
-    const pages = {};
+     // Create a tree structure from the URLs
+     const siteTree = { name: 'root', children: {}, path: '/' };
     
-    urls.forEach(url => {
-      const fullUrl = url.loc[0];
-      const urlPath = new URL(fullUrl).pathname;
-      
-      if (urlPath === '/') {
-        pages['home'] = { path: '/', children: {} };
-        return;
-      }
-      
-      // Split the path into segments
-      const segments = urlPath.split('/').filter(Boolean);
-      
-      // Skip if not under /blog
-      if (segments[0] !== 'blog') return;
-      
-      // Build the hierarchy
-      let current = pages;
-      for (let i = 0; i < segments.length; i++) {
-        const segment = segments[i];
-        const segmentPath = '/' + segments.slice(0, i+1).join('/');
-        
-        if (!current[segment]) {
-          current[segment] = { 
-            path: segmentPath, 
-            children: {},
-            contentCount: 0
-          };
-        }
-        
-        if (i < segments.length - 1) {
-          current = current[segment].children;
-        } else {
-          // This is a leaf node (content page)
-          current[segment].isContent = true;
-        }
-      }
-    });
-
-    // Group pages and count content
-    function groupPages(obj) {
-      const contentCategories = {};
-      
-      // First pass: identify content categories
-      for (const [key, value] of Object.entries(obj)) {
-        if (Object.keys(value.children).length > 0) {
-          // Get category from first path segment
-          const category = key.split('_')[0];
-          if (!contentCategories[category]) {
-            contentCategories[category] = [];
-          }
-          contentCategories[category].push(key);
-        }
-      }
-      
-      // Second pass: process each node
-      for (const [key, value] of Object.entries(obj)) {
-        // If this is a section with children
-        if (Object.keys(value.children).length > 0) {
-          // Count content pages
-          let contentCount = 0;
-          for (const childValue of Object.values(value.children)) {
-            if (childValue.isContent) {
-              contentCount++;
-            }
-          }
-          
-          // If it has content pages, store the count and clear children
-          if (contentCount > 0) {
-            value.contentCount = contentCount;
-            value.children = {}; // Remove individual content pages
-          } else {
-            // Recursively process its children
-            groupPages(value.children);
-          }
-        }
-      }
-      
-      return obj;
-    }
-    
-    // Group content pages
-    const groupedPages = groupPages(structuredClone(pages));
+     urls.forEach(url => {
+       const fullUrl = url.loc[0];
+       let urlPath = new URL(fullUrl).pathname;
+       
+       // Skip if empty or just "/"
+       if (!urlPath || urlPath === '/') {
+         siteTree.children['home'] = { name: 'home', path: '/', children: {} };
+         return;
+       }
+       
+       // Remove trailing slash if exists
+       if (urlPath.endsWith('/')) {
+         urlPath = urlPath.slice(0, -1);
+       }
+       
+       // Split path into segments
+       const segments = urlPath.split('/').filter(Boolean);
+       
+       // Build the path in the tree
+       let currentNode = siteTree;
+       
+       for (let i = 0; i < segments.length; i++) {
+         const segment = segments[i];
+         const segmentPath = '/' + segments.slice(0, i+1).join('/');
+         
+         if (!currentNode.children[segment]) {
+           currentNode.children[segment] = { 
+             name: segment,
+             path: segmentPath,
+             children: {}
+           };
+         }
+         
+         currentNode = currentNode.children[segment];
+       }
+     });
         
     // Generate Mermaid diagram
     let mermaidDiagram = `flowchart TD
@@ -148,70 +102,64 @@ async function main() {
       classDef content fill:#f8f9fa,stroke:#adb5bd,stroke-width:1px,color:#495057,font-size:13px
       classDef countNode fill:#fff8f0,stroke:#f4a261,stroke-width:1px,color:#e76f51,font-style:italic,font-size:13px
       
-      linkStyle default stroke:#999,stroke-width:1px
+      linkStyle default stroke:#999,stroke-width:1px\n
     `;
-
-    function addToMermaid(obj, parentId = null, depth = 0) {
-      for (const [key, value] of Object.entries(obj)) {
-        const id = parentId ? `${parentId}_${key}` : key;
-        let displayName = key.replace(/-/g, ' ');
-        
-        // Add content count if available
-        if (value.contentCount && value.contentCount > 0) {
-          displayName = `${displayName} (${value.contentCount})`;
-          mermaidDiagram += `    ${id}["${displayName}"]\n`;
-          mermaidDiagram += `    class ${id} countNode\n`;
-        } else {
-          mermaidDiagram += `    ${id}["${displayName}"]\n`;
-          
-          // Apply classes based on depth
-          if (depth === 0) {
-            mermaidDiagram += `    class ${id} root\n`;
-          } else if (depth === 1) {
-            mermaidDiagram += `    class ${id} section\n`;
-          } else if (depth === 2) {
-            mermaidDiagram += `    class ${id} subsection\n`;
-          } else {
-            mermaidDiagram += `    class ${id} content\n`;
-          }
-        }
-        
-        if (parentId) {
-          // Cleaner label without the path
-          mermaidDiagram += `    ${parentId} --> ${id}\n`;
-        }
-        
-        if (Object.keys(value.children).length > 0) {
-          addToMermaid(value.children, id, depth + 1);
-        }
+    
+    // Generate nodes and connections
+    function generateMermaidNodes(node, parentId = null) {
+      const nodeName = node.name.replace(/-/g, ' '); // Replace hyphens with spaces for display
+      const nodeId = parentId ? `${parentId}_${node.name}` : node.name;
+      
+      // Add node
+      mermaidDiagram += `    ${nodeId}["${nodeName}"]\n`;
+      
+      // Add style class
+      if (!parentId) {
+        mermaidDiagram += `    class ${nodeId} root\n`;
+      } else if (Object.keys(node.children).length > 0) {
+        mermaidDiagram += `    class ${nodeId} section\n`;
+      } else {
+        mermaidDiagram += `    class ${nodeId} leaf\n`;
+      }
+      
+      // Add connection to parent
+      if (parentId) {
+        mermaidDiagram += `    ${parentId} --> ${nodeId}\n`;
+      }
+      
+      // Process children
+      for (const [childName, childNode] of Object.entries(node.children)) {
+        generateMermaidNodes(childNode, nodeId);
       }
     }
     
-    addToMermaid(groupedPages);
+    // Generate nodes starting from root's children
+    for (const [childName, childNode] of Object.entries(siteTree.children)) {
+      generateMermaidNodes(childNode);
+    }
 
     
     
-    // Also generate ASCII tree as fallback
-    let asciiTree = `ASCII version\n`;
-    asciiTree += `=============\n\n`;
+    // Generate ASCII tree for alternative view
+    let asciiTree = 'Site Structure\n============\n\n';
     
-    function buildAsciiTree(obj, indent = '') {
-      const entries = Object.entries(obj);
-      entries.forEach(([key, value], index) => {
+    function generateAsciiTree(node, indent = '') {
+      const entries = Object.entries(node.children);
+      
+      entries.forEach(([key, childNode], index) => {
         const isLast = index === entries.length - 1;
         const connector = isLast ? '└── ' : '├── ';
-        const contentInfo = value.contentCount ? ` (${value.contentCount} items)` : '';
         
-        asciiTree += `${indent}${connector}${key}${contentInfo}\n`;
+        asciiTree += `${indent}${connector}${childNode.name}\n`;
         
-        if (Object.keys(value.children).length > 0) {
+        if (Object.keys(childNode.children).length > 0) {
           const childIndent = indent + (isLast ? '    ' : '│   ');
-          buildAsciiTree(value.children, childIndent);
+          generateAsciiTree(childNode, childIndent);
         }
       });
     }
     
-    buildAsciiTree(groupedPages);
+    generateAsciiTree(siteTree);
     
     // Create or update the markdown file
     const markdown = 
@@ -232,9 +180,14 @@ sortOrder: 1
 <details>
   <summary>DEBUG</summary>
   <pre>
-  ${asciiTree}
+  ${mermaidDiagram}
   </pre>
 </details>
+
+<div class="wide mermaid">
+DEBUG2
+${mermaidDiagram}
+</div>
 
 <pre class="wide mermaid">
 ${mermaidDiagram}

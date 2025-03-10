@@ -32,7 +32,7 @@ const { Content } = await sitemap.render();
     const svg = container?.querySelector('svg');
     if (!svg) return;
     
-    // Clean up SVG and make it responsive
+    // Make SVG responsive
     svg.setAttribute('width', '100%');
     svg.setAttribute('height', '100%');
     
@@ -178,7 +178,7 @@ const { Content } = await sitemap.render();
       setTimeout(() => {
         const isLightTheme = document.body.classList.contains('theme-light');
         mermaid.initialize({ 
-          theme: isLightTheme ? 'neutral' : 'dark',
+          theme: isLightTheme ? 'light' : 'dark',
           startOnLoad: false 
         });
         mermaid.init(undefined, document.querySelectorAll(".mermaid:not([data-processed])"));
@@ -195,9 +195,7 @@ const { Content } = await sitemap.render();
     <p class="mmb">A sitemap of sanaBlog. Work in progress.</p>
 
     <div class="mermaid-container">
-      <div class="mermaid">
-        <Content />
-      </div>
+      <Content />
     </div>
 
   </content>
