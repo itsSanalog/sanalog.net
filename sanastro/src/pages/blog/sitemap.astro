@@ -50,32 +50,6 @@ const { Content } = await sitemap.render();
     const g = svg.querySelector('g');
     if (!g) return;
     
-    // Add interaction styles
-    const style = document.createElement('style');
-    style.textContent = `
-      .mermaid-container {
-        position: relative;
-        overflow: hidden;
-        border: 1px solid var(--color-ui-hover);
-        border-radius: 8px;
-        max-height: 70vh;
-        margin: 2rem 0;
-      }
-      
-      .mermaid svg {
-        cursor: grab;
-      }
-      
-      .mermaid svg.grabbing {
-        cursor: grabbing;
-      }
-      
-      .node:hover {
-        opacity: 0.8;
-      }
-    `;
-    document.head.appendChild(style);
-    
     // Update transform helper
     function updateTransform() {
       g.setAttribute('transform', `translate(${translateX}, ${translateY}) scale(${scale})`);
@@ -164,7 +138,7 @@ const { Content } = await sitemap.render();
         }
         
         // Convert from mermaid node ID to path
-        // e.g., blog_reviews_music → /blog/reviews/music
+        // e.g., blog_reviews_music -> /blog/reviews/music
         const path = '/' + nodeId.replace(/_/g, '/');
         window.location.href = path;
       });
@@ -194,9 +168,21 @@ const { Content } = await sitemap.render();
     <p class="muted"><em>..mapping pages makes this more of an index</em></p>
     <p class="mmb">A sitemap of sanaBlog. Work in progress.</p>
 
-    <div class="mermaid-container">
-      <Content />
-    </div>
+    <Content />
 
   </content>
 </BlogLayout>
+
+<style>
+  .mermaid svg {
+    cursor: grab;
+  }
+
+  .mermaid svg.grabbing {
+    cursor: grabbing;
+  }
+
+  .node:hover {
+    opacity: 0.8;
+  }
+</style>

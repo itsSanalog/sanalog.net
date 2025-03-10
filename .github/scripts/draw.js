@@ -180,23 +180,18 @@ sortOrder: 1
 <details>
   <summary>DEBUG</summary>
   <pre>
-  ${mermaidDiagram}
+    ${mermaidDiagram}
   </pre>
 </details>
 
-<div class="wide mermaid">
-DEBUG2
-${mermaidDiagram}
-</div>
-
 <pre class="wide mermaid">
-${mermaidDiagram}
+  ${mermaidDiagram}
 </pre>
 
 <details>
   <summary>ASCII version — click to expand</summary>
   <pre>
-  ${asciiTree}
+    ${asciiTree}
   </pre>
 </details>
 
