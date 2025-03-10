@@ -28,16 +28,13 @@ const { Content } = await sitemap.render();
   });
   
   function setupInteractivity() {
-    const container = document.querySelector('.mermaid-container');
+    const container = document.querySelector('.mermaid');
     const svg = container?.querySelector('svg');
     if (!svg) return;
     
     // Make SVG responsive
     svg.setAttribute('width', '100%');
     svg.setAttribute('height', '100%');
-    
-    // Store original viewBox for reset
-    const originalViewBox = svg.getAttribute('viewBox') || '0 0 1000 1000';
     
     // Setup pan/zoom state
     let scale = 1;

@@ -188,6 +188,10 @@ sortOrder: 1
   ${mermaidDiagram}
 </pre>
 
+<div class="wide mermaid">
+  ${mermaidDiagram}
+</div>
+
 <details>
   <summary>ASCII version — click to expand</summary>
   <pre>
