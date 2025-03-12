@@ -13,12 +13,9 @@ const { Content } = await sitemap.render();
   
   mermaid.initialize({ 
     startOnLoad: true,
-    theme: document.body.classList.contains("theme-light") ? "light" : "dark",
-    flowchart: {
-      curve: 'basis',
-      diagramPadding: 8,
-      htmlLabels: true,
-      useMaxWidth: true,
+    theme: document.querySelector('body').classList.contains("theme-light") ? "light" : "dark",
+    mindmap: {
+
     }
   });
   
@@ -169,17 +166,3 @@ const { Content } = await sitemap.render();
 
   </content>
 </BlogLayout>
-
-<style>
-  .mermaid svg {
-    cursor: grab;
-  }
-
-  .mermaid svg.grabbing {
-    cursor: grabbing;
-  }
-
-  .node:hover {
-    opacity: 0.8;
-  }
-</style>

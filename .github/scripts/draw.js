@@ -52,94 +52,6 @@ async function main() {
       urls = result.urlset.url;
     }
     
-     // Create a tree structure from the URLs
-     const siteTree = { name: 'root', children: {}, path: '/' };
-    
-     urls.forEach(url => {
-       const fullUrl = url.loc[0];
-       let urlPath = new URL(fullUrl).pathname;
-       
-       // Skip if empty or just "/"
-       if (!urlPath || urlPath === '/') {
-         siteTree.children['home'] = { name: 'home', path: '/', children: {} };
-         return;
-       }
-       
-       // Remove trailing slash if exists
-       if (urlPath.endsWith('/')) {
-         urlPath = urlPath.slice(0, -1);
-       }
-       
-       // Split path into segments
-       const segments = urlPath.split('/').filter(Boolean);
-       
-       // Build the path in the tree
-       let currentNode = siteTree;
-       
-       for (let i = 0; i < segments.length; i++) {
-         const segment = segments[i];
-         const segmentPath = '/' + segments.slice(0, i+1).join('/');
-         
-         if (!currentNode.children[segment]) {
-           currentNode.children[segment] = { 
-             name: segment,
-             path: segmentPath,
-             children: {}
-           };
-         }
-         
-         currentNode = currentNode.children[segment];
-       }
-     });
-        
-    // Generate Mermaid diagram
-    let mermaidDiagram = `flowchart TD
-
-      %% Styling
-      classDef root fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#333,font-weight:bold,font-size:16px
-      classDef section fill:#e6f2ff,stroke:#0066cc,stroke-width:1px,color:#0066cc,font-weight:bold,font-size:14px
-      classDef subsection fill:#f0f7ff,stroke:#4895ef,stroke-width:1px,color:#4895ef,font-size:14px
-      classDef content fill:#f8f9fa,stroke:#adb5bd,stroke-width:1px,color:#495057,font-size:13px
-      classDef countNode fill:#fff8f0,stroke:#f4a261,stroke-width:1px,color:#e76f51,font-style:italic,font-size:13px
-      
-      linkStyle default stroke:#999,stroke-width:1px\n
-    `;
-    
-    // Generate nodes and connections
-    function generateMermaidNodes(node, parentId = null) {
-      const nodeName = node.name.replace(/-/g, ' '); // Replace hyphens with spaces for display
-      const nodeId = parentId ? `${parentId}_${node.name}` : node.name;
-      
-      // Add node
-      mermaidDiagram += `    ${nodeId}["${nodeName}"]\n`;
-      
-      // Add style class
-      if (!parentId) {
-        mermaidDiagram += `    class ${nodeId} root\n`;
-      } else if (Object.keys(node.children).length > 0) {
-        mermaidDiagram += `    class ${nodeId} section\n`;
-      } else {
-        mermaidDiagram += `    class ${nodeId} leaf\n`;
-      }
-      
-      // Add connection to parent
-      if (parentId) {
-        mermaidDiagram += `    ${parentId} --> ${nodeId}\n`;
-      }
-      
-      // Process children
-      for (const [childName, childNode] of Object.entries(node.children)) {
-        generateMermaidNodes(childNode, nodeId);
-      }
-    }
-    
-    // Generate nodes starting from root's children
-    for (const [childName, childNode] of Object.entries(siteTree.children)) {
-      generateMermaidNodes(childNode);
-    }
-
-    
-    
     // Generate ASCII tree for alternative view
     let asciiTree = 'Site Structure\n============\n\n';
     
@@ -177,20 +89,16 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
+<pre class="wide mermaid">
+  ${mermaidDiagram}
+</pre>
+
 <details>
   <summary>DEBUG</summary>
   <pre>
     ${mermaidDiagram}
   </pre>
 </details>
-
-<pre class="wide mermaid">
-  ${mermaidDiagram}
-</pre>
-
-<div class="wide mermaid">
-  ${mermaidDiagram}
-</div>
 
 <details>
   <summary>ASCII version — click to expand</summary>
