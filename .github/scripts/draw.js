@@ -51,6 +51,89 @@ async function main() {
       // It's a direct sitemap
       urls = result.urlset.url;
     }
+
+    // Process URLs to build a hierarchical site structure
+    const siteTree = { name: 'home', children: {}, path: '/', count: 0 };
+    const siteUrl = 'https://sanalog.net'; // Base URL to remove from paths
+    
+    urls.forEach(urlObj => {
+      const fullUrl = urlObj.loc[0];
+      // Remove the base URL to get the path
+      let urlPath = fullUrl.replace(siteUrl, '');
+      
+      // Skip the home page as we already have it
+      if (urlPath === '/' || urlPath === '') return;
+      
+      // Remove trailing slash if present
+      if (urlPath.endsWith('/')) {
+        urlPath = urlPath.slice(0, -1);
+      }
+      
+      // Split the path into segments
+      const segments = urlPath.split('/').filter(segment => segment);
+      
+      // Add to the tree structure
+      let currentNode = siteTree;
+      let currentPath = '';
+      
+      segments.forEach((segment, index) => {
+        currentPath += '/' + segment;
+        
+        if (!currentNode.children[segment]) {
+          currentNode.children[segment] = {
+            name: segment,
+            children: {},
+            path: currentPath,
+            count: 0
+          };
+        }
+        
+        // Increment count for parent nodes to track number of children
+        currentNode.count++;
+        
+        // Move to the next level
+        currentNode = currentNode.children[segment];
+      });
+    });
+    
+    // Generate Mermaid Mindmap diagram
+    let mermaidDiagram = 'mindmap\n';
+    
+    function generateMindmap(node, indent = '', parentId = '') {
+      // Create a unique ID for the node
+      const nodeId = parentId ? `${parentId}_${node.name}` : node.name;
+      
+      // Format the node's name with proper capitalization
+      let displayName = node.name;
+      if (displayName !== 'home') {
+        displayName = displayName.charAt(0).toUpperCase() + displayName.slice(1);
+      }
+      
+      // Add the node to the diagram
+      mermaidDiagram += `${indent}${nodeId}[${displayName}]\n`;
+      
+      // Add children count as a separate node if there are children
+      if (node.count > 0) {
+        const countNodeId = `${nodeId}_count`;
+        mermaidDiagram += `${indent}  ${countNodeId}(${node.count}:::countNode)\n`;
+      }
+      
+      // Add child nodes
+      Object.values(node.children).forEach(child => {
+        generateMindmap(child, indent + '  ', nodeId);
+      });
+    }
+    
+    // Start generating the mindmap
+    generateMindmap(siteTree);
+    
+    // Add custom styling for Obsidian-like graph
+    mermaidDiagram += `
+    classDef default fill:#282a36,stroke:#bd93f9,color:#f8f8f2,stroke-width:2px
+    classDef countNode fill:#44475a,stroke:#50fa7b,color:#f8f8f2,stroke-width:1px,font-size:14px
+    `;
+    
+
     
     // Generate ASCII tree for alternative view
     let asciiTree = 'Site Structure\n============\n\n';
