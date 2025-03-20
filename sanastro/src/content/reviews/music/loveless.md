@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia802708.us.archive.org/10/items/mbid-b85a7189-f986-45f2-98d9-67e831e988c3/mbid-b85a7189-f986-45f2-98d9-67e831e988c3-36140396673_thumb250.jpg"
+imageLink: "https://ia800109.us.archive.org/20/items/mbid-b85a7189-f986-45f2-98d9-67e831e988c3/mbid-b85a7189-f986-45f2-98d9-67e831e988c3-36140396673_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: loveless
