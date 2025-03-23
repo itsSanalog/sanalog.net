@@ -25,6 +25,8 @@ A very powerful jingle.
 
 # Humming Word
 
+Super airy/lispy vocals
+
 # Dewy Roses
 
 # Woman 〜Wの悲劇より〜
@@ -48,3 +50,6 @@ we can check in on 森田洋之 through Note. Guy still seems interested in the 
 https://www.reddit.com/r/pitcher56/comments/1jg9rdw ???
 
 https://rateyourmusic.com/release/album/pitcher56/her-abiding-memory/
+
+# Album score
+
