@@ -15,29 +15,36 @@ rating: 0
 
 An unexpected and unknown embodiment of Shibuya-kei.
 
-A confession to make: I discovered this album through the Weezer subreddit on a <a href="https://www.reddit.com/r/weezer/comments/1ao4a5f/" target="_blank" class="extlink">post</a> about albums that use the same typeface as Weezer does.
+Pitcher56 is a Japanese Shibuya-kei band. All three members were medical school students at the time of release, and are currently doctors. There is almost no other information on them. Barely any physical releases. No live performances. As with most bands, music is the only thing they have left behind, bar a faint scent of nostalgia.
 
-Pitcher56 is a Japanese Shibuya-kei band, with almost no information about them. Barely any physical releases. No live performances. All three memebers were medical school students were medical school students at the time of release, and are currently doctors.
+The mix and mastering isn't perfect. Raw recordings capturing even swallowing and saliva noises. Would I be weird for appreciating this? Film capturing those days raw stimulates nostalgia like spice.. old spice or whatever.
 
 # 1.2.3!
+
+A very powerful jingle.
 
 # Humming Word
 
 # Dewy Roses
 
-# WOMAN
+# Woman 〜Wの悲劇より〜
 
 # すじをえがく
+
+A song that declares goodbye.
 
 # Another Season
 
 # Jump Out From The Bed
 
-# Love Letter
+# Love Letter -Original Version-
 
 # サヨナラマタイツカ
 
 
+A confession to make: I discovered this album through the Weezer subreddit on a <a href="https://www.reddit.com/r/weezer/comments/1ao4a5f/" target="_blank" class="extlink">post</a> about albums that use the same typeface as Weezer does.
+
+we can check in on 森田洋之 through Note. Guy still seems interested in the band he was in. They haven't disbanded, so anything is possible.
 https://www.reddit.com/r/pitcher56/comments/1jg9rdw ???
 
 https://rateyourmusic.com/release/album/pitcher56/her-abiding-memory/
