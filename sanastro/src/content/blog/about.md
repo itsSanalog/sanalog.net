@@ -34,9 +34,9 @@ sanaBlog is a static site hosted on <a href="https://pages.github.com/" target="
 
 sanaBlog's code is under the <a target="_blank" class="extlink" href="https://github.com/itsSanalog/sanalog.net/blob/main/LICENSE">MIT license</a>, and all content is under the <a target="_blank" class="extlink" href="https://creativecommons.org/licenses/by-nc-sa/4.0">BY-NC-SA 4.0 license</a>.
 
-sanaBlog is part of the <a href="https://webring.adilene.net/index.php" target="_blank" class="extlink">Vocaloid webring</a>.
+sanaBlog is part of the <a href="https://webring.xxiivv.com" target="_blank" class="extlink">XXIIVV webring</a> and the <a href="https://webring.adilene.net/index.php" target="_blank" class="extlink">Vocaloid webring</a>.
 
-<!-- <a href="https://webring.xxiivv.com" target="_blank" class="extlink">xxiivv webring</a> -->
+
 
 # Who
 
