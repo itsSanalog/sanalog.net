@@ -18,8 +18,7 @@ sortOrder: 1
 
 A small webring of [three] friends.
 
-<svg>
-</svg>
+<img href="/bbnormal.svg" height="150px"></img>
 
 - [Sanalog | sanalog.net](/blog)
 <!-- - <a href="" target="_blank" class="extlink">cane | </a> -->
