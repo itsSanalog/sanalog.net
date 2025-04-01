@@ -16,7 +16,7 @@ sortOrder: 1
 
 *<span class="muted">..this is the autism.</span>*
 
-A small webring of three friends.  ∫\' ∫
+A small webring of three friends. ∫&apos; ∫
 
 <svg width="200" height="200" viewBox="0 0 46 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M10.1447 29.7373C9.84789 31.0493 9.36857 32.1328 8.70673 32.9879C8.05425 33.8547 7.24929 34.4931 6.29183 34.9031C5.33172 35.3248 4.24518 35.5356 3.03219 35.5356C2.65988 35.5356 2.31222 35.5063 1.9892 35.4478C1.65152 35.4009 1.32178 35.3189 1 35.2018L1.92265 32.6365C2.08018 32.6833 2.30378 32.7302 2.59342 32.777C2.88041 32.8356 3.11999 32.8649 3.31214 32.8649C3.90062 32.8649 4.4242 32.7536 4.88289 32.531C5.34157 32.3085 5.732 31.9629 6.05418 31.4944C6.38572 31.0375 6.63232 30.4519 6.79398 29.7373L11.9815 6.80767C12.2916 5.43716 12.7988 4.28335 13.5032 3.34626C14.2076 2.40916 15.0705 1.70048 16.0919 1.22021C17.1133 0.739949 18.2545 0.499817 19.5156 0.499817C19.9479 0.499817 20.3663 0.534958 20.7708 0.605241C21.1872 0.675523 21.5997 0.763376 22.0082 0.8688L21.0294 3.36383C20.8385 3.30526 20.6089 3.2584 20.3406 3.22326C20.0843 3.18812 19.7821 3.17055 19.4338 3.17055C18.7252 3.17055 18.0916 3.31697 17.5329 3.60981C16.9769 3.89094 16.5119 4.30093 16.1378 4.83976C15.7757 5.37859 15.5072 6.03456 15.3323 6.80767L10.1447 29.7373Z" fill="var(--color-tx-normal)"/>
@@ -27,7 +27,7 @@ A small webring of three friends.  ∫\' ∫
 <path d="M27.8375 4.87616L27.1983 10.5771H25.07L24.8233 4.87616H27.8375Z" stroke="var(--color-tx-normal)" stroke-width="0.999014" stroke-linecap="round"/>
 </svg>
 
-BoomBot is a stupid robot but also a friend. The BoomBot ring icon is based on the <a href="https://numahachi.tumblr.com/post/129793690338" target class="extlink"="_blank">mogura</a> from Nichijou.
+BoomBot is a stupid robot but also a friend. The BoomBot ring icon is based on the <a href="https://numahachi.tumblr.com/post/129793690338" class="extlink" target="_blank">mogura</a> from Nichijou.
 It's a typewriter apostrphe `'` surrounded by two integration symbols `∫`. (The character entity reference code for `'` is `&#39;`, which is neat because we all love Miku.)
 
 ### members
