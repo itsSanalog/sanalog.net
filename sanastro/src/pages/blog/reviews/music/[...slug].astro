@@ -66,4 +66,18 @@ const releaseDateYear = new Date( entry.data.releaseDate ?? '').getFullYear();
     font-family: var(--font-content);
     letter-spacing: -0.04em;
   }
+
+  .point {
+    font-weight: bold;
+    padding: 0.25em 0 0;
+  }
+
+  .point.title {
+    color: var(--color-bg-primary);
+    background: var(--color-tx-normal);
+  }
+
+  .point.number {
+    border: solid var(--color-tx-normal);
+  }
 </style>

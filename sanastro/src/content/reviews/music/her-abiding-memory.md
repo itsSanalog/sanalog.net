@@ -23,6 +23,8 @@ The mix and mastering isn't perfect. Raw recordings capturing even swallowing an
 
 A very powerful jingle.
 
+<p class="rating"><span class="title">Flavour</span><span class="number">6</span></p>
+
 # Humming Word
 
 Super airy/lispy vocals
