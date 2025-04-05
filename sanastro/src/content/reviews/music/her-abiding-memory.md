@@ -23,7 +23,7 @@ The mix and mastering isn't perfect. Raw recordings capturing even swallowing an
 
 A very powerful jingle.
 
-<p class="rating"><span class="title">Flavour</span><span class="number">6</span></p>
+<p class="point"><span class="title">Flavour</span><span class="number">4</span><span class="title">Technique</span><span class="number">B</span></p>
 
 # Humming Word
 
