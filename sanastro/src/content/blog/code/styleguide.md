@@ -52,7 +52,7 @@ You are seeing the result of my efforts by being here, but I've also explicitly 
     <h2>And this is how H2 does</h2>
     <h3>H3 and H4 look the same</h3>
     <h5>H5 forces uppercase!</h5>
-    <p class="mn2">Normal text is rendered like this. Text can be in <em>italics<em>, <b>bolded<b>, <span class="muted">muted</span>, or <span class="faint">muted even more</span>.</p>
+    <p class="mn2">Normal text is rendered like this. Text can be in <em>italics</em>, <b>bolded</b>, <span class="muted">muted</span>, or <span class="faint">muted even more</span>.</p>
     <p class="small">Small text is used for descriptions or captions.</p>
     <p class="smaller">Smaller text is there for you in those rare moments when you need to whisper something.</p>
     <a class="mn2">Links are underlined like this</a>.
