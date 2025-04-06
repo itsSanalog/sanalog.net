@@ -19,32 +19,61 @@ Pitcher56 is a Japanese Shibuya-kei band. All three members were medical school 
 
 The mix and mastering isn't perfect. Raw recordings capturing even swallowing and saliva noises. Would I be weird for appreciating this? Film capturing those days raw stimulates nostalgia like spice.. old spice or whatever.
 
+9 tracks.
+
 # 1.2.3!
 
 A very powerful jingle.
 
-<p class="point"><span class="point title">Flavour</span><span class="point number">4</span><span class="point title">Technique</span><span class="point number">B</span></p>
+<p class="point"><span class="point title">Flavour</span><span class="point number">3</span><span class="point title">Technique</span><span class="point number">C</span></p>
 
 # Humming Word
 
-Super airy/lispy vocals
+Starts off with a weird sigh. Super airy/lispy vocals. An earworm. Switches to male vocals around 1:52.
+
+<p class="point"><span class="point title">Flavour</span><span class="point number">4</span><span class="point title">Technique</span><span class="point number">B</span></p>
 
 # Dewy Roses
 
+Rather unexpected lyrics. Guitar at 1:56 changes the water level vibes.
+
+<p class="point"><span class="point title">Flavour</span><span class="point number">3</span><span class="point title">Technique</span><span class="point number">B</span></p>
+
 # Woman 〜Wの悲劇より〜
+
+Electro?? Bonnie Tyler?? Perhaps true Shibuya-kei
+
+<p class="point"><span class="point title">Flavour</span><span class="point number">4</span><span class="point title">Technique</span>C<span class="point number"></span></p>
 
 # すじをえがく
 
-A song that declares goodbye.
+A song that declares goodbye. Reminds me too much of Korean ballad. Rock is good. Gave it a three for lyrics, for without them this would be a two.
+
+<p class="point"><span class="point title">Flavour</span><span class="point number">3</span><span class="point title">Technique</span>B<span class="point number"></span></p>
 
 # Another Season
 
+lol?
+
+<p class="point"><span class="point title">Flavour</span><span class="point number">2</span><span class="point title">Technique</span>C<span class="point number"></span></p>
+
 # Jump Out From The Bed
+
+This would have made for an amazing session intro. Love the cheers.
+
+<p class="point"><span class="point title">Flavour</span><span class="point number">3</span><span class="point title">Technique</span>A<span class="point number"></span></p>
 
 # Love Letter -Original Version-
 
+Bittersweet love.
+
+<p class="point"><span class="point title">Flavour</span><span class="point number">?</span><span class="point title">Technique</span>?<span class="point number"></span></p>
+
 # サヨナラマタイツカ
 
+I really like these intros.
+
+<p class="point"><span class="point title">Flavour</span><span class="point number">3</span><span class="point title">Technique</span>B<span class="point number"></span></p>
 
 A confession to make: I discovered this album through the Weezer subreddit on a <a href="https://www.reddit.com/r/weezer/comments/1ao4a5f/" target="_blank" class="extlink">post</a> about albums that use the same typeface as Weezer does.
 
