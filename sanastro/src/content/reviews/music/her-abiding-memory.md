@@ -21,15 +21,23 @@ Pitcher56 is a Japanese Shibuya-kei band. All three members were medical school 
 
 # 1.2.3!
 
-The introduction to a lead track serves as the listener's gateway to the entire album—a critical first impression that can set the tone for the entire journey. This track begins with a xylophone melody that instantly evoked the nostalgic ring of school dismissal bells. This is followed up by a warping sound effect before catapulting the listener into an explosive chorus. Putting the chorus at the beginning of the song achieves instant immersion, especially when the chorus possesses such a powerful, addictive quality. This is obviously deliberate, and I have a hunch that they might have been inspired by <a href="https://faroutmagazine.co.uk/the-open-secret-to-the-beatles-catchiness/" target="_blank" class="extlink">the Beatles</a>. The chorus itself possesses similar musical traits to Japanese commercial jingles of the 90's—bright, unforgettable, and designed to lodge itself firmly in your ear. What follows creates a fascinating dynamic as the verse adopts a significantly more subdued tone. Interestingly, the lyrics reflect this as well, with the Japanese verses being poetic and melancholic in constrast to the very (literally) playful English chorus. The track is well balanced between the soothing vocals, bass, drums, keyboard, and quirky sound effects—highlighted in the layered build up after the instrumental bridge. Boasting a simple arrangement, the track ends with multiple replays of that addictive xylophone motif, after which the school bells announce that it's really time to go home.
+The introduction to a lead track serves as the listener's gateway to the entire album—a critical first impression that can set the tone for the entire journey. This track begins with a xylophone melody that instantly evoked the nostalgic ring of school dismissal bells. This is followed up by a warping sound effect before catapulting the listener into an explosive chorus. Putting the chorus at the beginning of the song achieves instant immersion, especially when the chorus possesses such a powerful, addictive quality. This is obviously deliberate, and I have a hunch that they might have been inspired by <a href="https://faroutmagazine.co.uk/the-open-secret-to-the-beatles-catchiness/" target="_blank" class="extlink">the Beatles</a>. The chorus itself possesses similar musical traits to Japanese commercial jingles of the 90's—bright, unforgettable, and designed to lodge itself firmly in your ear. What follows creates a fascinating dynamic as the verse adopts a significantly more subdued tone. Interestingly, the lyrics reflect this as well, with the Japanese verses being poetic and melancholic in constrast to the very (literally) playful English chorus.
 
-If you listen to the track on loop, you will notice that the ending bells have one extra chime compared to the opening bells. The 'warping sound effect' sounds like a sped-up glissando with a few filters, but listening carefully, I noticed a click just before the warp starts. 
+The track is well balanced between the soothing vocals, bass, drums, keyboard, and quirky sound effects—highlighted in the layered build up after the instrumental bridge. Boasting a simple arrangement, the track ends with multiple replays of that addictive xylophone motif, after which the school bells announce that it's finally time to go home.
+
+If you listen to the track on loop, you will notice that the ending bells have one extra chime compared to the opening bells. The 'warping sound effect' sounds like a sped-up glissando with a few filters, but listening carefully, I noticed a click just before the warp starts. Can't only be me who thinks that this sounds like hitting rewind on tape, as if to reminisce the past. It's like starting a film with the ending scene and watching a flashback sequence. Such a cool trick to use in the first track.
 
 <p class="point"><span class="point title">Flavour</span><span class="point number">3</span><span class="point title">Technique</span><span class="point number">C</span></p>
 
 # Humming Word
 
-Starts off with a weird sigh. Super airy/lispy vocals. An earworm. Switches to male vocals around 1:52.
+This track starts off with a weird sigh. Whatever. You are also surrounded by high BPM, complex drums, and oh so many layers. But what demands the most attention is the super airy vocals. The lispy accent 
+
+what even are these lyrics
+
+actually what the hell is this song because i've listened to it on loop 24 times and have no idea what to write about or how to start
+
+. An earworm. Switches to male vocals around 1:52.
 
 <p class="point"><span class="point title">Flavour</span><span class="point number">4</span><span class="point title">Technique</span><span class="point number">B</span></p>
 
@@ -88,4 +96,4 @@ The mix and mastering isn't perfect. Raw recordings capturing even swallowing an
 
 Also, beautiful cover.
 
-<p class="point"><span class="point title">Cohesion</span><span class="point number">S</span><span class="point title">Completeness</span><span class="point number">A</span></p><p class="point"><span class="point title">Art</span><span class="point number">5</span>
+<p class="point"><span class="point title">Cohesion</span><span class="point number">S</span><span class="point title">Completeness</span><span class="point number">A</span><span class="point title">Art</span><span class="point number">5</span></p>
