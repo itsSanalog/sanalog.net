@@ -13,11 +13,11 @@ sortOrder: 0
 rating: 0
 ---
 
-https://www.discogs.com/artist/6286597-Dazey-And-The-Scouts Microtonality
+Riot Grrrl resurgence. Queercore landmark. But just good punk, honestly.
 
 # Groan
 
-I wish this was more live.
+I found this album through this song, and it remains my favourite of the seven tracks. The dynamic instrumentals evoke vivid images of performers letting it all out - laughing, crying, and loving. There is no band I would rather see live for this reason. (https://rateyourmusic.com/release/album/dazey-and-the-scouts/maggot/reviews/3/)
 
 <p class="point"><span class="point title">Flavour</span><span class="point number">5</span><span class="point title">Technique</span><span class="point number">A</span></p>
 
