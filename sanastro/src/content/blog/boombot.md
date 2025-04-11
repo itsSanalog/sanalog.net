@@ -33,5 +33,5 @@ It's a typewriter apostrphe `'` surrounded by two integration symbols `∫`. (Th
 ### members
 - [Sanalog : sanalog.net](/blog)
 - <a href="https://wrenches.online" target="_blank" class="extlink">cane : wrenches.online</a>
-- <a href="blog.javalim.com" target="_blank" class="extlink">JavaLim : blog.javalim.com</a>
+- <a href="https://blog.javalim.com" target="_blank" class="extlink">JavaLim : blog.javalim.com</a>
 <!-- - <a href="" target="_blank" class="extlink"> | </a> -->
