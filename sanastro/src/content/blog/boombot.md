@@ -28,7 +28,7 @@ A small webring of three friends. ∫&apos; ∫
 </svg>
 
 BoomBot is a stupid robot but also a friend. The BoomBot ring icon is based on the <a href="https://numahachi.tumblr.com/post/129793690338" class="extlink" target="_blank">mogura</a> from Nichijou.
-It's a typewriter apostrphe `'` surrounded by two integration symbols `∫`. (The character entity reference code for `'` is `&#39;`, which is neat because we all love Miku.)
+It's a typewriter apostrophe `'` surrounded by two integration symbols `∫`. (The character entity reference code for `'` is `&#39;`, which is neat because we all love Miku.)
 
 ### members
 - [Sanalog : sanalog.net](/blog)
