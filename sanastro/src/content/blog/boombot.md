@@ -34,4 +34,4 @@ It's a typewriter apostrophe `'` surrounded by two integration symbols `∫`. (T
 - [Sanalog : sanalog.net](/blog)
 - <a href="https://wrenches.online" target="_blank" class="extlink">cane : wrenches.online</a>
 - <a href="https://blog.javalim.com" target="_blank" class="extlink">JavaLim : blog.javalim.com</a>
-<!-- - <a href="" target="_blank" class="extlink"> | </a> -->
+- <a href="https://mizumyst.com" target="_blank" class="extlink">mizu : mizumyst.com</a>
