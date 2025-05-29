@@ -6,7 +6,7 @@ title: Maggot
 artist: Dazey and the Scouts
 releaseDate: 2017-02-14
 
-# publicationDate: 2024-05-23
+# publicationDate: 2024-05-31
 sortOrder: 0
 
 # stars:
@@ -19,9 +19,9 @@ Dazey and the Scouts were a 4.5 man band from 2016 to 2018. They released this o
 
 # Groan
 
-I found this album through this song, and it remains my favourite of the seven tracks. The dynamic instrumentals evoke vivid images of performers letting it all out - laughing, crying, and loving. There is no band I would rather see live for this reason. (https://rateyourmusic.com/release/album/dazey-and-the-scouts/maggot/reviews/3/)
+I found this album through this song, and it remains my favourite of the seven tracks. This track—and the entire album by extension—is incredibly fun. In *Groan*, instrumentals refuse to back down against the incredible vocals of Lea Jaffe, painting an image of each player letting it all out. You can only imagine how intense the energy would be in one of their basement concerts that I will unfortunately never be a part of. Vocals are clearly the highlight, full of sass and giving maximum attitude. The note at 2:28 is some stunning soprano shit.
 
-seven songs, no skips, the entire thing bursting with talent. Opening with the heavy surf punk of Groan, primary vocalist Lea Jaffe impresses with her constantly varying delivery that is both melodic and full of attitude and the full-on opera note she hits at 2:28 drops my jaw every time.
+The song is direct about its subject, unabashedly chasing inappropriate love tainted with unbalanced age and power dynamics. The magic, however, is in how you find yourself falling in with the performer rather than being an adult about it. You share the sheer desperation in being wanted. "I wanna spend the night with you" is the most straight forward way to tell how much you want someone. It is made obvious who's in the wrong, with lines like "For a girl this young, naïve, and miserable" and the repeated "You want a fresh cut flower, and I'm your sweet red rose". It's also painfully obvious that the younger one isn't manipulated, unaware, or stupid. Fully knowing how foolish she's being, She just can't give a fuck. Honestly, I'd do the same for attention that I so dearly crave.
 
 <p class="point"><span class="point title">Flavour</span><span class="point number">5</span><span class="point title">Technique</span><span class="point number">S</span></p>
 
@@ -49,7 +49,7 @@ Starts slow. Cardiac is a bit predictable and poppy. Actually overall track is p
 
 # Sweet Cis Teen
 
-noisy
+Noisy song. rage and isolation
 
 <p class="point"><span class="point title">Flavour</span><span class="point number">4</span><span class="point title">Technique</span><span class="point number">B</span></p>
 
