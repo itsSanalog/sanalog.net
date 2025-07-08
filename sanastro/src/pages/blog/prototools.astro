@@ -29,7 +29,8 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
     position: relative;
     cursor: grab;
     overflow: hidden;
-    background: beige;
+    
+    /* background: rgb(226, 156, 197); */
   }
 
   .desk-container:active {
@@ -37,12 +38,11 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
   }
 
   .desk-surface {
-    background-color: aqua;
+    /* background-color: rgb(177, 221, 221); */
 
     position: absolute;
-    width: 1200px;
-    height: 800px;
-    transform-origin: center center;
+    width: 2400px;
+    height: 1600px;
     /* transition: transform 0.1s ease; */
   }
 
@@ -50,20 +50,25 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
     position: absolute;
     cursor: pointer;
     transition: all 0.1s ease;
+    stroke-width: 2;
+    filter: brightness(0) saturate(100%) invert(90%) sepia(7%) saturate(227%) hue-rotate(17deg) brightness(92%) contrast(90%);
   }
 
   :global(.desk-item:hover) {
-    transform: translateY(-5px) scale(1.05);
-    filter: drop-shadow(4px 4px 8px rgb(0, 0, 0));
-    stroke:var(--color-action);
-    stroke-width: 3;
+    /* Some options: 1. simple translateY and shadow 2. scale for emphasis 3. blur and stroke color+width for a glow effect */
+
+    transform: translateY(-10px) scale(1.02);
+    /* filter: drop-shadow(4px 4px 8px rgb(0, 0, 0)); */
+    filter: brightness(0) saturate(100%) invert(74%) sepia(54%) saturate(5147%) hue-rotate(340deg) brightness(88%) contrast(93%);
+    stroke-width: 120;
   }
 
-  :global(.desk-item svg) {
-    width: 100%;
-    height: 100%;
-    stroke:var(--color-tx-normal);
-    stroke-width: 2;
+  :global(.theme-light .desk-item) {
+    filter: brightness(0) saturate(100%) invert(9%) sepia(4%) saturate(263%) hue-rotate(314deg) brightness(97%) contrast(106%);
+  }
+
+  :global(.theme-light .desk-item:hover) {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(81%) saturate(1239%) hue-rotate(356deg) brightness(94%) contrast(88%);
   }
 
   .item-info {
@@ -71,10 +76,9 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
     bottom: 20px;
     left: 20px;
     z-index: 100;
-    background: rgba(0,0,0,0.7);
+    background: var(--color-ui-normal);
     padding: 15px;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
     opacity: 0;
     transition: opacity 0.1s ease;
   }
@@ -120,14 +124,14 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
       id: 1,
       name: "knife",
       description: "knife",
-      x: 440, y: 410, width: 150, height: 120,
+      x: 500, y: 510, width: 150, height: 120,
       svgFile: "knife.svg"
     },
     {
       id: 2,
       name: "phone",
       description: "phone",
-      x: 280, y: 340, width: 250, height: 160,
+      x: 280, y: 400, width: 250, height: 160,
       svgFile: "phone.svg"
     },
     {
@@ -202,7 +206,7 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
         });
         
         itemElement.addEventListener('click', () => {
-          this.focusOnItem(item);
+          // this.focusOnItem(item); DEPRECATED
         });
         
         this.surface.appendChild(itemElement);
@@ -255,7 +259,7 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
       
     zoom(factor) {
       const newScale = this.scale * factor;
-      if (newScale >= 0.3 && newScale <= 3) {
+      if (newScale >= 0.5 && newScale <= 3) {
         this.scale = newScale;
         this.updateTransform();
       }
@@ -267,25 +271,22 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
   
     centerView() {
       const containerRect = this.container.getBoundingClientRect();
-      this.translateX = (containerRect.width - 1200) / 2;
-      this.translateY = (containerRect.height - 800) / 2;
+      this.translateX = (containerRect.width - 2400) / 2;
+      this.translateY = (containerRect.height - 1600) / 2;
       this.updateTransform();
     }
     
-    resetView() {
-      this.scale = 1;
-      this.centerView();
-    }
-    
-    focusOnItem(item) {
-      const itemCenterX = item.x + item.width / 2;
-      const itemCenterY = item.y + item.height / 2;
-      
-      this.translateX = window.innerWidth / 2 - itemCenterX * this.scale;
-      this.translateY = window.innerHeight / 2 - itemCenterY * this.scale;
-      
-      this.updateTransform();
-    }
+    // Removed because it only works on 1x zoom and when you drag on items, it activates and causes a massive headache
+    //
+    // focusOnItem(item) {
+    //   const itemCenterX = item.x + item.width / 2;
+    //   const itemCenterY = item.y + item.height / 2;
+    //
+    //   this.translateX = window.innerWidth / 2 - itemCenterX * this.scale;
+    //   this.translateY = window.innerHeight / 2 - itemCenterY * this.scale;
+    //
+    //   this.updateTransform();
+    // }
   }
   
   window.addEventListener('load', async () => {
