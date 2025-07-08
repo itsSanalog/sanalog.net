@@ -1,4 +1,4 @@
-import { defineConfig, squooshImageService } from "astro/config";
+import { defineConfig } from "astro/config";
 import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import svelte from "@astrojs/svelte";
@@ -10,9 +10,9 @@ export default defineConfig({
   // base: "/sanalog.net",
   compressHTML: true,
   scopedStyleStrategy: "class",
-  image: {
-    service: squooshImageService(),
-  },
+  // image: {
+  //   // service: squooshImageService(),  //DEPRECATED Astro v5
+  // },
   markdown: {
     rehypePlugins: [
       rehypeHeadingIds,
