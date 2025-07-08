@@ -11,9 +11,9 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
       <button class="zoom-btn" id="zoom-in">+</button>
       <button class="zoom-btn" id="zoom-out">−</button>
     </div>
-    <div class="item-info" id="item-info">
-      <h4 id="item-title">name</h4>
-      <p id="item-description">description</p>
+    <div class="item-info pa ppl ppr" id="item-info">
+      <h3 class="m0" id="item-title">name</h3>
+      <p class="m0" id="item-description">description</p>
     </div>
     <div class="desk-surface" id="desk-surface">
     </div>
@@ -24,13 +24,19 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
 
 <style>
   .desk-container {
-    width: 100%;
+    width: 90%;
     height: 90vh;
+    margin: auto;
     position: relative;
     cursor: grab;
     overflow: hidden;
-    
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 2rem rgba(0,0,0,0.9) inset;
     /* background: rgb(226, 156, 197); */
+  }
+
+  :global(.theme-light .desk-container) {
+    box-shadow: 0 0 1.2rem rgba(0,0,0,0.1) inset;
   }
 
   .desk-container:active {
@@ -57,10 +63,10 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
   :global(.desk-item:hover) {
     /* Some options: 1. simple translateY and shadow 2. scale for emphasis 3. blur and stroke color+width for a glow effect */
 
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-1rem) scale(1.02);
     /* filter: drop-shadow(4px 4px 8px rgb(0, 0, 0)); */
     filter: brightness(0) saturate(100%) invert(74%) sepia(54%) saturate(5147%) hue-rotate(340deg) brightness(88%) contrast(93%);
-    stroke-width: 120;
+    stroke-width: 8;
   }
 
   :global(.theme-light .desk-item) {
@@ -72,13 +78,12 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
   }
 
   .item-info {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 100;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
     background: var(--color-ui-normal);
-    padding: 15px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
+    z-index: 100;
     opacity: 0;
     transition: opacity 0.1s ease;
   }
@@ -121,23 +126,23 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
 <script>
   const deskItemsConfig = [
     {
-      id: 1,
-      name: "knife",
-      description: "knife",
+      link: "knife",
+      name: "Folding Knife",
+      description: "Blackfox Bean Gen 2",
       x: 500, y: 510, width: 150, height: 120,
       svgFile: "knife.svg"
     },
     {
-      id: 2,
-      name: "phone",
-      description: "phone",
+      link: "sisterIV",
+      name: "SisterIV",
+      description: "Samsung Galaxy S22 Ultra",
       x: 280, y: 400, width: 250, height: 160,
       svgFile: "phone.svg"
     },
     {
-      id: 3,
-      name: "switch",
-      description: "switch",
+      link: "switch",
+      name: "Switch",
+      description: "Nintendo Switch",
       x: 450, y: 180, width: 340, height: 300,
       svgFile: "switch.svg"
     }
@@ -207,6 +212,7 @@ import BlogLayout from "../../layouts/BlogLayout.astro";
         
         itemElement.addEventListener('click', () => {
           // this.focusOnItem(item); DEPRECATED
+          window.location.href = `/blog/reviews/tools/${item.link}`;
         });
         
         this.surface.appendChild(itemElement);
