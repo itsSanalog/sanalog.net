@@ -45,7 +45,7 @@ import Footer from "../components/blog/Footer.astro";
       }
 
       function updateThemeImages() {
-        const isLight = document.body.classList.contains("theme-light");
+        let isLightMode = document.body.classList.contains("theme-light");
         document.querySelectorAll("img.theme-image").forEach(img => {
           img.src = isLight ? img.dataset.light : img.dataset.dark;
         });
