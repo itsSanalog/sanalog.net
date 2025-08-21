@@ -14,10 +14,13 @@ sortOrder: 4
 
 Say you have to make a pocket radio. You have to include a circuit board, a speaker, and two AA batteries.
 
-<picture>
-  <source srcset="../../../assets/blog/work/design-4d/light.png" media="(prefers-color-scheme: light)"/>
-  <source srcset="../../../assets/blog/work/design-4d/dark.png"  media="(prefers-color-scheme: dark)"/>
-</picture>
+<img 
+  src="../../../assets/blog/work/design-4d/light.png" 
+  alt="Example" 
+  data-light="../../../assets/blog/work/design-4d/light.png" 
+  data-dark="../../../assets/blog/work/design-4d/dark.png" 
+  class="theme-image" 
+/>
 <p class="small muted c">a circuit board, a speaker, and two AA batteries</p>
 
 Designing *as little as possible*, you'd probably go with an arrangement like this:
