@@ -26,7 +26,7 @@ export default defineConfig({
           },
         },
       ],
-      [rehypeAttrs],
+      // [rehypeAttrs],
     ],
   },
   integrations: [
