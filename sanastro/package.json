@@ -15,8 +15,8 @@
     "@astrojs/svelte": "^7.1.0",
     "astro": "^5.11.0",
     "open-props": "^1.5.8",
-    "rehype-attr": "^4.0.2",
     "rehype-autolink-headings": "^6.1.1",
+    "remark-attr": "^0.11.1",
     "three": "^0.174.0"
   }
 }
