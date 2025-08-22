@@ -667,11 +667,11 @@ option{
 }
 
 img.theme-aware {
-  filter: brightness(0) saturate(100%) invert(57%) sepia(3%) saturate(546%) hue-rotate(5deg) brightness(92%) contrast(88%);
+  filter: brightness(0) saturate(100%) invert(88%) sepia(10%) saturate(160%) hue-rotate(17deg) brightness(93%) contrast(90%);
 }
 
 .theme-light img.theme-aware {
-  filter: brightness(0) saturate(100%) invert(44%) sepia(4%) saturate(395%) hue-rotate(13deg) brightness(97%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(5%) sepia(7%) saturate(271%) hue-rotate(314deg) brightness(99%) contrast(98%);
 }
 /* theme aware image hack. astro only allows ![]() for images in src, so remark/rehype is used to add class using imgattr. only works with black pixels. */
 
