@@ -26,8 +26,10 @@ export default defineConfig({
           },
         },
       ],
-      [remarkAttr,
-        { properties: "className" },
+    ],
+    remarkPlugins: [
+      [ remarkAttr,
+        { properties: "className" }
       ],
     ],
   },
