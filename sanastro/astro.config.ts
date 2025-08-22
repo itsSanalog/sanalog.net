@@ -4,6 +4,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import svelte from "@astrojs/svelte";
 import sitemap from '@astrojs/sitemap';
 import remarkAttr from "remark-attr";
+import imgAttr from 'remark-imgattr';
 
 // https://astro.build/config
 export default defineConfig({
@@ -27,11 +28,7 @@ export default defineConfig({
         },
       ],
     ],
-    remarkPlugins: [
-      [ remarkAttr,
-        { properties: "className" }
-      ],
-    ],
+    remarkPlugins:[imgAttr],
   },
   integrations: [
     svelte(), 

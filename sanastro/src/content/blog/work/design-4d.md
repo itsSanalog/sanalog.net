@@ -12,15 +12,16 @@ publicationDate: 2025-08-21
 sortOrder: 4
 ---
 
-Say you have to make a pocket radio. You have to include a circuit board, a speaker, and two AA batteries.{.c}
+Say you have to make a pocket radio. You have to include a circuit board, a speaker, and two AA batteries.
 
-![](../../../assets/blog/work/design-4d/light.png){.theme-invert}
+![](../../../assets/blog/work/design-4d/light.png)(style: border: 1px solid #ccc;)
 
 <p class="small muted c">a circuit board, a speaker, and two AA batteries</p>
 
-Designing *as little as possible*, you'd probably go with an arrangement like this:{class="c"}
+Designing *as little as possible*, you'd probably go with an arrangement like this:
 
-![](../../../assets/blog/work/design-4d/arrange-light.png){class="theme-invert"}
+![](../../../assets/blog/work/design-4d/arrange-light.png)(width: 300, height: 150)
+
 <style>
   body:not(.theme-light) img.theme-invert {
     filter: invert(1) hue-rotate(180deg);
