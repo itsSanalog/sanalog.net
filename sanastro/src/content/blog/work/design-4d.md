@@ -14,7 +14,7 @@ sortOrder: 4
 
 Say you have to make a pocket radio. You have to include a circuit board, a speaker, and two AA batteries.
 
-![](../../../assets/blog/work/design-4d/light.png)<!--rehype:class=".theme-invert c"-->
+![](../../../assets/blog/work/design-4d/light.png)
 <p class="small muted c">a circuit board, a speaker, and two AA batteries</p>
 
 Designing *as little as possible*, you'd probably go with an arrangement like this:
