@@ -3,7 +3,6 @@ import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import svelte from "@astrojs/svelte";
 import sitemap from '@astrojs/sitemap';
-import remarkAttr from "remark-attr";
 import imgAttr from 'remark-imgattr';
 
 // https://astro.build/config

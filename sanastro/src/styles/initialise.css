@@ -666,7 +666,14 @@ option{
   transition: left 0.1s linear;
 }
 
+img.theme-aware {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(3%) saturate(546%) hue-rotate(5deg) brightness(92%) contrast(88%);
+}
 
+.theme-light img.theme-aware {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(4%) saturate(395%) hue-rotate(13deg) brightness(97%) contrast(97%);
+}
+/* theme aware image hack. astro only allows ![]() for images in src, so remark/rehype is used to add class using imgattr. only works with black pixels. */
 
 /* ----- TYPEFACES -----*/
 
