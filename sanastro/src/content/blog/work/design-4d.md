@@ -34,12 +34,18 @@ But following good design principles, you will probably end up with this:
 
 Indeed, this is what every sensible designer would do.
 
-![](../../../assets/blog/work/design-4d/atom)
+![](../../../assets/blog/work/design-4d/atom.jpg)
 
-![](../../../assets/blog/work/design-4d/atom2)
+![](../../../assets/blog/work/design-4d/atom2.jpg)
 
 <p class="small muted c">blog.naver.com/samurai1696/220379264970</p>
 
-To most readers, the 'optimal' arrangement would have more than likely been visualised immediately. Indeed, this is fundamental and second nature to product designers. But I would like to investigate what exactly goes through our brains when we collectively arrive at the same answer.
+To many readers, the 'optimal' arrangement would have been immediately obvious. For product designers, this fundamental exercise is trivial and second nature. However, I wanted to investigate what goes on in our minds that makes us collectively arrive at the same answer. I assume your thought process is something very similar to mine:
 
-Since the product is a pocket radio, portability is a high priority factor to account for when arranging components. The largest part are the PCB and the speaker, but the thickest part are the batteries. I'll thus overlap the speaker over the circuit board. The PCB could be L-shaped to accomodate the batteries. This way, not only have we minimised unused space inside the casing, but also the minimum bounding box (MBB) of the product, ensuring it fits comfortably in pockets.
+> Since the product is a pocket radio, portability is the top priority for arranging the components. The largest parts are the PCB and the speaker, but AA batteries are thick. I'll thus overlap the speaker on the circuit board. The PCB could be L-shaped to accomodate the batteries. This way, not only have we minimised unused space inside the casing, but also the minimum bounding box (MBB) of the product, ensuring it fits comfortably in pockets.
+
+# Quantifying goodness
+
+Utilising the concept of minimum bounding boxes is very notable, because it explicitly defines a criteria to satisfy—minimise a variable which can be numericalised, calculated, and has a specific global/local minimum. This is why designs converge into one good, sensible, and 'optimal' design. It is also why a thousand people can come up with the same answer when faced with the same assignment. But while this approach creates good (enough) designs, it often fails to output truly exceptional ones.
+
+What if, instead of just three dimensions, we were tasked to maximise the durability of the product as well? Now we have to take time into account, and with it, usage patterns, battery chemistry, 
