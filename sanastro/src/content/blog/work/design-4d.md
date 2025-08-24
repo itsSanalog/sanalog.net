@@ -34,9 +34,9 @@ But following good design principles, you will probably end up with this:
 
 Indeed, this is what every sensible designer would do.
 
-![](../../../assets/blog/work/design-4d/atom.jpg)
+![](../../../assets/blog/work/design-4d/atom.png)
 
-![](../../../assets/blog/work/design-4d/atom2.jpg)
+![](../../../assets/blog/work/design-4d/atom2.png)
 
 <p class="small muted c">blog.naver.com/samurai1696/220379264970</p>
 
