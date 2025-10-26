@@ -10,12 +10,14 @@ releaseDate: 2017-02-14
 sortOrder: 0
 
 # stars:
-rating: 66
+rating: 69
 ---
 
 Riot Grrrl resurgence. Queercore landmark. But just excellent punk, honestly.
 
 Dazey and the Scouts were a 4.5 person band from 2016 to 2018. They released this one (fantastic) album which nobody noticed at the time, and then they disbanded. That is until 2021, when they were re-evaluated by horny and punk hungry music nerds looking for something intimate, passionate, and full of energy. Bless them, for this album is some good shit. The attention prompted the band to release physical copies, pressing nine records, a CD, and a cassette—all these years after the album's release.
+
+7 tracks.
 
 # Groan
 
@@ -35,7 +37,7 @@ I noticed this has ~~eleven~~ seventeen millions plays on YouTube. Cool.
 
 # James Deen You Let Us Down
 
-lol? This relatively slower, calmer track requires some research to appreciate. It's a funny surfy tune per se, but provides a deeper insight to the humans behind the voices and instruments. *Maggot* being a debut album, the track does a fine job at introducing you to Dazey and the Scouts.
+lol? This relatively slower, calmer track requires some context to appreciate. It's a funny surfy tune per se, but provides a deeper insight to the humans behind the voices and instruments. *Maggot* being a debut album, the track does a fine job at introducing you to Dazey and the Scouts.
 
 <p class="point"><span class="point title">Flavour</span><span class="point number">2</span><span class="point title">Technique</span><span class="point number">C</span></p>
 
@@ -55,9 +57,13 @@ But really, I'm making a mountain out of a molehill, considering *Maggot* is abo
 
 # Sweet Cis Teen
 
-Noisy song. rage and isolation
+Otto Klammer is a composer, synth player, vocalist, and bassist for Dazey and the Scouts. They are also transgender. *Sweet Cis Teen* is a look at their trans identity. It is a noisy song, appealing rage and isolation. The tender opening steadily builds up into a cacophony—layers upon layers of instruments and sounds that get progressively louder until the electrifying bridge—declaring "to be trans is to be your own pallbearer".
 
-<p class="point"><span class="point title">Flavour</span><span class="point number">4</span><span class="point title">Technique</span><span class="point number">B</span></p>
+The diatribe drowns into the sea of sound as the song spirals into pure emotion. It's a raw and brutal climax. Frankly, the finale radiates a great deal of liberating euphoria for a song about dysphoria.
+
+Also the guitar sings in this song. The guitar fucking sings I die for this shit man.
+
+<p class="point"><span class="point title">Flavour</span><span class="point number">4</span><span class="point title">Technique</span><span class="point number">A</span></p>
 
 # Nice Nice
 
@@ -69,5 +75,7 @@ I am aware I discounted *Wet* for its literal lyrics. The story is different wit
 <p class="point"><span class="point title">Flavour</span><span class="point number">4</span><span class="point title">Technique</span><span class="point number">C</span></p>
 
 # Album Score
+
+25 minutes makes *Maggot* a short album. But with an insane batting lineup of hard-hitters one after another, your attention is demanded the entire duration.
 
 <p class="point"><span class="point title">Cohesion</span><span class="point number">S</span><span class="point title">Completeness</span><span class="point number">A</span><span class="point title">Art</span><span class="point number">3</span></p>
