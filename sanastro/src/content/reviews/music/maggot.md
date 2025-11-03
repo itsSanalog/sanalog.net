@@ -6,7 +6,7 @@ title: Maggot
 artist: Dazey and the Scouts
 releaseDate: 2017-02-14
 
-publicationDate: 2025-11-3
+publicationDate: 2025-11-03
 sortOrder: 0
 
 # stars:
@@ -76,6 +76,6 @@ I am aware I discounted *Wet* for its literal lyrics. The story is different wit
 
 # Album Score
 
-25 minutes makes *Maggot* a short album. But with an insane batting lineup of hard-hitters one after another, it demands your attention the entire duration. It is jam-packed with talent—musical, lyrical, and vocal. Lea Jaffe's presence is strong, effecting an emotional response just as powerful. Speaking on behalf of millions of its listeners, *Maggot* melts its message into humour, maintaining a healthy ratio across the seven tracks. Sure some parts are rough in nature, but reproving the lack of polish is like faulting sashimi for being raw.
+25 minutes makes *Maggot* a short album. But with an insane batting lineup of hard-hitters one after another, it demands your attention the entire duration. It is jam-packed with talent—musical, lyrical, and vocal. Lea Jaffe's presence is strong, effecting an emotional response just as powerful. Speaking on behalf of millions of its listeners, *Maggot* melts its message into humour, maintaining a healthy ratio across the seven tracks. Sure some parts are rough in nature, but reproving the lack of polish is like faulting sashimi for being raw. With a decent album cover, this thrilling album gets an overall score of 69 from me—nice nice.
 
 <p class="point"><span class="point title">Cohesion</span><span class="point number">S</span><span class="point title">Completeness</span><span class="point number">A</span><span class="point title">Art</span><span class="point number">3</span></p>
