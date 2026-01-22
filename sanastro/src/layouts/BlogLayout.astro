@@ -44,9 +44,17 @@ import Footer from "../components/blog/Footer.astro";
         lightModeToggle.setAttribute("aria-checked", isLightMode.toString());
       }
 
+      function updateThemeImages() {
+        let isLightMode = document.body.classList.contains("theme-light");
+        document.querySelectorAll("img.theme-image").forEach(img => {
+          img.src = isLight ? img.dataset.light : img.dataset.dark;
+        });
+      }
+
       function toggleTheme() {
         document.body.classList.toggle("theme-light");
         updateThemeState();
+        updateThemeImages();
       }
 
       lightModeToggle.addEventListener("click", toggleTheme);
@@ -61,6 +69,7 @@ import Footer from "../components/blog/Footer.astro";
       });
 
       initializeTheme();
+      updateThemeImages();
     </script>
   </body>
 </html>

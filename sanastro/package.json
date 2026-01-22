@@ -16,6 +16,8 @@
     "astro": "^5.11.0",
     "open-props": "^1.5.8",
     "rehype-autolink-headings": "^6.1.1",
+    "remark-attr": "^0.11.1",
+    "remark-imgattr": "^1.0.5",
     "three": "^0.174.0"
   }
 }

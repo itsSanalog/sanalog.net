@@ -5,14 +5,14 @@ coverAlt: "Server"
 # bannerAlt: "Server"
 
 title: "Server"
-description: ""
+description: "A log of how I first set up a small home server."
 # author:
 publicationDate: 2023-01-15
 # creationDate: "January 2023"
 sortOrder: 1
 ---
 
-A log of how I first set up a small home server. This is very outdated, and my setup has become relatively sophisticated since, but I'm still a noob at this stuff.
+This is very outdated, and my setup has become relatively sophisticated since (VPNs, Pi-hole, media management, you know), but I'm still a noob at this stuff.
 
 # Goals
 
@@ -20,13 +20,13 @@ A general purpose home server was a personal goal of mine for a long time.
 
 The server was intended to be a headless Dell OptiPlex with a fourth-generation Intel i5 processor and 8 GB of RAM, but I decided to run it on my old laptop before making a purchase. I wanted to use this server only as a Network Attached Storage (NAS) device, as well as to host a Minecraft server, but ended up giving it extra QoL features.
 
-It runs Ubuntu Server 20.04 and CasaOS. Proxmox would be nice but CasaOS’ GUI is really useful for my family to toy with the server as well.
+It runs Ubuntu Server 20.04 and CasaOS. Proxmox would be nice but CasaOS' GUI is really useful for my family to toy with the server as well.
 
 # Walkthrough
 
 ### Disclaimer
 
-This was my first foray into self hosted servers. I am talking about things I barely know anything about. There are things I’m doing terribly wrong.
+This was my first foray into self hosted servers. I am talking about things I barely know anything about. There are things I'm doing terribly wrong.
 
 Each numbered steps are written in direct speech akin to that of a tutorial, but only follow said steps if you want to do exactly what I have done (read as: in a wrong manner), for this is intended to be a documentation of my journey rather than a guide.
 
@@ -56,7 +56,7 @@ Then run `sudo apt update` and `sudo apt upgrade` as a test, and also to get eve
 Samba is used to create a directory (folder) that will be shared on the network. This allows the server to function as a NAS for speedy file sharing across devices without compression, as well as a central location to store backup files.
 
 1. Run `sudo apt install samba`.
-2. Run `samba --version` to verify it’s installed.
+2. Run `samba --version` to verify it's installed.
 3. Run `cd` to go to the home directory (`/home/sanalog/`), then `mkdir sanalog-share`.
 4. Run `sudo nano /etc/samba/smb.conf`. Scroll all the way down and append the following line:
 
@@ -77,7 +77,7 @@ At this point, the network drive can be added on any device on the local network
 
 <a href="https://www.docker.com/" target="_blank" class="extlink">Docker</a> is pretty cool. It allows you to run applications as containers, that can be readily found online. If all goes well, adding features to our server should be as easy as installing apps from the app store. Docker will be used to set up the Minecraft server, as well as a VPN.
 
-1. Run `docker --version` to verify that it’s installed.
+1. Run `docker --version` to verify that it's installed.
 2. Run `docker ps`. This should throw an error.
 3. Run `sudo groupadd docker` and `gpasswd -a sanalog docker`.
 4. Reboot the server by executing `sudo reboot`. Re-establish the SSH connection.
@@ -108,7 +108,7 @@ At this point, the network drive can be added on any device on the local network
     
 4. Paste the above into the SSH terminal.
 
-At this point, the server should be open and available for any device on the server’s local network. In Minecraft, use `192.168.18.44` as server address and a connection should be established.
+At this point, the server should be open and available for any device on the server's local network. In Minecraft, use `192.168.18.44` as server address and a connection should be established.
 
 ## VI. Configuring Minecraft world
 
@@ -153,7 +153,7 @@ Theoretically, opening SMB and SSH to WAN could be made secure, but port forward
 
 ## Intermission
 
-That’s it. The NAS works, and the Minecraft server works. The initial goals have been achieved!
+That's it. The NAS works, and the Minecraft server works. The initial goals have been achieved!
 
 The remaining steps are not absolutely necessary, but they will help in making the operation and maintenance of the server effortless, as well as making it easy to expand the server's capabilities.
 
