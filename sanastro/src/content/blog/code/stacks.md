@@ -1,7 +1,7 @@
 ---
-cover: "../../../assets/blog/code/styleguide/cover.png"
+cover: "../../../assets/blog/code/stacks/cover.png"
 coverAlt: "stacks"
-# banner: "../../../assets/blog/code/styleguide/banner.png"
+# banner: "../../../assets/blog/code/stacks/banner.png"
 # bannerAlt: "stacks"
 
 title: "stacks"
