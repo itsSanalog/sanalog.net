@@ -16,12 +16,6 @@ sortOrder: 1
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 
-# who writes this crap?
-
-*<span class="muted">..that would be me.</span>*
-
-A self-introduction.
-
 # What
 
 sanaBlog or 산아록 is a notebook in webpage form. It is part of sanalog.net, the personal website and playspace of Sanalog.

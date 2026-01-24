@@ -12,12 +12,6 @@ title: "Links"
 sortOrder: 1
 ---
 
-# the web is cool
-
-*<span class="muted">..at least it's meant to be.</span>*
-
-A collection of links. Channels of information I found to be worth exploring, for various reasons. Good things are meant to be shared, and bad things, well...
-
 I wanted to call this collection a *webbook*, a younger cousin to the phonebook that is but a relic of the past. Unfortunately that arrangement of letters looks hideous to me.
 
 ## Persons / Ideas

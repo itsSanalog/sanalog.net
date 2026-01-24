@@ -12,11 +12,7 @@ title: "Tools"
 sortOrder: 1
 ---
 
-# i use things
-
-*<span class="muted">..whether i like them or not.</span>*
-
-A list of tools I use frequently. For detailed thoughts on a specific item, check out [reviews/tools](/blog/reviews/tools).
+For detailed thoughts on a specific item, see [reviews/tools](/blog/reviews/tools).
 
 <details>
   <summary>Chapters — click to expand</summary>
@@ -167,15 +163,13 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 - **Moondrop Chu 2 IEM** &centerdot; lifeline.
 - **Truthear Zero: Red IEM** &centerdot; for uneasy listening.
 - **Rega Planar P1 turntable**
-- **Triangle LN01A**
 - **Beocenter 1500** &centerdot; a beautiful all-in-one machine.
 
 # Kitchen
 
-- Chef's knife
-- Cleaver
-- Wooden cutting board
-- Stainless steel pots and skillet
+- Nakiri knife
+- Cutting board
+- Stainless steel skillet
 - Non-stick pan
 - Wok
 - Ramyun pot

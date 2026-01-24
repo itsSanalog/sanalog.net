@@ -13,12 +13,6 @@ sortOrder: 1
 # rating:
 ---
 
-# reviews
-
-*<span class="muted">..of what, exactly?</span>*
-
-An archive of things I have interacted with.
-
 <p class="muted">quick links</p>
 <!-- To use centerdot or | is a good UI question, as well as using &centerdot; over &xB7; for clarity -->
 <a href="/blog/reviews/music" class="plain mmr">music</a>&centerdot;
