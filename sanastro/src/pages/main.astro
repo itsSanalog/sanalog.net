@@ -64,6 +64,10 @@ import Head from "../components/Head.astro";
           <rect x="750" y="0" width="25" height="25" class="shape color-grey2" />
           <rect x="750" y="25" width="25" height="25" class="shape color-grey3" />
           
+          <path d="m 725 125 v -25 a 1 1 180 0 0 -50 0 c 0 25 25 25 25 25 h 25 z" class="shape color-staticwhite" />
+          <rect x="725" y="100" width="25" height="25" class="shape color-terminalamber" />
+          <circle cx="calc(650 + 25/2)" cy="112.5" r="12.5" class="shape color-charcoal" />
+          
           <rect x="800" y="0" width="25" height="50" class="shape color-staticwhite" />
           <path d="m 875 50 v -25 a 1 1 180 0 0 -50 0 c 0 25 25 25 25 25 h 25 z" class="shape color-grey3" />
           <rect x="875" y="0" width="25" height="25" class="shape color-charcoal" />
@@ -107,21 +111,21 @@ import Head from "../components/Head.astro";
         </g>
 
         <g id="text">
-          <text x="220" y="10" class="type color-coldwhite" font-size="60px">潜</text>
-          <text x="720" y="300" class="type color-coldwhite" font-size="50px">我</text>
-          <text x="1400" y="255" class="type color-coldwhite" font-size="50px">录</text>
+          <text x="220" y="75" class="type kaiti color-coldwhite" font-size="60px">潜</text>
+          <text x="720" y="345" class="type kaiti color-coldwhite" font-size="50px">我</text>
+          <text x="1400" y="294" class="type kaiti color-coldwhite" font-size="50px">录</text>
 
-          <text x="447" y="206" class="type color-staticwhite" font-size="30px">呼</text>
-          <text x="447" y="225" class="type color-staticwhite" font-size="30px">吸</text>
+          <text x="447" y="235" class="type simsun color-staticwhite" font-size="30px">呼</text>
+          <text x="447" y="273" class="type simsun color-staticwhite" font-size="30px">吸</text>
         
-          <text x="925" y="275" class="type color-grey3" font-size="28px" letter-spacing="2">record.</text>
-          <text x="1156" y="275" class="type color-grey3" font-size="28px" letter-spacing="2">reason.</text>
+          <text x="925" y="295" class="type color-grey3" font-size="28px" letter-spacing="2">record.</text>
+          <text x="1156" y="295" class="type color-grey3" font-size="28px" letter-spacing="2">reason.</text>
 
-          <text x="1153" y="52" class="type" font-size="40px" letter-spacing="114" fill="#ffffff">산아록</text>
+          <text x="1153" y="52" class="type hangeul" font-size="40px" letter-spacing="114" fill="#ffffff">산아록</text>
 
-          <text x="1150" y="200" class="type" font-size="80px" fill="#ffffff" opacity="0.5">02.</text>
+          <text x="1150" y="262" class="type" font-size="80px" font-weight="bold" fill="#ffffff" opacity="0.5">02.</text>
 
-          <text x="932" y="70" class="type color-staticwhite" font-size="20px" transform="rotate(90 932 70)">tear.</text>
+          <text x="930" y="65" class="type color-staticwhite" font-size="20px" transform="rotate(90 932 70)">tear.</text>
         </g>
                 
       </svg>
@@ -130,6 +134,16 @@ import Head from "../components/Head.astro";
 </html>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&family=Noto+Serif+SC:wght@300&display=swap');
+
+  @font-face {
+    font-family: 'KaiTi';
+    src: url('/fonts/kaiti-8kb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   .landing {
     display: flex;
     justify-content: center;
@@ -173,15 +187,18 @@ import Head from "../components/Head.astro";
   }
 
   .type {
-    font-family: "Noto Serif SC", "Songti SC", serif; 
-    font-weight: 300;
+
   }
-  .type.hanja {
-    font-weight: 700;
-    font-family: "Didot", "Bodoni MT", serif;
+  .type.simsun {
+    /* font-weight: 300; */
+    font-family: "Noto Serif SC", serif;
+  }
+  .type.kaiti {
+    font-family: "Kaiti", serif;
   }
   .type.hangeul {
-    font-family: "HY신명조", serif;
+    /* font-weight: 300; */
+    font-family: "Noto Serif KR", serif;
   }
   .type.alphabet {
     font-family: "Times New Roman", serif;
@@ -200,6 +217,7 @@ import Head from "../components/Head.astro";
   .hover {
     cursor: pointer;
   }
+
 </style>
 
 <script>
