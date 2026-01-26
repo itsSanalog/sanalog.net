@@ -1,5 +1,6 @@
 ---
 import "../styles/normalize.css";
+import "../styles/main.css";
 
 import Head from "../components/Head.astro";
 ---
@@ -132,93 +133,6 @@ import Head from "../components/Head.astro";
     </main>
   </body>
 </html>
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&family=Noto+Serif+SC:wght@300&display=swap');
-
-  @font-face {
-    font-family: 'KaiTi';
-    src: url('/fonts/kaiti-8kb.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  .landing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #a1a6ab;
-    overflow: hidden;
-
-    --charcoal:      #1C1C2A;
-    --grey3:         #2E3242;
-    --grey2:         #5E647A;
-    --grey1:         #8C90A4;
-    --staticwhite:   #E6E9F0;
-    --coldwhite:     #F2F4F8;
-    --ionblue:       #9AD7FF;
-    --terminalamber: #FF8A00;
-    --laserred:      #FF2E2E;
-    --acidyellow:    #FFEA00;
-    --neonmint:      #05FF74;
-    --arcblue:       #5FFFFF;
-  }
-
-  .color-charcoal      { fill: var(--charcoal); }
-  .color-grey3         { fill: var(--grey3); }
-  .color-grey2         { fill: var(--grey2); }
-  .color-grey1         { fill: var(--grey1); }
-  .color-staticwhite   { fill: var(--staticwhite); }
-  .color-coldwhite     { fill: var(--coldwhite); }
-  .color-ionblue       { fill: var(--ionblue); }
-  .color-terminalamber { fill: var(--terminalamber); }
-  .color-laserred      { fill: var(--laserred); }
-  .color-acidyellow    { fill: var(--acidyellow); }
-  .color-neonmint      { fill: var(--neonmint); }
-  .color-arcblue       { fill: var(--arcblue); }
-
-  svg {
-    display: block;
-    max-width: 1600px;
-    width: 100%;
-    height: auto;
-  }
-
-  .type {
-
-  }
-  .type.simsun {
-    /* font-weight: 300; */
-    font-family: "Noto Serif SC", serif;
-  }
-  .type.kaiti {
-    font-family: "Kaiti", serif;
-  }
-  .type.hangeul {
-    /* font-weight: 300; */
-    font-family: "Noto Serif KR", serif;
-  }
-  .type.alphabet {
-    font-family: "Times New Roman", serif;
-  }
-
-  .shape {
-
-  }
-  .shape.square {
-
-  }
-  .shape.circle {
-
-  }
-  
-  .hover {
-    cursor: pointer;
-  }
-
-</style>
 
 <script>
   // Import functions from the local file
