@@ -1,0 +1,100 @@
+---
+import "../styles/normalize.css";
+
+import Head from "../components/Head.astro";
+---
+
+<html lang="en">
+  <Head title="sanalog.net" />
+  <body>
+    <main class="landing">
+      <svg
+        id="strip"
+        viewBox="0 0 1200 160"
+        width="1200"
+        height="160"
+        preserveAspectRatio="xMidYMid meet"
+        aria-hidden="true"
+      >
+        <!-- Passive elements -->
+        <g class="item drift rotate">
+          <rect x="40" y="60" width="40" height="40" rx="8" />
+        </g>
+
+        <g class="item drift">
+          <circle cx="140" cy="80" r="20" />
+        </g>
+
+        <!-- Hover glow + bounce -->
+        <g class="item hover glow bounce" data-hover="bounce">
+          <rect x="220" y="55" width="50" height="50" rx="12" />
+        </g>
+
+        <!-- Hover morph -->
+        <g class="item hover morph" data-hover="morph">
+          <path
+            class="shape"
+            d="M320 60 h40 a10 10 0 0 1 10 10 v20 a10 10 0 0 1 -10 10 h-40 a10 10 0 0 1 -10 -10 v-20 a10 10 0 0 1 10 -10 z"
+            data-alt="M320 80 a20 20 0 1 1 40 0 a20 20 0 1 1 -40 0"
+          />
+        </g>
+      </svg>
+    </main>
+  </body>
+</html>
+
+<style>
+  .landing {
+      display: flex;
+      justify-content: center;
+      padding: 4rem 0;
+      background: #b2b5b8;
+    }
+
+    svg {
+      display: block;
+    }
+
+    .item {
+      transform-box: fill-box;
+      transform-origin: center;
+      fill: #e8e9eb;
+    }
+
+    .glow {
+      transition: filter 200ms ease, opacity 200ms ease;
+    }
+
+    .glow:hover {
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+      opacity: 0.95;
+    }
+
+    .hover {
+      cursor: pointer;
+    }
+</style>
+
+<script type="module">
+  
+  import anime from 'animejs';
+  
+  console.log('client script running');
+
+  import {
+      initPassiveRotation,
+      initPassiveDrift,
+      initHoverBounce,
+      initHoverMorph,
+    } from '../scripts/animation.js';
+
+    const root = document.getElementById('strip');
+
+    initPassiveRotation(root);
+    initPassiveDrift(root);
+    initHoverBounce(root);
+    initHoverMorph(root);
+  
+  console.log('222client script running');
+
+</script>
