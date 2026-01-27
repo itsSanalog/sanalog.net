@@ -81,86 +81,87 @@ export function initScrollAnimation(root) {
   const sanalogL = root.getElementById('sanalogL');
   const sanalogO = root.getElementById('sanalogO');
   const sanalogG = root.getElementById('sanalogG');
+
+  const aliveShapes = [sanalogS, sanalogA0, sanalogN, sanalogA1, sanalogL, sanalogO, sanalogG];
   
   // die
-  const allShapes = root.querySelectorAll('.shape, .type');
-  const background = document.body;
+  const allShapes = Array.from(root.querySelectorAll('.shape, .type'));
+  const dyingShapes = allShapes.filter(el => el !==sanalogS && el !==sanalogA0 && el !==sanalogN && el !==sanalogA1 && el !==sanalogL && el !==sanalogO && el !==sanalogG);
 
   const tl = createTimeline({
     autoplay: false,
-    duration: 1000
+    duration: 10 // does this even do anything xd
   });
 
   // dying anim
-  tl.add(allShapes, {
-    // opacity: 0.1,
-    fill: '#000000',
+  tl.add(document.body, {
+    backgroundColor: '#000000',
     easing: 'outQuad',
-    duration: 300
+    duration: 250
   }, 0);
 
-  tl.add(document.body, {
-    backgroundColor: '#050505',
-    easing: 'linear',
-    duration: 300
-  }, 0);
+    tl.add(dyingShapes, {
+    opacity: 0,
+    // fill: '#000000',
+    easing: 'outQuad',
+    duration: 400
+  }, 100);
 
   // living anim
-  tl.add(sanalogS, {
-    // translateX: 650,
-    // translateY: 100, 
-    fill: '#ffffff', 
+  tl.add(aliveShapes, {
+    fill: '#ffffff',
     easing: 'inOutQuad',
-    duration: 700
-  }, 200);
+    duration: 400
+  }, 0);
+
+  tl.add(sanalogS, {
+    translateX: 370,
+    easing: 'inOutQuad',
+    duration: 600
+  }, 525);
 
   tl.add(sanalogA0, {
-    // translateX: 550,
-    // translateY: 75, 
-    fill: '#ffffff', 
+    translateX: 255,
     easing: 'inOutQuad',
-    duration: 700
-  }, 300);
+    duration: 550
+  }, 500);
   
   tl.add(sanalogN, {
-    // translateX: 450,
-    // translateY: 50, 
-    fill: '#ffffff', 
+    translateX: 115,
     easing: 'inOutQuad',
-    duration: 700
-  }, 400);
+    duration: 500
+  }, 450);
 
   tl.add(sanalogA1, {
-    // translateX: 350,
-    // translateY: 25,
-    fill: '#ffffff',
+    translateX: -50,
     easing: 'inOutQuad',
-    duration: 700
-  }, 500);
+    duration: 500
+  }, 425);
 
   tl.add(sanalogL, {
-    // translateX: 250,
-    // translateY: 0,
-    fill: '#ffffff',
+    translateX: -165,
     easing: 'inOutQuad',
-    duration: 700
-  }, 600);
+    duration: 500
+  }, 450);
 
   tl.add(sanalogO, {
-    // translateX: 150,
-    // translateY: -25,
-    fill: '#ffffff',
+    translateX: -405,
     easing: 'inOutQuad',
-    duration: 700
-  }, 700);
+    duration: 550
+  }, 500);
 
   tl.add(sanalogG, {
-    // translateX: 50,
-    // translateY: -50,
-    fill: '#ffffff',
+    translateX: -545,
+    rotate: -390,
     easing: 'inOutQuad',
-    duration: 700
-  }, 800);
+    duration: 600
+  }, 525);
+
+    tl.add(sanalogG, {
+    rotate: -360,
+    easing: 'linear',
+    duration: 50
+  }, 1400);
   
   // scroll listener
   window.addEventListener('scroll', () => {
