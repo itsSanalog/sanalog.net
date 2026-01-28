@@ -51,6 +51,28 @@ body {
 .color-neonmint      { fill: var(--neonmint); }
 .color-arcblue       { fill: var(--arcblue); }
 
+.raider .color-laserred:hover {
+  transition: transform 0.2s;
+  transform: scale(0.8);
+  filter: drop-shadow( 0px 0px 10px var(--laserred));
+}
+.raider .color-acidyellow:hover {
+  transition: transform 0.2s;
+  transform: scale(0.8);
+  filter: drop-shadow( 0px 0px 10px var(--acidyellow));
+}
+.raider .color-neonmint:hover {
+  transition: transform 0.2s;
+  transform: scale(0.8);
+  filter: drop-shadow( 0px 0px 10px var(--neonmint));
+}
+.raider .color-arcblue:hover {
+  transition: transform 0.2s;
+  transform: scale(0.8);
+  filter: drop-shadow( 0px 0px 10px var(--arcblue));
+}
+
+
 svg {
   display: block;
   max-width: 1600px;

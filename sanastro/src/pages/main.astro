@@ -20,7 +20,7 @@ import Head from "../components/Head.astro";
           <rect x="0" y="0" width="50" height="50" fill="#ffffff" class="shape" />
           <rect x="50" y="0" width="50" height="50" fill="#000000" class="shape" />
           
-          <g>
+          <g class="raider">
             <circle cx="calc(100 + 25/2)" cy="37.5" r="12.5" class="shape color-laserred" />
             <circle cx="calc(125 + 25/2)" cy="37.5" r="12.5" class="shape color-acidyellow" />
             <circle cx="calc(150 + 25/2)" cy="37.5" r="12.5" class="shape color-neonmint" />
@@ -39,7 +39,7 @@ import Head from "../components/Head.astro";
           <rect x="275" y="25" width="25" height="25" class="shape color-grey2" />
           <rect x="325" y="0" width="25" height="25" class="shape color-grey2" />
           <rect x="300" y="25" width="50" height="25" class="shape color-ionblue" />
-          <rect x="250" y="75" width="125" height="25" class="shape color-staticwhite" />
+          <rect x="250" y="75" width="125" height="25" class="shape color-staticwhite drift-x" />
           
           <path d="m 350 0 v 25 a 1 1 0 0 0 50 0 c 0 -25 -25 -25 -25 -25 h -25 z" class="shape color-grey3" />
           <path id="sanalogA0" d="m 450 50 v -25 a 1 1 180 0 0 -50 0 c 0 25 25 25 25 25 h 25 z" class="shape color-terminalamber" />
@@ -53,10 +53,10 @@ import Head from "../components/Head.astro";
           <rect x="575" y="25" width="25" height="25" class="shape color-grey2" />
 
           <path id="sanalogN" d="m 600 50 v -25 a 1 1 1 0 1 50 0 v 25 z" class="shape color-staticwhite" />
-          <rect x="600" y="-100" width="25" height="25" class="shape color-grey2" />
+          <rect x="600" y="-100" width="25" height="25" class="rotate-90 shape color-grey2" />
           <rect x="625" y="-75" width="25" height="25" class="shape color-staticwhite" />
 
-          <path d="m 675 0 v 50 a 1 1 0 0 0 0 -50" class="shape color-terminalamber" />
+          <path d="m 675 0 v 50 a 1 1 0 0 0 0 -50" class="rotate-360 shape color-terminalamber" />
           <path d="m 700 0 v 50 a 1 1 0 0 0 0 -50" class="shape color-ionblue" />
           <rect x="725" y="0" width="25" height="25" class="shape color-grey1" />
           <rect x="725" y="25" width="25" height="25" class="shape color-staticwhite" />
@@ -85,14 +85,14 @@ import Head from "../components/Head.astro";
           
           <circle cx="calc(1100 + 25/2)" cy="12.5" r="12.5" class="shape color-charcoal" />
           <rect x="1125" y="0" width="75" height="25" class="shape color-grey2" />
-          <circle cx="calc(1150 + 25/2)" cy="37.5" r="12.5" class="shape color-charcoal" />
+          <circle cx="calc(1150 + 25/2)" cy="37.5" r="12.5" class="bounce-x shape color-charcoal" />
           <circle cx="calc(1175 + 25/2)" cy="37.5" r="12.5" class="shape color-charcoal" />
 
           <rect x="1200" y="0" width="50" height="50" class="shape color-staticwhite" />
           <rect x="1250" y="0" width="25" height="25" class="shape color-terminalamber" />
           <rect x="1250" y="25" width="25" height="25" class="shape color-ionblue" />
 
-          <path d="m 1300 0 v 50 a 1 1 0 0 1 0 -50" class="shape color-staticwhite" />
+          <path d="m 1300 0 v 50 a 1 1 0 0 1 0 -50" class="rotate-360 shape color-staticwhite" />
           <circle id="sanalogO" cx="calc(1300 + 25)" cy="25" r="25" class="shape color-coldwhite" />
           <rect x="1350" y="25" width="25" height="25" class="shape color-ionblue" />
           <rect x="1375" y="0" width="25" height="25" class="shape color-charcoal" />
@@ -134,9 +134,10 @@ import Head from "../components/Head.astro";
 
 <script>
   import { 
-    initPassiveRotation, 
-    initPassiveDrift, 
-    initHoverBounce, 
+    initPassiveRotation1,
+    initPassiveRotation2,
+    initPassiveDrift,
+    initPassiveBounce,
     initHoverMorph,
     initScrollAnimation
   } from '../scripts/animation.js';
@@ -145,11 +146,11 @@ import Head from "../components/Head.astro";
     const root = document.getElementById('bauhaus');
     
     if (root) {
-      initPassiveRotation(root);
+      initPassiveRotation1(root);
+      initPassiveRotation2(root);
       initPassiveDrift(root);
-      initHoverBounce(root);
+      initPassiveBounce(root);
       initHoverMorph(root);
-
       initScrollAnimation(root);
     } else {
       console.error('um this shouldnt happen');

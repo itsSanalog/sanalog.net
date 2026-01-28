@@ -1,46 +1,56 @@
-import { animate, random, createTimeline } from 'animejs';
+import { animate, createTimeline, cubicBezier } from 'animejs';
 
 // Passive rotation
-export function initPassiveRotation(root) {
-  const elements = root.querySelectorAll('.rotate');
-  if (!elements.length) return;
+export function initPassiveRotation1(root) {
+  const elements = root.querySelectorAll('.rotate-90');
   
   animate(elements, {
-    rotate: 360,
-    duration: () => random(12000, 20000),
-    easing: 'linear',
+    rotate: 90,
+    ease: 'inOutExpo',
+    loop: true,
+  });
+}
+
+export function initPassiveRotation2(root) {
+  const elements = root.querySelectorAll('.rotate-360');
+  
+  animate(elements, {
+    rotate: [0, 180, 360],
+    duration: 5000,
+    ease: 'outElastic',
     loop: true,
   });
 }
 
 // Passive drift
 export function initPassiveDrift(root) {
-  const elements = root.querySelectorAll('.drift');
-  if (!elements.length) return;
+  const elements = root.querySelectorAll('.drift-x');
 
   elements.forEach((el) => {
     animate(el, {
-      translateX: [-4, 4],
-      direction: 'alternate',
-      easing: 'easeInOutSine',
-      duration: random(3000, 6000),
+      translateX: [0, 70, 0],
+      ease: cubicBezier(0.7,0.1,0.5,0.9),
+      duration: 8000,
       loop: true,
     });
   });
 }
 
-// Bounce on hover
-export function initHoverBounce(root) {
-  root.querySelectorAll('[data-hover="bounce"]').forEach((el) => {
-    el.addEventListener('mouseenter', () => {
-      animate(el, {
-        scale: [1, 1.15],
-        easing: 'easeOutElastic(1, .6)',
-        duration: 600,
-      });
+// Bounce
+export function initPassiveBounce(root) {
+  const elements = root.querySelectorAll('.bounce-x');
+
+  elements.forEach((el) => {
+    animate(el, {
+      translateX: [0, -50, 0],
+      ease: 'outBounce',
+      duration: 2000,
+      loop: true,
+      loopDelay: 2000,
     });
   });
 }
+
 
 // SVG morph on hover
 export function initHoverMorph(root) {
@@ -56,7 +66,7 @@ export function initHoverMorph(root) {
       animate(path, {
         d: to,
         duration: 500,
-        easing: 'outQuad',
+        ease: 'outQuad',
       });
     });
 
@@ -64,7 +74,7 @@ export function initHoverMorph(root) {
       animate(path, {
         d: from,
         duration: 400,
-        easing: 'outQuad',
+        ease: 'outQuad',
       });
     });
   });
@@ -96,70 +106,70 @@ export function initScrollAnimation(root) {
   // dying anim
   tl.add(document.body, {
     backgroundColor: '#000000',
-    easing: 'outQuad',
+    ease: 'outQuad',
     duration: 250
   }, 0);
 
     tl.add(dyingShapes, {
     opacity: 0,
     // fill: '#000000',
-    easing: 'outQuad',
+    ease: 'outQuad',
     duration: 400
   }, 100);
 
   // living anim
   tl.add(aliveShapes, {
     fill: '#ffffff',
-    easing: 'inOutQuad',
+    ease: 'inOutQuad',
     duration: 400
   }, 0);
 
   tl.add(sanalogS, {
     translateX: 370,
-    easing: 'inOutQuad',
+    ease: 'inOutQuad',
     duration: 600
   }, 525);
 
   tl.add(sanalogA0, {
     translateX: 255,
-    easing: 'inOutQuad',
+    ease: 'inOutQuad',
     duration: 550
   }, 500);
   
   tl.add(sanalogN, {
     translateX: 115,
-    easing: 'inOutQuad',
+    ease: 'inOutQuad',
     duration: 500
   }, 450);
 
   tl.add(sanalogA1, {
     translateX: -50,
-    easing: 'inOutQuad',
+    ease: 'inOutQuad',
     duration: 500
   }, 425);
 
   tl.add(sanalogL, {
     translateX: -165,
-    easing: 'inOutQuad',
+    ease: 'inOutQuad',
     duration: 500
   }, 450);
 
   tl.add(sanalogO, {
     translateX: -405,
-    easing: 'inOutQuad',
+    ease: 'inOutQuad',
     duration: 550
   }, 500);
 
   tl.add(sanalogG, {
     translateX: -545,
     rotate: -390,
-    easing: 'inOutQuad',
+    ease: 'inOutQuad',
     duration: 600
   }, 525);
 
     tl.add(sanalogG, {
     rotate: -360,
-    easing: 'linear',
+    ease: 'linear',
     duration: 50
   }, 1400);
   
