@@ -81,7 +81,8 @@ svg {
 }
 
 .type {
-
+  cursor: default;
+  transition: letter-spacing 0.6s;
 }
 .type.simsun {
   /* font-weight: 300; */
@@ -97,16 +98,21 @@ svg {
 .type.alphabet {
   font-family: "Times New Roman", serif;
 }
+.type.simsun:hover, .type.kaiti:hover, .type.hangeul:hover {
+  filter: drop-shadow( 0px 0px 5px rgba(255, 255, 255, 0.7));
+}
+.type.alphabet:hover {
+  letter-spacing: 4px;
+}
 
 .shape {
   transform-origin: 50% 50%;
   transform-box: fill-box;
 }
-.shape.square {
 
-}
-.shape.circle {
-
+.orbit {
+  transform-origin: top right;
+  transform-box: fill-box;
 }
 
 .hover {

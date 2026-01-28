@@ -65,8 +65,11 @@ import Head from "../components/Head.astro";
           
           <path d="m 725 125 v -25 a 1 1 180 0 0 -50 0 c 0 25 25 25 25 25 h 25 z" class="shape color-staticwhite" />
           <rect x="725" y="100" width="25" height="25" class="shape color-terminalamber" />
-          <circle cx="calc(650 + 25/2)" cy="112.5" r="12.5" class="shape color-charcoal" />
-          
+          <g class="orbit">
+            <circle cx="690" cy="110" r="10" opacity="0"/>
+            <circle cx="calc(650 + 25/2)" cy="112.5" r="12.5" class="shape color-charcoal" />
+          </g>
+
           <rect x="800" y="0" width="25" height="50" class="shape color-staticwhite" />
           <path id="sanalogA1" d="m 875 50 v -25 a 1 1 180 0 0 -50 0 c 0 25 25 25 25 25 h 25 z" class="shape color-grey3" />
           <rect x="875" y="0" width="25" height="25" class="shape color-charcoal" />
@@ -104,7 +107,7 @@ import Head from "../components/Head.astro";
           <rect x="1475" y="25" width="25" height="25" class="shape color-grey1" />
           
           <path id="sanalogG" d="m 1525 0 a 1 1 0 0 0 0 50 c 0 0 25 0 25 -25 h -25 v -25 z" class="shape color-coldwhite" />
-          <rect x="1550" y="0" width="25" height="25" class="shape color-terminalamber" />
+          <rect x="1550" y="0" width="25" height="25" class="rotate-90 shape color-terminalamber" />
           <rect x="1575" y="25" width="25" height="25" class="shape color-charcoal" />
 
         </g>
@@ -117,14 +120,14 @@ import Head from "../components/Head.astro";
           <text x="447" y="235" class="type simsun color-staticwhite" font-size="30px">呼</text>
           <text x="447" y="273" class="type simsun color-staticwhite" font-size="30px">吸</text>
         
-          <text x="925" y="295" class="type color-grey3" font-size="28px" letter-spacing="2">record.</text>
-          <text x="1156" y="295" class="type color-grey3" font-size="28px" letter-spacing="2">reason.</text>
+          <text x="925" y="295" class="type alphabet color-grey3" font-size="28px" letter-spacing="2">record.</text>
+          <text x="1156" y="295" class="type alphabet color-grey3" font-size="28px" letter-spacing="2">reason.</text>
 
           <text x="1153" y="80" class="type hangeul" font-size="40px" letter-spacing="114" fill="#ffffff">산아록</text>
 
           <text x="1150" y="262" class="type" font-size="80px" font-weight="bold" fill="#ffffff" opacity="0.5">02.</text>
 
-          <text x="930" y="65" class="type color-staticwhite" font-size="20px" transform="rotate(90 932 70)">tear.</text>
+          <text x="930" y="65" class="type alphabet color-staticwhite" font-size="20px" transform="rotate(90 932 70)">tear.</text>
         </g>
                 
       </svg>
@@ -138,6 +141,7 @@ import Head from "../components/Head.astro";
     initPassiveRotation2,
     initPassiveDrift,
     initPassiveBounce,
+    initPassiveOrbit,
     initHoverMorph,
     initScrollAnimation
   } from '../scripts/animation.js';
@@ -150,6 +154,7 @@ import Head from "../components/Head.astro";
       initPassiveRotation2(root);
       initPassiveDrift(root);
       initPassiveBounce(root);
+      initPassiveOrbit(root);
       initHoverMorph(root);
       initScrollAnimation(root);
     } else {

@@ -1,12 +1,14 @@
-import { animate, createTimeline, cubicBezier } from 'animejs';
+import { animate, createTimeline, cubicBezier, spring } from 'animejs';
 
 // Passive rotation
 export function initPassiveRotation1(root) {
   const elements = root.querySelectorAll('.rotate-90');
   
   animate(elements, {
+    delay: 500,
     rotate: 90,
     ease: 'inOutExpo',
+    duration: 1500,
     loop: true,
   });
 }
@@ -15,10 +17,12 @@ export function initPassiveRotation2(root) {
   const elements = root.querySelectorAll('.rotate-360');
   
   animate(elements, {
+    delay: 5000,
     rotate: [0, 180, 360],
-    duration: 5000,
     ease: 'outElastic',
+    duration: 5000,
     loop: true,
+    loopDelay: 1000,
   });
 }
 
@@ -26,31 +30,42 @@ export function initPassiveRotation2(root) {
 export function initPassiveDrift(root) {
   const elements = root.querySelectorAll('.drift-x');
 
-  elements.forEach((el) => {
-    animate(el, {
-      translateX: [0, 70, 0],
-      ease: cubicBezier(0.7,0.1,0.5,0.9),
-      duration: 8000,
-      loop: true,
-    });
+  animate(elements, {
+    delay: 500,
+    translateX: [0, 68, 0],
+    ease: cubicBezier(0.7,0.1,0.5,0.9),
+    duration: 8000,
+    loop: true,
   });
-}
+};
 
 // Bounce
 export function initPassiveBounce(root) {
   const elements = root.querySelectorAll('.bounce-x');
 
-  elements.forEach((el) => {
-    animate(el, {
-      translateX: [0, -50, 0],
-      ease: 'outBounce',
-      duration: 2000,
-      loop: true,
-      loopDelay: 2000,
-    });
+  animate(elements, {
+    delay: 3000,
+    translateX: [0, -50, 0],
+    ease: 'outBounce',
+    duration: 2000,
+    loop: true,
+    loopDelay: 2000,
   });
-}
+};
 
+// Orbit
+export function initPassiveOrbit(root) {
+  const elements = root.querySelectorAll('.orbit');
+
+  animate(elements, {
+    delay: 2000,
+    rotate: [-40, 170, 170, -40],
+    ease: 'inOutBack',
+    duration: 5000,
+    loop: true,
+    loopDelay: 1000,
+  });
+};
 
 // SVG morph on hover
 export function initHoverMorph(root) {
@@ -124,50 +139,15 @@ export function initScrollAnimation(root) {
     duration: 400
   }, 0);
 
-  tl.add(sanalogS, {
-    translateX: 370,
-    ease: 'inOutQuad',
-    duration: 600
-  }, 525);
-
-  tl.add(sanalogA0, {
-    translateX: 255,
-    ease: 'inOutQuad',
-    duration: 550
-  }, 500);
-  
-  tl.add(sanalogN, {
-    translateX: 115,
-    ease: 'inOutQuad',
-    duration: 500
-  }, 450);
-
-  tl.add(sanalogA1, {
-    translateX: -50,
-    ease: 'inOutQuad',
-    duration: 500
-  }, 425);
-
-  tl.add(sanalogL, {
-    translateX: -165,
-    ease: 'inOutQuad',
-    duration: 500
-  }, 450);
-
-  tl.add(sanalogO, {
-    translateX: -405,
-    ease: 'inOutQuad',
-    duration: 550
-  }, 500);
+  tl.add(sanalogS, { translateX: 370, ease: 'inOutQuad', duration: 600 }, 525);
+  tl.add(sanalogA0, { translateX: 255, ease: 'inOutQuad', duration: 550 }, 500);
+  tl.add(sanalogN, { translateX: 115, ease: 'inOutQuad', duration: 500 }, 450);
+  tl.add(sanalogA1, { translateX: -50, ease: 'inOutQuad', duration: 500 }, 425);
+  tl.add(sanalogL, { translateX: -165, ease: 'inOutQuad', duration: 500 }, 450);
+  tl.add(sanalogO, { translateX: -405, ease: 'inOutQuad', duration: 550 }, 500);
+  tl.add(sanalogG, { translateX: -545, rotate: -390, ease: 'inOutQuad', duration: 600 }, 525);
 
   tl.add(sanalogG, {
-    translateX: -545,
-    rotate: -390,
-    ease: 'inOutQuad',
-    duration: 600
-  }, 525);
-
-    tl.add(sanalogG, {
     rotate: -360,
     ease: 'linear',
     duration: 50
