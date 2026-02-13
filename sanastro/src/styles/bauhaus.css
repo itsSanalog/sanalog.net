@@ -82,6 +82,7 @@ svg {
 
 .type {
   cursor: default;
+  user-select: none;
   transition: letter-spacing 0.6s;
 }
 .type.simsun {
