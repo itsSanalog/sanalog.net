@@ -34,8 +34,9 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  
-  /* background: #a1a6ab; */
+
+  scroll-behavior: smooth;
+  /* does this even do anything */
 }
 
 .color-charcoal      { fill: var(--charcoal); }
@@ -100,6 +101,7 @@ svg {
   font-family: "Times New Roman", serif;
 }
 .type.simsun:hover, .type.kaiti:hover, .type.hangeul:hover {
+  cursor: pointer;
   filter: drop-shadow( 0px 0px 5px rgba(255, 255, 255, 0.7));
 }
 .type.alphabet:hover {
