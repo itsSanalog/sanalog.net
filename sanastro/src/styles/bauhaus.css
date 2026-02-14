@@ -7,6 +7,18 @@
   font-display: swap;
 }
 
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--staticwhite);
+}
+
 body {
   --charcoal:      #1C1C2A;
   --grey3:         #2E3242;
