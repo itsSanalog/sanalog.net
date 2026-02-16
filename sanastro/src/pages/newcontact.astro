@@ -26,7 +26,6 @@ import Head from "../components/Head.astro";
 <span class="glitch">(C) 2026 SNLG_ARCHIVE | ALL_CHARS_RESERVED</span>
 
 {`
-
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒░░░░  ░░░  ░ ░     ░░░░░░░▒▒░░░░ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▒░░░░░░░  ░░░░░░░░░░░░▒░░░░░░░░▒░░░░░░░   ░▒░▓▓▓▓▓▒▒▓▓▒░░░░░░░░░░░░░░░░░░░░░░░░▒▓▓▒▓▓▓▓▓▓▓▓ ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓                      
 
 _123456789012345678901234567890123456789_123456789012345678901234567890123456789_123456789012345678901234567890123456789_123456789012345678901234567890123456789_123456789012345678901234567890123456789_12345678901234567`}
@@ -101,8 +100,8 @@ _123456789012345678901234567890123456789_123456789012345678901234567890123456789
 
 <style>
   @font-face {
-    font-family: 'FiraCode';
-    src: url('/fonts/FiraCode-Variable.ttf') format('truetype');
+    font-family: 'IBM-BIOS';
+    src: url('/fonts/IBM-BIOS.ttf') format('truetype');
     font-display: swap;
   }
 
@@ -134,16 +133,14 @@ _123456789012345678901234567890123456789_123456789012345678901234567890123456789
     overflow-x: hidden;
     background: var(--bg);
     color: var(--text);
-    font-family: 'FiraCode', monospace;
   }
-
+  
   #terminal {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
-
+  
   pre {
+    font-family: IBM-BIOS, monospace;    
     margin: 0;
     width: 100%;
     font-size: calc(100vw / (var(--columns) * var(--ratio)));
