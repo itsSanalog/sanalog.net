@@ -9,7 +9,7 @@ description: "In defense of gaud."
 # author:
 publicationDate: 2024-07-20
 # creationDate: "July 2022"
-sortOrder: 4
+sortOrder: 6
 ---
 
 https://x.com/usgraphics/status/1863682721706348775
