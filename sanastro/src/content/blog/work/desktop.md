@@ -12,9 +12,9 @@ publicationDate: 2026-03-19
 sortOrder: 5
 ---
 
-My first desktop computer was built back in March of 2021. It was a modest build back then, but would be considered rather dated by today's standards. Don't get me wrong—the Ryzen 5 3600 paired with a 1660 Super is completely useable for most tasks, but it did struggle with some heavier applications, like games. I was not planning to replace my original build, in parts or whole, but completing my military service netted me some cash which I've decided to use to treat myself with a build that I'd be completely happy with.
+My first desktop computer was built in March of 2021. It was a modest build at the time, though it is rather dated by today's standards. Don't get me wrong—the Ryzen 5 3600 paired with a 1660 Super is completely viable for most tasks, but it did struggle with some heavier applications, like games. I was not planning to replace my original build, in parts or as a whole, but completing my military service netted me some cash which I've decided to use to treat myself to a system that I'd be completely happy with.
 
-During the last few months of my service, I obsessively hunted for deals, even going as far as negotiating prices with a storeowner in Singapore over a video call from Korea. Turns out, that was completely justified as RAM prices surged to four times what I paid in just over two months. I assembled it on the 28th of February, 2026.
+During the last few months of my service, I obsessively hunted for deals, even going as far as negotiating prices with a storeowner in Singapore over a video call from Korea. Turns out, that was completely justified, as RAM prices surged to four times what I paid in just over two months. I assembled it on the 28th of February, 2026.
 
 ![](../../../assets/blog/work/desktop/1_main.jpg)
 
@@ -65,19 +65,19 @@ Case | <a href="https://pcpartpicker.com/product/kqHqqs/fractal-design-terra-min
 
 # Address me
 
-You should have noticed the peculiar white pieces that are stuck onto my components. What are they? What purpose do they serve?
+You may have noticed the peculiar white pieces that are stuck onto my components. What are they? What purpose do they serve?
 
-The Fractal Terra is a very popular case, but is also one known to have airflow issues. At a shorter height than other cases with comparable overall volume, it infamously has no room for top mounted fans, putting the burden on a single optional fan at the bottom to move air through the whole case, which is already tightly packed with parts.
+The Fractal Terra is a very popular case, but is also notorious for its airflow issues. At a shorter height than other cases with comparable overall volume, it infamously has no room for top-mounted fans, putting the burden on a single optional fan at the bottom to move air through the entire chassis, which is already tightly packed with parts.
 
-Naturally, this prompted the SFFPC community to make <a href="https://www.printables.com/model/1065941-fractal-terra-cpu-fan-duct-92mm" target="_blank" class="extlink">various</a> <a href="https://www.printables.com/model/902873-fractal-terra-92mm-fan-top-mount" target="_blank" class="extlink">solutions</a> in attempts to bring temps down, even marginally. I figured I'd try the same, by designing a CPU fan duct—as well as what I'd like to call a GPU curtain mod.
+Naturally, this prompted the SFFPC community to make <a href="https://www.printables.com/model/1065941-fractal-terra-cpu-fan-duct-92mm" target="_blank" class="extlink">various</a> <a href="https://www.printables.com/model/902873-fractal-terra-92mm-fan-top-mount" target="_blank" class="extlink">solutions</a> in attempts to bring temps down, even marginally. I figured I'd try the same by designing a CPU fan duct—as well as what I'd like to call a GPU curtain mod.
 
 ## Goals
 
-My careful part selection meant that I did not have a problem with my thermals, nor were the acoustics annoying. In fact, the graphics card fans are turned off during general usage and the CPU cooler comfortably handles the 65W TDP of my processor. Therefore, it's important to recognise that I was not trying to solve a problem out of necessity here. This was an experiment above all, and my main objective was to find out how much I could decrease my temps/noise with passive elements to redirect the already existing airflow from my components. 
+My careful part selection meant that I did not have a problem with my thermals, nor were the acoustics annoying. In fact, the graphics card fans remain off during general usage and the CPU cooler comfortably handles the 65W TDP of my processor. Therefore, it's important to recognise that I was not attempting to solve a problem out of necessity here. This was an experiment above all, and my main objective was to find out how much I could reduce my temps/noise using passive elements to redirect the existing airflow from my components. 
 
 ## Methodology
 
-Testing was done using FurMark2's 1440p preset testing, Assetto Corsa benchmarks, and actual gameplay for The Finals and Deadlock, recorded using RTSS. PBO and 105W TDP mode were disabled. The GPU uses a custom fan curve but was otherwise left stock. Ambient temperature was kept at 28°C. Because deliberate stress tests like FurMark will always use whatever thermal headroom it has, I don't find those test results very useful or meaningful over realistic scenarios where fan RPM (and thus noise) could be lowered with the implementation of these mods.
+Testing was done using FurMark2's 1440p preset testing, Assetto Corsa benchmarks, and actual gameplay for The Finals and Deadlock, recorded using RTSS. PBO and 105W TDP mode were disabled. The GPU uses a custom fan curve but was otherwise left stock. Ambient temperature was kept at 28°C. Because deliberate stress tests like FurMark will always use whatever thermal headroom it has, I don't find those test results very useful or meaningful over realistic scenarios where fan RPM (and thus noise) could be lowered by implementing these mods.
 
 # GPU curtain mod
 
@@ -98,13 +98,13 @@ I figure most people would be more interested in this one, so I will discuss it 
 
 ### Why not just use a duct?
 
-If I were to implement <a href="https://www.reddit.com/r/FormD/comments/1gqkydx/first_sff_build_testing_a_gpu_fan_duct/" target="_blank" class="extlink">a duct that matches the size of the card</a>, fresh air from the side panel would 'leak' into the cavity below the GPU, due to the negative pressure generated by the bottom fan. This means that the fan's efficiency would be impeded, where instead of sucking hot air out from within the case, it circulates air in a tiny loop that does nothing for the entire case. By partitioning the fan from the side panel vents, it enables the exhuast fan to purely move hot air generated by the GPU and PSU above it.
+If I were to implement <a href="https://www.reddit.com/r/FormD/comments/1gqkydx/first_sff_build_testing_a_gpu_fan_duct/" target="_blank" class="extlink">a duct that matches the size of the card</a>, fresh air from the side panel would 'leak' into the cavity below the GPU due to the negative pressure generated by the bottom fan. This means that the fan's efficiency would be compromised; instead of extracting hot air from within the case, it circulates air in a tiny loop that does nothing for the entire case. By partitioning the fan from the side panel vents, it enables the exhuast fan to purely move hot air generated by the GPU and PSU above it.
 
 ![](https://i.postimg.cc/g0f4j7yH/sim1.png)
 
 <p class="small muted c">not a definitive test whatsoever, just a visualisation</p>
 
-Additionally, I was paranoid of the possibility of the hot exhaust from the GPU recirculating back to its own intake, though I'd expect such a phenomenon would have no meaningful impact on temperature whatsoever. I whipped up a CFD sim to see if this was actually happening. While the model isn't accurate enough to generate anything optimised, it does provide some neat visualisations.
+Additionally, I was paranoid of the possibility of the hot exhaust from the GPU recirculating back to its own intake. Although I expected such a phenomenon to have no meaningful impact on temperature whatsoever, I whipped up a CFD sim to see if this was actually happening. While the model isn't accurate enough to generate anything optimised, it does provide some neat visualisations.
 
 <div class="carousel mmt">
   <button class="carousel-btn carousel-btn-prev" data-action="prev" aria-label="Previous slide">❮</button>
@@ -146,7 +146,7 @@ Additionally, I was paranoid of the possibility of the hot exhaust from the GPU 
 | With    | 187     | 123       |         | 57°C       |
 | Open    | 188     | 130       |         | 55°C       |
 
-As we can see, there isn't a dramatic difference enabled by the curtain mod, but a ~3°C drop in temps at similar or better framerates is a win I'll take. It seems that the curtain mod does not quite have the same result as simply opening the case up altogether, which is to be expected.
+As we can see, there isn't a dramatic difference enabled by the curtain mod, but a ~3°C drop in temps at similar or better framerates is a win I'll take. It seems that the curtain mod does not quite have the same effect as simply opening the case up altogether, which is to be expected.
 
 Since this mod mainly affects the dynamics of hot air inside the case, it should have a negligible impact on the initial 'spike' when the GPU is first introduced to load. Once the case is saturated with hot air, only then should the partition do its thing. This theory seems to check out with the fact that longer tests under sustained load (The Finals) showed a more significant variance in results between the three configurations.
 
@@ -191,6 +191,12 @@ Honestly, this has been done to death by so many individuals that I considered l
 <p class="small muted c">before/after top surface ironing</p>
 
 # Conclusion
+
+While the stock performance of the Ryzen 9600X and RTX 5070 was already decent, I do believe that these modifications provide tangible value. The Terra is a beautiful case with a great build experience, I wasn't going to let its subpar thermal performance keep me from purchasing it.
+
+Should you make your own? If you find yourself staring at RivaTuner numbers more than the scoreboard in your games, I think making these airflow mods would be a fun and easy project. Having a 3D printer does make things easier, but cardboard will get you 99% of the way as well. If you wish your fan curves were a bit more aggressive, you could pair it with undervolting to make the GPU silent most of the time.
+
+I'm just happy that it worked, man. 
 
 ## Downloads
 
