@@ -1,0 +1,114 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Footer from "../components/Footer.astro";
+import ContactGrid from "../components/ContactGrid.astro";
+---
+
+<MainLayout title="Contact">
+  <div id="luxy">
+    <div class="content" style="padding-top: 30vh;">
+      <h1 class="title">Identity</h1>
+      <article style="margin-bottom: 150px;">
+        <p>Sanalog is preferably rendered as <code>Sanalog</code>. <br> <code>sanalog_</code> is sometimes used for services that require an all-lowercase handle.</p>
+        <p>This page lists some of them I use. It is not a request to follow or otherwise connect to me. The list is non-exhaustive. If you find me on other services, I don't use them often enough to warrant a mention, but you're welcome to interact with it, creep.</p>
+        <p>You can [<a href="mailto:me@sanalog.net" style="color:#000e;">email: me (at) sanalog.net</a>].</p>
+        <p>For a faster reply, message me on Discord. For secure messages, my GPG key is below.</p>
+      </article>
+      <h1 class="title">Social</h1>
+      <div class="contacts_grid">
+        <ContactGrid
+          link="https://twitter.com/sanalog_"
+          service="Twitter"
+          username="@sanalog_" />
+        <!-- <ContactGrid
+          link="https://www.instagram.com/sanalog_"
+          service="Instagram"
+          username="@sanalog_" /> -->
+        <ContactGrid
+          link="https://discord.com/channels/@me/258172826039746561"
+          service="Discord"
+          username="sanalog" />
+        <ContactGrid
+          link="https://www.reddit.com/u/Sanalog"
+          service="Reddit"
+          username="u/Sanalog" />
+        <ContactGrid
+          link="https://github.com/itsSanalog"
+          service="GitHub"
+          username="@itsSanalog" />
+        <ContactGrid
+          link="https://www.linkedin.com/in/[no]"
+          service="LinkedIn"
+          username="[no]" />
+        <!-- <ContactGrid
+          link="https://www.youtube.com/@sanalog_"
+          service="YouTube"
+          username="Sanalog" /> -->
+        <!-- <ContactGrid
+          link="https://www.twitch.tv/sanalog"
+          service="Twitch"
+          username="Sanalog" /> -->
+        <ContactGrid
+          link="https://www.last.fm/user/SanaBeats"
+          service="Last.fm"
+          username="SanaBeats" />
+      </div>
+      <h1 class="title">Game</h1>
+      <div class="contacts_grid">
+        <!-- <ContactGrid
+          link="https://steamcommunity.com/id/sanamanta"
+          service="Steam"
+          username="Manta" /> -->
+        <ContactGrid
+          link="https://www.minecraft.net/"
+          service="Minecraft"
+          username="Sanalog" />
+        <!-- <ContactGrid
+          link="https://tracker.gg/valorant/profile/riot/sana%23Iog/overview"
+          service="Riot"
+          username="Sana#Iog" /> -->
+        <ContactGrid
+          link="https://pokemonshowdown.com/users/sanalog"
+          service="Showdown"
+          username="Sanalog" />
+        <ContactGrid
+          link="https://ch.tetr.io/u/sanalog"
+          service="Tetr.io"
+          username="Sanalog" />
+      </div>
+      <h1 class="title">GPG</h1>
+      <div style="margin-bottom: 350px;">
+        <p>Fingerprint: <code>CAEA 9364 907B 8B74 EC81  C17F 4B18 676D 8547 6C80</code></p>
+        <p>Public key: <a href="/sanalog.asc" style="text-decoration: underline" download>Download</a> | <a href="https://github.com/itsSanalog.gpg" target="_blank" style="text-decoration: underline">GitHub</a></p>
+      </div>
+    </div>
+    <Footer />
+  </div>
+</MainLayout>
+
+
+<style>
+  .contacts_grid {
+    margin-bottom: 150px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: auto;
+  }
+
+  /* also check ContactGrid component for more CSS */
+</style>
+
+
+<!-- SMOOTH SCROLLING -->
+<script slot="inlineJS" src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+<script>
+  var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+  if (!isMobile) {
+      luxy.init({
+          wrapper: '#luxy',
+          wrapperSpeed: 0.1,
+      });
+  }
+</script>

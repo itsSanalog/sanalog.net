@@ -73,7 +73,7 @@ Naturally, this prompted the SFFPC community to make <a href="https://www.printa
 
 ## Goals
 
-My careful part selection meant that I did not have a problem with my thermals, nor were the acoustics annoying. In fact, the graphics card fans remain off during general usage and the CPU cooler comfortably handles the 65W TDP of my processor. Therefore, it's important to recognise that I was not attempting to solve a problem out of necessity here. This was an experiment above all, and my main objective was to find out how much I could reduce my temps/noise using passive elements to redirect the existing airflow from my components. 
+My careful part selection meant that I did not have a problem with my thermals, nor were the acoustics annoying. In fact, the graphics card fans remain off during general usage and the CPU cooler comfortably handles the 65W TDP of my processor. Therefore, it's important to recognise that I was not attempting to solve a problem out of necessity here. This was an experiment above all, and my main objective was to find out how much I could reduce my temps/noise using passive elements to redirect the existing airflow from my components.
 
 ## Methodology
 
