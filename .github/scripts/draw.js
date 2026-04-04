@@ -5,8 +5,7 @@ const xml2js = require('xml2js');
 async function main() {
   try {
     const rootDir = process.cwd();
-    // Adjust if your astro dir is named differently
-    const astroDir = path.join(rootDir, 'sanastro'); 
+    const astroDir = path.join(rootDir, 'sanastro');
     
     const sitemapPath = path.join(astroDir, 'dist', 'sitemap-index.xml');
     const fallbackPath = path.join(astroDir, 'dist', 'sitemap-0.xml');
@@ -51,6 +50,14 @@ async function main() {
           val: isLeaf ? 4 : 12, // 12 for Categories, 4 for individual posts
           url: nodePath
         });
+
+        // All my homies home to origin
+        if (nodePath !== '/') {
+          nodeData.fx = 0;
+          nodeData.fy = 0;
+        }
+
+        nodesMap.set(nodePath, nodeData);
       }
     }
 
@@ -62,7 +69,7 @@ async function main() {
       if (urlPath === '/' || urlPath === '') return;
       if (urlPath.endsWith('/')) urlPath = urlPath.slice(0, -1);
       
-      const segments = urlPath.split('/').filter(Boolean);
+      const segments = urlPath.split('/').filter(Boolean).map(decodeURIComponent);
       let currentPath = '';
       let parentPath = '/';
 
@@ -97,13 +104,14 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-<div id="graph-container" style="width: 100%; height: 700px; border-radius: 8px; overflow: hidden; border: 1px solid var(--color-border, #333);"></div>
+<pre id="graph-container" class="wide"></pre>
 
 <script id="sitemap-data" type="application/json">
 ${JSON.stringify(graphData)}
 </script>
 
 <br>
+
 <span class="muted">last updated on ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
 `;
 

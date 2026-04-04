@@ -19,7 +19,6 @@ const { Content } = await sitemap.render();
 </BlogLayout>
 
 <script type="module">
-  // Using esm.sh to import the force-graph module cleanly
   import ForceGraph from 'https://esm.sh/force-graph@1.43.3';
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -32,9 +31,9 @@ const { Content } = await sitemap.render();
     
     // Theme setup
     const isLightTheme = document.body.classList.contains("theme-light");
-    const textColor = isLightTheme ? '#1a1a1a' : '#e5e7eb';
+    const textColor = 'var(--color-tx-normal)';
     const linkColor = isLightTheme ? '#cbd5e1' : '#334155';
-    container.style.backgroundColor = isLightTheme ? '#f8fafc' : '#1e1e1e';
+    container.style.backgroundColor ='var(--color-bg-primary)';
 
     const Graph = ForceGraph()(container)
       .graphData(graphData)
@@ -48,17 +47,17 @@ const { Content } = await sitemap.render();
         window.location.href = node.url;
       })
       .nodeCanvasObject((node, ctx, globalScale) => {
-        // Draw custom node with text underneath, just like Obsidian
+
         const size = node.val;
         const fontSize = 12 / globalScale;
         
-        // Draw the dot
+        // dots
         ctx.beginPath();
         ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
         ctx.fillStyle = node.color;
         ctx.fill();
 
-        // Draw the text
+        // text
         ctx.font = `${fontSize}px Inter, sans-serif`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
@@ -67,20 +66,27 @@ const { Content } = await sitemap.render();
       });
 
     // Add some gravity to keep nodes clustered tightly in the center
-    Graph.d3Force('charge').strength(-200);
+    Graph.d3Force('charge').strength(-400);
+    
+    // Minimum distance
+    Graph.d3Force('link').distance(80);
 
-    // Optional: Re-evaluate theme if you have a toggle button on the page
-    const themeToggle = document.querySelector("#theme-toggle");
-    if (themeToggle) {
-      themeToggle.addEventListener("click", () => {
-        setTimeout(() => window.location.reload(), 100); 
-      });
-    }
+    // Experimental
+    // Graph.onEngineStop(() => {
+    //   Graph.zoomToFit(400, 50);
+    // });
+
+    // theme updates (disabled)
+    // const themeToggle = document.querySelector("#theme-toggle");
+    // if (themeToggle) {
+    //   themeToggle.addEventListener("click", () => {
+    //     setTimeout(() => window.location.reload(), 100); 
+    //   });
+    // }
   });
 </script>
 
 <style>
-  /* Optional: Ensure the graph feels interactive when hovered */
   :global(#graph-container canvas) {
     cursor: grab;
   }
