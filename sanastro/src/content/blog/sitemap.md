@@ -12,14 +12,8 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-<pre class="mermaid">
-graph TD
-    home["home"]
-</pre>
+<pre class="">
 
-<pre>
-Site Structure
-============
 </pre>
 
 <br>
