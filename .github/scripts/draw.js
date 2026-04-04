@@ -47,7 +47,7 @@ async function main() {
           id: nodePath,
           label: label,
           group: topLevel, 
-          val: isLeaf ? 4 : 12, // 12 for Categories, 4 for individual posts
+          val: isLeaf ? 8 : 20,
           url: nodePath
         };
 
@@ -104,7 +104,7 @@ title: "Sitemap"
 sortOrder: 1
 ---
 
-<pre id="graph-container" class="wide"></pre>
+<div id="graph-container" class="" style="width: 70vw; margin-left: calc((70vw - 100%)/-2); height: Min(67vh, 1000px); border-radius: var(--border-radius); border: 1px solid var(--color-ui-normal); overflow: hidden;"></div>
 
 <script id="sitemap-data" type="application/json">
 ${JSON.stringify(graphData)}

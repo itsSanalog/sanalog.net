@@ -26,30 +26,35 @@ const { Content } = await sitemap.render();
     const container = document.getElementById('graph-container');
     
     if (!dataEl || !container) return;
-
-    const graphData = JSON.parse(dataEl.textContent);
     
-    // Theme setup
-    const isLightTheme = document.body.classList.contains("theme-light");
-    const textColor = 'var(--color-tx-normal)';
-    const linkColor = 'var(--color-ui-normal)';
-    container.style.backgroundColor ='var(--color-bg-primary)';
+    const graphData = JSON.parse(dataEl.textContent);
+
+    // Without this for some reason the canvas itself becomes way bigger than the parent div, and centering is off
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    
+    // Colour setup
+    const getCSSVar = (name) => getComputedStyle(container).getPropertyValue(name).trim();
+    const textColor = getCSSVar('--color-tx-normal') || '#ff0000';
+    const linkColor = getCSSVar('--color-ui-normal') || '#00ff00';
+    const bgColor = getCSSVar('--color-bg-primary') || '#0000ff';
+
+    container.style.backgroundColor = bgColor;
 
     const Graph = ForceGraph()(container)
+      .width(width)
+      .height(height)
       .graphData(graphData)
-      .nodeId('id')
-      .nodeVal('val') // Size nodes based on val (12 for categories, 4 for posts)
-      .nodeAutoColorBy('group') // Automatically assigns a persistent color per top-level category
+      .nodeAutoColorBy('group') // auto color per top-level category
       .linkColor(() => linkColor)
-      .linkWidth(1.5)
+      .linkWidth(2)
       .onNodeClick(node => {
-        // Click to navigate immediately
         window.location.href = node.url;
       })
       .nodeCanvasObject((node, ctx, globalScale) => {
 
-        const size = node.val;
-        const fontSize = 12 / globalScale;
+        const size = node.val; 
+        const fontSize = 10;
         
         // dots
         ctx.beginPath();
@@ -58,23 +63,16 @@ const { Content } = await sitemap.render();
         ctx.fill();
 
         // text
-        ctx.font = `${fontSize}px Inter, sans-serif`;
+        ctx.font = `${fontSize}px Firacode, monospace`;
         ctx.textAlign = 'center';
         ctx.textBaseline = 'top';
         ctx.fillStyle = textColor;
-        ctx.fillText(node.label, node.x, node.y + size + (4 / globalScale));
+        ctx.fillText(node.label, node.x, node.y + size + 3);
       });
 
-    // Add some gravity to keep nodes clustered tightly in the center
-    Graph.d3Force('charge').strength(-400);
-    
-    // Minimum distance
+    // gravity and cluster settings
+    Graph.d3Force('charge').strength(-100);
     Graph.d3Force('link').distance(80);
-
-    // Experimental
-    // Graph.onEngineStop(() => {
-    //   Graph.zoomToFit(400, 50);
-    // });
 
     // theme updates (disabled)
     // const themeToggle = document.querySelector("#theme-toggle");
