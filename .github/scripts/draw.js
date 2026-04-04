@@ -53,6 +53,7 @@ async function main() {
 
         // All my homies home to origin
         if (nodePath === '/') {
+          nodeData.val = 30;
           nodeData.fx = 0;
           nodeData.fy = 0;
         }
@@ -86,7 +87,7 @@ async function main() {
         
         // Ensure parent is flagged as a large node
         if (nodesMap.has(parentPath) && parentPath !== '/') {
-          nodesMap.get(parentPath).val = 12; 
+          nodesMap.get(parentPath).val = 20; 
         }
         
         parentPath = currentPath;
