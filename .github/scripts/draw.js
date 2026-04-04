@@ -52,7 +52,7 @@ async function main() {
         };
 
         // All my homies home to origin
-        if (nodePath !== '/') {
+        if (nodePath === '/') {
           nodeData.fx = 0;
           nodeData.fy = 0;
         }

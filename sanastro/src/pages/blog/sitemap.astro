@@ -32,7 +32,7 @@ const { Content } = await sitemap.render();
     // Theme setup
     const isLightTheme = document.body.classList.contains("theme-light");
     const textColor = 'var(--color-tx-normal)';
-    const linkColor = isLightTheme ? '#cbd5e1' : '#334155';
+    const linkColor = 'var(--color-ui-normal)';
     container.style.backgroundColor ='var(--color-bg-primary)';
 
     const Graph = ForceGraph()(container)
