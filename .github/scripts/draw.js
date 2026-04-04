@@ -43,13 +43,13 @@ async function main() {
       if (!nodesMap.has(nodePath)) {
         // Group by top-level directory for color coding
         const topLevel = nodePath.split('/')[1] || 'home';
-        nodesMap.set(nodePath, {
+        const nodeData = {
           id: nodePath,
           label: label,
           group: topLevel, 
           val: isLeaf ? 4 : 12, // 12 for Categories, 4 for individual posts
           url: nodePath
-        });
+        };
 
         // All my homies home to origin
         if (nodePath !== '/') {
