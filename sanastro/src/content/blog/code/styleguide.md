@@ -4,7 +4,7 @@ coverAlt: "styleguide"
 # banner: "../../../assets/blog/code/styleguide/banner.png"
 # bannerAlt: "styleguide"
 
-title: "Styleguide"
+title: "styleguide"
 description: "sanaBlog manual of style."
 # author:
 publicationDate: 2025-01-31

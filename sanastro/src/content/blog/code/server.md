@@ -1,10 +1,10 @@
 ---
 cover: "../../../assets/blog/code/server/cover.png"
-coverAlt: "Server"
+coverAlt: "server"
 # banner: "../../../assets/blog/code/server/banner.png"
-# bannerAlt: "Server"
+# bannerAlt: "server"
 
-title: "Server"
+title: "server"
 description: "A log of how I first set up a small home server."
 # author:
 publicationDate: 2023-01-15

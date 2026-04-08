@@ -52,3 +52,7 @@ Create a simple proxy API to catch failures. We don't need a server for this so 
 ### API rate limits when scaled
 
 True. Cache the data using Elasticache or Redis itself if we're not using Fargate. Cache is appropriate since weather data doesn't have to be stored—time to live could be a few minutes. Write some super easy logic to check cache first when proxy API is called by the client. Only call the third party API if requested data is not already in cache.
+
+<br>
+
+<span id="lastupdate" class="muted">last updated on Jul 25, 2025</span>
