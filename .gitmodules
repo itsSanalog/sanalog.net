@@ -1,0 +1,3 @@
+[submodule "sanastro/public/mimage"]
+	path = sanastro/public/mimage
+	url = https://github.com/itsSanalog/mimage
