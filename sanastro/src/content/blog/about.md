@@ -36,7 +36,7 @@ sanaBlog is part of the <a href="https://webring.xxiivv.com" target="_blank" cla
 
 Sanalog likes to play. Sanalog is:
 
-> Currently in active duty, cooking three meals a day for ~60 people. I am also a Field Radio Operator and Drill Instructor when they need me to be. Guess that's how it is when the entire base is ran by such few people. I update sanaBlog on my phone.
+> Currently studying computer science in university and deeply regretting taking a two year leave of absence. I update sanaBlog during class.
 
 Sanalog operates under the [credo](/blog/credo).
 
