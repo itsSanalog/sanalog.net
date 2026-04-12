@@ -7,8 +7,8 @@ coverAlt: "Dissertations of a Passive Mind"
 title: "Dissertations of a Passive Mind"
 description: "Pseudorandom word vending machine."
 # author:
-publicationDate: 2022-03-22
-# creationDate: "March 2022"
+publicationDate: 2024-03-22
+# creationDate: "March 2024"
 sortOrder: 1
 ---
 
