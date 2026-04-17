@@ -1,9 +1,17 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&family=Noto+Serif+SC:wght@300&display=swap'); */
 /* unsure why but it breaks when in production despite working local */
 
-@font-face {
+/* @font-face {
   font-family: 'KaiTi';
   src: url('/fonts/Kaiti-8kb.ttf') format('truetype');
+  font-display: swap;
+} */
+/* Also no idea why but 潜 doesn't work when the font file is seubset to潜我录 only.*/
+
+
+@font-face {
+  font-family: 'Kaiti';
+  src: url('https://static.wfonts.com/data/2016/07/15/kaiti/simkai.ttf') format('ttf');
   font-display: swap;
 }
 
