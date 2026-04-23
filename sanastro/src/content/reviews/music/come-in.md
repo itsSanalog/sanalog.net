@@ -1,5 +1,5 @@
 ---
-imageLink: "https://ia803004.us.archive.org/16/items/mbid-f9c4f9a3-4cb3-40b4-8ca2-892afe40046c/mbid-f9c4f9a3-4cb3-40b4-8ca2-892afe40046c-23517307084_thumb250.jpg"
+imageLink: "https://dn711008.ca.archive.org/0/items/mbid-f9c4f9a3-4cb3-40b4-8ca2-892afe40046c/mbid-f9c4f9a3-4cb3-40b4-8ca2-892afe40046c-23517307084_thumb250.jpg"
 imageAlt: "Album cover"
 
 title: Come In
