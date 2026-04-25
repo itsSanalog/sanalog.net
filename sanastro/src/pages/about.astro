@@ -2,7 +2,7 @@
 import "../styles/normalize.css";
 
 import { Image } from 'astro:assets';
-import nasaImage from '../assets/nasa.jpg';
+import wandanlage from '../assets/wandanlage.jpg';
 
 import Head from "../components/Head.astro";
 ---
@@ -10,19 +10,203 @@ import Head from "../components/Head.astro";
 <html lang="en">
   <Head title="About" />
   <body>
-    <Image src={ nasaImage } alt="background" /></Image>
+    <main>
+      
+    </main>
+
+    <div class="music-container">
+      <Image src={ wandanlage } alt="wandanlage" class="wandanlage" />
+
+      <div class="text-area">
+        <div class="now-playing">
+          <div id="status-dot" class="dot"></div>
+          <p id="status-text" class="">CONNECTING...</p>
+        </div>
+        <p id="track-name" class="track-text">—</p>
+        <p id="artist-name" class="artist-text">—</p>
+      </div>
+
+      <div class="album-frame">
+        <img src="" alt="" class="album-cover" />
+      </div>
+    </div>
   </body>
 </html>
 
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+  @font-face {
+    font-family: 'BritDark';
+    src: url('/fonts/britrdn.ttf') format('truetype');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Helvetica';
+    src: url('/fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+  }
+  
+  :root {
+    --bg-color: #e7e7e7; 
+    --text-color: #222;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Playfair Display', serif;
+  }
+
+  main {
+    height: 50vh;
+  }
+
   img {
-    position: fixed;
-    top: 0;
-    left: 0;
+    display: block;
+  }
+
+  .music-container {
+    position: relative;
     width: 100%;
-    height: 100%;
+    /* z-index: 1; */
+  }
+
+  .wandanlage {
+    width: 100%;
+    height: auto;
     object-fit: contain;
-    z-index: -1;
+    pointer-events: none;
+    mask-image: linear-gradient(to top, black 92%, transparent 100%);
+  }
+
+  .album-cover {
+    position: absolute;
+    left: 62.7%;
+    top: 29.5%;
+    width: calc(136% * (300 / 3000));
+    height: calc(136% * (300 / 1705));
+    /* the reason why two variables are used is because the 136% is scale, while 300 is the original image width. */
+    /* in the case of calc(100% * (1000 / 3000)), it's kept that way for consistency. Otherwise calc(100000% / 3000) is fine too. */
+    filter: contrast(0.85) saturate(0.85) drop-shadow(0 0 0.8cqw rgba(0, 0, 0, 0.5));
+  }
+
+  .text-area {
+    position: absolute;
+    left: 23%;
+    top: 29.5%;
+    
+    width: calc(100% * (1000 / 3000));
+    height: calc(100% * (1000 / 1705));
+    /* border: 1px solid #ff0000; */
+    /* this is kept square so that i don't have to use calc() for all its children. */
+  }
+
+  .now-playing {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2%;
+    gap: 1%;
+
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: #696969;
+    font-size: 1cqw;
+  }
+
+  /* so .dot needs to be scaled using %, but this doesn't work if now-playing is smallest bounding box, because it'll just be 0. So we use a fixed width/height using % for now-playing as well. */
+
+  .dot {
+    position: relative;
+    /* top: 12%; */
+    width: 2%;
+    height: 100%;
+    background: #ccc;
+    border-radius: 50%;
+  }
+
+  .dot.is-live {
+    background: #ff2b2b;
+    /* box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); */
+    animation: passive-pulse 2s infinite;
+  }
+
+  .track-text {
+    font-family: BritDark;
+    font-size: 5cqw;
+    line-height: 0.8;
+    margin: 1.5cqw 0 0 0;
+  }
+
+  .artist-text {
+    position: relative;
+    left: 0.1cqw;
+    font-family: BritDark;
+    font-size: 2cqw;
+    line-height: 0.8;
+    margin: 0.5cqw 0 0 0;
+  }
+
+  @keyframes passive-pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 4px rgba(255, 43, 43, 0.4);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(255, 43, 43, 0.8);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 4px rgba(255, 43, 43, 0.4);
+    }
   }
 </style>
+
+
+<script>
+  // https://soft.thran.uk/last-played.html
+  const API_URL = `https://www.ballix.net/whatsplaying/now?user=sanabeats`;
+
+  async function fetchNowPlaying() {
+    try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+
+      const trackEl = document.getElementById('track-name');
+      const artistEl = document.getElementById('artist-name');
+      const statusText = document.getElementById('status-text');
+      const statusDot = document.getElementById('status-dot');
+      const albumImg = document.querySelector('.album-cover');
+
+      trackEl.textContent = data.name;
+      artistEl.textContent = data.artist;
+      
+      if (data.image) {
+        albumImg.src = data.image.extralarge;
+      }
+
+      if (data.nowplaying === "true") {
+        statusText.textContent = "NOW PLAYING";
+        statusDot.classList.add('is-live');
+      } else {
+        statusText.textContent = "last played: " + data.date;
+        statusDot.classList.remove('is-live');
+      }
+
+      // load the widget
+      // document.getElementById('now-playing-container').style.opacity = "1";
+
+    } catch (error) {
+      console.error("oh no what happened", error);
+    }
+  }
+
+  fetchNowPlaying();
+  // refresh every 30 seconds
+  setInterval(fetchNowPlaying, 30000);
+</script>

@@ -1,4 +1,4 @@
-import { animate, createTimeline, cubicBezier, spring } from 'animejs';
+import { animate, createTimeline, cubicBezier } from 'animejs';
 
 // Passive rotation
 export function initPassiveRotation1(root) {
@@ -17,7 +17,7 @@ export function initPassiveRotation2(root) {
   const elements = root.querySelectorAll('.rotate-360');
   
   animate(elements, {
-    delay: 5000,
+    delay: 3000,
     rotate: [0, 180, 360],
     ease: 'outElastic',
     duration: 5000,
@@ -44,7 +44,7 @@ export function initPassiveBounce(root) {
   const elements = root.querySelectorAll('.bounce-x');
 
   animate(elements, {
-    delay: 3000,
+    delay: 2000,
     translateX: [0, -50, 0],
     ease: 'outBounce',
     duration: 2000,
@@ -58,7 +58,7 @@ export function initPassiveOrbit(root) {
   const elements = root.querySelectorAll('.orbit');
 
   animate(elements, {
-    delay: 2000,
+    delay: 1000,
     rotate: [-40, 170, 170, -40],
     ease: 'inOutBack',
     duration: 5000,
