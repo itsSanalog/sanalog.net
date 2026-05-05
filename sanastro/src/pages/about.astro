@@ -10,8 +10,31 @@ import Head from "../components/Head.astro";
 <html lang="en">
   <Head title="About" />
   <body>
-    <main>
-      
+    <main class="background-grid">
+      <h1 class="main-title">
+        <span class="info-node">
+          <span class="target-word">I</span>
+          <div class="info-elbow elbow-i"></div>
+          <div class="info-box box-i">
+            <p>Hi! I'm currently a junior year Computer Science student.</p>
+          </div>
+        </span> 
+        love 
+        <span class="info-node">
+          <span class="target-word">making</span>
+          <div class="info-elbow elbow-making"></div>
+          <div class="info-box box-making">
+            <p>Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/ LOR-əm IP-səm) is a dummy or placeholder text commonly used in graphic design, publishing, and web development.</p>
+          </div>
+        </span> 
+        <span class="info-node">
+          <span class="target-word">stuff</span>.
+          <div class="info-elbow elbow-stuff"></div>
+          <div class="info-box box-stuff">
+            <p>Lorem ipsum (/ˌlɔː.rəm ˈɪp.səm/ LOR-əm IP-səm) is a dummy or placeholder text commonly used in graphic design, publishing, and web development.</p>
+          </div>
+        </span>
+      </h1>
     </main>
 
     <div class="music-container">
@@ -24,6 +47,10 @@ import Head from "../components/Head.astro";
         </div>
         <p id="track-name" class="track-text">—</p>
         <p id="artist-name" class="artist-text">—</p>
+        <p class="snacks">TYPE: AUDIO/LP <span>SOURCE: LAST.FM</span><span>REF 00-02</span></p>
+        <p class="description" style="margin-top: 2.1cqw">When I am not making something, I am listening to music.</p>
+        <p class="description">Music is a great source of inspiration. Music acts a solvent for the millions of ideas <br> making up the whirlpool in my mind. It catalyses the cross-pollination of thoughts.</p>
+        <p class="description">I talk about my favourite albums at <a href="https://sanalog.net/blog/reviews/music">sanalog.net/blog/reviews/music</a>.</p>
       </div>
 
       <div class="album-frame">
@@ -53,6 +80,12 @@ import Head from "../components/Head.astro";
   :root {
     --bg-color: #e7e7e7; 
     --text-color: #222;
+    --grid-line: rgba(0, 0, 0, 0.1); 
+  }
+
+  ::selection {
+    background-color: var(--text-color);
+    color: var(--bg-color);
   }
 
   body {
@@ -60,14 +93,136 @@ import Head from "../components/Head.astro";
     color: var(--text-color);
     font-family: 'Playfair Display', serif;
   }
-
+  
   main {
-    height: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-color);
   }
 
   img {
     display: block;
   }
+  
+  .background-grid {
+    background-size: 5cqw 5cqw;
+    background-image:
+      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  }
+
+  .main-title {
+    font-family: 'Playfair Display';
+    font-size: 5cqw;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    cursor: crosshair;
+  }
+
+  .info-node {
+    position: relative;
+    display: inline-block;
+  }
+
+  .target-word {
+    transition: all 0.3s ease;
+  }
+
+  .info-box {
+    position: absolute;
+    background: var(--bg-color);
+    border: 1px solid var(--grid-line);
+
+    color: var(--grid-line);
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+
+  .info-box p {
+    margin: 0;
+    padding: 0.5cqw;
+    font-size: 1cqw;
+    line-height: 1.2;
+  }
+
+  .info-elbow {
+    position: absolute;
+    border: 0 solid var(--grid-line);
+    transition: border-color 0.3s ease;
+    pointer-events: none;
+  }
+
+  .elbow-i {
+    bottom: 50%;
+    left: 48%;
+    width: 10cqw;
+    height: 6cqw;
+    border-top-width: 1px;
+    border-left-width: 1px;
+  }
+  .box-i {
+    width: 20cqw;
+    height: 10cqw;
+    bottom: calc(50% + 6cqw);
+    left: calc(48% + 10cqw);
+  }
+
+  .elbow-making {
+    top: 50%;
+    right: 54%;
+    width: 8cqw;
+    height: 8cqw;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+  }
+  .box-making {
+    width: 25cqw;
+    height: 5cqw;
+    top: calc(50% + 8cqw);
+    right: calc(54% + 8cqw);
+  }
+
+  .elbow-stuff {
+    top: 80%;
+    left: 55%;
+    height: 5cqw;
+    border-left-width: 1px;
+  }
+  .box-stuff {
+    width: 20cqw;
+    height: 4cqw;
+    top: calc(80% + 4cqw);
+    left: calc(54% - 10cqw);
+  }
+
+  .info-node:hover .target-word {
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5vw;
+  }
+
+  .info-node:hover .info-box,
+  .info-node:hover .info-elbow,
+  .info-node:hover .info-box::after {  
+    border-color: var(--text-color);
+    color: var(--text-color);
+  }
+  
+
+
+  /* MUSIC STUFF */
+
 
   .music-container {
     position: relative;
@@ -101,7 +256,7 @@ import Head from "../components/Head.astro";
     
     width: calc(100% * (1000 / 3000));
     height: calc(100% * (1000 / 1705));
-    border: 1px solid #ff00ff;
+    /* border: 1px solid #ff00ff; */
     /* this is kept square so that i don't have to use calc() for all its children. */
   }
 
@@ -144,26 +299,34 @@ import Head from "../components/Head.astro";
 
   .artist-text {
     position: relative;
-    left: 0.1cqw;
     font-family: BritDark;
     font-size: 2cqw;
     line-height: 0.8;
-    margin: 0.5cqw 0 0 0;
+    margin: 0.5cqw 0 0 0.1cqw;
+  }
+
+  .snacks {
+    display: flex;
+    justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.8cqw;
+    color: #b4b4b4;
+    margin: 2.5cqw 5cqw 0 0.1cqw;
+  }
+
+  .description {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.8cqw;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0.5cqw 0 0 0.1cqw;
   }
 
   @keyframes passive-pulse {
-    0% {
-      transform: scale(1);
-      box-shadow: 0 0 4px rgba(255, 43, 43, 0.4);
-    }
-    50% {
-      transform: scale(1.1);
-      box-shadow: 0 0 10px rgba(255, 43, 43, 0.8);
-    }
-    100% {
-      transform: scale(1);
-      box-shadow: 0 0 4px rgba(255, 43, 43, 0.4);
-    }
+    0% { transform: scale(1); box-shadow: 0 0 4px rgba(255, 43, 43, 0.4); }
+    50% { transform: scale(1.1); box-shadow: 0 0 10px rgba(255, 43, 43, 0.8); }
+    100% { transform: scale(1); box-shadow: 0 0 4px rgba(255, 43, 43, 0.4); }
   }
 </style>
 
