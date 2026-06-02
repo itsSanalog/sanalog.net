@@ -9,7 +9,7 @@ title: Knife
 publicationDate: 2026-04-21
 sortOrder: 0
 
-stars: 3
+stars: 0
 rating: 0
 ---
 
@@ -25,7 +25,7 @@ The flat, stainless steel blade folds into the same 440C steel handle. All surfa
 
 <p class="small muted c">440C is high carbon, martensitic stainless steel</p>
 
-The knife is adorned with three T8 screws near the pivot and four T6 screws towards the rear end. All but one are button heads, sitting flush with the surrounding metal. Because the nub on the blade is not a thumb stud but actually a stopper, it does away with the traditional thumb stud design and opts for a brutalist approach instead. 
+The knife is adorned with three T8 screws near the pivot and four T6 screws towards the rear end. All but one are button heads, sitting flush with the surrounding metal. Because the nub on the blade is not a thumb stud but actually a stopper, it does away with the traditional thumb stud design and opts for a brutalist approach instead.
 
 ![](../../../assets/reviews/tools/knife/5.jpg)
 

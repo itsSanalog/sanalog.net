@@ -29,6 +29,7 @@ You are seeing the result of my efforts by being here, but I've also explicitly 
     overflow: hidden;
     border: 1px solid var(--color-ui-normal);
     border-radius: var(--image-radius);
+    width: 1200px; /* overwrites .wide */
   }
 
   .swatch {
