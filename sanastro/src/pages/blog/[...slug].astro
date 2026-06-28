@@ -21,11 +21,6 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-// Map standard markdown tags to custom component
-// const components = {
-//   img: ThemedImage
-// }
-
 // JavaScript for date
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 let formattedDate = null;
@@ -43,7 +38,7 @@ if (entry.data.publicationDate) {
     <p class="muted mt0">{ entry.data.creationDate } { formattedDate } </p>
     <p class="ms2">{ entry.data.description }</p>
 
-    <Content />
+    <Content/>
     
   </content>
 </BlogLayout>

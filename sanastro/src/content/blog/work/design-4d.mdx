@@ -11,26 +11,32 @@ publicationDate: 2025-08-21
 # creationDate: "August 2025"
 sortOrder: 4
 ---
+import ThemeImage from '../../../components/blog/ThemedImage.astro';
+import parts from '../../../assets/blog/work/design-4d/parts.png';
+import bad from '../../../assets/blog/work/design-4d/bad.png';
+import bad1 from '../../../assets/blog/work/design-4d/bad1.png';
+import arrange from '../../../assets/blog/work/design-4d/arrange.png';
+
 
 Say you have to make a pocket radio. You have to include a circuit board, a speaker, and two AA batteries.
 
-![](../../../assets/blog/work/design-4d/parts.png)(class: theme-aware, style: margin: auto;)
+<ThemeImage src={parts} alt="Parts diagram" />
 
 <p class="small muted c">a circuit board, a speaker, and two AA batteries</p>
 
 You might go with an arrangement like this:
 
-![](../../../assets/blog/work/design-4d/bad1.png)(class: theme-aware, style: margin: auto;)
+<ThemeImage src={bad1} alt="Parts diagram" />
 
 <p class="small muted c">look at that mighty ergonomic handle</p>
 
 Designing *as little as possible*, we can save some space by removing those ugly, unnecessary cavities:
 
-![](../../../assets/blog/work/design-4d/bad.png)(class: theme-aware, style: margin: auto;)
+<ThemeImage src={bad} alt="Parts diagram" />
 
 But following good design principles, you will probably end up with this: 
 
-![](../../../assets/blog/work/design-4d/arrange.png)(class: theme-aware, style: margin: auto;)
+<ThemeImage src={arrange} alt="Parts diagram" />
 
 Indeed, this is what every sensible designer would do.
 
