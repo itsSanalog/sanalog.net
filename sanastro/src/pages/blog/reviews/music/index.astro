@@ -36,12 +36,12 @@ musicReviews.sort((a, b) => {
               data-release-date={ review.data.releaseDate }
               data-publication-date={ review.data.publicationDate }>
             <td class="column-image">
-              <a href={ `/blog/reviews/${ review.slug }` }>
+              <a href={ `/blog/reviews/${ review.id }` }>
                 <img src={ review.data.imageLink } alt={ review.data.imageAlt } />
               </a>
             </td>
             <td>
-              <a href={ `/blog/reviews/${ review.slug }` } class="plain">{ review.data.title }</a>
+              <a href={ `/blog/reviews/${ review.id }` } class="plain">{ review.data.title }</a>
               <br />
               <span class="muted">{ review.data.artist } &centerdot; { releaseDateYear }</span>
             </td>

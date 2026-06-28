@@ -31,7 +31,7 @@ const featuredEntry = await getEntry("blog", "work/anemic-identity");
 <BlogLayout title="sanaBlog">
   <div class="wrap">
     <p>sanaBlog is <a href="https://joelhooks.com/digital-garden" target="_blank" class="extlink">a blog that is not</a>. The featured item today is:</p>
-    <a href={ `/blog/${ featuredEntry.slug }` } class="plain">
+    <a href={ `/blog/${ featuredEntry.id }` } class="plain">
       <h2 style="margin-bottom: 1rem; font-size: 1.5em">{ featuredEntry.data.title }</h2>
       <div class="small muted pb">
         <time datetime={ featuredEntry.data.publicationDate }>
@@ -47,7 +47,7 @@ const featuredEntry = await getEntry("blog", "work/anemic-identity");
 
     <Collapsible name="code( );">
       { codeEntries.map((entry) => ( //doc: https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
-          <a href={ `/blog/${ entry.slug }` } class="plain">
+          <a href={ `/blog/${ entry.id }` } class="plain">
             <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
             {/* use 'entry.data.cover.src' as src if using native <img> tag */}
             <h2 class="mt mb0">{ entry.data.title }</h2>
@@ -58,7 +58,7 @@ const featuredEntry = await getEntry("blog", "work/anemic-identity");
 
     <Collapsible name="work">
       { workEntries.map((entry) => (
-          <a href={ `/blog/${ entry.slug }` } class="plain">
+          <a href={ `/blog/${ entry.id }` } class="plain">
             <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
             <h2 class="mt mb0">{ entry.data.title }</h2>
             <p class="mt small muted">{ entry.data.description }</p>
@@ -68,7 +68,7 @@ const featuredEntry = await getEntry("blog", "work/anemic-identity");
     
     <Collapsible name="talk..">
       { talkEntries.map((entry) => (
-          <a href={ `/blog/${ entry.slug }` } class="plain">
+          <a href={ `/blog/${ entry.id }` } class="plain">
             <Image src={ entry.data.cover } alt={ entry.data.coverAlt } />
             <h2 class="mt mb0">{ entry.data.title }</h2>
             <p class="mt small muted">{ entry.data.description }</p>

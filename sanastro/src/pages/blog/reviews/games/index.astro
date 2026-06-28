@@ -32,7 +32,7 @@ gameReviews.sort((a, b) => {
     
     <div class="game-grid" id="reviewsContainer">
       { gameReviews.map((review) => { return(
-        <a href={ `/blog/reviews/${ review.slug }` } class="cartridge plain"
+        <a href={ `/blog/reviews/${ review.id }` } class="cartridge plain"
         data-rating={ review.data.rating }
         data-title={ review.data.title }
         data-dev-name={ review.data.artist }

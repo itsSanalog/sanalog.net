@@ -2,7 +2,7 @@
 // https://docs.astro.build/en/guides/content-collections/#building-for-static-output-default
 // very useful documentation. Also read Routing and Content Collection
 
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import { Image } from "astro:assets";
 import BlogLayout from "../../layouts/BlogLayout.astro";
 import ThemedImage from "../../components/blog/ThemedImage.astro";
@@ -12,14 +12,14 @@ export async function getStaticPaths() {
   // Get all entries from the blog collection
   const blogEntries = await getCollection('blog');
   return blogEntries.map((entry) => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id },
     props: { entry },
   }));
 }
 
 // 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 // Map standard markdown tags to custom component
 // const components = {

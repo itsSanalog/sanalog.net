@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import BlogLayout from "../../../../layouts/BlogLayout.astro";
 
 // 1. Generate a new path for every collection entry
@@ -10,14 +10,14 @@ export async function getStaticPaths() {
   });
   return reviewEntries.map((entry) => ({
     // Remove the "[directory]/" prefix from the slug. slice() isn't used for clarity
-    params: { slug: entry.slug.replace(/^(games\/)/,"") },
+    params: { slug: entry.id.replace(/^(games\/)/,"") },
     props: { entry },
   }));
 }
 
 // 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 // JavaScript for date
 const options = { year: 'numeric', month: 'long', day: 'numeric' };

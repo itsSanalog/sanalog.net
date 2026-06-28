@@ -15,7 +15,7 @@ filmReviews.sort((a, b) => {
   <content>
     {
       filmReviews.map((review) => (
-      <a href={ `/blog/${ review.slug }` } class="plain">
+      <a href={ `/blog/${ review.id }` } class="plain">
           <Image src={ review.data.cover } alt={ review.data.coverAlt } />
           <h2 style="margin-top: 1rem;">{ review.data.title }</h2>
           <p>{ review.data.rating }</p>
