@@ -210,20 +210,23 @@ I will update these to STEP files once they are cleaned up a bit. Sorry!
   position: relative;
   overflow: hidden;
 }
+
 .carousel-container {
   position: relative;
 }
+
 .carousel-img {
   display: none;
   width: 100%;
   height: auto;
   object-fit: contain;
-  transition: opacity .3s ease;
 }
+
 .carousel-img.active {
   display: block;
   opacity: 1;
 }
+
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -231,19 +234,16 @@ I will update these to STEP files once they are cleaned up a bit. Sorry!
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   border: 0;
-  width: 36px;
-  height: 36px;
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
   cursor: pointer;
   z-index: 2;
   font-size: 1.1rem;
   line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.carousel-btn:hover,
-.carousel-btn:focus {
+
+.carousel-btn:hover {
   background: rgba(0,0,0,.75);
 }
 .carousel-btn-prev { left: 0.7rem; }

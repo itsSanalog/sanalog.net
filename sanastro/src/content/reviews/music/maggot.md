@@ -68,7 +68,6 @@ Also the guitar sings in this song. The guitar fucking sings I die for this shit
 # Nice Nice
 
 > Um, going over to a friend's house for a sleepover for the first time, and their dad wants them to pop a cyst on his back, but they're really squeamish and faint, but he's in a lot of pain so you have to do it
-lmao.
 
 I am aware I discounted *Wet* for its literal lyrics. The story is different with this, though. You're *meant* to cringe at this. *Nice Nice* is comic relief—mocking invasive sexual culture that my background, gender, and how much of a loser I am make hard to directly relate to. However, it does such a great job at being insufferable that you find yourself empathising with victims of the masculine idea of 'flirtation' which is pretty much sexual harrassment. I rate this ability highly. Obviously nobody opens with lines like "take your shirt off let me see your lady nipples", but let's be honest—it's not far off from reality.
 
