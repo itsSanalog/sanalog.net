@@ -1,9 +1,7 @@
 import { defineConfig } from "astro/config";
-import { rehypeHeadingIds } from "@astrojs/markdown-remark";
-import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import svelte from "@astrojs/svelte";
-import sitemap from '@astrojs/sitemap';
-import imgAttr from 'remark-imgattr';
+import sitemap from "@astrojs/sitemap";
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,26 +9,10 @@ export default defineConfig({
   // base: "/sanalog.net",
   compressHTML: true,
   scopedStyleStrategy: "class",
-  // image: {
-  //   // service: squooshImageService(),  //DEPRECATED Astro v5
-  // },
-  markdown: {
-    rehypePlugins: [
-      rehypeHeadingIds,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: "wrap",
-          properties: {
-            class: "heading-linker",
-          },
-        },
-      ],
-    ],
-    remarkPlugins:[imgAttr],
-  },
+
   integrations: [
     svelte(), 
     sitemap(),
-  ],
+    mdx(),
+  ]
 });
