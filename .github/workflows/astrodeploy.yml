@@ -44,7 +44,7 @@ jobs:
           run: node .github/scripts/draw.js
         
         - name: Build again with sitemap
-          uses: withastro/action@v2
+          uses: withastro/action@v6
           with:
               path: sanastro # The root location of Astro project
 
