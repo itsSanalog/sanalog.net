@@ -12,4 +12,5 @@ publicationDate: 2026-04-30
 sortOrder: 6
 ---
 
-connect at <a href="https://sanalog.net/apps/mimage/">sanalog.net/apps/mimage</a>.
+connect at <a href="https://sanalog.net/apps/mimage" target="_blank" class="">sanalog.net/apps/mimage</a>.
+<!-- this is a unique link where it's not external but still target _blank -->
