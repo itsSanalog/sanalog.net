@@ -22,11 +22,13 @@ I enjoy learning. I enjoy experiencing things, especially regarding creative med
 
 My work processes favour creativity and innovative approaches to tasks. This is accompanied by heavy, yet uncluttered documentation with a focus on clarity. I try to apply the various knowledge and skills I have acquired in the past, gaining a deeper understanding of them in the process.
 
-It is thus not surprising that I have an intense ardour for <a target="_blank" class="extlink" href="https://www.goodreads.com/book/show/255132.The_Medici_Effect">intellectual cross-pollination</a>.
+It is thus not surprising that I have an intense ardour for <a href="https://www.goodreads.com/book/show/255132.The_Medici_Effect" target="_blank" class="extlink">intellectual cross-pollination</a>.
 
 > In a wicked world, relying upon experience from a single domain is not only limiting, it can be disastrous.
 
 I created the credo to remind myself of the things I love and how I should act. The credo is split into four codes. Their names borrow inspiration from the little bear (little dipper) constellation, as an homage to seafarers using the perpetually visible to safeguard themselves on their parlous journeys.
+
+My stance on AI is detailed in [a separate entry](/blog/work/anemic-identity/).
 
 # Polaris
 
@@ -43,6 +45,10 @@ Anything you do, be aware of what you have earned. So much as a smile is a good 
 ##### Better the world.
 
 The Confucian ideal society resonates with me, one where the people are enriched in knowledge, coexisting beyond the cofines of capital and even ownership. Why should one's knowledge be exclusively theirs? The propagation of knowledge should be catalysed by altruism. Voice your opinion and share your creations. Discourse giveth but never takeths away.
+
+##### Be ethical.
+
+I am aggressively opposed to racism, sexism, homophobia, speciesism, transphobia, nationalism, ethnocentrism, religious fundamentalism, and oppressive and coercive power structures of all kinds.
 
 # Kochab
 

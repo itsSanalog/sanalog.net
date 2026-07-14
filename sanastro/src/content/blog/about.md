@@ -26,19 +26,17 @@ Its purpose is to be a secretary of sorts—a second brain. It archives various 
 
 sanaBlog is a static site hosted on <a href="https://pages.github.com/" target="_blank" class="extlink">GitHub Pages</a>. It is built using <a href="https://astro.build/" target="_blank" class="extlink">Astro</a>, with HTML, CSS, and a touch of JavaScript. Content is written using Markdown. More details in [wesbite](/blog/code/wesbite).
 
-sanaBlog's code is under the <a target="_blank" class="extlink" href="https://github.com/itsSanalog/sanalog.net/blob/main/LICENSE">MIT license</a>, and all content is under the <a target="_blank" class="extlink" href="https://creativecommons.org/licenses/by-nc-sa/4.0">BY-NC-SA 4.0 license</a>.
+sanaBlog's code is under the <a href="https://github.com/itsSanalog/sanalog.net/blob/main/LICENSE" target="_blank" class="extlink">MIT license</a>. All content is under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0" target="_blank" class="extlink">BY-NC-SA 4.0 license</a>.
 
-sanaBlog is part of the <a href="https://webring.xxiivv.com" target="_blank" class="extlink">XXIIVV webring</a>, <a href="https://webring.adilene.net/index.php" target="_blank" class="extlink">Vocaloid webring</a>, and the [BoomBot ring](/blog/boombot).
-
-
+sanaBlog is part of the <a href="https://webring.xxiivv.com" target="_blank" class="extlink">XXIIVV webring</a> and the [BoomBot ring](/blog/boombot).
 
 # Who
 
 Sanalog likes to play. Sanalog is:
 
-> Currently studying computer science in university and deeply regretting taking a two year leave of absence. I update sanaBlog during class.
+> Currently learning from the wonderful people at Seagate as an intern.
 
-Sanalog operates under the [credo](/blog/credo).
+Sanalog operates under the [credo](/blog/credo) and their [AI policy](/blog/work/anemic-identity/).
 
 # Why
 
@@ -52,9 +50,10 @@ sanaBlog's content is created under the [Pherkad code](/blog/credo#pherkad), par
 
 I try to:
 
-- Ensure 'correct' spelling, punctuation, and grammar.
 - Create content that is accurate and correct to my best knowledge.
 - Create content that is welcoming, accessible, and enjoyable.
 - Credit relevant sources.
+
+Content on sanalog.net is made by me.
 
 Questions, feedback, or suggestions are always welcome. You can <a href="mailto:me@sanalog.net">email: me (at) sanalog.net</a>.
