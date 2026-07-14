@@ -52,6 +52,47 @@ The girl leaves.
 
 ---
 
+Melancholy is not an unfamiliar concept to her. Neither is happiness. A cocktail mix of both is what she's used to, and every day numbs her to both. By the age of sixteen, the brew was indissoluble. So why was she up on the roof again? The carpark may have four storeys, but the floor to floor height couldn't possibly pass inspection--I'd bet on just two broken femurs, if that.
+
+Two is also the number of sticks in the pack.
+
+"would you like one?"
+
+...
+
+The girl leaves.
+
+She did not smoke that day.
+
+---
+
+Father found out. She has a depth behind her eyes that allures those who manage to not avert their gaze. One that is not found in a teenager. This trait has been exploited multiple times at the convenience store, but the card company is blind to such things. The parking lot, however, is not her place of refuge just because it's a smoking area.
+
+"hey"
+
+...
+
+"I'm sorry"
+
+*about what?*
+
+...
+
+*...?*
+
+"being here, I guess. maybe it was your spot to begin with"
+
+*no it's not. what makes you think i like being here anyway?*
+
+The girl was right. She was here for over two hundred days and have only seen the girl since the past month. But that did not matter.
+
+"it's a nice place"
+
+*...it is.*
+
+
+---
+
 The surface is scuffed from years of use, but she can make the silhouette of her face out in its piano black finish. The glossy window is oily for some reason, but the deep, saturated blue penetrates through the fingerprints.
 
 You grab the retro oracle and gives it a good shake.
@@ -110,8 +151,8 @@ You grab the retro oracle and gives it a good shake.
     "My reply is no",
     "My sources say no",
     "Outlook<br>not so<br>good",
-    "Very doubtful"
-    // "fuck"
+    "Very doubtful",
+    "fuck"
   ];
 
   function shakeThemBalls() {
@@ -125,3 +166,5 @@ You grab the retro oracle and gives it a good shake.
   <div class="triangle"></div>
   <div class="answer"></div>
 </div>
+
+<span class="muted">last updated on Jul 15, 2026</span>

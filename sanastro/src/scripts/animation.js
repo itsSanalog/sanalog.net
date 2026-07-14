@@ -179,7 +179,7 @@ export function initScrollAnimation(root) {
 
     tl.seek(scrollPercent * tl.duration);
 
-    // Activate the transparent hitbox at the bottom of the scroll
+    // activate hitbox at end
     if (scrollPercent >= 0.98) {
       if (!isAnimationComplete) {
         isAnimationComplete = true;
@@ -210,11 +210,11 @@ export function initScrollAnimation(root) {
     altImages.forEach(img => img.classList.remove('visible'));
 
     if (currentAltIndex === -1) {
-      // Fade the original scattered vectors back in seamlessly
-      animate(aliveShapes, { opacity: 1, duration: 200, ease: 'outQuad' });
+      // original comes back
+      animate(aliveShapes, { opacity: 1, duration: 0 });
     } else {
-      // Hide the vectors, show the scaled PNG option underneath the transparent hitbox
-      animate(aliveShapes, { opacity: 0, duration: 200, ease: 'outQuad' });
+      // original goes away, alternate comes in
+      animate(aliveShapes, { opacity: 0, duration: 0 });
       altImages[currentAltIndex].classList.add('visible');
     }
   }
