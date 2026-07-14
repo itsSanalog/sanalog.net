@@ -27,7 +27,7 @@ export function initPassiveRotation2(root) {
 }
 
 // Passive drift
-export function initPassiveDrift(root) {
+export function initPassiveDriftX(root) {
   const elements = root.querySelectorAll('.drift-x');
 
   animate(elements, {
@@ -38,6 +38,19 @@ export function initPassiveDrift(root) {
     loop: true,
   });
 };
+
+export function initPassiveDriftY(root) {
+  const elements = root.querySelectorAll('.drift-y');
+
+  animate(elements, {
+    delay: 0,
+    translateY: [0, 25, 0],
+    ease: cubicBezier(0.7,0.1,0.5,0.9),
+    duration: 8000,
+    loop: true,
+  });
+};
+
 
 // Bounce
 export function initPassiveBounce(root) {
@@ -151,13 +164,64 @@ export function initScrollAnimation(root) {
     rotate: -360,
     ease: 'linear',
     duration: 50
-  }, 1400);
+  }, 1280);
   
+  // alternate logo images
+  const hitbox = root.getElementById('logo-hitbox');
+  const altImages = root.querySelectorAll('.alt-logo');
+  let currentAltIndex = -1; 
+  let isAnimationComplete = false;
+
   // scroll listener
   window.addEventListener('scroll', () => {
     const scrollHeight = document.body.scrollHeight - window.innerHeight;
     const scrollPercent = window.scrollY / scrollHeight;
 
     tl.seek(scrollPercent * tl.duration);
+
+    // Activate the transparent hitbox at the bottom of the scroll
+    if (scrollPercent >= 0.98) {
+      if (!isAnimationComplete) {
+        isAnimationComplete = true;
+        hitbox.classList.add('active');
+      }
+    } else {
+      if (isAnimationComplete) {
+        isAnimationComplete = false;
+        hitbox.classList.remove('active');
+        resetToVectorLogo();
+      }
+    }
   });
+
+  // cycle image on clicking invisible rect
+  hitbox.addEventListener('click', () => {
+    if (!isAnimationComplete) return;
+
+    currentAltIndex++;
+    if (currentAltIndex >= altImages.length) {
+      currentAltIndex = -1; 
+    }
+
+    updateLogoState();
+  });
+
+  function updateLogoState() {
+    altImages.forEach(img => img.classList.remove('visible'));
+
+    if (currentAltIndex === -1) {
+      // Fade the original scattered vectors back in seamlessly
+      animate(aliveShapes, { opacity: 1, duration: 200, ease: 'outQuad' });
+    } else {
+      // Hide the vectors, show the scaled PNG option underneath the transparent hitbox
+      animate(aliveShapes, { opacity: 0, duration: 200, ease: 'outQuad' });
+      altImages[currentAltIndex].classList.add('visible');
+    }
+  }
+
+  function resetToVectorLogo() {
+    currentAltIndex = -1;
+    altImages.forEach(img => img.classList.remove('visible'));
+    aliveShapes.forEach(el => el.style.opacity = 1);
+  }
 }

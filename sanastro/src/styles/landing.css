@@ -1,0 +1,166 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&family=Noto+Serif+SC:wght@300&display=swap'); */
+/* unsure why but it breaks when in production despite working local */
+
+/* @font-face {
+  font-family: 'KaiTi';
+  src: url('/fonts/Kaiti-8kb.ttf') format('truetype');
+  font-display: swap;
+} */
+/* Also no idea why but 潜 doesn't work when the font file is seubset to潜我录 only.*/
+
+
+@font-face {
+  font-family: 'Kaiti';
+  src: url('https://static.wfonts.com/data/2016/07/15/kaiti/simkai.ttf') format('ttf');
+  font-display: swap;
+}
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--staticwhite);
+}
+
+body {
+  --charcoal:      #1C1C2A;
+  --grey3:         #2E3242;
+  --grey2:         #5E647A;
+  --grey1:         #8C90A4;
+  --staticwhite:   #E6E9F0;
+  --coldwhite:     #F2F4F8;
+  --ionblue:       #9AD7FF;
+  --terminalamber: #FF8A00;
+  --laserred:      #FF2E2E;
+  --acidyellow:    #FFEA00;
+  --neonmint:      #05FF74;
+  --arcblue:       #5FFFFF;
+
+  height: 400vh;
+  background-color: #a1a6ab;
+  /* transition: background-color 0.2s; */
+}
+
+.landing {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  scroll-behavior: smooth;
+  /* does this even do anything */
+}
+
+.color-charcoal      { fill: var(--charcoal); }
+.color-grey3         { fill: var(--grey3); }
+.color-grey2         { fill: var(--grey2); }
+.color-grey1         { fill: var(--grey1); }
+.color-staticwhite   { fill: var(--staticwhite); }
+.color-coldwhite     { fill: var(--coldwhite); }
+.color-ionblue       { fill: var(--ionblue); }
+.color-terminalamber { fill: var(--terminalamber); }
+.color-laserred      { fill: var(--laserred); }
+.color-acidyellow    { fill: var(--acidyellow); }
+.color-neonmint      { fill: var(--neonmint); }
+.color-arcblue       { fill: var(--arcblue); }
+
+.raider .color-laserred:hover {
+  transition: transform 0.2s;
+  transform: scale(0.8);
+  filter: drop-shadow( 0px 0px 10px var(--laserred));
+}
+.raider .color-acidyellow:hover {
+  transition: transform 0.2s;
+  transform: scale(0.8);
+  filter: drop-shadow( 0px 0px 10px var(--acidyellow));
+}
+.raider .color-neonmint:hover {
+  transition: transform 0.2s;
+  transform: scale(0.8);
+  filter: drop-shadow( 0px 0px 10px var(--neonmint));
+}
+.raider .color-arcblue:hover {
+  transition: transform 0.2s;
+  transform: scale(0.8);
+  filter: drop-shadow( 0px 0px 10px var(--arcblue));
+}
+
+
+svg {
+  display: block;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+}
+
+.type {
+  cursor: default;
+  user-select: none;
+  transition: letter-spacing 0.6s;
+}
+.type.simsun {
+  /* font-weight: 300; */
+  font-family: "Noto Serif SC", serif;
+}
+.type.kaiti {
+  font-family: "Kaiti", serif;
+}
+.type.hangeul {
+  /* font-weight: 300; */
+  font-family: "Noto Serif KR", serif;
+}
+.type.alphabet {
+  font-family: "Times New Roman", serif;
+}
+.type.simsun:hover, .type.kaiti:hover, .type.hangeul:hover {
+  cursor: pointer;
+  filter: drop-shadow( 0px 0px 5px rgba(255, 255, 255, 0.7));
+}
+.type.alphabet:hover {
+  letter-spacing: 4px;
+}
+
+.shape {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+.orbit {
+  transform-origin: top right;
+  transform-box: fill-box;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+/* ############################################# */
+
+#logo-hitbox.active {
+  pointer-events: auto;
+  cursor: crosshair;
+}
+
+.alt-logo {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(var(--logo-scale, 1));
+  transform-origin: 800px 25px;
+  /* the pixels are virtual, in-canvas pixels.*/
+  /* Since svg viewbox is initialised at 1600x350, we center image as 800 25 */
+  /* 25 because height of the bounding box (original logo) is 50 and starts at baseline 0*/
+
+  /* transition: opacity 0.1s ease-in-out; */
+}
+
+.alt-logo.visible {
+  opacity: 1;
+}

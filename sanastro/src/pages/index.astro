@@ -1,6 +1,6 @@
 ---
 import "../styles/normalize.css";
-import "../styles/bauhaus.css";
+import "../styles/landing.css";
 
 import Head from "../components/Head.astro";
 ---
@@ -78,7 +78,7 @@ import Head from "../components/Head.astro";
           <rect x="900" y="25" width="25" height="25" class="shape color-terminalamber" />
           <rect x="925" y="50" width="25" height="25" class="shape color-terminalamber" />
           <rect x="900" y="0" width="50" height="25" class="shape color-staticwhite" />
-          <circle cx="calc(950 + 25/2)" cy="12.5" r="12.5" class="shape color-grey2" />
+          <circle cx="calc(950 + 25/2)" cy="12.5" r="12.5" class="drift-y shape color-grey2" />
           <rect x="900" y="-100" width="50" height="25" class="shape color-grey3" />
           
           <path id="sanalogL" d="m 1000 0 v 50 h 50 v -25 h -25 v -25 z" class="shape color-coldwhite" />
@@ -110,6 +110,14 @@ import Head from "../components/Head.astro";
           <rect x="1550" y="0" width="25" height="25" class="rotate-90 shape color-terminalamber" />
           <rect x="1575" y="25" width="25" height="25" class="shape color-charcoal" />
 
+          <image href="/images/altlogos/gradt.png" class="alt-logo" style="--logo-scale: 1.13;" x="595" y="0" width="410" height="50"/>
+          <image href="/images/altlogos/ascii.png" class="alt-logo" style="--logo-scale: 2.05;" x="595" y="0" width="410" height="50"/>
+          <image href="/images/altlogos/veehs.png" class="alt-logo" style="--logo-scale: 2.05;" x="595" y="0" width="410" height="50"/>
+          <image href="/images/altlogos/earth.png" class="alt-logo" style="--logo-scale: 1.33;" x="595" y="0" width="410" height="50"/>
+          <image href="/images/altlogos/shiny.png" class="alt-logo" style="--logo-scale: 1.05;" x="595" y="0" width="410" height="50"/>
+          <image href="/images/altlogos/yello.png" class="alt-logo" style="--logo-scale: 1.025;" x="595" y="0" width="410" height="50"/>
+          
+          <rect id="logo-hitbox" x="580" y="-10" width="440" height="70" fill="transparent" stroke="" pointer-events="none" />
         </g>
 
         <g id="text">
@@ -148,7 +156,8 @@ import Head from "../components/Head.astro";
   import { 
     initPassiveRotation1,
     initPassiveRotation2,
-    initPassiveDrift,
+    initPassiveDriftX,
+    initPassiveDriftY,
     initPassiveBounce,
     initPassiveOrbit,
     initHoverMorph,
@@ -178,7 +187,8 @@ import Head from "../components/Head.astro";
     if (root) {
       initPassiveRotation1(root);
       initPassiveRotation2(root);
-      initPassiveDrift(root);
+      initPassiveDriftX(root);
+      initPassiveDriftY(root);
       initPassiveBounce(root);
       initPassiveOrbit(root);
       initHoverMorph(root);
