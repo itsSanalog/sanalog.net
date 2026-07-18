@@ -1,0 +1,91 @@
+<html>
+
+<head>
+  <title>mimage+ Pixel Sort</title>
+  <link rel="icon" type="image/ico" href="/mimage/images/favicon.png" />
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/pixelsort/style.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="header">
+      <h1>mimage+</h1>
+      <h2>Pixel Sort & Stretch Tool</h2>
+    </div>
+
+    <div class="section">
+      <label>Image Operations</label>
+      <label for="upload" class="btn btn-highlight">Upload or Paste Image</label>
+      <input type="file" id="upload" accept="image/*" hidden>
+      <button id="rotate" class="btn btn-gray">Rotate 90°</button>
+      
+      <div class="slider-group">
+        <label for="zoom">Image Zoom <span><span id="zoom-val">100</span>%</span></label>
+        <input type="range" id="zoom" min="10" max="200" value="100">
+      </div>
+    </div>
+
+    <div class="section">
+      <label>Annotation Mode</label>
+      <input type="text" id="labels" class="text-input" placeholder="e.g. tree, leaf, branch, green">
+      <p class="hint">Enter comma-separated tags.</p>
+      <div class="slider-group" style="margin-top: 10px;">
+        <label for="text-prob">Text Probability <span><span id="text-prob-val">30</span>%</span></label>
+        <input type="range" id="text-prob" min="0" max="100" value="30">
+      </div>
+    </div>
+
+    <div class="section">
+      <label>Grid Parameters</label>
+      <div class="slider-group">
+        <label for="complexity">Grid Complexity</label>
+        <input type="range" id="complexity" min="2" max="150" value="40">
+      </div>
+      <div class="slider-group">
+        <label for="coverage">Modifier Coverage</label>
+        <input type="range" id="coverage" min="0" max="100" value="50">
+      </div>
+    </div>
+
+    <div class="section">
+      <label>Stretch Options</label>
+      <div class="slider-group">
+        <label for="intensity">Stretch Intensity <span><span id="intensity-val">59</span>%</span></label>
+        <input type="range" id="intensity" min="0" max="100" value="59">
+      </div>
+      <div class="slider-group">
+        <label for="balance">Stretch Ratio (V ←→ H) <span><span id="balance-val">100H / 0V</span></span></label>
+        <input type="range" id="balance" min="0" max="100" value="100">
+      </div>
+    </div>
+
+    <div class="section">
+      <label>Display Settings</label>
+      <div class="checkbox-group">
+        <label for="wireframe">Show Grid Wireframe</label>
+        <input type="checkbox" id="wireframe" checked>
+      </div>
+      <div class="checkbox-group">
+        <label for="show-text">Show Text Annotations</label>
+        <input type="checkbox" id="show-text" checked>
+      </div>
+    </div>
+
+    <div class="section">
+      <label>Save & Export</label>
+      <button id="export-png" class="btn btn-highlight">Export PNG</button>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="canvas-container">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <script src="/pixelsort/script.js"></script>
+</body>
+</html>
