@@ -37,6 +37,7 @@ Other than grid drawing and stretching, you can add labels (in comma-separated f
 There is a little more. The tool comes with rudimentary contour detection. Unfortunately there's no toggle switch, so it will automatically draw grids around the subject given an image with a transparent background. This is its intended purpose--to be used with single-subject transparent images.
 
 ![miku](../../../assets/blog/code/mimage/mikubg.png)
+<p class="small muted c">credit: Hatsune Miku: Project Diva Mega Mix+</p>
 
 It is an interesting aesthetic. However, potential is realised when the tool is used in conjunction with other tools, mixed with different effects.
 
@@ -47,11 +48,11 @@ It is an interesting aesthetic. However, potential is realised when the tool is 
 
 ### The code
 
-Source is on <a href="https://github.com/itsSanalog/sanalog.net/blob/main/sanastro/src/scripts/apps/mimagePlus/stretchgrid.js" target="_blank" class="extlink">GitHub</a>.
+Source on <a href="https://github.com/itsSanalog/sanalog.net/blob/main/sanastro/src/scripts/apps/mimagePlus/stretchgrid.js" target="_blank" class="extlink">GitHub</a>.
 
 None of the code is technically impressive, but the one interesting implementation is that of the 'random' grid. A regular or otherwise equispaced grid would be super boring.
 
-My intial approach was to take a finely split grid and cluster them using some algorithm. I then realised that a finely split grid on an image were also known as pixels. Anyway, constructing clusters that would add up to the dimensions of the input image sounded painful. While a solution wouldn't be computationally expensive in practice, it did remind me that the <a href="https://en.wikipedia.org/wiki/Subset_sum_problem" target="_blank" class="extlink">subset sum problem is NP-hard</a>.
+My intial approach was to overlay a finely split grid and cluster them using some algorithm. I then realised that a finely split grid on an image were also known as pixels. Anyway, constructing clusters that would add up to the dimensions of the input image sounded painful. While a solution wouldn't be computationally expensive in practice, it did remind me that the <a href="https://en.wikipedia.org/wiki/Subset_sum_problem" target="_blank" class="extlink">subset sum problem is NP-hard</a>.
 
 An approach through division was going to be exponentially simpler to implement. With the idea of algorithms already in my head, the visualisation of a k-d tree was a good approximation of what I wanted to achieve.
 
@@ -156,3 +157,5 @@ if (elements.showText.checked && cellData.text) {
   ctx.fillText(cellData.text, ix + 4, iy + 14);
 }
 ```
+
+If anyone makes a better version, I'd be more than happy to use that instead. This is not an invitation, it is a plea.
