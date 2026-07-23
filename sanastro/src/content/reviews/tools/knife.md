@@ -43,7 +43,7 @@ The slipjoint system is augmented by a ball detent mechanism, which is enabled b
 
 ![](../../../assets/reviews/tools/knife/3.jpg)
 
-<p class="small muted c">the rounded edges distributes stress</p>
+<p class="small muted c">the rounded edges distribute stress</p>
 
 ## The bad
 

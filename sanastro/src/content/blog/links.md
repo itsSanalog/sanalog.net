@@ -96,7 +96,7 @@ While I dare categorise these entries, note that it's simply for convenience. Pl
 
 ## Utilities
 
-Also check out my [tools page](/blog/tools#utilities) for non-browser-based software.
+Also check out my [uses page](/blog/uses#utilities) for non-browser-based software.
 
 - <a href="https://oeis.org/" target="_blank" class="extlink">OEIS</a>
 

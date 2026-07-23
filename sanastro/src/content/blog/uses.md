@@ -4,7 +4,7 @@
 # banner:
 # bannerAlt:
 
-title: "Tools"
+title: "Uses"
 # description: ""
 # author:
 # publicationDate: 2024-05-21
@@ -83,7 +83,7 @@ SSD  | 256 GB
 
 It runs Ubuntu Server 20.04 and CasaOS. Proxmox would be nice but CasaOS' GUI is really useful for my family to toy with the server as well.
 
-![](../../assets/blog/tools/sanalog-server.png)
+![](../../assets/blog/uses/sanalog-server.png)
 <p class="small muted c">i enjoy my terminal</p>
 
 ## SisterIV (phone)
@@ -168,8 +168,6 @@ I've had four Samsung phones. I stopped rooting once OneUI was rolled out. I don
 # Kitchen
 
 - Nakiri knife
-- Cutting board
-- Stainless steel skillet
 - Non-stick pan
 - Wok
 - Ramyun pot
