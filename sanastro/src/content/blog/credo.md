@@ -44,7 +44,7 @@ Anything you do, be aware of what you have earned. So much as a smile is a good 
 
 ##### Better the world.
 
-The Confucian ideal society resonates with me, one where the people are enriched in knowledge, coexisting beyond the cofines of capital and even ownership. Why should one's knowledge be exclusively theirs? The propagation of knowledge should be catalysed by altruism. Voice your opinion and share your creations. Discourse giveth but never takeths away.
+The Confucian ideal society resonates with me, one where the people are enriched in knowledge, coexisting beyond the cofines of capital and even ownership. Why should one's knowledge be exclusively theirs? The propagation of knowledge should be catalysed by altruism. Voice your opinion and share your creations. Discourse giveth but never taketh away.
 
 ##### Be ethical.
 

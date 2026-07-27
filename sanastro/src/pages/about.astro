@@ -1,68 +1,161 @@
 ---
 import "../styles/normalize.css";
 
-import { Image } from 'astro:assets';
-import wandanlage from '../assets/wandanlage.jpg';
+import { Image } from "astro:assets";
+import build from "../assets/about/build.png";
+import make from "../assets/about/make.png";
+import learn from "../assets/about/learn.png";
+import polymath from "../assets/about/polymath.png";
+import team from "../assets/about/team.png";
+import wandanlage from "../assets/wandanlage.jpg";
 
 import Head from "../components/Head.astro";
+
+const profiles = [
+  {
+    label: "polymath",
+    image: polymath,
+    description: "You and I are limitless in our capacity for development. Experiment, improvise, and follow interesting accidents until an idea begins to take shape.",
+  },
+  {
+    label: "learner",
+    image: learn,
+    description: "I am forever a student. One who learns by taking things apart, tracing how they work, and rebuilding the useful parts into something I understand.",
+  },
+  {
+    label: "maker",
+    image: make,
+    description: "I turn loose thoughts into visible, deliberate things—interfaces, graphics, interactions, objects, and documentation.",
+  },
+  {
+    label: "builder",
+    image: build,
+    description: "I enjoy carrying ideas through the unglamorous middle: solving constraints, refining details, and making the final thing dependable.",
+  },
+  {
+    label: "teammate",
+    image: team,
+    description: "I work best in highly dynamic teams where disciplines overlap, knowledge is shared freely, and everyone helps make the outcome clearer.",
+  },
+];
 ---
 
 <html lang="en">
   <Head title="About" />
   <body>
-    <main class="background-grid">
-      <h1 class="main-title">
-        <span class="info-node">
-          <span class="target-word">I</span>
-          <div class="info-elbow elbow-i"></div>
-          <div class="info-box box-i">
-            <p>I am a jack of all trades regarding technical and creative media. My work processes favour creative and innovative approaches to tasks. This is accompanied by heavy, yet uncluttered documentation with a focus on information delivery and presentation.</p>
+    <main class="about-page">
+      <div class="system-grid" aria-hidden="true"></div>
+
+      <section class="about-canvas" aria-labelledby="about-title">
+        <header class="masthead">
+          <a href="/" aria-label="Back to home">SANALOG / ABOUT</a>
+          <span>PROFILE SYSTEM 01</span>
+          <span>SINGAPORE — <span id="local-time">00:00:00</span></span>
+          <span class="masthead-right">© 2026</span>
+        </header>
+
+        <span class="section-index">[A01 / SELECT A PROFILE]</span>
+
+        <h1 class="highlight" id="about-title">
+          I am a<br /><span id="profile-label">{profiles[0].label}</span>
+        </h1>
+
+        <figure class="main-visual">
+          <!-- <figcaption>FIG. / <span id="figure-label">{profiles[0].label.toUpperCase()}</span></figcaption> -->
+          <Image
+            id="profile-image"
+            src={profiles[0].image}
+            alt={`Sanalog is a ${profiles[0].label}`}
+            loading="eager"
+          />
+        </figure>
+
+        <article class="profile-copy">
+          <span>01 / ABOUT</span>
+          <h2 id="profile-heading">{profiles[0].label}</h2>
+          <p id="profile-description">{profiles[0].description}</p>
+        </article>
+
+        <div class="profile-options">
+          {profiles.map((profile, index) => (
+            <button
+              class:list={["profile-option", { "is-active": index === 0 }]}
+              type="button"
+              data-label={profile.label}
+              data-description={profile.description}
+            >
+              <Image src={profile.image} alt="" />
+              <span>{String(index + 1).padStart(2, "0")} / {profile.label}</span>
+            </button>
+          ))}
+        </div>
+
+        <div class="handoff" aria-hidden="true">
+          <span>CONTINUE / MUSIC</span>
+          <span class="handoff-line"></span>
+        </div>
+      </section>
+
+      <script>
+        const options = document.querySelectorAll(".profile-option");
+        const mainImage = document.getElementById("profile-image");
+        const label = document.getElementById("profile-label");
+        const heading = document.getElementById("profile-heading");
+        const description = document.getElementById("profile-description");
+        const figureLabel = document.getElementById("figure-label");
+
+        function selectProfile(option) {
+          const thumbnail = option.querySelector("img");
+          const name = option.dataset.label;
+
+          options.forEach((item) => {
+            const selected = item === option;
+            item.classList.toggle("is-active", selected);
+            item.setAttribute("aria-pressed", String(selected));
+          });
+
+          mainImage.src = thumbnail.currentSrc || thumbnail.src;
+          mainImage.alt = `Sanalog is a ${name}`;
+          label.textContent = name;
+          heading.textContent = name;
+          description.textContent = option.dataset.description;
+          figureLabel.textContent = name.toUpperCase();
+        }
+
+        options.forEach((option) => {
+          option.addEventListener("mouseenter", () => selectProfile(option));
+          option.addEventListener("focus", () => selectProfile(option));
+          option.addEventListener("click", () => selectProfile(option));
+        });
+      </script>
+
+      <div class="music-container">
+        <Image src={ wandanlage } alt="wandanlage" class="wandanlage" />
+
+        <div class="text-area">
+          <div class="now-playing">
+            <div id="status-dot" class="dot"></div>
+            <p id="status-text" class="">CONNECTING...</p>
           </div>
-        </span> 
-        love 
-        <span class="info-node">
-          <span class="target-word">making</span>
-          <div class="info-elbow elbow-making"></div>
-          <div class="info-box box-making">
-            <p>Passionate about web development, computer graphics and visualization, and 3D modelling and rendering. Led multiple projects including multi-platform app development, robotics competitions, and spatial design, as well as solo endeavours in graphic design, web development, and video editing.</p>
-          </div>
-        </span> 
-        <span class="info-node">
-          <span class="target-word">stuff</span>.
-          <div class="info-elbow elbow-stuff"></div>
-          <div class="info-box box-stuff">
-            <p>Proficient in programming in various languages and a trilingual individual beyond computers, making me an asset to any global team.</p>
-          </div>
-        </span>
-      </h1>
+          <p id="track-name" class="track-text">—</p>
+          <p id="artist-name" class="artist-text">—</p>
+          <p class="snacks">TYPE: AUDIO/LP <span>SOURCE: LAST.FM</span><span>REF 00-02</span></p>
+          <p class="description" style="margin-top: 2.1cqw">When I am not making something, I am listening to music.</p>
+          <p class="description">Music is a great source of inspiration. Music acts a solvent for the millions of ideas <br> making up the whirlpool in my mind. It catalyses the cross-pollination of thoughts.</p>
+          <p class="description">I talk about my favourite albums at <a href="https://sanalog.net/blog/reviews/music">sanalog.net/blog/reviews/music</a>.</p>
+        </div>
+
+        <div class="album-frame">
+          <img src="" alt="" class="album-cover" />
+        </div>
+      </div>
     </main>
 
-    <div class="music-container">
-      <Image src={ wandanlage } alt="wandanlage" class="wandanlage" />
-
-      <div class="text-area">
-        <div class="now-playing">
-          <div id="status-dot" class="dot"></div>
-          <p id="status-text" class="">CONNECTING...</p>
-        </div>
-        <p id="track-name" class="track-text">—</p>
-        <p id="artist-name" class="artist-text">—</p>
-        <p class="snacks">TYPE: AUDIO/LP <span>SOURCE: LAST.FM</span><span>REF 00-02</span></p>
-        <p class="description" style="margin-top: 2.1cqw">When I am not making something, I am listening to music.</p>
-        <p class="description">Music is a great source of inspiration. Music acts a solvent for the millions of ideas <br> making up the whirlpool in my mind. It catalyses the cross-pollination of thoughts.</p>
-        <p class="description">I talk about my favourite albums at <a href="https://sanalog.net/blog/reviews/music">sanalog.net/blog/reviews/music</a>.</p>
-      </div>
-
-      <div class="album-frame">
-        <img src="" alt="" class="album-cover" />
-      </div>
-    </div>
   </body>
 </html>
 
-
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
 
   @font-face {
     font-family: 'BritDark';
@@ -76,158 +169,245 @@ import Head from "../components/Head.astro";
     font-weight: normal;
     font-display: swap;
   }
-  
+
   :root {
-    --bg-color: #e7e7e7; 
-    --text-color: #222;
-    --grid-line: rgba(0, 0, 0, 0.1); 
+    --paper: #e7e7e7;
+    --ink: #222;
+    --muted: #767676;
+    --line: rgba(21, 21, 21, 0.1);
+    --columns: 19;
   }
 
-  ::selection {
-    background-color: var(--text-color);
-    color: var(--bg-color);
+  * {
+    box-sizing: border-box;
   }
 
   body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Playfair Display', serif;
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Playfair Display", serif;
+    cursor: crosshair;
   }
-  
-  main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+
+  ::selection {
+    background: var(--ink);
+    color: var(--paper);
   }
 
   a {
-    color: var(--text-color);
-    text-decoration: none;
-    border-bottom: 1px solid var(--text-color);
+    color: inherit;
   }
 
   img {
     display: block;
   }
-  
-  .background-grid {
-    background-size: 5cqw 5cqw;
-    background-image:
-      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
-      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
-    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
-  }
 
-  .main-title {
-    font-family: 'Playfair Display';
-    font-size: 5cqw;
-    font-weight: 400;
-    text-align: center;
-    margin: 0;
-    cursor: crosshair;
-  }
-
-  .info-node {
+  .about-page {
     position: relative;
-    display: inline-block;
+    isolation: isolate;
+    container-type: inline-size;
+    min-width: 320px;
+    background-color: var(--paper);
+    --cell: calc(100cqw / var(--columns));
   }
 
-  .target-word {
-    transition: all 0.3s ease;
-  }
-
-  .info-box {
+  .system-grid {
     position: absolute;
-    background: var(--bg-color);
-    border: 1px solid var(--grid-line);
-
-    color: var(--grid-line);
-    font-family: 'Playfair Display', serif;
-    text-align: left;
-    transition: all 0.3s ease;
-  }
-
-  .info-box p {
-    margin: 0;
-    padding: 0.5cqw;
-    font-size: 1cqw;
-    line-height: 1.2;
-  }
-
-  .info-elbow {
-    position: absolute;
-    border: 0 solid var(--grid-line);
-    transition: border-color 0.3s ease;
+    inset: 0 0 auto;
+    height: calc(var(--cell) * 16);
+    z-index: -2;
     pointer-events: none;
+    background-image:
+      linear-gradient(to right, var(--line) 0.5px, transparent 0.5px),
+      linear-gradient(to bottom, var(--line) 0.5px, transparent 0.5px);
+    background-position: 0 0;
+    background-size: var(--cell) var(--cell);
+    /* smooth transition */
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   }
 
-  .elbow-i {
-    bottom: 50%;
-    left: 48%;
-    width: 10cqw;
-    height: 6cqw;
-    border-top-width: 1px;
-    border-left-width: 1px;
-  }
-  .box-i {
-    width: 20cqw;
-    height: 10cqw;
-    bottom: calc(50% + 6cqw);
-    left: calc(48% + 10cqw);
+  .about-canvas {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(16, var(--cell));
+    height: calc(var(--cell) * 16);
   }
 
-  .elbow-making {
-    top: 50%;
-    right: 54%;
-    width: 8cqw;
-    height: 12cqw;
-    border-bottom-width: 1px;
-    border-right-width: 1px;
-  }
-  .box-making {
-    width: 25cqw;
-    height: 8cqw;
-    top: calc(50% + 8cqw);
-    right: calc(54% + 8cqw);
+  .masthead {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    padding: 0 calc(var(--cell) * 0.5);
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 0.8cqw;
   }
 
-  .elbow-stuff {
-    top: 80%;
-    left: 55%;
-    height: 5cqw;
-    border-left-width: 1px;
-  }
-  .box-stuff {
-    width: 20cqw;
-    height: 6cqw;
-    top: calc(80% + 4cqw);
-    left: calc(54% - 10cqw);
+  .masthead a {
+    border-bottom: 0;
+    text-decoration: none;
   }
 
-  .info-node:hover .target-word {
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    border-radius: 0.5vw;
+  .masthead-right {
+    text-align: right;
   }
 
-  .info-node:hover .info-box,
-  .info-node:hover .info-elbow,
-  .info-node:hover .info-box::after {  
-    border-color: var(--text-color);
-    color: var(--text-color);
+  /* -------------------------------- */
+
+  .section-index,
+  /* .main-visual figcaption, */
+  .profile-copy > span,
+  .profile-option span,
+  .handoff {
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 0.75vw;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
-  
 
+  .section-index {
+    grid-column: 4 / 8;
+    grid-row: 3;
+    padding: calc(var(--cell) * 0.5) calc(var(--cell) * 0.1);
+  }
 
-  /* MUSIC STUFF */
+  .highlight {
+    grid-column: 4 / 8;
+    grid-row: 4 / 6;
+    z-index: 2;
+    margin: 0;
+    padding: calc(var(--cell) * 0.09) calc(var(--cell) * 0.05);
+    font-family: "BritDark", "Helvetica", sans-serif;
+    font-size: 7cqw;
+    font-weight: normal;
+    line-height: 0.76;
+    letter-spacing: -0.04em;
+  }
 
+  .main-visual {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-column: 8 / -3;
+    grid-row: 1 / 11;
+    padding: calc(var(--cell) * 0.8) 0 calc(var(--cell) * 0.2);
+    min-height: 0;
+    margin: 0;
+  }
+
+  .main-visual :global(img) {
+    justify-self: end;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+  }
+
+  /* .main-visual figcaption {
+    justify-self: end;
+    padding: calc(var(--cell) * 0.1) calc(var(--cell) * 0.1);
+  } */
+
+  .profile-copy {
+    /* align-self: center; */
+    grid-column: 4 / 9;
+    grid-row: 7 / 9;
+    padding: calc(var(--cell) * 0.25);
+    border: 1px solid var(--ink);
+    background: rgba(231, 231, 231, 0.9);
+  }
+
+  .profile-copy > span {
+    color: var(--muted);
+  }
+
+  .profile-copy h2 {
+    margin: 0.35em 0 0;
+    font-size: 1.5cqw;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: capitalize;
+  }
+
+  .profile-copy p {
+    margin: 0.8em 0 0;
+    font-size: 0.9cqw;
+    line-height: 1.4;
+  }
+
+  /* ------------------------------------------- */
+
+  .profile-options {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 3 / 18;
+    grid-row: 12 / 15;
+  }
+
+  .profile-option {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid rgba(21, 21, 21, 0.55);
+    border-right: 0;
+    background: var(--paper);
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .profile-option:last-child {
+    border-right: 1px solid rgba(21, 21, 21, 0.55);
+  }
+
+  .profile-option :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(1) brightness(0.42) contrast(1.1);
+    transition: filter 160ms ease;
+  }
+
+  .profile-option:is(:hover, :focus-visible, .is-active) :global(img) {
+    filter: none;
+  }
+
+  .profile-option span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.35rem;
+    background: rgba(231, 231, 231, 0.9);
+    text-align: left;
+  }
+
+  .profile-option.is-active {
+    outline: 2px solid var(--ink);
+    outline-offset: -2px;
+  }
+
+  .handoff {
+    align-self: end;
+    display: flex;
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-row: 16;
+    gap: calc(var(--cell) * 0.25);
+    padding: 0 calc(var(--cell) * 0.2) calc(var(--cell) * 0.25);
+  }
+
+  .handoff-line {
+    height: 1px;
+    flex: 1;
+    background: var(--ink);
+  }
 
   .music-container {
     position: relative;
     width: 100%;
-    /* z-index: 1; */
   }
 
   .wandanlage {
@@ -237,7 +417,7 @@ import Head from "../components/Head.astro";
     pointer-events: none;
     mask-image: linear-gradient(to top, black 92%, transparent 100%);
   }
-
+  
   .album-cover {
     position: absolute;
     left: 62.7%;
@@ -253,7 +433,6 @@ import Head from "../components/Head.astro";
     position: absolute;
     left: 23%;
     top: 29.5%;
-    
     width: calc(100% * (1000 / 3000));
     height: calc(100% * (1000 / 1705));
     /* border: 1px solid #ff00ff; */
@@ -266,7 +445,6 @@ import Head from "../components/Head.astro";
     width: 100%;
     height: 2%;
     gap: 1%;
-
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     color: #696969;
@@ -316,11 +494,17 @@ import Head from "../components/Head.astro";
   }
 
   .description {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 0.8cqw;
     line-height: 1.6;
-    color: var(--text-color);
+    color: var(--ink);
     margin: 0.5cqw 0 0 0.1cqw;
+  }
+
+  .description a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
   }
 
   @keyframes passive-pulse {
@@ -328,10 +512,77 @@ import Head from "../components/Head.astro";
     50% { transform: scale(1.1); box-shadow: 0 0 10px rgba(255, 43, 43, 0.8); }
     100% { transform: scale(1); box-shadow: 0 0 4px rgba(255, 43, 43, 0.4); }
   }
+
+  @media (max-width: 720px) {
+    .about-canvas {
+      grid-template-rows: repeat(38, var(--cell));
+      height: calc(var(--cell) * 38);
+    }
+
+    .system-grid {
+      height: calc(var(--cell) * 38);
+    }
+
+    .masthead {
+      grid-template-columns: 1fr 1.5fr 0.5fr;
+    }
+
+    .masthead > span:nth-child(2) {
+      display: none;
+    }
+
+    .section-index {
+      grid-column: 1 / -1;
+    }
+
+    .highlight {
+      grid-column: 2 / 20;
+      grid-row: 3 / 8;
+      padding-left: 0;
+      font-size: clamp(44px, 14vw, 72px);
+    }
+
+    .main-visual {
+      grid-column: 2 / 20;
+      grid-row: 8 / 25;
+    }
+
+    .profile-copy {
+      grid-column: 2 / 20;
+      grid-row: 25 / 31;
+    }
+
+    .profile-options {
+      grid-column: 1 / -1;
+      grid-row: 31 / 37;
+    }
+
+    .handoff {
+      grid-row: 38;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 </style>
 
-
 <script>
+  const timeEl = document.getElementById("local-time");
+  function updateTime() {
+    timeEl.textContent = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Asia/Singapore",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false,
+    }).format(new Date());
+  }
+  updateTime();
+  setInterval(updateTime, 1000);
+
   // https://soft.thran.uk/last-played.html
   const API_URL = `https://www.ballix.net/whatsplaying/now?user=sanabeats`;
 
