@@ -48,10 +48,10 @@ const profiles = [
 
       <section class="about-canvas" aria-labelledby="about-title">
         <header class="masthead">
-          <a href="/" aria-label="Back to home">SANALOG / ABOUT</a>
-          <span>PROFILE SYSTEM 01</span>
-          <span>SINGAPORE — <span id="local-time">00:00:00</span></span>
-          <span class="masthead-right">© 2026</span>
+          <a href="/">SANALOG / ABOUT</a>
+          <!-- <span>PROFILE SYSTEM 01</span> -->
+          <span style="text-align: center;">SINGAPORE — <span id="local-time">00:00:00</span></span>
+          <span style="text-align: right;">© 2026</span>
         </header>
 
         <span class="section-index">[A01 / SELECT A PROFILE]</span>
@@ -236,7 +236,7 @@ const profiles = [
 
   .masthead {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     grid-column: 1 / -1;
     grid-row: 1;
@@ -247,12 +247,7 @@ const profiles = [
   }
 
   .masthead a {
-    border-bottom: 0;
     text-decoration: none;
-  }
-
-  .masthead-right {
-    text-align: right;
   }
 
   /* -------------------------------- */
@@ -509,50 +504,60 @@ const profiles = [
 
   @media (max-width: 720px) {
     .about-canvas {
-      grid-template-rows: repeat(38, var(--cell));
-      height: calc(var(--cell) * 38);
+      grid-template-rows: repeat(30, var(--cell));
+      height: calc(var(--cell) * 30);
     }
 
     .system-grid {
-      height: calc(var(--cell) * 38);
+      height: calc(var(--cell) * 30);
     }
 
     .masthead {
-      grid-template-columns: 1fr 1.5fr 0.5fr;
-    }
-
-    .masthead > span:nth-child(2) {
-      display: none;
+      font-size: 1.6cqw;
     }
 
     .section-index {
-      grid-column: 1 / -1;
+      grid-column: 2 / -1;
+      font-size: 1.5vw;
     }
 
     .highlight {
       grid-column: 2 / 20;
-      grid-row: 3 / 8;
       padding-left: 0;
-      font-size: clamp(44px, 14vw, 72px);
+      font-size: 14vw;
     }
 
     .main-visual {
-      grid-column: 2 / 20;
-      grid-row: 8 / 25;
+      grid-column: 1 / 20;
+      grid-row: 6 / 24;
     }
 
     .profile-copy {
-      grid-column: 2 / 20;
-      grid-row: 25 / 31;
+      grid-column: 13 / 19;
+      grid-row: 4 / 8;
+    }
+
+    .profile-copy > span {
+      font-size: 1.5cqw;
+    }
+
+    .profile-copy h2 {
+      font-size: 3cqw;
+      margin: 0;
+    }
+
+    .profile-copy p {
+      margin: 0.5em 0 0;
+      font-size: 1.5cqw;
     }
 
     .profile-options {
       grid-column: 1 / -1;
-      grid-row: 31 / 37;
+      grid-row: 25 / 29;
     }
 
     .handoff {
-      grid-row: 38;
+      display: none;
     }
   }
 
