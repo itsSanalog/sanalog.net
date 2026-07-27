@@ -1,28 +1,56 @@
 ---
 const { name } = Astro.props;
+const gridId = `collapsible-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`;
 ---
 
-<button type="button" class="collapsible-button">{ name }</button>
-<div class="collapsible-grid">
+<button type="button" class="collapsible-button" aria-expanded="false">{ name }</button>
+<div class="collapsible-grid" id={gridId}>
   <slot />
 </div>
 
 <script>
-  var colbutton = document.getElementsByClassName("collapsible-button");
-  var i;
-  for (i = 0; i < colbutton.length; i++) {
-    colbutton[i].addEventListener("click", function() {
-      this.classList.toggle("active1");
-      var grid = this.nextElementSibling;
-      if (grid.style.maxHeight) {
-        grid.style.maxHeight = null;
-        grid.style.marginTop = null;
+  document.querySelectorAll<HTMLButtonElement>(".collapsible-button").forEach((button) => {
+    const grid = button.nextElementSibling as HTMLElement | null;
+    if (!grid) return;
+
+    const syncOpenHeight = () => {
+      if (
+        button.getAttribute("aria-expanded") === "true" &&
+        grid.style.maxHeight !== "none"
+      ) {
+        grid.style.maxHeight = `${grid.scrollHeight}px`;
+      }
+    };
+
+    grid.querySelectorAll("img").forEach((image) => {
+      if (!image.complete) image.addEventListener("load", syncOpenHeight);
+    });
+
+    new ResizeObserver(syncOpenHeight).observe(grid);
+
+    button.addEventListener("click", () => {
+      const isOpening = button.getAttribute("aria-expanded") !== "true";
+      button.setAttribute("aria-expanded", String(isOpening));
+      button.classList.toggle("active1", isOpening);
+
+      if (isOpening) {
+        grid.style.maxHeight = `${grid.scrollHeight}px`;
+        grid.addEventListener("transitionend", () => {
+          if (button.getAttribute("aria-expanded") === "true") {
+            grid.style.maxHeight = "none";
+          }
+        }, { once: true });
       } else {
-        grid.style.maxHeight = grid.scrollHeight + "px";
-        grid.style.marginTop = "1em";
+        if (grid.style.maxHeight === "none") {
+          grid.style.maxHeight = `${grid.scrollHeight}px`;
+          grid.getBoundingClientRect();
+        }
+        requestAnimationFrame(() => {
+          grid.style.maxHeight = "0px";
+        });
       }
     });
-  }
+  });
 </script>
 
 <style>
@@ -67,11 +95,19 @@ const { name } = Astro.props;
   
   .collapsible-grid {
     display: grid;
-    grid-column-gap: 1.8em;
+    grid-column-gap: clamp(0.8em, 3vw, 1.8em);
     grid-row-gap: 1em;
     grid-template-columns: 1fr 1fr 1fr;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out, margin-top 0.2s ease-out;
+  }
+
+  .collapsible-button.active1 + .collapsible-grid {
+    margin-top: 1em;
+  }
+
+  .collapsible-grid :global(a) {
+    min-width: 0;
   }
 </style>

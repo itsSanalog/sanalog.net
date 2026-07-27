@@ -18,17 +18,23 @@
       </svg>
     </a>
   </span>
-  <span class="flex-shrink mmr">
-    <a href="/blog/reviews" class="muted plain">reviews</a>
-    <a href="/blog/about" class="muted plain mml">about</a>
-  </span>
-  <span id="theme-toggle" title="Toggle light mode" type="button" role="switch" aria-checked="false">
-    <div class="theme-toggle-slide"></div>
-    <div class="theme-toggle-switch"></div>
+  <span class="flex-shrink">
+    <a href="/blog/reviews" class="muted plain mmr">reviews</a>
+    <a href="/blog/about" class="muted plain mmr">about</a>
+    <span id="theme-toggle" title="Toggle light mode" type="button" role="switch" aria-checked="false">
+      <div class="theme-toggle-slide"></div>
+      <div class="theme-toggle-switch"></div>
+    </span>
   </span>
 </nav>
 
 <style>
+  .flex-shrink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   /* #Layer_2:hover path:not(#bforblog) {
     fill: var(--color-action);
   } */
