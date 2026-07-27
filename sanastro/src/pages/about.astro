@@ -348,10 +348,9 @@ const profiles = [
 
   .profile-option {
     position: relative;
-    min-width: 0;
     overflow: hidden;
-    padding: 0;
-    border: 1px solid rgba(21, 21, 21, 0.55);
+    padding: 0.8cqw;
+    border: 1px solid var(--ink);
     border-right: 0;
     background: var(--paper);
     color: var(--ink);
@@ -359,15 +358,15 @@ const profiles = [
   }
 
   .profile-option:last-child {
-    border-right: 1px solid rgba(21, 21, 21, 0.55);
+    border-right: 1px solid var(--ink);
   }
 
   .profile-option :global(img) {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter: grayscale(1) brightness(0.42) contrast(1.1);
-    transition: filter 160ms ease;
+    filter: grayscale(1) brightness(0.4) contrast(1.1);
+    transition: filter 80ms ease;
   }
 
   .profile-option:is(:hover, :focus-visible, .is-active) :global(img) {
@@ -376,17 +375,10 @@ const profiles = [
 
   .profile-option span {
     position: absolute;
-    right: 0;
     bottom: 0;
     left: 0;
     padding: 0.35rem;
     background: rgba(231, 231, 231, 0.9);
-    text-align: left;
-  }
-
-  .profile-option.is-active {
-    outline: 2px solid var(--ink);
-    outline-offset: -2px;
   }
 
   .handoff {
@@ -396,14 +388,16 @@ const profiles = [
     grid-column: 1 / -1;
     grid-row: 16;
     gap: calc(var(--cell) * 0.25);
-    padding: 0 calc(var(--cell) * 0.2) calc(var(--cell) * 0.25);
+    padding: 0 calc(var(--cell) * 0.5) calc(var(--cell) * 0.5);
   }
 
   .handoff-line {
-    height: 1px;
+    height: 0.5px;
     flex: 1;
     background: var(--ink);
   }
+
+  /* --------------------------------------------------- */
 
   .music-container {
     position: relative;
