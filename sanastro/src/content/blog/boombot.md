@@ -25,8 +25,8 @@ BoomBot is a stupid robot but also a friend. The BoomBot ring icon is based on t
 It's a typewriter apostrophe `'` surrounded by two integration symbols `∫`. (The character entity reference code for `'` is `&#39;`, which is neat because we all love Miku.)
 
 ### members
-- [sanalog.net](/blog)
-- <a href="https://bleedinghe.art" target="_blank" class="extlink">bleedinghe.art</a>
-- <a href="https://blog.javalim.com" target="_blank" class="extlink">blog.javalim.com</a>
-- <a href="https://mizumyst.com" target="_blank" class="extlink">mizumyst.com</a>
+<!-- - <a href="https://bleedinghe.art" target="_blank" class="extlink">bleedinghe.art</a> -->
 - <a href="https://cpc2.org" target="_blank" class="extlink">cpc2.org</a>
+- <a href="https://javalim.com" target="_blank" class="extlink">javalim.com</a>
+- <a href="https://mizumyst.com" target="_blank" class="extlink">mizumyst.com</a>
+- [sanalog.net](/)
