@@ -41,11 +41,57 @@ const { Content } = await render(sitemap);
 
     container.style.backgroundColor = bgColor;
 
+    // draw.js groups everything below /blog together. Derive more useful groups by examining links
+    const childrenById = new Map();
+    const parentById = new Map();
+
+    graphData.links.forEach((link) => {
+      const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+      const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+
+      if (!childrenById.has(sourceId)) childrenById.set(sourceId, []);
+      childrenById.get(sourceId).push(targetId);
+      parentById.set(targetId, sourceId);
+    });
+
+    const branchIds = graphData.nodes
+      .filter((node) =>
+        node.id !== '/' &&
+        node.id !== '/blog' &&
+        childrenById.has(node.id)
+      )
+      .map((node) => node.id);
+
+    const branchIdSet = new Set(branchIds);
+
+    const groupForNode = (node) => {
+      let currentId = node.id;
+
+      // The closest branching ancestor owns the colour. This lets nested sections such as reviews/music differ from reviews itself.
+      while (currentId) {
+        if (branchIdSet.has(currentId)) return currentId;
+        currentId = parentById.get(currentId);
+      }
+
+      // One-off pages belong to /blog rather than each consuming new colours
+      return node.id === '/blog' || node.id.startsWith('/blog/')
+        ? '/blog'
+        : '/';
+    };
+
+    graphData.nodes.forEach((node) => {
+      node.group = groupForNode(node);
+    });
+
+    const homeNode = graphData.nodes.find((node) => node.id === '/');
+    const blogNode = graphData.nodes.find((node) => node.id === '/blog');
+    blogNode.val = homeNode.val; //make same size
+
     const Graph = ForceGraph()(container)
       .width(width)
       .height(height)
       .graphData(graphData)
-      .nodeAutoColorBy('group') // auto color per top-level category
+      .nodeAutoColorBy('group')
       .linkColor(() => linkColor)
       .linkWidth(2)
       .onNodeClick(node => {
@@ -72,7 +118,7 @@ const { Content } = await render(sitemap);
 
     // gravity and cluster settings
     Graph.d3Force('charge').strength(-100);
-    Graph.d3Force('link').distance(80);
+    Graph.d3Force('link').distance(100);
 
     // theme updates (disabled)
     // const themeToggle = document.querySelector("#theme-toggle");
