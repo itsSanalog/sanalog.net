@@ -1,0 +1,192 @@
+---
+interface Props {
+  ciphertext?: string;
+}
+
+const { ciphertext = "" } = Astro.props;
+const payload = ciphertext.trim();
+---
+
+<section class="encrypted-talk mn2" data-encrypted-talk data-ciphertext={payload}>
+  <div class="encrypted-talk__prompt">
+    <input
+      id="limerent-password"
+      type="password"
+      autocomplete="off"
+      spellcheck="false"
+      data-password
+    />
+    <p class="muted small mt ms2" data-status>Enter a password.</p>
+  </div>
+
+  <p class="muted small encrypted-talk__label mb">Output</p>
+  <pre class="encrypted-talk__output m0" data-output>(ˉ▽ˉ；)...</pre>
+</section>
+
+<script>
+  const ITERATION_LIMIT = 2_000_000;
+  const FORMAT_V2 = "limerent/v2/pbkdf2-sha256";
+
+  const bytesToBase64Url = (bytes) => {
+    let binary = "";
+    bytes.forEach((byte) => { binary += String.fromCharCode(byte); });
+    return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+  };
+
+  const base64UrlToBytes = (value) => {
+    const padded = value.replace(/-/g, "+").replace(/_/g, "/") + "=".repeat((4 - value.length % 4) % 4);
+    const binary = atob(padded);
+    return Uint8Array.from(binary, (character) => character.charCodeAt(0));
+  };
+
+  const fingerprint = async (payload, password) => {
+    const digest = await crypto.subtle.digest(
+      "SHA-256",
+      new TextEncoder().encode(`${payload}\0${password}`),
+    );
+    return bytesToBase64Url(new Uint8Array(digest)).slice(0, 16);
+  };
+
+  const parsePayload = (payload) => {
+    const parts = payload.split("/");
+    const iterations = Number(parts[3]);
+    if (!Number.isSafeInteger(iterations) || iterations < 100_000 || iterations > ITERATION_LIMIT) {
+      throw new Error("Unsupported PBKDF2 work factor.");
+    }
+
+    const salt = base64UrlToBytes(parts[4]);
+    if (salt.length !== 16) throw new Error("Invalid limerent ciphertext sizes.");
+
+    if (parts.length === 8 && parts.slice(0, 3).join("/") === FORMAT_V2) {
+      const counter = base64UrlToBytes(parts[5]);
+      const encrypted = base64UrlToBytes(parts[6]);
+      const tag = base64UrlToBytes(parts[7]);
+      if (counter.length !== 16 || tag.length !== 32) {
+        throw new Error("Invalid limerent ciphertext sizes.");
+      }
+      return {
+        version: 2,
+        iterations,
+        salt,
+        counter,
+        encrypted,
+        tag,
+        authenticatedData: parts.slice(0, 7).join("/"),
+      };
+    }
+
+    throw new Error("Invalid limerent ciphertext format.");
+  };
+
+  const deriveBits = async (password, salt, iterations, length) => {
+    const keyMaterial = await crypto.subtle.importKey(
+      "raw",
+      new TextEncoder().encode(password),
+      "PBKDF2",
+      false,
+      ["deriveBits"],
+    );
+    return new Uint8Array(await crypto.subtle.deriveBits(
+      { name: "PBKDF2", salt, iterations, hash: "SHA-256" },
+      keyMaterial,
+      length,
+    ));
+  };
+
+  const decrypt = async (payload, password) => {
+    const parsed = parsePayload(payload);
+
+    const derived = await deriveBits(password, parsed.salt, parsed.iterations, 512);
+    const encryptionKey = await crypto.subtle.importKey(
+      "raw",
+      derived.slice(0, 32),
+      { name: "AES-CTR" },
+      false,
+      ["decrypt"],
+    );
+    const authenticationKey = await crypto.subtle.importKey(
+      "raw",
+      derived.slice(32),
+      { name: "HMAC", hash: "SHA-256" },
+      false,
+      ["verify"],
+    );
+    const plaintext = await crypto.subtle.decrypt(
+      { name: "AES-CTR", counter: parsed.counter, length: 128 },
+      encryptionKey,
+      parsed.encrypted,
+    );
+    const authenticated = await crypto.subtle.verify(
+      "HMAC",
+      authenticationKey,
+      parsed.tag,
+      new TextEncoder().encode(parsed.authenticatedData),
+    );
+    return { text: new TextDecoder().decode(plaintext), authenticated };
+  };
+
+  document.querySelectorAll("[data-encrypted-talk]").forEach((root) => {
+    const payload = root.dataset.ciphertext || "";
+    const passwordInput = root.querySelector("[data-password]");
+    const status = root.querySelector("[data-status]");
+    const output = root.querySelector("[data-output]");
+    let request = 0;
+    let timer;
+
+    if (!(passwordInput instanceof HTMLInputElement) || !(status instanceof HTMLElement) || !(output instanceof HTMLElement)) return;
+
+    passwordInput.addEventListener("input", () => {
+      window.clearTimeout(timer);
+      const currentRequest = ++request;
+      const password = passwordInput.value;
+
+      if (!password) {
+        status.textContent = "Enter a password.";
+        output.textContent = "";
+        return;
+      }
+
+      status.textContent = "Trying password...";
+      output.textContent = "Deriving key...";
+      timer = window.setTimeout(async () => {
+        try {
+          const result = await decrypt(payload, password);
+          if (currentRequest !== request) return;
+          const attempt = await fingerprint(payload, password);
+          if (currentRequest !== request) return;
+          status.textContent = result.authenticated
+            ? "Password accepted! I am very scared."
+            : `Authentication failed; fingerprint: ${attempt}`;
+          output.textContent = result.text;
+        } catch {
+          if (currentRequest !== request) return;
+          const attempt = await fingerprint(payload, password);
+          if (currentRequest !== request) return;
+          status.textContent = `Authentication failed ; fingerprint: ${attempt}`;
+          output.textContent = "this shouldn't pop up ever";
+        }
+      }, 150);
+    });
+  });
+</script>
+
+<style>
+  .encrypted-talk__prompt input {
+    width: 100%;
+    padding: 0.55em 0.7em;
+    color: var(--color-tx-normal);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-ui-normal);
+    border-radius: var(--border-radius);
+  }
+
+  .encrypted-talk__prompt input:focus {
+    outline: solid var(--color-action);
+  }
+
+  .encrypted-talk__output {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    min-height: 15em;
+  }
+</style>
