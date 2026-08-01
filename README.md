@@ -1,4 +1,5 @@
 # [sanalog.net](https://sanalog.net)
+
 Personal website. In perpetual development.
 
 <!-- For an actual description of the site, purpose, development and whatnot, check [sanalog.net/blog/code/sanalog.net](https://sanalog.net/blog/code/wesbite) (incomplete). -->
