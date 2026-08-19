@@ -5,7 +5,7 @@ coverAlt: "Automated Individuality"
 # bannerAlt: "Automated Individuality"
 
 title: "Automated Individuality"
-description: "The flatlined soul."
+description: "How to deslop."
 # author:
 publicationDate: 2026-08-19
 # creationDate: "August 2026"
