@@ -79,7 +79,7 @@ Oh boy. If you haven't been doing so already, please listen to the full track be
 
 With the track length extended to exactly five times the original, I fully believed that this would be an ambient track, and the piano was there to back me up. So where are the drums coming from and what are they building up to—the fuck? Listening to the whole thing again, the pent-up energy is perceivable but I'll admit it caught me entirely off guard the first time.
 
-There isn't much known about this group, other than a few <a href="https://www.youtube.com/watch?v=F5QEUiZrNbE" target="blank" class="extlink">videos</a> and some <a href="https://x.com/thesodomproject/status/1253550382686461952" target="blank" class="extlink">audio snippets</a> on their mostly defunct Twitter account. They are more than enough to indicate that the band was heavily invested in bass-heavy electronic darkwave, which is good enough context to explain what just happened.
+There isn't much known about this group, other than a few <a href="https://www.youtube.com/watch?v=F5QEUiZrNbE" target="_blank" class="extlink">videos</a> and some <a href="https://x.com/thesodomproject/status/1253550382686461952" target="_blank" class="extlink">audio snippets</a> on their mostly defunct Twitter account. They are more than enough to indicate that the band was heavily invested in bass-heavy electronic darkwave, which is good enough context to explain what just happened.
 
 Some regard *touched* as a palate cleanser to thrust you into *to here knows when*. I'd like to praise The Sodom Project for rejecting that idea and making the most out of the track they chose to go for. That being said, the starting few minutes does not serve much purpose beyond leading to the climax. While it was absolutely necessary, I can't help but feel disappointed by the wasted potential in extending the song five fold and reserving most of it for a buildup sequence.
 
@@ -107,11 +107,11 @@ Another point of contention could be its pace. To be fair, eleven minutes make t
 
 ## Sei & Swann
 
-Very little is known about Swann. He has one release that does not show up anywhere other than <a href="https://www.youtube.com/watch?v=3Xp2NsQtgoo" target="blank" class="extlink">this video</a> with 383 views. Fortunately, Swann (최수환) is also the lead of Yellow Kitchen, one of the forerunners of Korean post-rock and ambient music. They are important figures in the indie scene and have represented Korean experimental music for a long time.
+Very little is known about Swann. He has one release that does not show up anywhere other than <a href="https://www.youtube.com/watch?v=3Xp2NsQtgoo" target="_blank" class="extlink">this video</a> with 383 views. Fortunately, Swann (최수환) is also the lead of Yellow Kitchen, one of the forerunners of Korean post-rock and ambient music. They are important figures in the indie scene and have represented Korean experimental music for a long time.
 
 Cultural impact doesn't guarantee good music however. While his reimagined downtempo cover of *to here knows when* is decent, it's not very inspiring or impactful, which is a trend in many of the tracks in *Dispersion Temporelle*. The very subtle harmony around 16:42 brings some interesting ideas to the table but does not stay nor come back. To reiterate, it's a fine song in a vacuum, but fails to meet expectations outside the safety of pure musical evaluation.
 
-# <a href="https://i.imgur.com/D9Z0GGj.png" target="blank" class="extlink">When you sleep</a>
+# <a href="https://i.imgur.com/D9Z0GGj.png" target="_blank" class="extlink">When you sleep</a>
 
 ## **少年ナイフ (Shonen Knife)**
 
@@ -133,7 +133,7 @@ I mean, one would not be wrong to call this moeshit, but they shouldn't dismiss 
 
 ## 조월 (Jowall)
 
-Jowall does everything, being an OG member of <a href="http://byul.org" target="blank" class="extlink">byul.org</a> and Underwears Band. In his own world however, he's the master of manipulating <a href="https://www.weiv.co.kr/archives/23176" target="blank" class="extlink">lyrical noise</a>, with the compilation album *To Celebrate Nothing* being a great demonstration of his craft. ‘Rustic yet grand' is a phrase I've seen used to describe Jowall's works, and it has stuck with me. It's true. That is exactly how it sounds and it is wonderful every single time, this one no exception.
+Jowall does everything, being an OG member of <a href="http://byul.org" target="_blank" class="extlink">byul.org</a> and Underwears Band. In his own world however, he's the master of manipulating <a href="https://www.weiv.co.kr/archives/23176" target="_blank" class="extlink">lyrical noise</a>, with the compilation album *To Celebrate Nothing* being a great demonstration of his craft. ‘Rustic yet grand' is a phrase I've seen used to describe Jowall's works, and it has stuck with me. It's true. That is exactly how it sounds and it is wonderful every single time, this one no exception.
 
 *City Burns* is my favourite track from Jowall's solo releases, so imagine my delight when I first noticed the same acoustic and brass sound from this track. The acoustic guitar is so sensual, its intimacy headlined by scratching of nail against wound string. Instead of sounding like a tuba through a Boss MT-2, the winds are gentler this time, producing a relaxing hum. As the riff retreats, you are introduced to delicate vocals.
 
@@ -154,9 +154,9 @@ Thank god he put in the effort, because it paid off. The resulting sequence is s
 
 **Yapping**
 
-We have been listening on YouTube so far with 160kbps VBR audio, but I was able to reach out via email and get a <a href="https://files.catbox.moe/f6rc4b.wav" target="blank" class="extlink">better version</a>. This got me excited to the point where I made my way to <a href="https://hangout.audio/" target="blank" class="extlink">The Hangout</a> so I could listen to it for the first time on something better than my earphones. It was wonderful. I opted for the Audeze LCD-X, a personal favourite from the lineup. It was a good choice.
+We have been listening on YouTube so far with 160kbps VBR audio, but I was able to reach out via email and get a <a href="https://files.catbox.moe/f6rc4b.wav" target="_blank" class="extlink">better version</a>. This got me excited to the point where I made my way to <a href="https://hangout.audio/" target="_blank" class="extlink">The Hangout</a> so I could listen to it for the first time on something better than my earphones. It was wonderful. I opted for the Audeze LCD-X, a personal favourite from the lineup. It was a good choice.
 
-Jowall's latest release, *Snowdrift*, has a mono mix. In his message board, he mentioned Phil Spector's stubborn pursuit of mono and claimed that it's not out of rebellion against technology like Dolby Atmos. Instead, he finds <a href="https://jowall.cafe24.com/zeroboard/view.php?id=jowall&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=4" target="blank" class="extlink">'building sound on top of a small dot' an enjoyable and gratifying experience</a>. Why am I talking about this? I'd like you to weigh this idea against the stereo sound in *when you sleep*. More than a decade ago, he was able to achieve such a delightful mix, putting you right in the middle of the session: acoustic on your left and drums to the right. You are in the room where the layered voices bounce off the walls and reverberate into your ears. I'm not sure if this effect could have been pulled off if 2023 Jowall was in charge of production.
+Jowall's latest release, *Snowdrift*, has a mono mix. In his message board, he mentioned Phil Spector's stubborn pursuit of mono and claimed that it's not out of rebellion against technology like Dolby Atmos. Instead, he finds <a href="https://jowall.cafe24.com/zeroboard/view.php?id=jowall&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=4" target="_blank" class="extlink">'building sound on top of a small dot' an enjoyable and gratifying experience</a>. Why am I talking about this? I'd like you to weigh this idea against the stereo sound in *when you sleep*. More than a decade ago, he was able to achieve such a delightful mix, putting you right in the middle of the session: acoustic on your left and drums to the right. You are in the room where the layered voices bounce off the walls and reverberate into your ears. I'm not sure if this effect could have been pulled off if 2023 Jowall was in charge of production.
 
 # i only said
 
