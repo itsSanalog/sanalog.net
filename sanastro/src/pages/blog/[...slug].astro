@@ -11,7 +11,16 @@ import ThemedImage from "../../components/blog/ThemedImage.astro";
 export async function getStaticPaths() {
   // Get all entries from the blog collection
   const blogEntries = await getCollection('blog');
-  return blogEntries.map((entry) => ({
+  const explicitRoutes = new Set([
+    'about',
+    'boombot',
+    'credo',
+    'links',
+    'sitemap',
+    'uses',
+  ]);
+
+  return blogEntries.filter((entry) => !explicitRoutes.has(entry.id)).map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
   }));
