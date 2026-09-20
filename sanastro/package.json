@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "check": "astro check --tsconfig tsconfig.check.json --minimumSeverity error",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -21,5 +22,9 @@
     "remark-attr": "^0.11.1",
     "remark-imgattr": "^1.0.5",
     "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
   }
 }

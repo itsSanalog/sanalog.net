@@ -6,51 +6,53 @@ on:
 
   workflow_dispatch:
 
-# Allow job to clone the repo and deploy
 permissions:
   contents: read
-  pages: write
-  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  generate-sitemap-and-build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout repository
-          uses: actions/checkout@v6
-          with:
-            submodules: recursive
-        
-        - name: Setup Node.js
-          uses: actions/setup-node@v6
-          with:
-            node-version: '24'
-        
-        - name: Install dependencies in sanastro directory
-          run: |
-            cd sanastro
-            npm install
-        
-        - name: Install xml2js
-          run: npm install xml2js
-        
-        - name: Build for xml
-          # /dist is in .gitignore, so the xml isn't present for draw.js to work with. Build is included in the workflow so /dist will exist when the script runs.
-          # Astro action creates an artifact. when it runs again it tries to create a second artifact with the same name and causes a conflict. So use npm run build.
-          working-directory: sanastro
-          run: npm run build
-        
-        - name: Generate diagram from sitemap
-          run: node .github/scripts/draw.js
-        
-        - name: Build again with sitemap
-          uses: withastro/action@v6
-          with:
-              path: sanastro # The root location of Astro project
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: sanastro/package-lock.json
+
+      - name: Install dependencies in sanastro directory
+        working-directory: sanastro
+        run: npm ci
+
+      - name: Astro check
+        continue-on-error: true
+        working-directory: sanastro
+        run: npm run check
+
+      - name: Build site
+        working-directory: sanastro
+        run: npm run build
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: sanastro/dist
 
   deploy:
-    needs: generate-sitemap-and-build
+    needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -58,4 +60,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
-        
+
