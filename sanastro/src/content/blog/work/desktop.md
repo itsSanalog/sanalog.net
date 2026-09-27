@@ -26,7 +26,7 @@ The specs are as follows. It runs Windows 11 and Mint.
 |:---|:---|
 CPU  | <a href="https://pcpartpicker.com/product/4r4Zxr/amd-ryzen-5-9600x-39-ghz-6-core-processor-100-100001405wof" target="_blank" class="extlink">AMD Ryzen 5 9600X</a>
 Mobo | <a href="https://pcpartpicker.com/product/DkFbt6/msi-mpg-b650i-edge-wifi-mini-itx-am5-motherboard-mpg-b650i-edge-wifi" target="_blank" class="extlink">MSI B650I</a>
-Cooler | <a href="https://www.idcooling.com/product/detail?id=553&name=IS-53-XT%20BLACK" target="_blank" class="extlink">IS-53-XT</a>  
+Cooler | <a href="https://pcpartpicker.com/product/JJJBD3/id-cooling-is-53-xt-black-475-cfm-cpu-cooler-is-53-xt-black" target="_blank" class="extlink">IS-53-XT</a>  
 RAM  | <a href="https://pcpartpicker.com/product/HHLp99/klevv-fit-v-32-gb-2-x-16-gb-ddr5-6000-cl28-memory-kd5agu880-60b280f" target="_blank" class="extlink">Klevv 32 GB DDR5-6000 CL28</a>
 SSD  | <a href="https://pcpartpicker.com/product/jhjv6h/crucial-p510-1-tb-m2-2280-pcie-50-x4-nvme-solid-state-drive-ct1000p510ssd8" target="_blank" class="extlink">Crucial 1 TB M.2 PCIe 5.0 NVMe</a>
 GPU  | <a href="https://pcpartpicker.com/product/PxG2FT/gigabyte-windforce-oc-sff-geforce-rtx-5070-12-gb-video-card-gv-n5070wf3oc-12gd" target="_blank" class="extlink">Gigabyte RTX 5070 12 GB (OC)</a>
