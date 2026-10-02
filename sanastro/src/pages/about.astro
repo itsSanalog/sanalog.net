@@ -582,13 +582,13 @@ const profiles = [
   updateTime();
   setInterval(updateTime, 1000);
 
-  // https://soft.thran.uk/last-played.html
-  const API_URL = `https://www.ballix.net/whatsplaying/now?user=sanabeats`;
+  // https://github.com/biancarosa/lastfm-last-played
+  const API_URL = "https://lastfm-last-played.biancarosa.com.br/SanaBeats/latest-song";
 
   async function fetchNowPlaying() {
     try {
       const response = await fetch(API_URL);
-      const data = await response.json();
+      const { track } = await response.json();
 
       const trackEl = document.getElementById('track-name');
       const artistEl = document.getElementById('artist-name');
@@ -596,18 +596,16 @@ const profiles = [
       const statusDot = document.getElementById('status-dot');
       const albumImg = document.querySelector('.album-cover');
 
-      trackEl.textContent = data.name;
-      artistEl.textContent = data.artist;
+      trackEl.textContent = track.name;
+      artistEl.textContent = track.artist['#text'];
       
-      if (data.image) {
-        albumImg.src = data.image.extralarge;
-      }
+      albumImg.src = track.image.find((image) => image.size === 'extralarge')['#text'];
 
-      if (data.nowplaying === "true") {
+      if (track['@attr'].nowplaying === "true") {
         statusText.textContent = "NOW PLAYING";
         statusDot.classList.add('is-live');
       } else {
-        statusText.textContent = "last played: " + data.date;
+        statusText.textContent = "last played: " + track.date['#text'];
         statusDot.classList.remove('is-live');
       }
 
